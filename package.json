@@ -34,7 +34,8 @@
     "clean": "rm -rf dist src/generated",
     "format": "prettier --write \"src/**/*.{ts,tsx}\" \"scripts/**/*.ts\"",
     "update": "npm run clean && npm run generate && npm run build",
-    "prepublishOnly": "npm run update"
+    "prepublishOnly": "npm run update",
+    "build:template": "tsx scripts/generateFromTemplate.ts"
   },
   "keywords": [
     "solidjs",
