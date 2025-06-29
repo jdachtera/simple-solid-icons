@@ -17,9 +17,14 @@ export function TablerCe({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M9 6a6 6 0 1 0 0 12" />
   <path d="M21 6a6 6 0 1 0 0 12" />
   <path d="M15 12h6" />
 </svg>
+    </>
+  )
 }

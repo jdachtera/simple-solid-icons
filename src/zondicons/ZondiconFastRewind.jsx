@@ -17,5 +17,10 @@ export function ZondiconFastRewind({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}><path d="M19 5v10l-9-5 9-5zm-9 0v10l-9-5 9-5z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M19 5v10l-9-5 9-5zm-9 0v10l-9-5 9-5z"/></svg>
+    </>
+  )
 }

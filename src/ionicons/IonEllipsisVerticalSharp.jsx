@@ -17,5 +17,10 @@ export function IonEllipsisVerticalSharp({ size = 24, width, height, ...inputPro
     },
     inputProps
   )
-  return <svg {...props}><circle cx="256" cy="256" r="48"/><circle cx="256" cy="416" r="48"/><circle cx="256" cy="96" r="48"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><circle cx="256" cy="256" r="48"/><circle cx="256" cy="416" r="48"/><circle cx="256" cy="96" r="48"/></svg>
+    </>
+  )
 }

@@ -17,11 +17,16 @@ export function TablerLineDotted({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 12v.01" />
   <path d="M8 12v.01" />
   <path d="M12 12v.01" />
   <path d="M16 12v.01" />
   <path d="M20 12v.01" />
 </svg>
+    </>
+  )
 }

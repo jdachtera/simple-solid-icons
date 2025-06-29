@@ -17,7 +17,12 @@ export function TablerBrandStrava({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 13l-5 -10l-5 10m6 0l4 8l4 -8" />
 </svg>
+    </>
+  )
 }

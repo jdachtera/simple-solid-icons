@@ -17,7 +17,10 @@ export function TablerBrandZapier({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12h6" />
   <path d="M21 12h-6" />
   <path d="M12 3v6" />
@@ -27,4 +30,6 @@ export function TablerBrandZapier({ size = 24, width, height, ...inputProps }) {
   <path d="M18.364 5.636l-4.243 4.243" />
   <path d="M9.879 14.121l-4.243 4.243" />
 </svg>
+    </>
+  )
 }

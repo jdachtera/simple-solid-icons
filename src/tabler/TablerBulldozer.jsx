@@ -17,7 +17,10 @@ export function TablerBulldozer({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M2 17a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
   <path d="M12 17a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
   <path d="M19 13v4a2 2 0 0 0 2 2h1" />
@@ -27,4 +30,6 @@ export function TablerBulldozer({ size = 24, width, height, ...inputProps }) {
   <path d="M5 15v-3a1 1 0 0 1 1 -1h8" />
   <path d="M19 17h-3" />
 </svg>
+    </>
+  )
 }

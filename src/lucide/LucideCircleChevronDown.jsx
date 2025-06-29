@@ -17,8 +17,13 @@ export function LucideCircleChevronDown({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="12" cy="12" r="10" />
   <path d="m16 10-4 4-4-4" />
 </svg>
+    </>
+  )
 }

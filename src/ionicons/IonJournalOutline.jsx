@@ -17,5 +17,10 @@ export function IonJournalOutline({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><rect x="96" y="48" width="320" height="416" rx="48" ry="48" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"/><line x1="320" y1="48" x2="320" y2="464" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:60px"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><rect x="96" y="48" width="320" height="416" rx="48" ry="48" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"/><line x1="320" y1="48" x2="320" y2="464" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:60px"/></svg>
+    </>
+  )
 }

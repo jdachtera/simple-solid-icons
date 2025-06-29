@@ -17,5 +17,10 @@ export function ZondiconWindowOpen({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}><path d="M0 3c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3zm2 2v12h16V5H2zm8 3l4 5H6l4-5z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M0 3c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3zm2 2v12h16V5H2zm8 3l4 5H6l4-5z"/></svg>
+    </>
+  )
 }

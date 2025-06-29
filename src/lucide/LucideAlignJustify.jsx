@@ -17,9 +17,14 @@ export function LucideAlignJustify({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12h18" />
   <path d="M3 18h18" />
   <path d="M3 6h18" />
 </svg>
+    </>
+  )
 }

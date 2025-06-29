@@ -17,7 +17,10 @@ export function TablerTimelineEventExclamation({ size = 24, width, height, ...in
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 20m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M10 20h-6" />
   <path d="M14 20h6" />
@@ -25,4 +28,6 @@ export function TablerTimelineEventExclamation({ size = 24, width, height, ...in
   <path d="M12 6v2" />
   <path d="M12 11v.01" />
 </svg>
+    </>
+  )
 }

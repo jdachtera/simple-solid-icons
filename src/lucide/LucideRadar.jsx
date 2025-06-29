@@ -17,7 +17,10 @@ export function LucideRadar({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M19.07 4.93A10 10 0 0 0 6.99 3.34" />
   <path d="M4 6h.01" />
   <path d="M2.29 9.62A10 10 0 1 0 21.31 8.35" />
@@ -27,4 +30,6 @@ export function LucideRadar({ size = 24, width, height, ...inputProps }) {
   <circle cx="12" cy="12" r="2" />
   <path d="m13.41 10.59 5.66-5.66" />
 </svg>
+    </>
+  )
 }

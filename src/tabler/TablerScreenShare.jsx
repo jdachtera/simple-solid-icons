@@ -17,7 +17,10 @@ export function TablerScreenShare({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M21 12v3a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1h9" />
   <path d="M7 20l10 0" />
   <path d="M9 16l0 4" />
@@ -25,4 +28,6 @@ export function TablerScreenShare({ size = 24, width, height, ...inputProps }) {
   <path d="M17 4h4v4" />
   <path d="M16 9l5 -5" />
 </svg>
+    </>
+  )
 }

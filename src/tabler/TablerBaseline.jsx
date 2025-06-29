@@ -17,9 +17,14 @@ export function TablerBaseline({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 20h16" />
   <path d="M8 16v-8a4 4 0 1 1 8 0v8" />
   <path d="M8 10h8" />
 </svg>
+    </>
+  )
 }

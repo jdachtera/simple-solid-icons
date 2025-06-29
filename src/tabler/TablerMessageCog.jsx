@@ -17,7 +17,10 @@ export function TablerMessageCog({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 9h8" />
   <path d="M8 13h6" />
   <path d="M12.031 18.581l-4.031 2.419v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v5" />
@@ -29,4 +32,6 @@ export function TablerMessageCog({ size = 24, width, height, ...inputProps }) {
   <path d="M15.97 17.25l1.3 .75" />
   <path d="M20.733 20l1.3 .75" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerPasswordUser({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 17v4" />
   <path d="M10 20l4 -2" />
   <path d="M10 18l4 2" />
@@ -30,4 +33,6 @@ export function TablerPasswordUser({ size = 24, width, height, ...inputProps }) 
   <path d="M9 6a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
   <path d="M7 14a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2" />
 </svg>
+    </>
+  )
 }

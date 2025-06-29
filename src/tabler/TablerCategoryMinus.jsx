@@ -17,7 +17,12 @@ export function TablerCategoryMinus({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 4h6v6h-6zm10 0h6v6h-6zm-10 10h6v6h-6zm10 3h6" />
 </svg>
+    </>
+  )
 }

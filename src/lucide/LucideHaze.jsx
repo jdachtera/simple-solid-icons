@@ -17,7 +17,10 @@ export function LucideHaze({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m5.2 6.2 1.4 1.4" />
   <path d="M2 13h2" />
   <path d="M20 13h2" />
@@ -27,4 +30,6 @@ export function LucideHaze({ size = 24, width, height, ...inputProps }) {
   <path d="M16 13a4 4 0 0 0-8 0" />
   <path d="M12 5V2.5" />
 </svg>
+    </>
+  )
 }

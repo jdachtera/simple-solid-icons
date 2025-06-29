@@ -17,8 +17,13 @@ export function LucideSignalLow({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M2 20h.01" />
   <path d="M7 20v-4" />
 </svg>
+    </>
+  )
 }

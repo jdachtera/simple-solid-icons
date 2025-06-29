@@ -17,9 +17,14 @@ export function TablerArrowLeftSquare({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M17 12h-14" />
   <path d="M6 9l-3 3l3 3" />
   <path d="M21 14h-4v-4h4z" />
 </svg>
+    </>
+  )
 }

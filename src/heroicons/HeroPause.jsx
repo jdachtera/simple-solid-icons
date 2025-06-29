@@ -17,7 +17,12 @@ export function HeroPause({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
 <path d="M15.75 5.25L15.75 18.75M8.25 5.25V18.75" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerTextPlus({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M19 10h-14" />
   <path d="M5 6h14" />
   <path d="M14 14h-9" />
@@ -25,4 +28,6 @@ export function TablerTextPlus({ size = 24, width, height, ...inputProps }) {
   <path d="M18 15v6" />
   <path d="M15 18h6" />
 </svg>
+    </>
+  )
 }

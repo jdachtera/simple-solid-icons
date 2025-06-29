@@ -17,5 +17,10 @@ export function IonVolumeOffSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><polygon points="237.65 176.1 144 176.1 144 335.9 237.65 335.9 368 440 368 72 237.65 176.1"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polygon points="237.65 176.1 144 176.1 144 335.9 237.65 335.9 368 440 368 72 237.65 176.1"/></svg>
+    </>
+  )
 }

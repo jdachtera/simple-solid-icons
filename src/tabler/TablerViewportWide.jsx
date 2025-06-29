@@ -17,7 +17,10 @@ export function TablerViewportWide({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 12h-7l3 -3" />
   <path d="M6 15l-3 -3" />
   <path d="M14 12h7l-3 -3" />
@@ -25,4 +28,6 @@ export function TablerViewportWide({ size = 24, width, height, ...inputProps }) 
   <path d="M3 6v-1a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v1" />
   <path d="M3 18v1a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2v-1" />
 </svg>
+    </>
+  )
 }

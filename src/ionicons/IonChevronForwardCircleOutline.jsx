@@ -17,5 +17,10 @@ export function IonChevronForwardCircleOutline({ size = 24, width, height, ...in
     },
     inputProps
   )
-  return <svg {...props}><path d="M64,256c0,106,86,192,192,192s192-86,192-192S362,64,256,64,64,150,64,256Z" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"/><polyline points="216 352 312 256 216 160" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M64,256c0,106,86,192,192,192s192-86,192-192S362,64,256,64,64,150,64,256Z" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"/><polyline points="216 352 312 256 216 160" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+    </>
+  )
 }

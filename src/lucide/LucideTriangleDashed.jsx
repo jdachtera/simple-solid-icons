@@ -17,7 +17,10 @@ export function LucideTriangleDashed({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10.17 4.193a2 2 0 0 1 3.666.013" />
   <path d="M14 21h2" />
   <path d="m15.874 7.743 1 1.732" />
@@ -28,4 +31,6 @@ export function LucideTriangleDashed({ size = 24, width, height, ...inputProps }
   <path d="M8 21h2" />
   <path d="m8.102 7.743-1 1.732" />
 </svg>
+    </>
+  )
 }

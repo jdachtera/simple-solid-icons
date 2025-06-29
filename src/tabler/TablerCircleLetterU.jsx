@@ -17,8 +17,13 @@ export function TablerCircleLetterU({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
   <path d="M10 8v6a2 2 0 1 0 4 0v-6" />
 </svg>
+    </>
+  )
 }

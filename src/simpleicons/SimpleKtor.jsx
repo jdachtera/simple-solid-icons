@@ -17,5 +17,10 @@ export function SimpleKtor({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><title>Ktor</title><path d="M8 0 0 8l8 8V8h8zm8 8v8H8l8 8 8-8z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><title>Ktor</title><path d="M8 0 0 8l8 8V8h8zm8 8v8H8l8 8 8-8z"/></svg>
+    </>
+  )
 }

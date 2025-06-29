@@ -17,7 +17,10 @@ export function TablerCircleDashedNumber4({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
   <path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
   <path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
@@ -29,4 +32,6 @@ export function TablerCircleDashedNumber4({ size = 24, width, height, ...inputPr
   <path d="M10 8v3a1 1 0 0 0 1 1h3" />
   <path d="M14 8v8" />
 </svg>
+    </>
+  )
 }

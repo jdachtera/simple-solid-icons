@@ -17,7 +17,10 @@ export function TablerHexagonalPrismPlus({ size = 24, width, height, ...inputPro
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20.792 6.996l-3.775 2.643a2.005 2.005 0 0 1 -1.147 .361h-7.74c-.41 0 -.81 -.126 -1.146 -.362l-3.774 -2.641" />
   <path d="M8 10v11" />
   <path d="M16 10v3.5" />
@@ -25,4 +28,6 @@ export function TablerHexagonalPrismPlus({ size = 24, width, height, ...inputPro
   <path d="M16 19h6" />
   <path d="M19 16v6" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerPasswordFingerprint({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M17 8c.788 1 1 2 1 3v1" />
   <path d="M9 11c0 -1.578 1.343 -3 3 -3s3 1.422 3 3v2" />
   <path d="M12 11v2" />
@@ -32,4 +35,6 @@ export function TablerPasswordFingerprint({ size = 24, width, height, ...inputPr
   <path d="M17 20l4 -2" />
   <path d="M17 18l4 2" />
 </svg>
+    </>
+  )
 }

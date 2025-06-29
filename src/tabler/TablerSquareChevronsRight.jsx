@@ -17,9 +17,14 @@ export function TablerSquareChevronsRight({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 9l3 3l-3 3" />
   <path d="M13 9l3 3l-3 3" />
   <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
 </svg>
+    </>
+  )
 }

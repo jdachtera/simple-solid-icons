@@ -17,5 +17,10 @@ export function SimpleNetapp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><title>NetApp</title><path d="M0 2v20h9.33V10h5.34v12H24V2Z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><title>NetApp</title><path d="M0 2v20h9.33V10h5.34v12H24V2Z"/></svg>
+    </>
+  )
 }

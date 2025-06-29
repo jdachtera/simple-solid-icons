@@ -17,7 +17,12 @@ export function LucideFlagTriangleRight({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 22V2l10 5-10 5" />
 </svg>
+    </>
+  )
 }

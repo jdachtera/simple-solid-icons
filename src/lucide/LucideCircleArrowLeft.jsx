@@ -17,9 +17,14 @@ export function LucideCircleArrowLeft({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="12" cy="12" r="10" />
   <path d="m12 8-4 4 4 4" />
   <path d="M16 12H8" />
 </svg>
+    </>
+  )
 }

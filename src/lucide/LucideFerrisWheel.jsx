@@ -17,7 +17,10 @@ export function LucideFerrisWheel({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="12" cy="12" r="2" />
   <path d="M12 2v4" />
   <path d="m6.8 15-3.5 2" />
@@ -28,4 +31,6 @@ export function LucideFerrisWheel({ size = 24, width, height, ...inputProps }) {
   <path d="M8 22h8" />
   <path d="M18 18.7a9 9 0 1 0-12 0" />
 </svg>
+    </>
+  )
 }

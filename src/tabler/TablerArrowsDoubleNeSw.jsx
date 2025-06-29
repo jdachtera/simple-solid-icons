@@ -17,10 +17,15 @@ export function TablerArrowsDoubleNeSw({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 14l11 -11" />
   <path d="M10 3h4v4" />
   <path d="M10 17v4h4" />
   <path d="M21 10l-11 11" />
 </svg>
+    </>
+  )
 }

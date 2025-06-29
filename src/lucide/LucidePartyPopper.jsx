@@ -17,7 +17,10 @@ export function LucidePartyPopper({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5.8 11.3 2 22l10.7-3.79" />
   <path d="M4 3h.01" />
   <path d="M22 8h.01" />
@@ -28,4 +31,6 @@ export function LucidePartyPopper({ size = 24, width, height, ...inputProps }) {
   <path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7" />
   <path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z" />
 </svg>
+    </>
+  )
 }

@@ -17,9 +17,14 @@ export function LucideHeading({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 12h12" />
   <path d="M6 20V4" />
   <path d="M18 20V4" />
 </svg>
+    </>
+  )
 }

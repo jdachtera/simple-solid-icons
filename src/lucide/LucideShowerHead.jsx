@@ -17,7 +17,10 @@ export function LucideShowerHead({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m4 4 2.5 2.5" />
   <path d="M13.5 6.5a4.95 4.95 0 0 0-7 7" />
   <path d="M15 5 5 15" />
@@ -29,4 +32,6 @@ export function LucideShowerHead({ size = 24, width, height, ...inputProps }) {
   <path d="M17 14v.01" />
   <path d="M20 11v.01" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,12 @@ export function TablerBadge({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M17 17v-13l-5 3l-5 -3v13l5 3z" />
 </svg>
+    </>
+  )
 }

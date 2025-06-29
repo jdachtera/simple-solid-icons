@@ -17,7 +17,10 @@ export function LucideSquareDashedKanban({ size = 24, width, height, ...inputPro
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 7v7" />
   <path d="M12 7v4" />
   <path d="M16 7v9" />
@@ -34,4 +37,6 @@ export function LucideSquareDashedKanban({ size = 24, width, height, ...inputPro
   <path d="M3 14v1" />
   <path d="M3 9v1" />
 </svg>
+    </>
+  )
 }

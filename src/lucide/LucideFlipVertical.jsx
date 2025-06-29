@@ -17,7 +17,10 @@ export function LucideFlipVertical({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M21 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v3" />
   <path d="M21 16v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3" />
   <path d="M4 12H2" />
@@ -25,4 +28,6 @@ export function LucideFlipVertical({ size = 24, width, height, ...inputProps }) 
   <path d="M16 12h-2" />
   <path d="M22 12h-2" />
 </svg>
+    </>
+  )
 }

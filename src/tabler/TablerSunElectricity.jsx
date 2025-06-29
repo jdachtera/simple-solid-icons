@@ -17,7 +17,10 @@ export function TablerSunElectricity({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 12a4 4 0 0 0 4 4m0 -8a4 4 0 0 0 -4 4" />
   <path d="M3 12h1" />
   <path d="M12 3v1" />
@@ -26,4 +29,6 @@ export function TablerSunElectricity({ size = 24, width, height, ...inputProps }
   <path d="M6.3 17.7l-.7 .7" />
   <path d="M20 7l-3 5h4l-3 5" />
 </svg>
+    </>
+  )
 }

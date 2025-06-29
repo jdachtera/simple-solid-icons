@@ -17,10 +17,15 @@ export function TablerNorthStar({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12h18" />
   <path d="M12 21v-18" />
   <path d="M7.5 7.5l9 9" />
   <path d="M7.5 16.5l9 -9" />
 </svg>
+    </>
+  )
 }

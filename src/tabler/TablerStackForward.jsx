@@ -17,8 +17,13 @@ export function TablerStackForward({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 5l-8 4l8 4l8 -4l-8 -4" fill="currentColor" />
   <path d="M10 12l-6 3l8 4l8 -4l-6 -3" />
 </svg>
+    </>
+  )
 }

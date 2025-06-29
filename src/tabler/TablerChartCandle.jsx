@@ -17,7 +17,10 @@ export function TablerChartCandle({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 6m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
   <path d="M6 4l0 2" />
   <path d="M6 11l0 9" />
@@ -28,4 +31,6 @@ export function TablerChartCandle({ size = 24, width, height, ...inputProps }) {
   <path d="M18 4l0 1" />
   <path d="M18 11l0 9" />
 </svg>
+    </>
+  )
 }

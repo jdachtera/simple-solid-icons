@@ -17,7 +17,10 @@ export function TablerDeviceImacExclamation({ size = 24, width, height, ...input
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 17h-11a1 1 0 0 1 -1 -1v-12a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v8.5" />
   <path d="M3 13h13" />
   <path d="M8 21h7" />
@@ -26,4 +29,6 @@ export function TablerDeviceImacExclamation({ size = 24, width, height, ...input
   <path d="M19 16v3" />
   <path d="M19 22v.01" />
 </svg>
+    </>
+  )
 }

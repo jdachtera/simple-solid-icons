@@ -17,5 +17,10 @@ export function FeatherActivity({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+    </>
+  )
 }

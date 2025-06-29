@@ -17,9 +17,14 @@ export function LucideArrowDownToLine({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 17V3" />
   <path d="m6 11 6 6 6-6" />
   <path d="M19 21H5" />
 </svg>
+    </>
+  )
 }

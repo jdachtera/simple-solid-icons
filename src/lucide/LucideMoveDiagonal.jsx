@@ -17,9 +17,14 @@ export function LucideMoveDiagonal({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M11 19H5v-6" />
   <path d="M13 5h6v6" />
   <path d="M19 5 5 19" />
 </svg>
+    </>
+  )
 }

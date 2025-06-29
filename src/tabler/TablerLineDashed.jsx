@@ -17,9 +17,14 @@ export function TablerLineDashed({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 12h2" />
   <path d="M17 12h2" />
   <path d="M11 12h2" />
 </svg>
+    </>
+  )
 }

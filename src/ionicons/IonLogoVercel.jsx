@@ -17,5 +17,10 @@ export function IonLogoVercel({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path fill-rule="evenodd" d="M256,48,496,464H16Z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path fill-rule="evenodd" d="M256,48,496,464H16Z"/></svg>
+    </>
+  )
 }

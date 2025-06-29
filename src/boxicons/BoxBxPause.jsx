@@ -17,5 +17,10 @@ export function BoxBxPause({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M8 7h3v10H8zm5 0h3v10h-3z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M8 7h3v10H8zm5 0h3v10h-3z"/></svg>
+    </>
+  )
 }

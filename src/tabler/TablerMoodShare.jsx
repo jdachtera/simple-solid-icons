@@ -17,7 +17,10 @@ export function TablerMoodShare({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20.942 13.018a9 9 0 1 0 -8.942 7.982" />
   <path d="M9 10h.01" />
   <path d="M15 10h.01" />
@@ -25,4 +28,6 @@ export function TablerMoodShare({ size = 24, width, height, ...inputProps }) {
   <path d="M16 22l5 -5" />
   <path d="M21 21.5v-4.5h-4.5" />
 </svg>
+    </>
+  )
 }

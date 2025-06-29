@@ -17,7 +17,10 @@ export function LucideTramFront({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <rect width="16" height="16" x="4" y="3" rx="2" />
   <path d="M4 11h16" />
   <path d="M12 3v8" />
@@ -26,4 +29,6 @@ export function LucideTramFront({ size = 24, width, height, ...inputProps }) {
   <path d="M8 15h.01" />
   <path d="M16 15h.01" />
 </svg>
+    </>
+  )
 }

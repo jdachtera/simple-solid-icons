@@ -17,7 +17,12 @@ export function LucideWifiZero({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 20h.01" />
 </svg>
+    </>
+  )
 }

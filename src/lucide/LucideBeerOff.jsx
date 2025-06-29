@@ -17,7 +17,10 @@ export function LucideBeerOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M13 13v5" />
   <path d="M17 11.47V8" />
   <path d="M17 11h1a3 3 0 0 1 2.745 4.211" />
@@ -27,4 +30,6 @@ export function LucideBeerOff({ size = 24, width, height, ...inputProps }) {
   <path d="M8.727 3.204C9.306 2.767 9.885 2 11 2c1.56 0 2 1.5 3 1.5s1.72-.5 2.5-.5a1 1 0 1 1 0 5c-.78 0-1.5-.5-2.5-.5a3.149 3.149 0 0 0-.842.12" />
   <path d="M9 14.6V18" />
 </svg>
+    </>
+  )
 }

@@ -17,5 +17,10 @@ export function CodiconPrimitiveSquare({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}><path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 4l.5-.5h8l.5.5v8l-.5.5H4l-.5-.5V4zm1 .5v7h7v-7h-7z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 4l.5-.5h8l.5.5v8l-.5.5H4l-.5-.5V4zm1 .5v7h7v-7h-7z"/></svg>
+    </>
+  )
 }

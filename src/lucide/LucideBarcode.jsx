@@ -17,11 +17,16 @@ export function LucideBarcode({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 5v14" />
   <path d="M8 5v14" />
   <path d="M12 5v14" />
   <path d="M17 5v14" />
   <path d="M21 5v14" />
 </svg>
+    </>
+  )
 }

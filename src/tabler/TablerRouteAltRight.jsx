@@ -17,7 +17,10 @@ export function TablerRouteAltRight({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M16 3h5v5" />
   <path d="M8 3h-5v5" />
   <path d="M21 3l-7.536 7.536a5 5 0 0 0 -1.464 3.534v6.93" />
@@ -25,4 +28,6 @@ export function TablerRouteAltRight({ size = 24, width, height, ...inputProps })
   <path d="M8 8.02v-.01" />
   <path d="M10 10v.01" />
 </svg>
+    </>
+  )
 }

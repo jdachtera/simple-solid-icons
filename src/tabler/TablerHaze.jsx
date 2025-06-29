@@ -17,7 +17,10 @@ export function TablerHaze({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12h1" />
   <path d="M12 3v1" />
   <path d="M20 12h1" />
@@ -27,4 +30,6 @@ export function TablerHaze({ size = 24, width, height, ...inputProps }) {
   <path d="M3 16h18" />
   <path d="M3 20h18" />
 </svg>
+    </>
+  )
 }

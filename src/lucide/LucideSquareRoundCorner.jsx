@@ -17,8 +17,13 @@ export function LucideSquareRoundCorner({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M21 11a8 8 0 0 0-8-8" />
   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
 </svg>
+    </>
+  )
 }

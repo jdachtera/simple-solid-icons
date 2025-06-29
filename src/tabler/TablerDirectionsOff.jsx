@@ -17,7 +17,10 @@ export function TablerDirectionsOff({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 21v-4" />
   <path d="M12 13v-1" />
   <path d="M12 5v-2" />
@@ -26,4 +29,6 @@ export function TablerDirectionsOff({ size = 24, width, height, ...inputProps })
   <path d="M14 14v3h-8l-2 -2l2 -2h7" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

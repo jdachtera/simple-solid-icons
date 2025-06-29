@@ -17,8 +17,13 @@ export function TablerOverline({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 9v5a5 5 0 0 0 10 0v-5" />
   <path d="M5 5h14" />
 </svg>
+    </>
+  )
 }

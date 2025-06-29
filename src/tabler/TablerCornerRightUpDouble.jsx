@@ -17,8 +17,13 @@ export function TablerCornerRightUpDouble({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 19h6a3 3 0 0 0 3 -3v-7" />
   <path d="M10 13l4 -4l4 4m-8 -5l4 -4l4 4" />
 </svg>
+    </>
+  )
 }

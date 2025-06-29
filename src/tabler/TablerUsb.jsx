@@ -17,7 +17,10 @@ export function TablerUsb({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M12 17v-11.5" />
   <path d="M7 10v3l5 3" />
@@ -26,4 +29,6 @@ export function TablerUsb({ size = 24, width, height, ...inputProps }) {
   <path d="M7 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
   <path d="M10 5.5h4l-2 -2.5z" />
 </svg>
+    </>
+  )
 }

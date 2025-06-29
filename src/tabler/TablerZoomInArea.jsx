@@ -17,7 +17,10 @@ export function TablerZoomInArea({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 13v4" />
   <path d="M13 15h4" />
   <path d="M15 15m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" />
@@ -28,4 +31,6 @@ export function TablerZoomInArea({ size = 24, width, height, ...inputProps }) {
   <path d="M10 3h1" />
   <path d="M15 3h1a2 2 0 0 1 2 2v1" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function LucideCalendarSearch({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M16 2v4" />
   <path d="M21 11.75V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7.25" />
   <path d="m22 22-1.875-1.875" />
@@ -25,4 +28,6 @@ export function LucideCalendarSearch({ size = 24, width, height, ...inputProps }
   <path d="M8 2v4" />
   <circle cx="18" cy="18" r="3" />
 </svg>
+    </>
+  )
 }

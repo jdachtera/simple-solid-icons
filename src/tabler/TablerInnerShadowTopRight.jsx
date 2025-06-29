@@ -17,8 +17,13 @@ export function TablerInnerShadowTopRight({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18z" />
   <path d="M18 12a6 6 0 0 0 -6 -6" />
 </svg>
+    </>
+  )
 }

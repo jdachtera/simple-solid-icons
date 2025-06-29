@@ -17,5 +17,10 @@ export function ZondiconArrowThickDown({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}><path d="M7 10V2h6v8h5l-8 8-8-8h5z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M7 10V2h6v8h5l-8 8-8-8h5z"/></svg>
+    </>
+  )
 }

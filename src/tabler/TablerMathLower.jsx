@@ -17,7 +17,12 @@ export function TablerMathLower({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M19 18l-14 -6l14 -6" />
 </svg>
+    </>
+  )
 }

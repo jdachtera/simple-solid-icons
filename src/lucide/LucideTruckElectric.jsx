@@ -17,7 +17,10 @@ export function LucideTruckElectric({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 19V7a2 2 0 0 0-2-2H9" />
   <path d="M15 19H9" />
   <path d="M19 19h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62L18.3 9.38a1 1 0 0 0-.78-.38H14" />
@@ -26,4 +29,6 @@ export function LucideTruckElectric({ size = 24, width, height, ...inputProps })
   <circle cx="17" cy="19" r="2" />
   <circle cx="7" cy="19" r="2" />
 </svg>
+    </>
+  )
 }

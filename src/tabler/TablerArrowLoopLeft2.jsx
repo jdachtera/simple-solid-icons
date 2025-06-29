@@ -17,8 +17,13 @@ export function TablerArrowLoopLeft2({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M13 21v-6m0 -6v-1a4 4 0 1 1 4 4h-13" />
   <path d="M8 16l-4 -4l4 -4" />
 </svg>
+    </>
+  )
 }

@@ -17,9 +17,14 @@ export function TablerRouteSquare({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 17h4v4h-4z" />
   <path d="M17 3h4v4h-4z" />
   <path d="M11 19h5.5a3.5 3.5 0 0 0 0 -7h-8a3.5 3.5 0 0 1 0 -7h4.5" />
 </svg>
+    </>
+  )
 }

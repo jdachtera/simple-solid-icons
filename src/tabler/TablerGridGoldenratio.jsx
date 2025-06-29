@@ -17,10 +17,15 @@ export function TablerGridGoldenratio({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 10h18" />
   <path d="M3 14h18" />
   <path d="M10 3v18" />
   <path d="M14 3v18" />
 </svg>
+    </>
+  )
 }

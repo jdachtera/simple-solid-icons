@@ -17,7 +17,10 @@ export function TablerBrandGithubCopilot({ size = 24, width, height, ...inputPro
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 18v-5.5c0 -.667 .167 -1.333 .5 -2" />
   <path d="M12 7.5c0 -1 -.01 -4.07 -4 -3.5c-3.5 .5 -4 2.5 -4 3.5c0 1.5 0 4 3 4c4 0 5 -2.5 5 -4z" />
   <path d="M4 12c-1.333 .667 -2 1.333 -2 2c0 1 0 3 1.5 4c3 2 6.5 3 8.5 3s5.499 -1 8.5 -3c1.5 -1 1.5 -3 1.5 -4c0 -.667 -.667 -1.333 -2 -2" />
@@ -26,4 +29,6 @@ export function TablerBrandGithubCopilot({ size = 24, width, height, ...inputPro
   <path d="M10 15v2" />
   <path d="M14 15v2" />
 </svg>
+    </>
+  )
 }

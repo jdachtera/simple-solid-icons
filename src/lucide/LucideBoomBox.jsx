@@ -17,7 +17,10 @@ export function LucideBoomBox({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 9V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" />
   <path d="M8 8v1" />
   <path d="M12 8v1" />
@@ -26,4 +29,6 @@ export function LucideBoomBox({ size = 24, width, height, ...inputProps }) {
   <circle cx="8" cy="15" r="2" />
   <circle cx="16" cy="15" r="2" />
 </svg>
+    </>
+  )
 }

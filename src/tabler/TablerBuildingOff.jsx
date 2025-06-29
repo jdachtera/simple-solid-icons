@@ -17,7 +17,10 @@ export function TablerBuildingOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 21h18" />
   <path d="M9 12h1" />
   <path d="M9 16h1" />
@@ -28,4 +31,6 @@ export function TablerBuildingOff({ size = 24, width, height, ...inputProps }) {
   <path d="M19 19v2" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function LucideTableColumnsSplit({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 14v2" />
   <path d="M14 20v2" />
   <path d="M14 2v2" />
@@ -30,4 +33,6 @@ export function LucideTableColumnsSplit({ size = 24, width, height, ...inputProp
   <path d="M22 9h-4" />
   <path d="M5 3v18" />
 </svg>
+    </>
+  )
 }

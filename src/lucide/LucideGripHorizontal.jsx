@@ -17,7 +17,10 @@ export function LucideGripHorizontal({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="12" cy="9" r="1" />
   <circle cx="19" cy="9" r="1" />
   <circle cx="5" cy="9" r="1" />
@@ -25,4 +28,6 @@ export function LucideGripHorizontal({ size = 24, width, height, ...inputProps }
   <circle cx="19" cy="15" r="1" />
   <circle cx="5" cy="15" r="1" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerKayak({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6.414 6.414a2 2 0 0 0 0 -2.828l-1.414 -1.414l-2.828 2.828l1.414 1.414a2 2 0 0 0 2.828 0z" />
   <path d="M17.586 17.586a2 2 0 0 0 0 2.828l1.414 1.414l2.828 -2.828l-1.414 -1.414a2 2 0 0 0 -2.828 0z" />
   <path d="M6.5 6.5l11 11" />
@@ -25,4 +28,6 @@ export function TablerKayak({ size = 24, width, height, ...inputProps }) {
   <path d="M6.5 12.5l5 5" />
   <path d="M12.5 6.5l5 5" />
 </svg>
+    </>
+  )
 }

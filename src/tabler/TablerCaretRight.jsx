@@ -17,7 +17,12 @@ export function TablerCaretRight({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 18l6 -6l-6 -6v12" />
 </svg>
+    </>
+  )
 }

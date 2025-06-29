@@ -17,11 +17,16 @@ export function TablerSignalLte({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M21 8h-4v8h4" />
   <path d="M17 12h2.5" />
   <path d="M4 8v8h4" />
   <path d="M10 8h4" />
   <path d="M12 8v8" />
 </svg>
+    </>
+  )
 }

@@ -17,8 +17,13 @@ export function TablerChecks({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 12l5 5l10 -10" />
   <path d="M2 12l5 5m5 -5l5 -5" />
 </svg>
+    </>
+  )
 }

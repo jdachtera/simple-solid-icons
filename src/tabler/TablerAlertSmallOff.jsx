@@ -17,9 +17,14 @@ export function TablerAlertSmallOff({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 16h.01" />
   <path d="M12 7v1" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

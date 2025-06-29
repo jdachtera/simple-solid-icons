@@ -17,7 +17,10 @@ export function LucideAperture({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="12" cy="12" r="10" />
   <path d="m14.31 8 5.74 9.94" />
   <path d="M9.69 8h11.48" />
@@ -26,4 +29,6 @@ export function LucideAperture({ size = 24, width, height, ...inputProps }) {
   <path d="M14.31 16H2.83" />
   <path d="m16.62 12-5.74 9.94" />
 </svg>
+    </>
+  )
 }

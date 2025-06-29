@@ -17,8 +17,13 @@ export function LucideWifiLow({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 20h.01" />
   <path d="M8.5 16.429a5 5 0 0 1 7 0" />
 </svg>
+    </>
+  )
 }

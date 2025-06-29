@@ -17,7 +17,10 @@ export function LucideTouchpadOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 20v-6" />
   <path d="M19.656 14H22" />
   <path d="M2 14h12" />
@@ -25,4 +28,6 @@ export function LucideTouchpadOff({ size = 24, width, height, ...inputProps }) {
   <path d="M20 20H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2" />
   <path d="M9.656 4H20a2 2 0 0 1 2 2v10.344" />
 </svg>
+    </>
+  )
 }

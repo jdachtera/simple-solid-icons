@@ -17,8 +17,13 @@ export function LucideChevronsLeft({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m11 17-5-5 5-5" />
   <path d="m18 17-5-5 5-5" />
 </svg>
+    </>
+  )
 }

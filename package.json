@@ -21,6 +21,50 @@
     "./lucide": {
       "import": "./src/lucide/index.js",
       "types": "./src/lucide/index.d.ts"
+    },
+    "./feather": {
+      "import": "./src/feather/index.js",
+      "types": "./src/feather/index.d.ts"
+    },
+    "./bootstrap": {
+      "import": "./src/bootstrap/index.js",
+      "types": "./src/bootstrap/index.d.ts"
+    },
+    "./remix": {
+      "import": "./src/remix/index.js",
+      "types": "./src/remix/index.d.ts"
+    },
+    "./boxicons": {
+      "import": "./src/boxicons/index.js",
+      "types": "./src/boxicons/index.d.ts"
+    },
+    "./simpleicons": {
+      "import": "./src/simpleicons/index.js",
+      "types": "./src/simpleicons/index.d.ts"
+    },
+    "./eva/Fill": {
+      "import": "./src/eva/Fill/index.js",
+      "types": "./src/eva/Fill/index.d.ts"
+    },
+    "./eva/Outline": {
+      "import": "./src/eva/Outline/index.js",
+      "types": "./src/eva/Outline/index.d.ts"
+    },
+    "./zondicons": {
+      "import": "./src/zondicons/index.js",
+      "types": "./src/zondicons/index.d.ts"
+    },
+    "./ionicons": {
+      "import": "./src/ionicons/index.js",
+      "types": "./src/ionicons/index.d.ts"
+    },
+    "./codicons": {
+      "import": "./src/codicons/index.js",
+      "types": "./src/codicons/index.d.ts"
+    },
+    "./eva": {
+      "import": "./src/eva/index.js",
+      "types": "./src/eva/index.d.ts"
     }
   },
   "files": [

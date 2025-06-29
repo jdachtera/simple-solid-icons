@@ -17,7 +17,10 @@ export function TablerQrcode({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
   <path d="M7 17l0 .01" />
   <path d="M14 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
@@ -31,4 +34,6 @@ export function TablerQrcode({ size = 24, width, height, ...inputProps }) {
   <path d="M17 17l3 0" />
   <path d="M20 17l0 3" />
 </svg>
+    </>
+  )
 }

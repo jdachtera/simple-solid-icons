@@ -17,7 +17,10 @@ export function TablerProgressHelp({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 16v.01" />
   <path d="M12 13a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />
   <path d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969" />
@@ -26,4 +29,6 @@ export function TablerProgressHelp({ size = 24, width, height, ...inputProps }) 
   <path d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305" />
   <path d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356" />
 </svg>
+    </>
+  )
 }

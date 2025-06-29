@@ -17,5 +17,10 @@ export function CodiconMenu({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M16 5H0V4h16v1zm0 8H0v-1h16v1zm0-4.008H0V8h16v.992z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M16 5H0V4h16v1zm0 8H0v-1h16v1zm0-4.008H0V8h16v.992z"/></svg>
+    </>
+  )
 }

@@ -17,8 +17,13 @@ export function TablerPlaystationTriangle({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 21a9 9 0 0 0 9 -9a9 9 0 0 0 -9 -9a9 9 0 0 0 -9 9a9 9 0 0 0 9 9z" />
   <path d="M7.5 15h9l-4.5 -8z" />
 </svg>
+    </>
+  )
 }

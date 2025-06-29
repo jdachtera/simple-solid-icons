@@ -17,7 +17,10 @@ export function TablerWheel({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
   <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
   <path d="M3 12h6" />
@@ -27,4 +30,6 @@ export function TablerWheel({ size = 24, width, height, ...inputProps }) {
   <path d="M7 4.6l3.4 4.8" />
   <path d="M13.6 14.6l3.4 4.8" />
 </svg>
+    </>
+  )
 }

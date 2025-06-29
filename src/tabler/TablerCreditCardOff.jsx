@@ -17,7 +17,10 @@ export function TablerCreditCardOff({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 3l18 18" />
   <path d="M9 5h9a3 3 0 0 1 3 3v8a3 3 0 0 1 -.128 .87" />
   <path d="M18.87 18.872a3 3 0 0 1 -.87 .128h-12a3 3 0 0 1 -3 -3v-8c0 -1.352 .894 -2.495 2.124 -2.87" />
@@ -26,4 +29,6 @@ export function TablerCreditCardOff({ size = 24, width, height, ...inputProps })
   <path d="M7 15l.01 0" />
   <path d="M11 15l2 0" />
 </svg>
+    </>
+  )
 }

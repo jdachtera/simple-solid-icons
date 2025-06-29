@@ -17,5 +17,10 @@ export function FeatherPlay({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><polygon points="5 3 19 12 5 21 5 3"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polygon points="5 3 19 12 5 21 5 3"/></svg>
+    </>
+  )
 }

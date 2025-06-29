@@ -17,7 +17,12 @@ export function LucideMountain({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
 </svg>
+    </>
+  )
 }

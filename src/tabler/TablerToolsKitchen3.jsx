@@ -17,9 +17,14 @@ export function TablerToolsKitchen3({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 4v17m-3 -17v3a3 3 0 1 0 6 0v-3" />
   <path d="M17 8m-3 0a3 4 0 1 0 6 0a3 4 0 1 0 -6 0" />
   <path d="M17 12v9" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerCooker({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 7h.01" />
   <path d="M15 7h.01" />
   <path d="M9 7h.01" />
@@ -25,4 +28,6 @@ export function TablerCooker({ size = 24, width, height, ...inputProps }) {
   <path d="M9 15h6" />
   <path d="M5 11h14" />
 </svg>
+    </>
+  )
 }

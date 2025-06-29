@@ -17,7 +17,10 @@ export function TablerBoxModel({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 8h8v8h-8z" />
   <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
   <path d="M16 16l3.3 3.3" />
@@ -25,4 +28,6 @@ export function TablerBoxModel({ size = 24, width, height, ...inputProps }) {
   <path d="M8 8l-3.3 -3.3" />
   <path d="M8 16l-3.3 3.3" />
 </svg>
+    </>
+  )
 }

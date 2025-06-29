@@ -17,8 +17,13 @@ export function LucideMouse({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <rect x="5" y="2" width="14" height="20" rx="7" />
   <path d="M12 6v4" />
 </svg>
+    </>
+  )
 }

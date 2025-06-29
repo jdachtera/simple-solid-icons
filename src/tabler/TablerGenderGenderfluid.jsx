@@ -17,7 +17,10 @@ export function TablerGenderGenderfluid({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 15.464a4 4 0 1 0 4 -6.928a4 4 0 0 0 -4 6.928z" />
   <path d="M15.464 14l3 -5.196" />
   <path d="M5.536 15.195l3 -5.196" />
@@ -28,4 +31,6 @@ export function TablerGenderGenderfluid({ size = 24, width, height, ...inputProp
   <path d="M17 20l3 -3" />
   <path d="M3 7v-4h4" />
 </svg>
+    </>
+  )
 }

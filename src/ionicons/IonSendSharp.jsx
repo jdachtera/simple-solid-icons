@@ -17,5 +17,10 @@ export function IonSendSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M16,464,496,256,16,48V208l320,48L16,304Z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M16,464,496,256,16,48V208l320,48L16,304Z"/></svg>
+    </>
+  )
 }

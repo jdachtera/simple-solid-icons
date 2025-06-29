@@ -17,7 +17,10 @@ export function LucideTrainTrack({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M2 17 17 2" />
   <path d="m2 14 8 8" />
   <path d="m5 11 8 8" />
@@ -26,4 +29,6 @@ export function LucideTrainTrack({ size = 24, width, height, ...inputProps }) {
   <path d="m14 2 8 8" />
   <path d="M7 22 22 7" />
 </svg>
+    </>
+  )
 }

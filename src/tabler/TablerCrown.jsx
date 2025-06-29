@@ -17,7 +17,12 @@ export function TablerCrown({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerSunLow({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
   <path d="M4 12h.01" />
   <path d="M12 4v.01" />
@@ -28,4 +31,6 @@ export function TablerSunLow({ size = 24, width, height, ...inputProps }) {
   <path d="M17.7 17.7l.01 .01" />
   <path d="M6.3 17.7l.01 .01" />
 </svg>
+    </>
+  )
 }

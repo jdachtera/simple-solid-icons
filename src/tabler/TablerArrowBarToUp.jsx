@@ -17,10 +17,15 @@ export function TablerArrowBarToUp({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 10l0 10" />
   <path d="M12 10l4 4" />
   <path d="M12 10l-4 4" />
   <path d="M4 4l16 0" />
 </svg>
+    </>
+  )
 }

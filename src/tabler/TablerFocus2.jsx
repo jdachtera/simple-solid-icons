@@ -17,7 +17,10 @@ export function TablerFocus2({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="12" cy="12" r=".5" fill="currentColor" />
   <path d="M12 12m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
   <path d="M12 3l0 2" />
@@ -25,4 +28,6 @@ export function TablerFocus2({ size = 24, width, height, ...inputProps }) {
   <path d="M12 19l0 2" />
   <path d="M19 12l2 0" />
 </svg>
+    </>
+  )
 }

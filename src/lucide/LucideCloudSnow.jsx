@@ -17,7 +17,10 @@ export function LucideCloudSnow({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
   <path d="M8 15h.01" />
   <path d="M8 19h.01" />
@@ -26,4 +29,6 @@ export function LucideCloudSnow({ size = 24, width, height, ...inputProps }) {
   <path d="M16 15h.01" />
   <path d="M16 19h.01" />
 </svg>
+    </>
+  )
 }

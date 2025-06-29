@@ -17,7 +17,12 @@ export function LucidePlay({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <polygon points="6 3 20 12 6 21 6 3" />
 </svg>
+    </>
+  )
 }

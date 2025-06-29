@@ -17,8 +17,13 @@ export function TablerEqual({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 10h14" />
   <path d="M5 14h14" />
 </svg>
+    </>
+  )
 }

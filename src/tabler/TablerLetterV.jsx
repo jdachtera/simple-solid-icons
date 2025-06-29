@@ -17,7 +17,12 @@ export function TablerLetterV({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 4l6 16l6 -16" />
 </svg>
+    </>
+  )
 }

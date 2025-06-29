@@ -17,8 +17,13 @@ export function LucideBriefcase({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
   <rect width="20" height="14" x="2" y="6" rx="2" />
 </svg>
+    </>
+  )
 }

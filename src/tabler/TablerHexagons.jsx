@@ -17,9 +17,14 @@ export function TablerHexagons({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 18v-5l4 -2l4 2v5l-4 2z" />
   <path d="M8 11v-5l4 -2l4 2v5" />
   <path d="M12 13l4 -2l4 2v5l-4 2l-4 -2" />
 </svg>
+    </>
+  )
 }

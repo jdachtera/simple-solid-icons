@@ -17,5 +17,10 @@ export function IonChevronDown({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><polyline points="112 184 256 328 400 184" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polyline points="112 184 256 328 400 184" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/></svg>
+    </>
+  )
 }

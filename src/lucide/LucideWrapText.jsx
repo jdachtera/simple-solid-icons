@@ -17,10 +17,15 @@ export function LucideWrapText({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m16 16-2 2 2 2" />
   <path d="M3 12h15a3 3 0 1 1 0 6h-4" />
   <path d="M3 18h7" />
   <path d="M3 6h18" />
 </svg>
+    </>
+  )
 }

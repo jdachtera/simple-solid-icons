@@ -17,9 +17,14 @@ export function LucideChartNoAxesColumnDecreasing({ size = 24, width, height, ..
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 20V10" />
   <path d="M18 20v-4" />
   <path d="M6 20V4" />
 </svg>
+    </>
+  )
 }

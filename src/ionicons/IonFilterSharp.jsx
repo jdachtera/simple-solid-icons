@@ -17,5 +17,10 @@ export function IonFilterSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><rect x="16" y="120" width="480" height="48"/><rect x="96" y="232" width="320" height="48"/><rect x="192" y="344" width="128" height="48"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><rect x="16" y="120" width="480" height="48"/><rect x="96" y="232" width="320" height="48"/><rect x="192" y="344" width="128" height="48"/></svg>
+    </>
+  )
 }

@@ -17,5 +17,10 @@ export function CodiconDebugPause({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M4.5 3H6v10H4.5V3zm7 0v10H10V3h1.5z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M4.5 3H6v10H4.5V3zm7 0v10H10V3h1.5z"/></svg>
+    </>
+  )
 }

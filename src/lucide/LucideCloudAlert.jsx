@@ -17,9 +17,14 @@ export function LucideCloudAlert({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 12v4" />
   <path d="M12 20h.01" />
   <path d="M17 18h.5a1 1 0 0 0 0-9h-1.79A7 7 0 1 0 7 17.708" />
 </svg>
+    </>
+  )
 }

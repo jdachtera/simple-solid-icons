@@ -17,7 +17,10 @@ export function TablerGrill({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M19 8h-14a6 6 0 0 0 6 6h2a6 6 0 0 0 6 -5.775l0 -.225z" />
   <path d="M17 20a2 2 0 1 1 0 -4a2 2 0 0 1 0 4z" />
   <path d="M15 14l1 2" />
@@ -27,4 +30,6 @@ export function TablerGrill({ size = 24, width, height, ...inputProps }) {
   <path d="M12 5v-1" />
   <path d="M9 5v-1" />
 </svg>
+    </>
+  )
 }

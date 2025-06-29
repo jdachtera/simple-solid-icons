@@ -17,7 +17,10 @@ export function TablerTiltShiftOff({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8.56 3.69a9 9 0 0 0 -.577 .263" />
   <path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
   <path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
@@ -29,4 +32,6 @@ export function TablerTiltShiftOff({ size = 24, width, height, ...inputProps }) 
   <path d="M10.57 10.602a2 2 0 0 0 2.862 2.795" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

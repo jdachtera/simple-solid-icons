@@ -17,10 +17,15 @@ export function TablerProtocol({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 6l-7 12" />
   <path d="M20 6l-7 12" />
   <path d="M5 14v.015" />
   <path d="M5 10.015v.015" />
 </svg>
+    </>
+  )
 }

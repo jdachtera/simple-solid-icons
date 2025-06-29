@@ -17,9 +17,14 @@ export function TablerBedFlat({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M10 13h11v-2a3 3 0 0 0 -3 -3h-8v5z" />
   <path d="M3 16h18" />
 </svg>
+    </>
+  )
 }

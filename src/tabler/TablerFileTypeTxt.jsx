@@ -17,7 +17,10 @@ export function TablerFileTypeTxt({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 3v4a1 1 0 0 0 1 1h4" />
   <path d="M14 3v4a1 1 0 0 0 1 1h4" />
   <path d="M16.5 15h3" />
@@ -28,4 +31,6 @@ export function TablerFileTypeTxt({ size = 24, width, height, ...inputProps }) {
   <path d="M10 15l4 6" />
   <path d="M10 21l4 -6" />
 </svg>
+    </>
+  )
 }

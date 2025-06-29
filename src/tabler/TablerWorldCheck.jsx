@@ -17,7 +17,10 @@ export function TablerWorldCheck({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20.946 12.99a9 9 0 1 0 -9.46 7.995" />
   <path d="M3.6 9h16.8" />
   <path d="M3.6 15h13.9" />
@@ -25,4 +28,6 @@ export function TablerWorldCheck({ size = 24, width, height, ...inputProps }) {
   <path d="M12.5 3a16.997 16.997 0 0 1 2.311 12.001" />
   <path d="M15 19l2 2l4 -4" />
 </svg>
+    </>
+  )
 }

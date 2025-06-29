@@ -17,10 +17,15 @@ export function TablerGrid3x3({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 8h18" />
   <path d="M3 16h18" />
   <path d="M8 3v18" />
   <path d="M16 3v18" />
 </svg>
+    </>
+  )
 }

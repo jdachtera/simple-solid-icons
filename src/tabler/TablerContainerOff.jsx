@@ -17,7 +17,10 @@ export function TablerContainerOff({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20 4v.01" />
   <path d="M20 20v.01" />
   <path d="M20 16v.01" />
@@ -31,4 +34,6 @@ export function TablerContainerOff({ size = 24, width, height, ...inputProps }) 
   <path d="M4 8v.01" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

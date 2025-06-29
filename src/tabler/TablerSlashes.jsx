@@ -17,8 +17,13 @@ export function TablerSlashes({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 5l-10 14" />
   <path d="M20 5l-10 14" />
 </svg>
+    </>
+  )
 }

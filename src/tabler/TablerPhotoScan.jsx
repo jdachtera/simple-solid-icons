@@ -17,7 +17,10 @@ export function TablerPhotoScan({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 8h.01" />
   <path d="M6 13l2.644 -2.644a1.21 1.21 0 0 1 1.712 0l3.644 3.644" />
   <path d="M13 13l1.644 -1.644a1.21 1.21 0 0 1 1.712 0l1.644 1.644" />
@@ -26,4 +29,6 @@ export function TablerPhotoScan({ size = 24, width, height, ...inputProps }) {
   <path d="M16 4h2a2 2 0 0 1 2 2v2" />
   <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
 </svg>
+    </>
+  )
 }

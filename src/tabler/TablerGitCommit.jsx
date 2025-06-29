@@ -17,9 +17,14 @@ export function TablerGitCommit({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
   <path d="M12 3l0 6" />
   <path d="M12 15l0 6" />
 </svg>
+    </>
+  )
 }

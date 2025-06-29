@@ -17,5 +17,10 @@ export function IonPrismSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M256,16,16,352,256,496,496,352Zm-20,96.82V437.35L73.73,340Z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M256,16,16,352,256,496,496,352Zm-20,96.82V437.35L73.73,340Z"/></svg>
+    </>
+  )
 }

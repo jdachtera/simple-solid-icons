@@ -17,7 +17,12 @@ export function TablerRadiusBottomLeft({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M19 19h-6a8 8 0 0 1 -8 -8v-6" />
 </svg>
+    </>
+  )
 }

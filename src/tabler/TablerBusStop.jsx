@@ -17,7 +17,10 @@ export function TablerBusStop({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 3m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
   <path d="M18 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M10 5h7c2.761 0 5 3.134 5 7v5h-2" />
@@ -27,4 +30,6 @@ export function TablerBusStop({ size = 24, width, height, ...inputProps }) {
   <path d="M12 5v5" />
   <path d="M5 9v11" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerTimeDuration10({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M9 9v6" />
   <path d="M12 11v2a2 2 0 1 0 4 0v-2a2 2 0 1 0 -4 0z" />
   <path d="M3 12v.01" />
@@ -31,4 +34,6 @@ export function TablerTimeDuration10({ size = 24, width, height, ...inputProps }
   <path d="M4.2 7.5v.01" />
   <path d="M19.81 7.527a8.994 8.994 0 0 0 -7.81 -4.527" />
 </svg>
+    </>
+  )
 }

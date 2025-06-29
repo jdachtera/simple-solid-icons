@@ -17,7 +17,12 @@ export function BootstrapCircleFill({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="8" cy="8" r="8"/>
 </svg>
+    </>
+  )
 }

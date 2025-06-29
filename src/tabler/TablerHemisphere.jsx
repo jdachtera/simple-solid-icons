@@ -17,8 +17,13 @@ export function TablerHemisphere({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 9m-9 0a9 3 0 1 0 18 0a9 3 0 1 0 -18 0" />
   <path d="M3 9a9 9 0 0 0 18 0" />
 </svg>
+    </>
+  )
 }

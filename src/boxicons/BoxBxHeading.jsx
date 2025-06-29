@@ -17,5 +17,10 @@ export function BoxBxHeading({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M18 20V4h-3v6H9V4H6v16h3v-7h6v7z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M18 20V4h-3v6H9V4H6v16h3v-7h6v7z"/></svg>
+    </>
+  )
 }

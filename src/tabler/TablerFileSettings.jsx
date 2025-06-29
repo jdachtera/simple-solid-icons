@@ -17,7 +17,10 @@ export function TablerFileSettings({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 14m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M12 10.5v1.5" />
   <path d="M12 16v1.5" />
@@ -28,4 +31,6 @@ export function TablerFileSettings({ size = 24, width, height, ...inputProps }) 
   <path d="M14 3v4a1 1 0 0 0 1 1h4" />
   <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
 </svg>
+    </>
+  )
 }

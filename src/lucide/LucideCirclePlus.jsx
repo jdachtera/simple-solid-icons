@@ -17,9 +17,14 @@ export function LucideCirclePlus({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="12" cy="12" r="10" />
   <path d="M8 12h8" />
   <path d="M12 8v8" />
 </svg>
+    </>
+  )
 }

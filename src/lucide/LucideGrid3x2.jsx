@@ -17,10 +17,15 @@ export function LucideGrid3x2({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 3v18" />
   <path d="M3 12h18" />
   <path d="M9 3v18" />
   <rect x="3" y="3" width="18" height="18" rx="2" />
 </svg>
+    </>
+  )
 }

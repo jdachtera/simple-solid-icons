@@ -17,7 +17,12 @@ export function TablerSquareRoot({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12h2l4 8l4 -16h8" />
 </svg>
+    </>
+  )
 }

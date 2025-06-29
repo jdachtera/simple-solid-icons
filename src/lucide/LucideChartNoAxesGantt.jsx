@@ -17,9 +17,14 @@ export function LucideChartNoAxesGantt({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 6h10" />
   <path d="M6 12h9" />
   <path d="M11 18h7" />
 </svg>
+    </>
+  )
 }

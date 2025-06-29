@@ -17,5 +17,10 @@ export function IonTabletPortraitOutline({ size = 24, width, height, ...inputPro
     },
     inputProps
   )
-  return <svg {...props}><rect x="80" y="16" width="352" height="480" rx="48" ry="48" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><rect x="80" y="16" width="352" height="480" rx="48" ry="48" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+    </>
+  )
 }

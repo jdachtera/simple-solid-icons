@@ -17,7 +17,12 @@ export function TablerCaretDown({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 10l6 6l6 -6h-12" />
 </svg>
+    </>
+  )
 }

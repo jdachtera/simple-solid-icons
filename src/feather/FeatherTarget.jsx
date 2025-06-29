@@ -17,5 +17,10 @@ export function FeatherTarget({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+    </>
+  )
 }

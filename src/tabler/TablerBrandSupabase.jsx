@@ -17,7 +17,12 @@ export function TablerBrandSupabase({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 14h8v7l8 -11h-8v-7z" />
 </svg>
+    </>
+  )
 }

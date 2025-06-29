@@ -17,7 +17,10 @@ export function TablerBuildingBurjAlArab({ size = 24, width, height, ...inputPro
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 21h18" />
   <path d="M7 21v-18" />
   <path d="M7 4c5.675 .908 10 5.613 10 11.28a11 11 0 0 1 -1.605 5.72" />
@@ -25,4 +28,6 @@ export function TablerBuildingBurjAlArab({ size = 24, width, height, ...inputPro
   <path d="M7 13h4" />
   <path d="M7 17h4" />
 </svg>
+    </>
+  )
 }

@@ -17,9 +17,14 @@ export function TablerPlaystationX({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 21a9 9 0 0 0 9 -9a9 9 0 0 0 -9 -9a9 9 0 0 0 -9 9a9 9 0 0 0 9 9z" />
   <path d="M8.5 8.5l7 7" />
   <path d="M8.5 15.5l7 -7" />
 </svg>
+    </>
+  )
 }

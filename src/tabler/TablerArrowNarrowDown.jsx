@@ -17,9 +17,14 @@ export function TablerArrowNarrowDown({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 5l0 14" />
   <path d="M16 15l-4 4" />
   <path d="M8 15l4 4" />
 </svg>
+    </>
+  )
 }

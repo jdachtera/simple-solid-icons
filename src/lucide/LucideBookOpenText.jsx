@@ -17,7 +17,10 @@ export function LucideBookOpenText({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 7v14" />
   <path d="M16 12h2" />
   <path d="M16 8h2" />
@@ -25,4 +28,6 @@ export function LucideBookOpenText({ size = 24, width, height, ...inputProps }) 
   <path d="M6 12h2" />
   <path d="M6 8h2" />
 </svg>
+    </>
+  )
 }

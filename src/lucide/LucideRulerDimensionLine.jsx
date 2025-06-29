@@ -17,7 +17,10 @@ export function LucideRulerDimensionLine({ size = 24, width, height, ...inputPro
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 15v-3.014" />
   <path d="M16 15v-3.014" />
   <path d="M20 6H4" />
@@ -26,4 +29,6 @@ export function LucideRulerDimensionLine({ size = 24, width, height, ...inputPro
   <path d="M8 15v-3.014" />
   <rect x="3" y="12" width="18" height="7" rx="1" />
 </svg>
+    </>
+  )
 }

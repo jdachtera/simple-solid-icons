@@ -17,7 +17,12 @@ export function TablerBorderCornerSquare({ size = 24, width, height, ...inputPro
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 20v-15a1 1 0 0 1 1 -1h15" />
 </svg>
+    </>
+  )
 }

@@ -17,5 +17,10 @@ export function IonBluetoothOutline({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}><polyline points="144 352 368 160 256 48 256 464 368 352 144 160" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polyline points="144 352 368 160 256 48 256 464 368 352 144 160" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+    </>
+  )
 }

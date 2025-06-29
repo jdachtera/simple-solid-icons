@@ -17,7 +17,10 @@ export function TablerTableColumn({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
   <path d="M10 10h11" />
   <path d="M10 3v18" />
@@ -26,4 +29,6 @@ export function TablerTableColumn({ size = 24, width, height, ...inputProps }) {
   <path d="M10 12l-7 7" />
   <path d="M10 17l-4 4" />
 </svg>
+    </>
+  )
 }

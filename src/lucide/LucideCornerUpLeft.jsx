@@ -17,8 +17,13 @@ export function LucideCornerUpLeft({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20 20v-7a4 4 0 0 0-4-4H4" />
   <path d="M9 14 4 9l5-5" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerChartCovariate({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M18 11h.009" />
   <path d="M14 15h.009" />
   <path d="M12 6h.009" />
@@ -25,4 +28,6 @@ export function TablerChartCovariate({ size = 24, width, height, ...inputProps }
   <path d="M3 21l17 -17" />
   <path d="M3 3v18h18" />
 </svg>
+    </>
+  )
 }

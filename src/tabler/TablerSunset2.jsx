@@ -17,7 +17,10 @@ export function TablerSunset2({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 13h1" />
   <path d="M20 13h1" />
   <path d="M5.6 6.6l.7 .7" />
@@ -28,4 +31,6 @@ export function TablerSunset2({ size = 24, width, height, ...inputProps }) {
   <path d="M16 20h1" />
   <path d="M12 5v-1" />
 </svg>
+    </>
+  )
 }

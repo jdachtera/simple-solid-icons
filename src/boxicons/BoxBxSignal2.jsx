@@ -17,5 +17,10 @@ export function BoxBxSignal2({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M3 16h2v5H3zm4-3h2v8H7z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M3 16h2v5H3zm4-3h2v8H7z"/></svg>
+    </>
+  )
 }

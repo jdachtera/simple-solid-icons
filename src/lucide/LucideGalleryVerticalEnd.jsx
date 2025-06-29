@@ -17,9 +17,14 @@ export function LucideGalleryVerticalEnd({ size = 24, width, height, ...inputPro
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 2h10" />
   <path d="M5 6h14" />
   <rect width="18" height="12" x="3" y="10" rx="2" />
 </svg>
+    </>
+  )
 }

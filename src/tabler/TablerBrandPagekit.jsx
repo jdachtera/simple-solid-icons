@@ -17,7 +17,12 @@ export function TablerBrandPagekit({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12.077 20h-5.077v-16h11v14h-5.077" />
 </svg>
+    </>
+  )
 }

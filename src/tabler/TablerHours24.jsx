@@ -17,7 +17,10 @@ export function TablerHours24({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 13c.325 2.532 1.881 4.781 4 6" />
   <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2" />
   <path d="M4 5v4h4" />
@@ -25,4 +28,6 @@ export function TablerHours24({ size = 24, width, height, ...inputProps }) {
   <path d="M18 15v2a1 1 0 0 0 1 1h1" />
   <path d="M21 15v6" />
 </svg>
+    </>
+  )
 }

@@ -17,8 +17,13 @@ export function TablerWifi1({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 18l.01 0" />
   <path d="M9.172 15.172a4 4 0 0 1 5.656 0" />
 </svg>
+    </>
+  )
 }

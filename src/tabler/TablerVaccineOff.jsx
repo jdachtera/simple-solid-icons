@@ -17,7 +17,10 @@ export function TablerVaccineOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M17 3l4 4" />
   <path d="M19 5l-4.5 4.5" />
   <path d="M11.5 6.5l6 6" />
@@ -26,4 +29,6 @@ export function TablerVaccineOff({ size = 24, width, height, ...inputProps }) {
   <path d="M3 21l3 -3" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

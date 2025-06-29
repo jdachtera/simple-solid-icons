@@ -17,5 +17,10 @@ export function CodiconArrowSmallUp({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}><path d="M5 6.5L7.5 4h.7l2.5 2.5-.7.71-1.65-1.64v5.57h-1V5.57L5.7 7.22 5 6.5z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M5 6.5L7.5 4h.7l2.5 2.5-.7.71-1.65-1.64v5.57h-1V5.57L5.7 7.22 5 6.5z"/></svg>
+    </>
+  )
 }

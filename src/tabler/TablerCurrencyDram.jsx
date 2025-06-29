@@ -17,9 +17,14 @@ export function TablerCurrencyDram({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 10a6 6 0 1 1 12 0v10" />
   <path d="M12 16h8" />
   <path d="M12 12h8" />
 </svg>
+    </>
+  )
 }

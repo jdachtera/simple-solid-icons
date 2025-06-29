@@ -17,7 +17,10 @@ export function LucideBriefcaseConveyorBelt({ size = 24, width, height, ...input
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 20v2" />
   <path d="M14 20v2" />
   <path d="M18 20v2" />
@@ -26,4 +29,6 @@ export function LucideBriefcaseConveyorBelt({ size = 24, width, height, ...input
   <path d="M8 16V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v12" />
   <rect x="4" y="6" width="16" height="10" rx="2" />
 </svg>
+    </>
+  )
 }

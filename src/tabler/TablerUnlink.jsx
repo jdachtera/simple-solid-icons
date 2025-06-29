@@ -17,7 +17,10 @@ export function TablerUnlink({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M17 22v-2" />
   <path d="M9 15l6 -6" />
   <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
@@ -26,4 +29,6 @@ export function TablerUnlink({ size = 24, width, height, ...inputProps }) {
   <path d="M2 7h2" />
   <path d="M7 2v2" />
 </svg>
+    </>
+  )
 }

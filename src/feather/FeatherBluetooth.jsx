@@ -17,5 +17,10 @@ export function FeatherBluetooth({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"/></svg>
+    </>
+  )
 }

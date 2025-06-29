@@ -17,7 +17,10 @@ export function LucideBusFront({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 6 2 7" />
   <path d="M10 6h4" />
   <path d="m22 7-2-1" />
@@ -28,4 +31,6 @@ export function LucideBusFront({ size = 24, width, height, ...inputProps }) {
   <path d="M6 19v2" />
   <path d="M18 21v-2" />
 </svg>
+    </>
+  )
 }

@@ -17,5 +17,10 @@ export function CodiconListFlat({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><rect x="2" y="9" width="9" height="1"/><rect x="2" y="12" width="8" height="1"/><rect x="2" y="6" width="12" height="1"/><rect x="2" y="3" width="11" height="1"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><rect x="2" y="9" width="9" height="1"/><rect x="2" y="12" width="8" height="1"/><rect x="2" y="6" width="12" height="1"/><rect x="2" y="3" width="11" height="1"/></svg>
+    </>
+  )
 }

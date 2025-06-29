@@ -17,7 +17,12 @@ export function TablerWaveSawTool({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12h5l4 8v-16l4 8h5" />
 </svg>
+    </>
+  )
 }

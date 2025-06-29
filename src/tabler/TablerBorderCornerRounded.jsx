@@ -17,7 +17,12 @@ export function TablerBorderCornerRounded({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 20v-10a6 6 0 0 1 6 -6h10" />
 </svg>
+    </>
+  )
 }

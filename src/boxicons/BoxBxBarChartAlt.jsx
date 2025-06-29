@@ -17,5 +17,10 @@ export function BoxBxBarChartAlt({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M13 6h2v11h-2zm4-3h2v14h-2zM9 9h2v8H9zM4 19h16v2H4zm1-7h2v5H5z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M13 6h2v11h-2zm4-3h2v14h-2zM9 9h2v8H9zM4 19h16v2H4zm1-7h2v5H5z"/></svg>
+    </>
+  )
 }

@@ -17,8 +17,13 @@ export function TablerExclamationMark({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 19v.01" />
   <path d="M12 15v-10" />
 </svg>
+    </>
+  )
 }

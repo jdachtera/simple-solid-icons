@@ -17,7 +17,10 @@ export function TablerLivePhoto({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
   <path d="M12 12m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" />
   <path d="M15.9 20.11l0 .01" />
@@ -35,4 +38,6 @@ export function TablerLivePhoto({ size = 24, width, height, ...inputProps }) {
   <path d="M8.1 20.11l0 .01" />
   <path d="M12 21l0 .01" />
 </svg>
+    </>
+  )
 }

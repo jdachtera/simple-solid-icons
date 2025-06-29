@@ -17,5 +17,10 @@ export function FeatherCornerUpLeft({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}><polyline points="9 14 4 9 9 4"/><path d="M20 20v-7a4 4 0 0 0-4-4H4"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polyline points="9 14 4 9 9 4"/><path d="M20 20v-7a4 4 0 0 0-4-4H4"/></svg>
+    </>
+  )
 }

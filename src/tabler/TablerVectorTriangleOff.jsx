@@ -17,7 +17,10 @@ export function TablerVectorTriangleOff({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 6v-1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-1" />
   <path d="M3 17m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
   <path d="M20.705 20.709a1 1 0 0 1 -.705 .291h-2a1 1 0 0 1 -1 -1v-2c0 -.28 .115 -.532 .3 -.714" />
@@ -26,4 +29,6 @@ export function TablerVectorTriangleOff({ size = 24, width, height, ...inputProp
   <path d="M7 19h10" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

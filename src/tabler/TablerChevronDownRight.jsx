@@ -17,7 +17,12 @@ export function TablerChevronDownRight({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M16 8v8h-8" />
 </svg>
+    </>
+  )
 }

@@ -17,8 +17,13 @@ export function TablerPercentage33({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 3a9 9 0 0 1 7.794 13.5l-7.79 -4.497z" fill="currentColor" stroke="none" />
   <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerAdjustmentsAlt({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 8h4v4h-4z" />
   <path d="M6 4l0 4" />
   <path d="M6 12l0 8" />
@@ -28,4 +31,6 @@ export function TablerAdjustmentsAlt({ size = 24, width, height, ...inputProps }
   <path d="M18 4l0 1" />
   <path d="M18 9l0 11" />
 </svg>
+    </>
+  )
 }

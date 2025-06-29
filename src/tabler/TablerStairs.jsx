@@ -17,7 +17,12 @@ export function TablerStairs({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M22 5h-5v5h-5v5h-5v5h-5" />
 </svg>
+    </>
+  )
 }

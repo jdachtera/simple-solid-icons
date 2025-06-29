@@ -17,7 +17,10 @@ export function LucideFoldHorizontal({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M2 12h6" />
   <path d="M22 12h-6" />
   <path d="M12 2v2" />
@@ -27,4 +30,6 @@ export function LucideFoldHorizontal({ size = 24, width, height, ...inputProps }
   <path d="m19 9-3 3 3 3" />
   <path d="m5 15 3-3-3-3" />
 </svg>
+    </>
+  )
 }

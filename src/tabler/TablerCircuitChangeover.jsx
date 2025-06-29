@@ -17,7 +17,10 @@ export function TablerCircuitChangeover({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M2 12h2" />
   <path d="M20 7h2" />
   <path d="M6 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
@@ -26,4 +29,6 @@ export function TablerCircuitChangeover({ size = 24, width, height, ...inputProp
   <path d="M18 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M7.5 10.5l8.5 -3.5" />
 </svg>
+    </>
+  )
 }

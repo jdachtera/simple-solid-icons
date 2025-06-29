@@ -17,5 +17,10 @@ export function ICON_NAME({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>SVG_PATHS</svg>
+  return (
+    <>
+      {/*__ICON_STYLE__*/}
+      <svg {...props}>SVG_PATHS</svg>
+    </>
+  )
 }

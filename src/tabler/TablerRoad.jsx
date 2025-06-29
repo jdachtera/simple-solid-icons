@@ -17,11 +17,16 @@ export function TablerRoad({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 19l4 -14" />
   <path d="M16 5l4 14" />
   <path d="M12 8v-2" />
   <path d="M12 13v-2" />
   <path d="M12 18v-2" />
 </svg>
+    </>
+  )
 }

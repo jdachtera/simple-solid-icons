@@ -17,10 +17,15 @@ export function TablerBracketsContainStart({ size = 24, width, height, ...inputP
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M9 4h-4v16h4" />
   <path d="M18 16h-.01" />
   <path d="M14 16h-.01" />
   <path d="M10 16h-.01" />
 </svg>
+    </>
+  )
 }

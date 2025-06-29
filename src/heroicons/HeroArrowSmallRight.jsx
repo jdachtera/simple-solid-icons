@@ -17,7 +17,12 @@ export function HeroArrowSmallRight({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
 <path d="M4.5 12L19.5 12M19.5 12L12.75 5.25M19.5 12L12.75 18.75" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
+    </>
+  )
 }

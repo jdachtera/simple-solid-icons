@@ -17,7 +17,10 @@ export function TablerGitBranchDeleted({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M7 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M7 8v8" />
@@ -26,4 +29,6 @@ export function TablerGitBranchDeleted({ size = 24, width, height, ...inputProps
   <path d="M15 4l4 4" />
   <path d="M15 8l4 -4" />
 </svg>
+    </>
+  )
 }

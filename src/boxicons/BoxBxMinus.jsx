@@ -17,5 +17,10 @@ export function BoxBxMinus({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M5 11h14v2H5z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M5 11h14v2H5z"/></svg>
+    </>
+  )
 }

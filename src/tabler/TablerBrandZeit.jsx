@@ -17,7 +17,12 @@ export function TablerBrandZeit({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 20h18l-9 -16z" />
 </svg>
+    </>
+  )
 }

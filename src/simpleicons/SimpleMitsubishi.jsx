@@ -17,5 +17,10 @@ export function SimpleMitsubishi({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><title>Mitsubishi</title><path d="M8 22.38H0l4-6.92h8zm8 0h8l-4-6.92h-8zm0-13.84l-4-6.92-4 6.92 4 6.92Z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><title>Mitsubishi</title><path d="M8 22.38H0l4-6.92h8zm8 0h8l-4-6.92h-8zm0-13.84l-4-6.92-4 6.92 4 6.92Z"/></svg>
+    </>
+  )
 }

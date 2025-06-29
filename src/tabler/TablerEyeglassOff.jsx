@@ -17,7 +17,10 @@ export function TablerEyeglassOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5.536 5.546l-2.536 8.454" />
   <path d="M16 4h2l3 10" />
   <path d="M10 16h4" />
@@ -25,4 +28,6 @@ export function TablerEyeglassOff({ size = 24, width, height, ...inputProps }) {
   <path d="M10 16.5a3.5 3.5 0 0 1 -7 0v-2.5h7v2.5" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

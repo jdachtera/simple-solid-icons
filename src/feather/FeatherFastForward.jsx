@@ -17,5 +17,10 @@ export function FeatherFastForward({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}><polygon points="13 19 22 12 13 5 13 19"/><polygon points="2 19 11 12 2 5 2 19"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polygon points="13 19 22 12 13 5 13 19"/><polygon points="2 19 11 12 2 5 2 19"/></svg>
+    </>
+  )
 }

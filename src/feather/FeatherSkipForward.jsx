@@ -17,5 +17,10 @@ export function FeatherSkipForward({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg>
+    </>
+  )
 }

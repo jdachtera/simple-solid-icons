@@ -17,8 +17,13 @@ export function TablerFlag2Off({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 14h9m4 0h1v-9h-10m-4 0v16" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

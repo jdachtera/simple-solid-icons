@@ -17,7 +17,10 @@ export function TablerAdjustmentsQuestion({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
   <path d="M6 4v4" />
   <path d="M6 12v8" />
@@ -30,4 +33,6 @@ export function TablerAdjustmentsQuestion({ size = 24, width, height, ...inputPr
   <path d="M18 4v1" />
   <path d="M18 9v2" />
 </svg>
+    </>
+  )
 }

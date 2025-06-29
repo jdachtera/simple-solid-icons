@@ -17,7 +17,12 @@ export function TablerBrandCampaignmonitor({ size = 24, width, height, ...inputP
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 18l9 -6.462l-9 -5.538v12h18v-12l-9 5.538" />
 </svg>
+    </>
+  )
 }

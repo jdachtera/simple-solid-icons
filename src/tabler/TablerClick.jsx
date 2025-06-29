@@ -17,7 +17,10 @@ export function TablerClick({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12l3 0" />
   <path d="M12 3l0 3" />
   <path d="M7.8 7.8l-2.2 -2.2" />
@@ -25,4 +28,6 @@ export function TablerClick({ size = 24, width, height, ...inputProps }) {
   <path d="M7.8 16.2l-2.2 2.2" />
   <path d="M12 12l9 3l-4 2l-2 4l-3 -9" />
 </svg>
+    </>
+  )
 }

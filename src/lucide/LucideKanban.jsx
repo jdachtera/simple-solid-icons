@@ -17,9 +17,14 @@ export function LucideKanban({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 5v11" />
   <path d="M12 5v6" />
   <path d="M18 5v14" />
 </svg>
+    </>
+  )
 }

@@ -17,8 +17,13 @@ export function TablerGenderAgender({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 12m-6 0a6 6 0 1 0 12 0a6 6 0 1 0 -12 0" />
   <path d="M7 12h11" />
 </svg>
+    </>
+  )
 }

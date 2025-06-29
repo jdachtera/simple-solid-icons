@@ -17,5 +17,10 @@ export function IonPauseSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M224,432H144V80h80Z"/><path d="M368,432H288V80h80Z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M224,432H144V80h80Z"/><path d="M368,432H288V80h80Z"/></svg>
+    </>
+  )
 }

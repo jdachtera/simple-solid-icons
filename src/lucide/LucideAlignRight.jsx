@@ -17,9 +17,14 @@ export function LucideAlignRight({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M21 12H9" />
   <path d="M21 18H7" />
   <path d="M21 6H3" />
 </svg>
+    </>
+  )
 }

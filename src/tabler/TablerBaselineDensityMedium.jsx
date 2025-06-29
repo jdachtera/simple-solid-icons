@@ -17,9 +17,14 @@ export function TablerBaselineDensityMedium({ size = 24, width, height, ...input
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 20h16" />
   <path d="M4 12h16" />
   <path d="M4 4h16" />
 </svg>
+    </>
+  )
 }

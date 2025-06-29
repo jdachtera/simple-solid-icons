@@ -17,7 +17,10 @@ export function TablerBuildingCog({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 21h9" />
   <path d="M9 8h1" />
   <path d="M9 12h1" />
@@ -33,4 +36,6 @@ export function TablerBuildingCog({ size = 24, width, height, ...inputProps }) {
   <path d="M14.97 16.25l1.3 .75" />
   <path d="M19.733 19l1.3 .75" />
 </svg>
+    </>
+  )
 }

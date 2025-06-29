@@ -17,7 +17,12 @@ export function TablerBrandNationalGeographic({ size = 24, width, height, ...inp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 3h10v18h-10z" />
 </svg>
+    </>
+  )
 }

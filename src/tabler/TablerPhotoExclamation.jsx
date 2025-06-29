@@ -17,7 +17,10 @@ export function TablerPhotoExclamation({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 8h.01" />
   <path d="M15 21h-9a3 3 0 0 1 -3 -3v-12a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v6" />
   <path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l4 4" />
@@ -25,4 +28,6 @@ export function TablerPhotoExclamation({ size = 24, width, height, ...inputProps
   <path d="M19 16v3" />
   <path d="M19 22v.01" />
 </svg>
+    </>
+  )
 }

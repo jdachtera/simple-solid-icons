@@ -17,7 +17,10 @@ export function TablerTransformPointTopLeft({ size = 24, width, height, ...input
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 3m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" fill="currentColor" />
   <path d="M3 17m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
   <path d="M17 3m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
@@ -27,4 +30,6 @@ export function TablerTransformPointTopLeft({ size = 24, width, height, ...input
   <path d="M19 11v2" />
   <path d="M11 19h2" />
 </svg>
+    </>
+  )
 }

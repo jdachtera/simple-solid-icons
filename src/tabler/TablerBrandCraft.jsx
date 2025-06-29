@@ -17,9 +17,14 @@ export function TablerBrandCraft({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20 4h-8a8 8 0 1 0 0 16h8a8 8 0 0 0 -8 -8a8 8 0 0 0 8 -8" />
   <path d="M4 12h8" />
   <path d="M12 4v16" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function LucideBotOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M13.67 8H18a2 2 0 0 1 2 2v4.33" />
   <path d="M2 14h2" />
   <path d="M20 14h2" />
@@ -26,4 +29,6 @@ export function LucideBotOff({ size = 24, width, height, ...inputProps }) {
   <path d="M9 13v2" />
   <path d="M9.67 4H12v2.33" />
 </svg>
+    </>
+  )
 }

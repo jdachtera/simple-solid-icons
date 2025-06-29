@@ -17,7 +17,10 @@ export function TablerLadder({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 3v18" />
   <path d="M16 3v18" />
   <path d="M8 14h8" />
@@ -25,4 +28,6 @@ export function TablerLadder({ size = 24, width, height, ...inputProps }) {
   <path d="M8 6h8" />
   <path d="M8 18h8" />
 </svg>
+    </>
+  )
 }

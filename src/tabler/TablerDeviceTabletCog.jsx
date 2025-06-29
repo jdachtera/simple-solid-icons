@@ -17,7 +17,10 @@ export function TablerDeviceTabletCog({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 21h-6a1 1 0 0 1 -1 -1v-16a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v7.5" />
   <path d="M12 16a1 1 0 0 0 0 2" />
   <path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
@@ -28,4 +31,6 @@ export function TablerDeviceTabletCog({ size = 24, width, height, ...inputProps 
   <path d="M15.97 17.25l1.3 .75" />
   <path d="M20.733 20l1.3 .75" />
 </svg>
+    </>
+  )
 }

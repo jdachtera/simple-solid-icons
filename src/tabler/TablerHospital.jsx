@@ -17,10 +17,15 @@ export function TablerHospital({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
   <path d="M10 16v-8" />
   <path d="M14 16v-8" />
   <path d="M10 12h4" />
 </svg>
+    </>
+  )
 }

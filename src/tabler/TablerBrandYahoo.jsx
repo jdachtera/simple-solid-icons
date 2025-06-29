@@ -17,7 +17,10 @@ export function TablerBrandYahoo({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 6l5 0" />
   <path d="M7 18l7 0" />
   <path d="M4.5 6l5.5 7v5" />
@@ -26,4 +29,6 @@ export function TablerBrandYahoo({ size = 24, width, height, ...inputProps }) {
   <path d="M20 11l0 4" />
   <path d="M20 18l0 .01" />
 </svg>
+    </>
+  )
 }

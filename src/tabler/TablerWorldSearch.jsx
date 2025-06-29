@@ -17,7 +17,10 @@ export function TablerWorldSearch({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M21 12a9 9 0 1 0 -9 9" />
   <path d="M3.6 9h16.8" />
   <path d="M3.6 15h7.9" />
@@ -26,4 +29,6 @@ export function TablerWorldSearch({ size = 24, width, height, ...inputProps }) {
   <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
   <path d="M20.2 20.2l1.8 1.8" />
 </svg>
+    </>
+  )
 }

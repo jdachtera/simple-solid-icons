@@ -17,8 +17,13 @@ export function TablerTrendingDown2({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 6h5l7 10h6" />
   <path d="M18 19l3 -3l-3 -3" />
 </svg>
+    </>
+  )
 }

@@ -17,8 +17,13 @@ export function TablerUmbrellaClosed({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M9 16l3 -13l3 13z" />
   <path d="M12 16v3c0 2.667 4 2.667 4 0" />
 </svg>
+    </>
+  )
 }

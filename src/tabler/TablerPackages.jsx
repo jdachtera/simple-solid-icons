@@ -17,7 +17,10 @@ export function TablerPackages({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 16.5l-5 -3l5 -3l5 3v5.5l-5 3z" />
   <path d="M2 13.5v5.5l5 3" />
   <path d="M7 16.545l5 -3.03" />
@@ -28,4 +31,6 @@ export function TablerPackages({ size = 24, width, height, ...inputProps }) {
   <path d="M7 5.03v5.455" />
   <path d="M12 8l5 -3" />
 </svg>
+    </>
+  )
 }

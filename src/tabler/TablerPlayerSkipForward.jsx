@@ -17,8 +17,13 @@ export function TablerPlayerSkipForward({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 5v14l12 -7z" />
   <path d="M20 5l0 14" />
 </svg>
+    </>
+  )
 }

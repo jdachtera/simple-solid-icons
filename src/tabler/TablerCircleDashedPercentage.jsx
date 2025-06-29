@@ -17,7 +17,10 @@ export function TablerCircleDashedPercentage({ size = 24, width, height, ...inpu
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M9 15l6 -6" />
   <path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
   <path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
@@ -30,4 +33,6 @@ export function TablerCircleDashedPercentage({ size = 24, width, height, ...inpu
   <path d="M9 9.03v.015" />
   <path d="M15 15.045v.015" />
 </svg>
+    </>
+  )
 }

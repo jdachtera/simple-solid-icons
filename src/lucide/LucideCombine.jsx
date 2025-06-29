@@ -17,7 +17,10 @@ export function LucideCombine({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 18H5a3 3 0 0 1-3-3v-1" />
   <path d="M14 2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2" />
   <path d="M20 2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2" />
@@ -25,4 +28,6 @@ export function LucideCombine({ size = 24, width, height, ...inputProps }) {
   <rect x="14" y="14" width="8" height="8" rx="2" />
   <rect x="2" y="2" width="8" height="8" rx="2" />
 </svg>
+    </>
+  )
 }

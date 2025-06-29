@@ -17,7 +17,12 @@ export function TablerNumber1({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M13 20v-16l-5 5" />
 </svg>
+    </>
+  )
 }

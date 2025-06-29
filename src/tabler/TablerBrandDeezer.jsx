@@ -17,7 +17,10 @@ export function TablerBrandDeezer({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 16.5h2v.5h-2z" />
   <path d="M8 16.5h2.5v.5h-2.5z" />
   <path d="M16 17h-2.5v-.5h2.5z" />
@@ -29,4 +32,6 @@ export function TablerBrandDeezer({ size = 24, width, height, ...inputProps }) {
   <path d="M8 13.5h2.5v-.5h-2.5z" />
   <path d="M8 9.5h2.5v.5h-2.5z" />
 </svg>
+    </>
+  )
 }

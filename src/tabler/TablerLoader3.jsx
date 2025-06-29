@@ -17,8 +17,13 @@ export function TablerLoader3({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12a9 9 0 0 0 9 9a9 9 0 0 0 9 -9a9 9 0 0 0 -9 -9" />
   <path d="M17 12a5 5 0 1 0 -5 5" />
 </svg>
+    </>
+  )
 }

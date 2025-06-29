@@ -17,7 +17,10 @@ export function TablerArrowsTransferUpDown({ size = 24, width, height, ...inputP
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 21v-6" />
   <path d="M20 6l-3 -3l-3 3" />
   <path d="M10 18l-3 3l-3 -3" />
@@ -27,4 +30,6 @@ export function TablerArrowsTransferUpDown({ size = 24, width, height, ...inputP
   <path d="M17 21v-2" />
   <path d="M17 15v-2" />
 </svg>
+    </>
+  )
 }

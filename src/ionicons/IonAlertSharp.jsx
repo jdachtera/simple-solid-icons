@@ -17,5 +17,10 @@ export function IonAlertSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><polygon points="240 80 248 320 264 320 272 80 240 80" style="fill:none;stroke:#000;stroke-linecap:square;stroke-miterlimit:10;stroke-width:32px"/><rect x="240" y="400" width="32" height="32" style="fill:none;stroke:#000;stroke-linecap:square;stroke-miterlimit:10;stroke-width:32px"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polygon points="240 80 248 320 264 320 272 80 240 80" style="fill:none;stroke:#000;stroke-linecap:square;stroke-miterlimit:10;stroke-width:32px"/><rect x="240" y="400" width="32" height="32" style="fill:none;stroke:#000;stroke-linecap:square;stroke-miterlimit:10;stroke-width:32px"/></svg>
+    </>
+  )
 }

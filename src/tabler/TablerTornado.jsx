@@ -17,11 +17,16 @@ export function TablerTornado({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M21 4l-18 0" />
   <path d="M13 16l-6 0" />
   <path d="M11 20l4 0" />
   <path d="M6 8l14 0" />
   <path d="M4 12l12 0" />
 </svg>
+    </>
+  )
 }

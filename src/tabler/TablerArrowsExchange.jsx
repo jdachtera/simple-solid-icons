@@ -17,8 +17,13 @@ export function TablerArrowsExchange({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 10h14l-4 -4" />
   <path d="M17 14h-14l4 4" />
 </svg>
+    </>
+  )
 }

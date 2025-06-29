@@ -17,7 +17,10 @@ export function TablerFeatherOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 20l8 -8" />
   <path d="M14 5v5h5" />
   <path d="M9 11v4h4" />
@@ -27,4 +30,6 @@ export function TablerFeatherOff({ size = 24, width, height, ...inputProps }) {
   <path d="M11 18l3.499 -3.499m2.008 -2.008l2.493 -2.493" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

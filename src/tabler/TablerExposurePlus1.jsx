@@ -17,9 +17,14 @@ export function TablerExposurePlus1({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12h6" />
   <path d="M6 9v6" />
   <path d="M18 19v-14l-4 4" />
 </svg>
+    </>
+  )
 }

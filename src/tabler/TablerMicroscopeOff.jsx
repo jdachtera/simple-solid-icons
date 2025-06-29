@@ -17,7 +17,10 @@ export function TablerMicroscopeOff({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 21h14" />
   <path d="M6 18h2" />
   <path d="M7 18v3" />
@@ -27,4 +30,6 @@ export function TablerMicroscopeOff({ size = 24, width, height, ...inputProps })
   <path d="M12 21a6 6 0 0 0 5.457 -3.505m.441 -3.599a6 6 0 0 0 -2.183 -3.608" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

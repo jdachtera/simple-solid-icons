@@ -17,7 +17,10 @@ export function LucideChartCandlestick({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M9 5v4" />
   <rect width="4" height="6" x="7" y="9" rx="1" />
   <path d="M9 15v2" />
@@ -26,4 +29,6 @@ export function LucideChartCandlestick({ size = 24, width, height, ...inputProps
   <path d="M17 13v3" />
   <path d="M3 3v16a2 2 0 0 0 2 2h16" />
 </svg>
+    </>
+  )
 }

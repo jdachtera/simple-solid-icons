@@ -17,8 +17,13 @@ export function LucideCircleStop({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="12" cy="12" r="10" />
   <rect x="9" y="9" width="6" height="6" rx="1" />
 </svg>
+    </>
+  )
 }

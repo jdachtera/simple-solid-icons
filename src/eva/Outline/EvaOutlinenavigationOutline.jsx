@@ -1,0 +1,28 @@
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: eva | License: MIT (<https://github.com/akveo/eva-icons/blob/master/LICENSE.txt>)
+import { mergeProps } from 'solid-js'
+
+export function EvaOutlinenavigationOutline({ size = 24, width, height, ...inputProps }) {
+  const props = mergeProps(
+    {
+      xmlns: 'http://www.w3.org/2000/svg',
+      width: width ?? size,
+      height: height ?? size,
+      viewBox: '0 0 24 24',
+      fill: 'none',
+      stroke: 'currentColor',
+      'stroke-width': '2',
+      'stroke-linecap': 'round',
+      'stroke-linejoin': 'round',
+    },
+    inputProps
+  )
+  return (
+    <>
+      {<style>{
+`.cls-1{fill:#fff;opacity:0;}.cls-2{fill:#231f20;}`
+}</style>}
+      <svg {...props}><defs></defs><title>navigation</title><g id="Layer_2" data-name="Layer 2"><g id="navigation"><g id="navigation-2" data-name="navigation"><rect width="24" height="24"/><path d="M20,20a.94.94,0,0,1-.55-.17L12,14.9,4.55,19.83a1,1,0,0,1-1.44-1.28l8-16a1,1,0,0,1,1.78,0l8,16a1,1,0,0,1-.23,1.2A1,1,0,0,1,20,20Zm-8-7.3a1,1,0,0,1,.55.17l4.88,3.23L12,5.24,6.57,16.1l4.88-3.23A1,1,0,0,1,12,12.7Z"/></g></g></g></svg>
+    </>
+  )
+}

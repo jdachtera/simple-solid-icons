@@ -17,8 +17,13 @@ export function TablerArrowsSort({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 9l4 -4l4 4m-4 -4v14" />
   <path d="M21 15l-4 4l-4 -4m4 4v-14" />
 </svg>
+    </>
+  )
 }

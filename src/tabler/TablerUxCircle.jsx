@@ -17,10 +17,15 @@ export function TablerUxCircle({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
   <path d="M7 10v2a2 2 0 1 0 4 0v-2" />
   <path d="M14 10l3 4" />
   <path d="M14 14l3 -4" />
 </svg>
+    </>
+  )
 }

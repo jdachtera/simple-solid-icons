@@ -17,7 +17,10 @@ export function TablerFreezeRowColumn({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
   <path d="M15 3l-12 12" />
   <path d="M9.5 3l-6 6" />
@@ -25,4 +28,6 @@ export function TablerFreezeRowColumn({ size = 24, width, height, ...inputProps 
   <path d="M9 15l-5 5" />
   <path d="M21 9h-12v12" />
 </svg>
+    </>
+  )
 }

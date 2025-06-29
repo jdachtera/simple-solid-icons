@@ -17,7 +17,10 @@ export function TablerBasketUp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M17 10l-2 -6" />
   <path d="M7 10l2 -6" />
   <path d="M12 20h-4.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.358 2.04" />
@@ -25,4 +28,6 @@ export function TablerBasketUp({ size = 24, width, height, ...inputProps }) {
   <path d="M19 22v-6" />
   <path d="M22 19l-3 -3l-3 3" />
 </svg>
+    </>
+  )
 }

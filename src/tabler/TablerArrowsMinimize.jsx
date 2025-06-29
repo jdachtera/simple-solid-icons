@@ -17,7 +17,10 @@ export function TablerArrowsMinimize({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 9l4 0l0 -4" />
   <path d="M3 3l6 6" />
   <path d="M5 15l4 0l0 4" />
@@ -27,4 +30,6 @@ export function TablerArrowsMinimize({ size = 24, width, height, ...inputProps }
   <path d="M19 15l-4 0l0 4" />
   <path d="M15 15l6 6" />
 </svg>
+    </>
+  )
 }

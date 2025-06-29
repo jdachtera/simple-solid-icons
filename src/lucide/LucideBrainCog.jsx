@@ -17,7 +17,10 @@ export function LucideBrainCog({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m10.852 14.772-.383.923" />
   <path d="m10.852 9.228-.383-.923" />
   <path d="m13.148 14.772.382.924" />
@@ -34,4 +37,6 @@ export function LucideBrainCog({ size = 24, width, height, ...inputProps }) {
   <path d="m9.228 13.148-.923.383" />
   <circle cx="12" cy="12" r="3" />
 </svg>
+    </>
+  )
 }

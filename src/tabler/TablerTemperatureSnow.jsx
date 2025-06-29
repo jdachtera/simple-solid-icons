@@ -17,7 +17,10 @@ export function TablerTemperatureSnow({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 13.5a4 4 0 1 0 4 0v-8.5a2 2 0 1 0 -4 0v8.5" />
   <path d="M4 9h4" />
   <path d="M14.75 4l1 2h2.25" />
@@ -28,4 +31,6 @@ export function TablerTemperatureSnow({ size = 24, width, height, ...inputProps 
   <path d="M17 20l-3 -5h-1" />
   <path d="M12 9l2.088 .008" />
 </svg>
+    </>
+  )
 }

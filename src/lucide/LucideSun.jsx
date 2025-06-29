@@ -17,7 +17,10 @@ export function LucideSun({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="12" cy="12" r="4" />
   <path d="M12 2v2" />
   <path d="M12 20v2" />
@@ -28,4 +31,6 @@ export function LucideSun({ size = 24, width, height, ...inputProps }) {
   <path d="m6.34 17.66-1.41 1.41" />
   <path d="m19.07 4.93-1.41 1.41" />
 </svg>
+    </>
+  )
 }

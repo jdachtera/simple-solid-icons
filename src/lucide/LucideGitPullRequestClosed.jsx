@@ -17,7 +17,10 @@ export function LucideGitPullRequestClosed({ size = 24, width, height, ...inputP
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="6" cy="6" r="3" />
   <path d="M6 9v12" />
   <path d="m21 3-6 6" />
@@ -25,4 +28,6 @@ export function LucideGitPullRequestClosed({ size = 24, width, height, ...inputP
   <path d="M18 11.5V15" />
   <circle cx="18" cy="18" r="3" />
 </svg>
+    </>
+  )
 }

@@ -17,9 +17,14 @@ export function TablerFlipHorizontal({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12l18 0" />
   <path d="M7 16l10 0l-10 5l0 -5" />
   <path d="M7 8l10 0l-10 -5l0 5" />
 </svg>
+    </>
+  )
 }

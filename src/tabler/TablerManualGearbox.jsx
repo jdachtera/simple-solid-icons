@@ -17,7 +17,10 @@ export function TablerManualGearbox({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M12 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M19 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
@@ -27,4 +30,6 @@ export function TablerManualGearbox({ size = 24, width, height, ...inputProps })
   <path d="M12 8l0 8" />
   <path d="M19 8v2a2 2 0 0 1 -2 2h-12" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerSocialOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M5 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M17.57 17.602a2 2 0 0 0 2.83 2.827" />
@@ -27,4 +30,6 @@ export function TablerSocialOff({ size = 24, width, height, ...inputProps }) {
   <path d="M17.3 17.8l-2.8 -2" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

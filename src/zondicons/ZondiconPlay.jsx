@@ -17,5 +17,10 @@ export function ZondiconPlay({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M4 4l12 6-12 6z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M4 4l12 6-12 6z"/></svg>
+    </>
+  )
 }

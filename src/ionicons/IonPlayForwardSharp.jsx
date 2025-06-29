@@ -17,5 +17,10 @@ export function IonPlayForwardSharp({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}><polygon points="16 400 256 256 16 112 16 400"/><polygon points="256 400 496 256 256 112 256 400"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polygon points="16 400 256 256 16 112 16 400"/><polygon points="256 400 496 256 256 112 256 400"/></svg>
+    </>
+  )
 }

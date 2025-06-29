@@ -17,7 +17,10 @@ export function TablerDragDrop2({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
   <path d="M4 4l0 .01" />
   <path d="M8 4l0 .01" />
@@ -27,4 +30,6 @@ export function TablerDragDrop2({ size = 24, width, height, ...inputProps }) {
   <path d="M4 12l0 .01" />
   <path d="M4 16l0 .01" />
 </svg>
+    </>
+  )
 }

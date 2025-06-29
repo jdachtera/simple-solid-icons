@@ -17,5 +17,10 @@ export function SimpleVercel({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><title>Vercel</title><path d="m12 1.608 12 20.784H0Z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><title>Vercel</title><path d="m12 1.608 12 20.784H0Z"/></svg>
+    </>
+  )
 }

@@ -17,9 +17,14 @@ export function TablerAlphabetKorean({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 7h6c0 2.5 -1.593 8.474 -6 10" />
   <path d="M16 5v14z" />
   <path d="M16 12h2" />
 </svg>
+    </>
+  )
 }

@@ -17,8 +17,13 @@ export function LucideUngroup({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <rect width="8" height="6" x="5" y="4" rx="1" />
   <rect width="8" height="6" x="11" y="14" rx="1" />
 </svg>
+    </>
+  )
 }

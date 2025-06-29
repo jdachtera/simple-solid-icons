@@ -17,9 +17,14 @@ export function LucideGitCommitVertical({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 3v6" />
   <circle cx="12" cy="12" r="3" />
   <path d="M12 15v6" />
 </svg>
+    </>
+  )
 }

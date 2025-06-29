@@ -17,9 +17,14 @@ export function TablerNavigationEast({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 3h-4v6h4" />
   <path d="M10 6h2.5" />
   <path d="M16 21l-4 -8l-4 8l4 -2z" />
 </svg>
+    </>
+  )
 }

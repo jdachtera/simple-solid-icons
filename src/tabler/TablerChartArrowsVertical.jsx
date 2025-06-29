@@ -17,7 +17,10 @@ export function TablerChartArrowsVertical({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M18 21v-14" />
   <path d="M9 15l3 -3l3 3" />
   <path d="M15 10l3 -3l3 3" />
@@ -26,4 +29,6 @@ export function TablerChartArrowsVertical({ size = 24, width, height, ...inputPr
   <path d="M3 6l3 -3l3 3" />
   <path d="M6 21v-18" />
 </svg>
+    </>
+  )
 }

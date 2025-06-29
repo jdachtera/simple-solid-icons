@@ -17,7 +17,12 @@ export function TablerBackslash({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 5l10 14" />
 </svg>
+    </>
+  )
 }

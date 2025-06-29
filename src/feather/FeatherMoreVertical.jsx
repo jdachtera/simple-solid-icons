@@ -17,5 +17,10 @@ export function FeatherMoreVertical({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+    </>
+  )
 }

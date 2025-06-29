@@ -17,7 +17,10 @@ export function TablerBrandStorj({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 17m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
   <path d="M4 7m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
   <path d="M20 17m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
@@ -33,4 +36,6 @@ export function TablerBrandStorj({ size = 24, width, height, ...inputProps }) {
   <path d="M12 3v5" />
   <path d="M12 15v6" />
 </svg>
+    </>
+  )
 }

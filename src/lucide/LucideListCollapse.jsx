@@ -17,11 +17,16 @@ export function LucideListCollapse({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 12h11" />
   <path d="M10 18h11" />
   <path d="M10 6h11" />
   <path d="m3 10 3-3-3-3" />
   <path d="m3 20 3-3-3-3" />
 </svg>
+    </>
+  )
 }

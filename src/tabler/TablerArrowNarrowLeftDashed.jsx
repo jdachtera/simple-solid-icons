@@ -17,9 +17,14 @@ export function TablerArrowNarrowLeftDashed({ size = 24, width, height, ...input
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 12h6m3 0h1.5m3 0h.5" />
   <path d="M5 12l4 4" />
   <path d="M5 12l4 -4" />
 </svg>
+    </>
+  )
 }

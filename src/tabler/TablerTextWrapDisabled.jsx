@@ -17,9 +17,14 @@ export function TablerTextWrapDisabled({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 6l10 0" />
   <path d="M4 18l10 0" />
   <path d="M4 12h17l-3 -3m0 6l3 -3" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerArrowsDiff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M11 16h10" />
   <path d="M11 16l4 4" />
   <path d="M11 16l4 -4" />
@@ -25,4 +28,6 @@ export function TablerArrowsDiff({ size = 24, width, height, ...inputProps }) {
   <path d="M13 8l-4 4" />
   <path d="M13 8l-4 -4" />
 </svg>
+    </>
+  )
 }

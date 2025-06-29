@@ -17,7 +17,10 @@ export function TablerBrandDigg({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 15h-3v-4h3" />
   <path d="M15 15h-3v-4h3" />
   <path d="M9 15v-4" />
@@ -26,4 +29,6 @@ export function TablerBrandDigg({ size = 24, width, height, ...inputProps }) {
   <path d="M21 15h-3v-4h3" />
   <path d="M21 11v7h-3" />
 </svg>
+    </>
+  )
 }

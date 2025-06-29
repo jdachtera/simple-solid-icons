@@ -17,7 +17,10 @@ export function LucideBugOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 7.13V6a3 3 0 0 0-5.14-2.1L8 2" />
   <path d="M14.12 3.88 16 2" />
   <path d="M22 13h-4v-2a4 4 0 0 0-4-4h-1.3" />
@@ -28,4 +31,6 @@ export function LucideBugOff({ size = 24, width, height, ...inputProps }) {
   <path d="M6 13H2" />
   <path d="M3 21c0-2.1 1.7-3.9 3.8-4" />
 </svg>
+    </>
+  )
 }

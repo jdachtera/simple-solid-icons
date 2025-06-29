@@ -17,7 +17,12 @@ export function LucideCheck({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20 6 9 17l-5-5" />
 </svg>
+    </>
+  )
 }

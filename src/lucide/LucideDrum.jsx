@@ -17,7 +17,10 @@ export function LucideDrum({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m2 2 8 8" />
   <path d="m22 2-8 8" />
   <ellipse cx="12" cy="9" rx="10" ry="5" />
@@ -26,4 +29,6 @@ export function LucideDrum({ size = 24, width, height, ...inputProps }) {
   <path d="M17 13.4v7.9" />
   <path d="M2 9v8a10 5 0 0 0 20 0V9" />
 </svg>
+    </>
+  )
 }

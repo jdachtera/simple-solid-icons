@@ -17,8 +17,13 @@ export function TablerBrandBackbone({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 20l14 -8l-14 -8z" />
   <path d="M19 20l-14 -8l14 -8z" />
 </svg>
+    </>
+  )
 }

@@ -17,5 +17,10 @@ export function ZondiconCheckmark({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+    </>
+  )
 }

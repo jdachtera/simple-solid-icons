@@ -17,5 +17,10 @@ export function IonCheckboxSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M48,48V464H464V48ZM218,360.38,137.4,270.81l23.79-21.41,56,62.22L350,153.46,374.54,174Z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M48,48V464H464V48ZM218,360.38,137.4,270.81l23.79-21.41,56,62.22L350,153.46,374.54,174Z"/></svg>
+    </>
+  )
 }

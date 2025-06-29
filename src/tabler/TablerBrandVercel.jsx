@@ -17,7 +17,12 @@ export function TablerBrandVercel({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 19h18l-9 -15z" />
 </svg>
+    </>
+  )
 }

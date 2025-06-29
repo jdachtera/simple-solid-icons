@@ -17,7 +17,10 @@ export function LucideChartNoAxesCombined({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 16v5" />
   <path d="M16 14v7" />
   <path d="M20 10v11" />
@@ -25,4 +28,6 @@ export function LucideChartNoAxesCombined({ size = 24, width, height, ...inputPr
   <path d="M4 18v3" />
   <path d="M8 14v7" />
 </svg>
+    </>
+  )
 }

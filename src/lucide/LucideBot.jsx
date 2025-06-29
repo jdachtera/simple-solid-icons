@@ -17,7 +17,10 @@ export function LucideBot({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 8V4H8" />
   <rect width="16" height="12" x="4" y="8" rx="2" />
   <path d="M2 14h2" />
@@ -25,4 +28,6 @@ export function LucideBot({ size = 24, width, height, ...inputProps }) {
   <path d="M15 13v2" />
   <path d="M9 13v2" />
 </svg>
+    </>
+  )
 }

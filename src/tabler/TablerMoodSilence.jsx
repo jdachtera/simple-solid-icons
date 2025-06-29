@@ -17,7 +17,10 @@ export function TablerMoodSilence({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 21a9 9 0 1 1 0 -18a9 9 0 0 1 0 18z" />
   <path d="M9 10h-.01" />
   <path d="M15 10h-.01" />
@@ -26,4 +29,6 @@ export function TablerMoodSilence({ size = 24, width, height, ...inputProps }) {
   <path d="M12 14v2" />
   <path d="M15 14v2" />
 </svg>
+    </>
+  )
 }

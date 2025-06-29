@@ -17,7 +17,10 @@ export function LucideFileCog({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 2v4a2 2 0 0 0 2 2h4" />
   <path d="m2.305 15.53.923-.382" />
   <path d="m3.228 12.852-.924-.383" />
@@ -30,4 +33,6 @@ export function LucideFileCog({ size = 24, width, height, ...inputProps }) {
   <path d="m8.772 15.148.923.383" />
   <circle cx="6" cy="14" r="3" />
 </svg>
+    </>
+  )
 }

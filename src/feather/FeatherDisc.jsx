@@ -17,5 +17,10 @@ export function FeatherDisc({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+    </>
+  )
 }

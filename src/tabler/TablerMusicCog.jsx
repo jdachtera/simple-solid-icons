@@ -17,7 +17,10 @@ export function TablerMusicCog({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
   <path d="M9 17v-13h10v7.5" />
   <path d="M9 8h10" />
@@ -29,4 +32,6 @@ export function TablerMusicCog({ size = 24, width, height, ...inputProps }) {
   <path d="M15.97 17.25l1.3 .75" />
   <path d="M20.733 20l1.3 .75" />
 </svg>
+    </>
+  )
 }

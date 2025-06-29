@@ -17,5 +17,10 @@ export function ZondiconLocationCurrent({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}><path d="M0 0l20 8-8 4-2 8z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M0 0l20 8-8 4-2 8z"/></svg>
+    </>
+  )
 }

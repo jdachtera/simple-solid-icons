@@ -17,7 +17,10 @@ export function TablerHttpHeadOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 16v-8" />
   <path d="M7 8v8" />
   <path d="M3 12h4" />
@@ -27,4 +30,6 @@ export function TablerHttpHeadOff({ size = 24, width, height, ...inputProps }) {
   <path d="M17 13h4" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

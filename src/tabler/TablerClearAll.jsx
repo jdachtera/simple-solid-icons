@@ -17,9 +17,14 @@ export function TablerClearAll({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 6h12" />
   <path d="M6 12h12" />
   <path d="M4 18h12" />
 </svg>
+    </>
+  )
 }

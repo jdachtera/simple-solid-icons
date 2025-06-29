@@ -17,8 +17,13 @@ export function TablerArrowSharpTurnRight({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 18v-11.31a.7 .7 0 0 1 1.195 -.495l9.805 9.805" />
   <path d="M13 16h5v-5" />
 </svg>
+    </>
+  )
 }

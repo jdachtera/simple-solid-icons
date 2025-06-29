@@ -17,5 +17,10 @@ export function FeatherChevronUp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><polyline points="18 15 12 9 6 15"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polyline points="18 15 12 9 6 15"/></svg>
+    </>
+  )
 }

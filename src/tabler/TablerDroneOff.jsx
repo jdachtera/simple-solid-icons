@@ -17,7 +17,10 @@ export function TablerDroneOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 14h-4v-4" />
   <path d="M10 10l-3.5 -3.5" />
   <path d="M9.957 5.95a3.503 3.503 0 0 0 -2.917 -2.91m-3.02 .989a3.5 3.5 0 0 0 1.98 5.936" />
@@ -29,4 +32,6 @@ export function TablerDroneOff({ size = 24, width, height, ...inputProps }) {
   <path d="M6 14.035a3.5 3.5 0 1 0 3.966 3.965" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

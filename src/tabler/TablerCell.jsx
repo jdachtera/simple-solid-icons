@@ -17,9 +17,14 @@ export function TablerCell({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 4l-4 2v5l4 2l4 -2v-5z" />
   <path d="M12 11l4 2l4 -2v-5l-4 -2l-4 2" />
   <path d="M8 13v5l4 2l4 -2v-5" />
 </svg>
+    </>
+  )
 }

@@ -17,8 +17,13 @@ export function TablerPlayerTrackNext({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 5v14l8 -7z" />
   <path d="M14 5v14l8 -7z" />
 </svg>
+    </>
+  )
 }

@@ -17,9 +17,14 @@ export function TablerZodiacSagittarius({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 20l16 -16" />
   <path d="M13 4h7v7" />
   <path d="M6.5 12.5l5 5" />
 </svg>
+    </>
+  )
 }

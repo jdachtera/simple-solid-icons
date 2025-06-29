@@ -17,9 +17,14 @@ export function TablerCurrencyYuan({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 19v-7l-5 -7" />
   <path d="M17 5l-5 7" />
   <path d="M8 13h8" />
 </svg>
+    </>
+  )
 }

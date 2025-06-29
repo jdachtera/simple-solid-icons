@@ -17,7 +17,10 @@ export function TablerBrandCodepen({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 15l9 6l9 -6l-9 -6l-9 6" />
   <path d="M3 9l9 6l9 -6l-9 -6l-9 6" />
   <path d="M3 9l0 6" />
@@ -25,4 +28,6 @@ export function TablerBrandCodepen({ size = 24, width, height, ...inputProps }) 
   <path d="M12 3l0 6" />
   <path d="M12 15l0 6" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerMailCog({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 19h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v5" />
   <path d="M3 7l9 6l9 -6" />
   <path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
@@ -28,4 +31,6 @@ export function TablerMailCog({ size = 24, width, height, ...inputProps }) {
   <path d="M15.97 17.25l1.3 .75" />
   <path d="M20.733 20l1.3 .75" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerSelectAll({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 8m0 1a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1z" />
   <path d="M12 20v.01" />
   <path d="M16 20v.01" />
@@ -36,4 +39,6 @@ export function TablerSelectAll({ size = 24, width, height, ...inputProps }) {
   <path d="M20 16v.01" />
   <path d="M20 20v.01" />
 </svg>
+    </>
+  )
 }

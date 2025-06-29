@@ -17,5 +17,10 @@ export function SimpleSuckless({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><title>suckless</title><path d="M0 4h24v4H4v2h20v10H0v-4h20v-2H0z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><title>suckless</title><path d="M0 4h24v4H4v2h20v10H0v-4h20v-2H0z"/></svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerLogicXnor({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M22 12h-2" />
   <path d="M2 9h4" />
   <path d="M2 15h4" />
@@ -25,4 +28,6 @@ export function TablerLogicXnor({ size = 24, width, height, ...inputProps }) {
   <path d="M8 5c10.667 2.1 10.667 12.6 0 14c1.806 -4.667 1.806 -9.333 0 -14z" />
   <path d="M18 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
 </svg>
+    </>
+  )
 }

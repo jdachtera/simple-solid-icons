@@ -17,5 +17,10 @@ export function CodiconGrabber({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path fill-rule="evenodd" clip-rule="evenodd" d="M15 6H1v1h14V6zm0 3H1v1h14V9z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path fill-rule="evenodd" clip-rule="evenodd" d="M15 6H1v1h14V6zm0 3H1v1h14V9z"/></svg>
+    </>
+  )
 }

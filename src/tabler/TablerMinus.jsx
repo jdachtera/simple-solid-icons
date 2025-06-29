@@ -17,7 +17,12 @@ export function TablerMinus({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 12l14 0" />
 </svg>
+    </>
+  )
 }

@@ -17,5 +17,10 @@ export function BoxBxCaretLeft({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M15 19V5l-8 7z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M15 19V5l-8 7z"/></svg>
+    </>
+  )
 }

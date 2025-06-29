@@ -17,5 +17,10 @@ export function BoxBxCollapseAlt({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M2 15h7v7h2v-9H2v2zM15 2h-2v9h9V9h-7V2z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M2 15h7v7h2v-9H2v2zM15 2h-2v9h9V9h-7V2z"/></svg>
+    </>
+  )
 }

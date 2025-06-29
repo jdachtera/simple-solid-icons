@@ -17,8 +17,13 @@ export function TablerTransferVertical({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 4v16l-6 -5.5" />
   <path d="M14 20v-16l6 5.5" />
 </svg>
+    </>
+  )
 }

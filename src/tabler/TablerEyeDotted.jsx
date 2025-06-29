@@ -17,7 +17,10 @@ export function TablerEyeDotted({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
   <path d="M21 12h.01" />
   <path d="M3 12h.01" />
@@ -32,4 +35,6 @@ export function TablerEyeDotted({ size = 24, width, height, ...inputProps }) {
   <path d="M16 7h.01" />
   <path d="M19 9h.01" />
 </svg>
+    </>
+  )
 }

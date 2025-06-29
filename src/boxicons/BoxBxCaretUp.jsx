@@ -17,5 +17,10 @@ export function BoxBxCaretUp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M5 15h14l-7-8z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M5 15h14l-7-8z"/></svg>
+    </>
+  )
 }

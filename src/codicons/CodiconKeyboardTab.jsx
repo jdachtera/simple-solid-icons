@@ -17,5 +17,10 @@ export function CodiconKeyboardTab({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}><path fill-rule="evenodd" clip-rule="evenodd" d="M9.00001 13.8871L14 8.88711V8.18L9.00001 3.18L8.2929 3.88711L12.4393 8.03355L2 8.03355L2 9.03355L12.4393 9.03355L8.2929 13.18L9.00001 13.8871Z"/><path d="M15 3H16V14H15V3Z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path fill-rule="evenodd" clip-rule="evenodd" d="M9.00001 13.8871L14 8.88711V8.18L9.00001 3.18L8.2929 3.88711L12.4393 8.03355L2 8.03355L2 9.03355L12.4393 9.03355L8.2929 13.18L9.00001 13.8871Z"/><path d="M15 3H16V14H15V3Z"/></svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerAntennaOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20 4v8" />
   <path d="M16 4.5v7" />
   <path d="M12 5v3m0 4v9" />
@@ -26,4 +29,6 @@ export function TablerAntennaOff({ size = 24, width, height, ...inputProps }) {
   <path d="M20 8h-8m-4 0h-4" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

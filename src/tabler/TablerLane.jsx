@@ -17,8 +17,13 @@ export function TablerLane({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 6v13" />
   <path d="M20 6v13" />
 </svg>
+    </>
+  )
 }

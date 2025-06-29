@@ -17,8 +17,13 @@ export function TablerDirectionHorizontal({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 9l-3 3l3 3" />
   <path d="M14 9l3 3l-3 3" />
 </svg>
+    </>
+  )
 }

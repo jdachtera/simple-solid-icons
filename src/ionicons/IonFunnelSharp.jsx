@@ -17,5 +17,10 @@ export function IonFunnelSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><polygon points="0 48 192 288 192 416 320 464 320 288 512 48 0 48"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polygon points="0 48 192 288 192 416 320 464 320 288 512 48 0 48"/></svg>
+    </>
+  )
 }

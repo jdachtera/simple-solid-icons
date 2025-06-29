@@ -17,5 +17,10 @@ export function IonSquareSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><rect x="48" y="48" width="416" height="416"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><rect x="48" y="48" width="416" height="416"/></svg>
+    </>
+  )
 }

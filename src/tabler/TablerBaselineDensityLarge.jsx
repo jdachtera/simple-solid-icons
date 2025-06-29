@@ -17,8 +17,13 @@ export function TablerBaselineDensityLarge({ size = 24, width, height, ...inputP
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 4h16" />
   <path d="M4 20h16" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerBinaryTree({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 20a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
   <path d="M16 4a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
   <path d="M16 20a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
@@ -28,4 +31,6 @@ export function TablerBinaryTree({ size = 24, width, height, ...inputProps }) {
   <path d="M10.065 13.705l2.876 4.6" />
   <path d="M15.063 5.7l2.881 4.61" />
 </svg>
+    </>
+  )
 }

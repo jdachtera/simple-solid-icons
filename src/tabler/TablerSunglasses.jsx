@@ -17,7 +17,10 @@ export function TablerSunglasses({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 4h-2l-3 10" />
   <path d="M16 4h2l3 10" />
   <path d="M10 16h4" />
@@ -26,4 +29,6 @@ export function TablerSunglasses({ size = 24, width, height, ...inputProps }) {
   <path d="M4 14l4.5 4.5" />
   <path d="M15 14l4.5 4.5" />
 </svg>
+    </>
+  )
 }

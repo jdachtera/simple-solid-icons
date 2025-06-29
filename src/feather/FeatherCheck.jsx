@@ -17,5 +17,10 @@ export function FeatherCheck({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><polyline points="20 6 9 17 4 12"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polyline points="20 6 9 17 4 12"/></svg>
+    </>
+  )
 }

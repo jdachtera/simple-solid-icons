@@ -17,10 +17,15 @@ export function TablerAlignLeft2({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 4v16" />
   <path d="M8 6h12" />
   <path d="M8 12h6" />
   <path d="M8 18h10" />
 </svg>
+    </>
+  )
 }

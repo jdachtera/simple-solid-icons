@@ -17,7 +17,10 @@ export function LucideHeater({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M11 8c2-3-2-3 0-6" />
   <path d="M15.5 8c2-3-2-3 0-6" />
   <path d="M6 10h.01" />
@@ -29,4 +32,6 @@ export function LucideHeater({ size = 24, width, height, ...inputProps }) {
   <path d="M5 20v2" />
   <path d="M19 20v2" />
 </svg>
+    </>
+  )
 }

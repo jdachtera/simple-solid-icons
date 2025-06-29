@@ -17,7 +17,12 @@ export function TablerArrowBadgeUp({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M17 11v6l-5 -4l-5 4v-6l5 -4z" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerPlugConnected({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 12l5 5l-1.5 1.5a3.536 3.536 0 1 1 -5 -5l1.5 -1.5z" />
   <path d="M17 12l-5 -5l1.5 -1.5a3.536 3.536 0 1 1 5 5l-1.5 1.5z" />
   <path d="M3 21l2.5 -2.5" />
@@ -25,4 +28,6 @@ export function TablerPlugConnected({ size = 24, width, height, ...inputProps })
   <path d="M10 11l-2 2" />
   <path d="M13 14l-2 2" />
 </svg>
+    </>
+  )
 }

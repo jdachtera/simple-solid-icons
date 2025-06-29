@@ -17,7 +17,10 @@ export function TablerBorderTop({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 4l16 0" />
   <path d="M4 8l0 .01" />
   <path d="M12 8l0 .01" />
@@ -36,4 +39,6 @@ export function TablerBorderTop({ size = 24, width, height, ...inputProps }) {
   <path d="M16 20l0 .01" />
   <path d="M20 20l0 .01" />
 </svg>
+    </>
+  )
 }

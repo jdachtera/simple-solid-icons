@@ -17,7 +17,10 @@ export function TablerCube3dSphereOff({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 17.6l-2 -1.1v-2.5" />
   <path d="M4 10v-2.5l2 -1.1" />
   <path d="M10 4.1l2 -1.1l2 1.1" />
@@ -31,4 +34,6 @@ export function TablerCube3dSphereOff({ size = 24, width, height, ...inputProps 
   <path d="M6 8.6l-2 -1.1" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

@@ -17,5 +17,10 @@ export function SimpleKedro({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><title>Kedro</title><path d="m12 0 12 12-12 12L0 12 12 0z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><title>Kedro</title><path d="m12 0 12 12-12 12L0 12 12 0z"/></svg>
+    </>
+  )
 }

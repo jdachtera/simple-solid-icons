@@ -17,7 +17,10 @@ export function LucideShoppingBasket({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m15 11-1 9" />
   <path d="m19 11-4-7" />
   <path d="M2 11h20" />
@@ -26,4 +29,6 @@ export function LucideShoppingBasket({ size = 24, width, height, ...inputProps }
   <path d="m5 11 4-7" />
   <path d="m9 11 1 9" />
 </svg>
+    </>
+  )
 }

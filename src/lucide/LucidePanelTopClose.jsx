@@ -17,9 +17,14 @@ export function LucidePanelTopClose({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <rect width="18" height="18" x="3" y="3" rx="2" />
   <path d="M3 9h18" />
   <path d="m9 16 3-3 3 3" />
 </svg>
+    </>
+  )
 }

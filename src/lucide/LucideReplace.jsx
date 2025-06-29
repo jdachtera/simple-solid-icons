@@ -17,7 +17,10 @@ export function LucideReplace({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 4a2 2 0 0 1 2-2" />
   <path d="M16 10a2 2 0 0 1-2-2" />
   <path d="M20 2a2 2 0 0 1 2 2" />
@@ -26,4 +29,6 @@ export function LucideReplace({ size = 24, width, height, ...inputProps }) {
   <path d="M6 10V5a3 3 0 0 1 3-3h1" />
   <rect x="2" y="14" width="8" height="8" rx="2" />
 </svg>
+    </>
+  )
 }

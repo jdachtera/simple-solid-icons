@@ -17,5 +17,10 @@ export function SimpleAxisbank({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><title>Axis Bank</title><path d="M11.978 1.596 0 22.404h7.453l8.265-14.369Zm.027 12.896 4.533 7.903H24l-4.533-7.903z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><title>Axis Bank</title><path d="M11.978 1.596 0 22.404h7.453l8.265-14.369Zm.027 12.896 4.533 7.903H24l-4.533-7.903z"/></svg>
+    </>
+  )
 }

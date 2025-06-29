@@ -17,7 +17,10 @@ export function LucideFilm({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <rect width="18" height="18" x="3" y="3" rx="2" />
   <path d="M7 3v18" />
   <path d="M3 7.5h4" />
@@ -27,4 +30,6 @@ export function LucideFilm({ size = 24, width, height, ...inputProps }) {
   <path d="M17 7.5h4" />
   <path d="M17 16.5h4" />
 </svg>
+    </>
+  )
 }

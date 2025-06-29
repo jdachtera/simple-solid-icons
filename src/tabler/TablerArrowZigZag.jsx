@@ -17,8 +17,13 @@ export function TablerArrowZigZag({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 20v-10l10 6v-12" />
   <path d="M13 7l3 -3l3 3" />
 </svg>
+    </>
+  )
 }

@@ -17,8 +17,13 @@ export function LucideGauge({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m12 14 4-4" />
   <path d="M3.34 19a10 10 0 1 1 17.32 0" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function LucideTransgender({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 16v6" />
   <path d="M14 20h-4" />
   <path d="M18 2h4v4" />
@@ -27,4 +30,6 @@ export function LucideTransgender({ size = 24, width, height, ...inputProps }) {
   <path d="M8 5 5 8" />
   <circle cx="12" cy="12" r="4" />
 </svg>
+    </>
+  )
 }

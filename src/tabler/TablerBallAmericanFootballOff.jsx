@@ -17,7 +17,10 @@ export function TablerBallAmericanFootballOff({ size = 24, width, height, ...inp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 9l-1 1m-2 2l-3 3" />
   <path d="M10 12l2 2" />
   <path d="M8 21a5 5 0 0 0 -5 -5" />
@@ -25,4 +28,6 @@ export function TablerBallAmericanFootballOff({ size = 24, width, height, ...inp
   <path d="M16 3a5 5 0 0 0 5 5" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

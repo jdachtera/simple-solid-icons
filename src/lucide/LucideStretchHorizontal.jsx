@@ -17,8 +17,13 @@ export function LucideStretchHorizontal({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <rect width="20" height="6" x="2" y="4" rx="2" />
   <rect width="20" height="6" x="2" y="14" rx="2" />
 </svg>
+    </>
+  )
 }

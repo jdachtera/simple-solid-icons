@@ -17,7 +17,10 @@ export function TablerTopologyStarRing({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 20a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
   <path d="M14 4a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
   <path d="M6 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
@@ -32,4 +35,6 @@ export function TablerTopologyStarRing({ size = 24, width, height, ...inputProps
   <path d="M12 6v4" />
   <path d="M12 14v4" />
 </svg>
+    </>
+  )
 }

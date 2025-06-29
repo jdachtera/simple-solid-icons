@@ -17,7 +17,10 @@ export function TablerBrandTaobao({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M2 5c.968 .555 1.335 1.104 2 2" />
   <path d="M2 10c5.007 3.674 2.85 6.544 0 10" />
   <path d="M10 4c-.137 4.137 -2.258 5.286 -3.709 6.684" />
@@ -29,4 +32,6 @@ export function TablerBrandTaobao({ size = 24, width, height, ...inputProps }) {
   <path d="M16.5 17c-1.145 .361 -7 3 -8.5 -.5" />
   <path d="M11.765 8.539l-1.765 2.461" />
 </svg>
+    </>
+  )
 }

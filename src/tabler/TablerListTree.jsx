@@ -17,7 +17,10 @@ export function TablerListTree({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M9 6h11" />
   <path d="M12 12h8" />
   <path d="M15 18h5" />
@@ -25,4 +28,6 @@ export function TablerListTree({ size = 24, width, height, ...inputProps }) {
   <path d="M8 12v.01" />
   <path d="M11 18v.01" />
 </svg>
+    </>
+  )
 }

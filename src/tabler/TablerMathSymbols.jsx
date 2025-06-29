@@ -17,7 +17,10 @@ export function TablerMathSymbols({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12l18 0" />
   <path d="M12 3l0 18" />
   <path d="M16.5 4.5l3 3" />
@@ -28,4 +31,6 @@ export function TablerMathSymbols({ size = 24, width, height, ...inputProps }) {
   <path d="M18 20l.01 0" />
   <path d="M4 18l4 0" />
 </svg>
+    </>
+  )
 }

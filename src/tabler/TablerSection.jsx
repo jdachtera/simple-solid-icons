@@ -17,7 +17,10 @@ export function TablerSection({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20 20h.01" />
   <path d="M4 20h.01" />
   <path d="M8 20h.01" />
@@ -30,4 +33,6 @@ export function TablerSection({ size = 24, width, height, ...inputProps }) {
   <path d="M16 4l0 .01" />
   <path d="M4 8m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z" />
 </svg>
+    </>
+  )
 }

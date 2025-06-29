@@ -17,11 +17,16 @@ export function TablerAxisY({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M11 20h-.01" />
   <path d="M15 20h-.01" />
   <path d="M19 20h-.01" />
   <path d="M4 7l3 -3l3 3" />
   <path d="M7 20v-16" />
 </svg>
+    </>
+  )
 }

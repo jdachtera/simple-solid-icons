@@ -17,9 +17,14 @@ export function LucideCircleEqual({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 10h10" />
   <path d="M7 14h10" />
   <circle cx="12" cy="12" r="10" />
 </svg>
+    </>
+  )
 }

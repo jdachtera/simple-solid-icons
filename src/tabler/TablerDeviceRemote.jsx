@@ -17,7 +17,10 @@ export function TablerDeviceRemote({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 10m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M7 3m0 2a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2z" />
   <path d="M12 3v2" />
@@ -26,4 +29,6 @@ export function TablerDeviceRemote({ size = 24, width, height, ...inputProps }) 
   <path d="M14 18v.01" />
   <path d="M14 15v.01" />
 </svg>
+    </>
+  )
 }

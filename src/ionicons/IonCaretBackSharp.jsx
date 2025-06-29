@@ -17,5 +17,10 @@ export function IonCaretBackSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><polygon points="368 64 144 256 368 448 368 64"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polygon points="368 64 144 256 368 448 368 64"/></svg>
+    </>
+  )
 }

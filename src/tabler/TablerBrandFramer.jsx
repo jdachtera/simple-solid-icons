@@ -17,7 +17,12 @@ export function TablerBrandFramer({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 15h12l-12 -12h12v6h-12v6l6 6v-6" />
 </svg>
+    </>
+  )
 }

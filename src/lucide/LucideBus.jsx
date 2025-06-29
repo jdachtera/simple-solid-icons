@@ -17,7 +17,10 @@ export function LucideBus({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 6v6" />
   <path d="M15 6v6" />
   <path d="M2 12h19.6" />
@@ -26,4 +29,6 @@ export function LucideBus({ size = 24, width, height, ...inputProps }) {
   <path d="M9 18h5" />
   <circle cx="16" cy="18" r="2" />
 </svg>
+    </>
+  )
 }

@@ -17,5 +17,10 @@ export function IonDiscOutline({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><circle cx="256" cy="256" r="208" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"/><circle cx="256" cy="256" r="96" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"/><circle cx="256" cy="256" r="32"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><circle cx="256" cy="256" r="208" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"/><circle cx="256" cy="256" r="96" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"/><circle cx="256" cy="256" r="32"/></svg>
+    </>
+  )
 }

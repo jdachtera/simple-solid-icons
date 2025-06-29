@@ -17,7 +17,10 @@ export function TablerListLetters({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M11 6h9" />
   <path d="M11 12h9" />
   <path d="M11 18h9" />
@@ -25,4 +28,6 @@ export function TablerListLetters({ size = 24, width, height, ...inputProps }) {
   <path d="M4 8h3" />
   <path d="M4 20h1.5a1.5 1.5 0 0 0 0 -3h-1.5h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6z" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerHeading({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 12h10" />
   <path d="M7 5v14" />
   <path d="M17 5v14" />
@@ -26,4 +29,6 @@ export function TablerHeading({ size = 24, width, height, ...inputProps }) {
   <path d="M5 19h4" />
   <path d="M5 5h4" />
 </svg>
+    </>
+  )
 }

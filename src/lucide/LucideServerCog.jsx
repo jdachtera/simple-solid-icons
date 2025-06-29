@@ -17,7 +17,10 @@ export function LucideServerCog({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m10.852 14.772-.383.923" />
   <path d="M13.148 14.772a3 3 0 1 0-2.296-5.544l-.383-.923" />
   <path d="m13.148 9.228.383-.923" />
@@ -31,4 +34,6 @@ export function LucideServerCog({ size = 24, width, height, ...inputProps }) {
   <path d="m9.228 10.852-.923-.383" />
   <path d="m9.228 13.148-.923.383" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerSchema({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 2h5v4h-5z" />
   <path d="M15 10h5v4h-5z" />
   <path d="M5 18h5v4h-5z" />
@@ -26,4 +29,6 @@ export function TablerSchema({ size = 24, width, height, ...inputProps }) {
   <path d="M7.5 6v4" />
   <path d="M7.5 14v4" />
 </svg>
+    </>
+  )
 }

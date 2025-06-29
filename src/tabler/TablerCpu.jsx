@@ -17,7 +17,10 @@ export function TablerCpu({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 5m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z" />
   <path d="M9 9h6v6h-6z" />
   <path d="M3 10h2" />
@@ -29,4 +32,6 @@ export function TablerCpu({ size = 24, width, height, ...inputProps }) {
   <path d="M14 21v-2" />
   <path d="M10 21v-2" />
 </svg>
+    </>
+  )
 }

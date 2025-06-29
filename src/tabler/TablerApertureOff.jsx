@@ -17,7 +17,10 @@ export function TablerApertureOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3.6 15h10.55" />
   <path d="M5.641 5.631a9 9 0 1 0 12.719 12.738m1.68 -2.318a9 9 0 0 0 -12.074 -12.098" />
   <path d="M7.395 7.534l2.416 7.438" />
@@ -26,4 +29,6 @@ export function TablerApertureOff({ size = 24, width, height, ...inputProps }) {
   <path d="M12.257 20.916l2.123 -6.533m.984 -3.028l.154 -.473" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

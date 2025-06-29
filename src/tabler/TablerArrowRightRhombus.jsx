@@ -17,9 +17,14 @@ export function TablerArrowRightRhombus({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 12h13" />
   <path d="M18 9l3 3l-3 3" />
   <path d="M5.5 9.5l-2.5 2.5l2.5 2.5l2.5 -2.5z" />
 </svg>
+    </>
+  )
 }

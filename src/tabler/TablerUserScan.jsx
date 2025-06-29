@@ -17,7 +17,10 @@ export function TablerUserScan({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 9a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
   <path d="M4 8v-2a2 2 0 0 1 2 -2h2" />
   <path d="M4 16v2a2 2 0 0 0 2 2h2" />
@@ -25,4 +28,6 @@ export function TablerUserScan({ size = 24, width, height, ...inputProps }) {
   <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
   <path d="M8 16a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2" />
 </svg>
+    </>
+  )
 }

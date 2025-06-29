@@ -17,5 +17,10 @@ export function SimpleCollaboraonline({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}><title>Collabora Online</title><path d="M8.852 0 3.55 5.303 10.247 12 3.55 18.698 8.852 24l12-12zM3.147 5.706v12.588L9.442 12z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><title>Collabora Online</title><path d="M8.852 0 3.55 5.303 10.247 12 3.55 18.698 8.852 24l12-12zM3.147 5.706v12.588L9.442 12z"/></svg>
+    </>
+  )
 }

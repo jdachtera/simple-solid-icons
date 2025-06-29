@@ -17,7 +17,10 @@ export function TablerTrekking({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 4m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
   <path d="M7 21l2 -4" />
   <path d="M13 21v-4l-3 -3l1 -6l3 4l3 2" />
@@ -25,4 +28,6 @@ export function TablerTrekking({ size = 24, width, height, ...inputProps }) {
   <path d="M17 12v9" />
   <path d="M16 20h2" />
 </svg>
+    </>
+  )
 }

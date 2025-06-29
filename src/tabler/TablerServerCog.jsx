@@ -17,7 +17,10 @@ export function TablerServerCog({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
   <path d="M12 20h-6a3 3 0 0 1 -3 -3v-2a3 3 0 0 1 3 -3h10.5" />
   <path d="M18 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
@@ -30,4 +33,6 @@ export function TablerServerCog({ size = 24, width, height, ...inputProps }) {
   <path d="M7 8v.01" />
   <path d="M7 16v.01" />
 </svg>
+    </>
+  )
 }

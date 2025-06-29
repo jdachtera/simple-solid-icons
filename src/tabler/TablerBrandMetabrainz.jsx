@@ -17,8 +17,13 @@ export function TablerBrandMetabrainz({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 7v10l7 4v-18z" />
   <path d="M21 7v10l-7 4v-18z" />
 </svg>
+    </>
+  )
 }

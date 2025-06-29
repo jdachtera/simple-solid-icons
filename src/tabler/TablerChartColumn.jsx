@@ -17,7 +17,10 @@ export function TablerChartColumn({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 20h3" />
   <path d="M17 20h3" />
   <path d="M10.5 20h3" />
@@ -31,4 +34,6 @@ export function TablerChartColumn({ size = 24, width, height, ...inputProps }) {
   <path d="M17 8h3" />
   <path d="M4 4h3" />
 </svg>
+    </>
+  )
 }

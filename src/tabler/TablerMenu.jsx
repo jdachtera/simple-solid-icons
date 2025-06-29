@@ -17,8 +17,13 @@ export function TablerMenu({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 8l16 0" />
   <path d="M4 16l16 0" />
 </svg>
+    </>
+  )
 }

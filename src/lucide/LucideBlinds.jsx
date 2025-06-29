@@ -17,7 +17,10 @@ export function LucideBlinds({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 3h18" />
   <path d="M20 7H8" />
   <path d="M20 11H8" />
@@ -26,4 +29,6 @@ export function LucideBlinds({ size = 24, width, height, ...inputProps }) {
   <path d="M4 3v14" />
   <circle cx="4" cy="19" r="2" />
 </svg>
+    </>
+  )
 }

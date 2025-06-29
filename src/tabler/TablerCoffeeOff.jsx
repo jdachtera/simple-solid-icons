@@ -17,7 +17,10 @@ export function TablerCoffeeOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.73 -.565 1.783 -.923 3 -.99" />
   <path d="M8 3c-.194 .14 -.364 .305 -.506 .49" />
   <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
@@ -25,4 +28,6 @@ export function TablerCoffeeOff({ size = 24, width, height, ...inputProps }) {
   <path d="M20.116 16.124a3 3 0 0 0 -3.118 -4.953" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

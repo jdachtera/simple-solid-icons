@@ -17,7 +17,10 @@ export function TablerBorderRadius({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 12v-4a4 4 0 0 1 4 -4h4" />
   <path d="M16 4l0 .01" />
   <path d="M20 4l0 .01" />
@@ -31,4 +34,6 @@ export function TablerBorderRadius({ size = 24, width, height, ...inputProps }) 
   <path d="M16 20l0 .01" />
   <path d="M20 20l0 .01" />
 </svg>
+    </>
+  )
 }

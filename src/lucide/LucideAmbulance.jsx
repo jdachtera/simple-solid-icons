@@ -17,7 +17,10 @@ export function LucideAmbulance({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 10H6" />
   <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
   <path
@@ -27,4 +30,6 @@ export function LucideAmbulance({ size = 24, width, height, ...inputProps }) {
   <circle cx="17" cy="18" r="2" />
   <circle cx="7" cy="18" r="2" />
 </svg>
+    </>
+  )
 }

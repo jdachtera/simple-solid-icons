@@ -17,7 +17,10 @@ export function TablerLanguageOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 5h1m4 0h2" />
   <path d="M9 3v2m-.508 3.517c-.814 2.655 -2.52 4.483 -4.492 4.483" />
   <path d="M5 9c0 2.144 2.952 3.908 6.7 4" />
@@ -25,4 +28,6 @@ export function TablerLanguageOff({ size = 24, width, height, ...inputProps }) {
   <path d="M18 18h-5.1" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

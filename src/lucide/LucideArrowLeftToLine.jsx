@@ -17,9 +17,14 @@ export function LucideArrowLeftToLine({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 19V5" />
   <path d="m13 6-6 6 6 6" />
   <path d="M7 12h14" />
 </svg>
+    </>
+  )
 }

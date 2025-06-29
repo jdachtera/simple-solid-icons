@@ -17,8 +17,13 @@ export function LucidePause({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <rect x="14" y="4" width="4" height="16" rx="1" />
   <rect x="6" y="4" width="4" height="16" rx="1" />
 </svg>
+    </>
+  )
 }

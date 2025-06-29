@@ -17,9 +17,14 @@ export function LucideSquareArrowUp({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <rect width="18" height="18" x="3" y="3" rx="2" />
   <path d="m16 12-4-4-4 4" />
   <path d="M12 16V8" />
 </svg>
+    </>
+  )
 }

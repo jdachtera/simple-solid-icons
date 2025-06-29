@@ -17,8 +17,13 @@ export function LucideClock9({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 6v6H8" />
   <circle cx="12" cy="12" r="10" />
 </svg>
+    </>
+  )
 }

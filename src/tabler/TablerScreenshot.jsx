@@ -17,7 +17,10 @@ export function TablerScreenshot({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 19a2 2 0 0 1 -2 -2" />
   <path d="M5 13v-2" />
   <path d="M5 7a2 2 0 0 1 2 -2" />
@@ -28,4 +31,6 @@ export function TablerScreenshot({ size = 24, width, height, ...inputProps }) {
   <path d="M21 19h-4" />
   <path d="M13 19h-2" />
 </svg>
+    </>
+  )
 }

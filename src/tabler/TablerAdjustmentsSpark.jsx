@@ -17,7 +17,10 @@ export function TablerAdjustmentsSpark({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
   <path d="M6 4v4" />
   <path d="M6 12v8" />
@@ -28,4 +31,6 @@ export function TablerAdjustmentsSpark({ size = 24, width, height, ...inputProps
   <path d="M18 9v2.5" />
   <path d="M19 22.5a4.75 4.75 0 0 1 3.5 -3.5a4.75 4.75 0 0 1 -3.5 -3.5a4.75 4.75 0 0 1 -3.5 3.5a4.75 4.75 0 0 1 3.5 3.5" />
 </svg>
+    </>
+  )
 }

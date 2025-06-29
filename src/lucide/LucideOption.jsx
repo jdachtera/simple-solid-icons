@@ -17,8 +17,13 @@ export function LucideOption({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 3h6l6 18h6" />
   <path d="M14 3h7" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,12 @@ export function TablerTent({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M11 14l4 6h6l-9 -16l-9 16h6l4 -6" />
 </svg>
+    </>
+  )
 }

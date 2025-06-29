@@ -17,7 +17,10 @@ export function LucideUniversity({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
   <path d="M18 12h.01" />
   <path d="M18 16h.01" />
@@ -26,4 +29,6 @@ export function LucideUniversity({ size = 24, width, height, ...inputProps }) {
   <path d="M6 16h.01" />
   <circle cx="12" cy="10" r="2" />
 </svg>
+    </>
+  )
 }

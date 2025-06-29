@@ -17,7 +17,10 @@ export function TablerBrandQq({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 9.748a14.716 14.716 0 0 0 11.995 -.052c.275 -9.236 -11.104 -11.256 -11.995 .052z" />
   <path d="M18 10c.984 2.762 1.949 4.765 2 7.153c.014 .688 -.664 1.346 -1.184 .303c-.346 -.696 -.952 -1.181 -1.816 -1.456" />
   <path d="M17 16c.031 1.831 .147 3.102 -1 4" />
@@ -28,4 +31,6 @@ export function TablerBrandQq({ size = 24, width, height, ...inputProps }) {
   <path d="M13.75 7m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
   <path d="M10.25 7m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
 </svg>
+    </>
+  )
 }

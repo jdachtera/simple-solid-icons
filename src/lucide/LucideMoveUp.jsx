@@ -17,8 +17,13 @@ export function LucideMoveUp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 6L12 2L16 6" />
   <path d="M12 2V22" />
 </svg>
+    </>
+  )
 }

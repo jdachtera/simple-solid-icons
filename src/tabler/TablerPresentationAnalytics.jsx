@@ -17,7 +17,10 @@ export function TablerPresentationAnalytics({ size = 24, width, height, ...input
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M9 12v-4" />
   <path d="M15 12v-2" />
   <path d="M12 12v-1" />
@@ -26,4 +29,6 @@ export function TablerPresentationAnalytics({ size = 24, width, height, ...input
   <path d="M12 16v4" />
   <path d="M9 20h6" />
 </svg>
+    </>
+  )
 }

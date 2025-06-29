@@ -17,9 +17,14 @@ export function LucideDiff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 3v14" />
   <path d="M5 10h14" />
   <path d="M5 21h14" />
 </svg>
+    </>
+  )
 }

@@ -17,8 +17,13 @@ export function TablerCircleMinus2({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20.475 15.029a9 9 0 1 0 -7.962 5.957" />
   <path d="M16 19h6" />
 </svg>
+    </>
+  )
 }

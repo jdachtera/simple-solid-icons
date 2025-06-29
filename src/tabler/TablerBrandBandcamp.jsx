@@ -17,7 +17,12 @@ export function TablerBrandBandcamp({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8.5 6h13.5l-7 12h-13z" />
 </svg>
+    </>
+  )
 }

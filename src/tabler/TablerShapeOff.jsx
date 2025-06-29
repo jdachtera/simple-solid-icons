@@ -17,7 +17,10 @@ export function TablerShapeOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3.575 3.597a2 2 0 0 0 2.849 2.808" />
   <path d="M19 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M5 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
@@ -28,4 +31,6 @@ export function TablerShapeOff({ size = 24, width, height, ...inputProps }) {
   <path d="M19 7v8" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

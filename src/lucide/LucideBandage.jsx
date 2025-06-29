@@ -17,7 +17,10 @@ export function LucideBandage({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 10.01h.01" />
   <path d="M10 14.01h.01" />
   <path d="M14 10.01h.01" />
@@ -26,4 +29,6 @@ export function LucideBandage({ size = 24, width, height, ...inputProps }) {
   <path d="M6 6v12" />
   <rect x="2" y="6" width="20" height="12" rx="2" />
 </svg>
+    </>
+  )
 }

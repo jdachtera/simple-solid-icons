@@ -17,7 +17,10 @@ export function TablerAbacus({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 3v18" />
   <path d="M19 21v-18" />
   <path d="M5 7h14" />
@@ -30,4 +33,6 @@ export function TablerAbacus({ size = 24, width, height, ...inputProps }) {
   <path d="M8 5v4" />
   <path d="M3 21h18" />
 </svg>
+    </>
+  )
 }

@@ -17,5 +17,10 @@ export function IonStopSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><rect x="80" y="80" width="352" height="352"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><rect x="80" y="80" width="352" height="352"/></svg>
+    </>
+  )
 }

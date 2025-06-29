@@ -17,9 +17,14 @@ export function TablerMultiplier1x({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M9 16v-8l-2 2" />
   <path d="M13 16l4 -4" />
   <path d="M17 16l-4 -4" />
 </svg>
+    </>
+  )
 }

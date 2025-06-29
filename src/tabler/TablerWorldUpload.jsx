@@ -17,7 +17,10 @@ export function TablerWorldUpload({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M21 12a9 9 0 1 0 -9 9" />
   <path d="M3.6 9h16.8" />
   <path d="M3.6 15h8.4" />
@@ -25,4 +28,6 @@ export function TablerWorldUpload({ size = 24, width, height, ...inputProps }) {
   <path d="M12.5 3c1.719 2.755 2.5 5.876 2.5 9" />
   <path d="M18 21v-7m3 3l-3 -3l-3 3" />
 </svg>
+    </>
+  )
 }

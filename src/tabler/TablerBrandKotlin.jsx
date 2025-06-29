@@ -17,10 +17,15 @@ export function TablerBrandKotlin({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20 20h-16v-16h16" />
   <path d="M4 20l16 -16" />
   <path d="M4 12l8 -8" />
   <path d="M12 12l8 8" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function LucideChartNetwork({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m13.11 7.664 1.78 2.672" />
   <path d="m14.162 12.788-3.324 1.424" />
   <path d="m20 4-6.06 1.515" />
@@ -26,4 +29,6 @@ export function LucideChartNetwork({ size = 24, width, height, ...inputProps }) 
   <circle cx="16" cy="12" r="2" />
   <circle cx="9" cy="15" r="2" />
 </svg>
+    </>
+  )
 }

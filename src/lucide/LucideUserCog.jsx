@@ -17,7 +17,10 @@ export function LucideUserCog({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 15H6a4 4 0 0 0-4 4v2" />
   <path d="m14.305 16.53.923-.382" />
   <path d="m15.228 13.852-.923-.383" />
@@ -30,4 +33,6 @@ export function LucideUserCog({ size = 24, width, height, ...inputProps }) {
   <circle cx="18" cy="15" r="3" />
   <circle cx="9" cy="7" r="4" />
 </svg>
+    </>
+  )
 }

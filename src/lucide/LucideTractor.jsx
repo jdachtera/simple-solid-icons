@@ -17,7 +17,10 @@ export function LucideTractor({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m10 11 11 .9a1 1 0 0 1 .8 1.1l-.665 4.158a1 1 0 0 1-.988.842H20" />
   <path d="M16 18h-5" />
   <path d="M18 5a1 1 0 0 0-1 1v5.573" />
@@ -28,4 +31,6 @@ export function LucideTractor({ size = 24, width, height, ...inputProps }) {
   <circle cx="18" cy="18" r="2" />
   <circle cx="7" cy="15" r="5" />
 </svg>
+    </>
+  )
 }

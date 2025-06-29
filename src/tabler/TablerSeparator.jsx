@@ -17,9 +17,14 @@ export function TablerSeparator({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12l0 .01" />
   <path d="M7 12l10 0" />
   <path d="M21 12l0 .01" />
 </svg>
+    </>
+  )
 }

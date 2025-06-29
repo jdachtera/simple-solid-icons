@@ -17,8 +17,13 @@ export function TablerBrandValorant({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14.5 14h4.5l2 -2v-6z" />
   <path d="M9 19h5l-11 -13v6z" />
 </svg>
+    </>
+  )
 }

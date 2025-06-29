@@ -17,7 +17,12 @@ export function LucideSlash({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M22 2 2 22" />
 </svg>
+    </>
+  )
 }

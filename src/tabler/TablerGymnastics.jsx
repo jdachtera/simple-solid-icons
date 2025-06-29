@@ -17,10 +17,15 @@ export function TablerGymnastics({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 7a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
   <path d="M13 21l1 -9l7 -6" />
   <path d="M3 11h6l5 1" />
   <path d="M11.5 8.5l4.5 -3.5" />
 </svg>
+    </>
+  )
 }

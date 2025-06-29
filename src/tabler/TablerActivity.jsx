@@ -17,7 +17,12 @@ export function TablerActivity({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12h4l3 8l4 -16l3 8h4" />
 </svg>
+    </>
+  )
 }

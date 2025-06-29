@@ -17,7 +17,12 @@ export function TablerLetterMSmall({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M9 16v-8l3 5l3 -5v8" />
 </svg>
+    </>
+  )
 }

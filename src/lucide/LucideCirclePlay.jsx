@@ -17,8 +17,13 @@ export function LucideCirclePlay({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="12" cy="12" r="10" />
   <polygon points="10 8 16 12 10 16 10 8" />
 </svg>
+    </>
+  )
 }

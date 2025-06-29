@@ -17,7 +17,10 @@ export function LucideTrainFrontTunnel({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M2 22V12a10 10 0 1 1 20 0v10" />
   <path d="M15 6.8v1.4a3 2.8 0 1 1-6 0V6.8" />
   <path d="M10 15h.01" />
@@ -26,4 +29,6 @@ export function LucideTrainFrontTunnel({ size = 24, width, height, ...inputProps
   <path d="m9 19-2 3" />
   <path d="m15 19 2 3" />
 </svg>
+    </>
+  )
 }

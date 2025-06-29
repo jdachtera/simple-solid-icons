@@ -17,8 +17,13 @@ export function LucideCircleParking({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="12" cy="12" r="10" />
   <path d="M9 17V7h4a3 3 0 0 1 0 6H9" />
 </svg>
+    </>
+  )
 }

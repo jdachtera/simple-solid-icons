@@ -17,7 +17,10 @@ export function TablerFileTextAi({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 3v4a1 1 0 0 0 1 1h4" />
   <path d="M10 21h-3a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v3.5" />
   <path d="M9 9h1" />
@@ -27,4 +30,6 @@ export function TablerFileTextAi({ size = 24, width, height, ...inputProps }) {
   <path d="M14 19h4" />
   <path d="M21 15v6" />
 </svg>
+    </>
+  )
 }

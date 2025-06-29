@@ -17,7 +17,10 @@ export function LucideThermometerSun({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 9a4 4 0 0 0-2 7.5" />
   <path d="M12 3v2" />
   <path d="m6.6 18.4-1.4 1.4" />
@@ -25,4 +28,6 @@ export function LucideThermometerSun({ size = 24, width, height, ...inputProps }
   <path d="M4 13H2" />
   <path d="M6.34 7.34 4.93 5.93" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function LucideSwords({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" />
   <line x1="13" x2="19" y1="19" y2="13" />
   <line x1="16" x2="20" y1="16" y2="20" />
@@ -27,4 +30,6 @@ export function LucideSwords({ size = 24, width, height, ...inputProps }) {
   <line x1="7" x2="4" y1="17" y2="20" />
   <line x1="3" x2="5" y1="19" y2="21" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function LucideSunSnow({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 21v-1" />
   <path d="M10 4V3" />
   <path d="M10 9a3 3 0 0 0 0 6" />
@@ -30,4 +33,6 @@ export function LucideSunSnow({ size = 24, width, height, ...inputProps }) {
   <path d="m3.64 18.36.7-.7" />
   <path d="m4.34 6.34-.7-.7" />
 </svg>
+    </>
+  )
 }

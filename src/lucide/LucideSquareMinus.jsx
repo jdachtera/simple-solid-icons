@@ -17,8 +17,13 @@ export function LucideSquareMinus({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <rect width="18" height="18" x="3" y="3" rx="2" />
   <path d="M8 12h8" />
 </svg>
+    </>
+  )
 }

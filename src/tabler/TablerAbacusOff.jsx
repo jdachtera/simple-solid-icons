@@ -17,7 +17,10 @@ export function TablerAbacusOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 5v16" />
   <path d="M19 21v-2m0 -4v-12" />
   <path d="M5 7h2m4 0h8" />
@@ -31,4 +34,6 @@ export function TablerAbacusOff({ size = 24, width, height, ...inputProps }) {
   <path d="M3 21h18" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

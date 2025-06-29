@@ -17,9 +17,14 @@ export function LucideVoicemail({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="6" cy="12" r="4" />
   <circle cx="18" cy="12" r="4" />
   <line x1="6" x2="18" y1="16" y2="16" />
 </svg>
+    </>
+  )
 }

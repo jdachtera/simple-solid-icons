@@ -17,7 +17,12 @@ export function HeroChevronUpDown({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
 <path d="M8.25 15L12 18.75L15.75 15M8.25 9L12 5.25L15.75 9" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
+    </>
+  )
 }

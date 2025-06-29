@@ -17,7 +17,12 @@ export function TablerBolt({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerPlaylistOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 14a3 3 0 1 0 3 3" />
   <path d="M17 13v-9h4" />
   <path d="M13 5h-4m-4 0h-2" />
@@ -25,4 +28,6 @@ export function TablerPlaylistOff({ size = 24, width, height, ...inputProps }) {
   <path d="M9 13h-6" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

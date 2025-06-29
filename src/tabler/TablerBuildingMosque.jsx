@@ -17,7 +17,10 @@ export function TablerBuildingMosque({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 21h7v-2a2 2 0 1 1 4 0v2h7" />
   <path d="M4 21v-10" />
   <path d="M20 21v-10" />
@@ -28,4 +31,6 @@ export function TablerBuildingMosque({ size = 24, width, height, ...inputProps }
   <path d="M12 2a2 2 0 1 0 2 2" />
   <path d="M12 6v2" />
 </svg>
+    </>
+  )
 }

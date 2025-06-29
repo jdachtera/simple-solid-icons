@@ -17,7 +17,10 @@ export function LucideMessageSquareDashed({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 17H7l-4 4v-7" />
   <path d="M14 17h1" />
   <path d="M14 3h1" />
@@ -28,4 +31,6 @@ export function LucideMessageSquareDashed({ size = 24, width, height, ...inputPr
   <path d="M5 3a2 2 0 0 0-2 2" />
   <path d="M9 3h1" />
 </svg>
+    </>
+  )
 }

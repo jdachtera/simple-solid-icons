@@ -17,7 +17,12 @@ export function TablerDelta({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 20h16l-8 -16z" />
 </svg>
+    </>
+  )
 }

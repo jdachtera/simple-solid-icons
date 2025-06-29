@@ -17,7 +17,10 @@ export function TablerBrandGooglePodcasts({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 3v2" />
   <path d="M12 19v2" />
   <path d="M12 8v8" />
@@ -28,4 +31,6 @@ export function TablerBrandGooglePodcasts({ size = 24, width, height, ...inputPr
   <path d="M16 7v-2" />
   <path d="M16 19v-8" />
 </svg>
+    </>
+  )
 }

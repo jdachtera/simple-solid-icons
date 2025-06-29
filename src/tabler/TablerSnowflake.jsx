@@ -17,7 +17,10 @@ export function TablerSnowflake({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 4l2 1l2 -1" />
   <path d="M12 2v6.5l3 1.72" />
   <path d="M17.928 6.268l.134 2.232l1.866 1.232" />
@@ -31,4 +34,6 @@ export function TablerSnowflake({ size = 24, width, height, ...inputProps }) {
   <path d="M4.072 9.732l1.866 -1.232l.134 -2.232" />
   <path d="M3.34 7l5.629 3.25l2.99 -1.738" />
 </svg>
+    </>
+  )
 }

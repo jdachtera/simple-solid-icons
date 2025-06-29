@@ -17,7 +17,10 @@ export function LucidePanda({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M11.25 17.25h1.5L12 18z" />
   <path d="m15 12 2 2" />
   <path d="M18 6.5a.5.5 0 0 0-.5-.5" />
@@ -25,4 +28,6 @@ export function LucidePanda({ size = 24, width, height, ...inputProps }) {
   <path d="M6 6.5a.495.495 0 0 1 .5-.5" />
   <path d="m9 12-2 2" />
 </svg>
+    </>
+  )
 }

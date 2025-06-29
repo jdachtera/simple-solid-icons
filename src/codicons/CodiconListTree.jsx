@@ -17,5 +17,10 @@ export function CodiconListTree({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><rect x="4" y="9" width="9" height="1"/><rect x="4" y="12" width="7" height="1"/><rect x="4" y="6" width="10" height="1"/><rect x="1" y="3" width="11" height="1"/><rect x="4" y="4" width="1" height="9"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><rect x="4" y="9" width="9" height="1"/><rect x="4" y="12" width="7" height="1"/><rect x="4" y="6" width="10" height="1"/><rect x="1" y="3" width="11" height="1"/><rect x="4" y="4" width="1" height="9"/></svg>
+    </>
+  )
 }

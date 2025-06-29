@@ -17,9 +17,14 @@ export function LucideAlignCenter({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M17 12H7" />
   <path d="M19 18H5" />
   <path d="M21 6H3" />
 </svg>
+    </>
+  )
 }

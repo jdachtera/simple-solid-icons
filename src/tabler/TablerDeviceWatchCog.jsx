@@ -17,7 +17,10 @@ export function TablerDeviceWatchCog({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 18h-3a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3v2.5" />
   <path d="M9 18v3h3" />
   <path d="M9 6v-3h6v3" />
@@ -29,4 +32,6 @@ export function TablerDeviceWatchCog({ size = 24, width, height, ...inputProps }
   <path d="M15.97 17.25l1.3 .75" />
   <path d="M20.733 20l1.3 .75" />
 </svg>
+    </>
+  )
 }

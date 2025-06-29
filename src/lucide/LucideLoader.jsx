@@ -17,7 +17,10 @@ export function LucideLoader({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 2v4" />
   <path d="m16.2 7.8 2.9-2.9" />
   <path d="M18 12h4" />
@@ -27,4 +30,6 @@ export function LucideLoader({ size = 24, width, height, ...inputProps }) {
   <path d="M2 12h4" />
   <path d="m4.9 4.9 2.9 2.9" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function LucideNotebookTabs({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M2 6h4" />
   <path d="M2 10h4" />
   <path d="M2 14h4" />
@@ -28,4 +31,6 @@ export function LucideNotebookTabs({ size = 24, width, height, ...inputProps }) 
   <path d="M15 12h5" />
   <path d="M15 17h5" />
 </svg>
+    </>
+  )
 }

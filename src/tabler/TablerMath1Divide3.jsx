@@ -17,9 +17,14 @@ export function TablerMath1Divide3({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 15.5a.5 .5 0 0 1 .5 -.5h2a1.5 1.5 0 0 1 0 3h-1.167h1.167a1.5 1.5 0 0 1 0 3h-2a.5 .5 0 0 1 -.5 -.5" />
   <path d="M5 12h14" />
   <path d="M10 5l2 -2v6" />
 </svg>
+    </>
+  )
 }

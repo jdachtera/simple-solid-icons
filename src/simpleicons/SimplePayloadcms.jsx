@@ -17,5 +17,10 @@ export function SimplePayloadcms({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><title>Payload CMS</title><path d="M11.068 0 22.08 6.625v12.573L13.787 24V11.427L2.769 4.808 11.068 0ZM1.92 18.302l8.31-4.812v9.812l-8.31-5Z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><title>Payload CMS</title><path d="M11.068 0 22.08 6.625v12.573L13.787 24V11.427L2.769 4.808 11.068 0ZM1.92 18.302l8.31-4.812v9.812l-8.31-5Z"/></svg>
+    </>
+  )
 }

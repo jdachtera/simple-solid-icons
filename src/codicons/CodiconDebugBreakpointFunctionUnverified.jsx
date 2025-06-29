@@ -17,5 +17,10 @@ export function CodiconDebugBreakpointFunctionUnverified({ size = 24, width, hei
     },
     inputProps
   )
-  return <svg {...props}><path fill-rule="evenodd" clip-rule="evenodd" d="M4 11h8L8 4l-4 7zm2.154-1.25h3.692L8 6.52 6.154 9.75z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path fill-rule="evenodd" clip-rule="evenodd" d="M4 11h8L8 4l-4 7zm2.154-1.25h3.692L8 6.52 6.154 9.75z"/></svg>
+    </>
+  )
 }

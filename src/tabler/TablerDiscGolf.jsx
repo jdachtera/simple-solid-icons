@@ -17,7 +17,10 @@ export function TablerDiscGolf({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 5h14" />
   <path d="M6 5c.32 6.744 2.74 9.246 6 10" />
   <path d="M18 5c-.32 6.744 -2.74 9.246 -6 10" />
@@ -28,4 +31,6 @@ export function TablerDiscGolf({ size = 24, width, height, ...inputProps }) {
   <path d="M7 16c.64 .64 1.509 1 2.414 1h5.172c.905 0 1.774 -.36 2.414 -1" />
   <path d="M11 21h2" />
 </svg>
+    </>
+  )
 }

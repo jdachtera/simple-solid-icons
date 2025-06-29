@@ -17,10 +17,15 @@ export function TablerArrowsMoveHorizontal({ size = 24, width, height, ...inputP
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M18 9l3 3l-3 3" />
   <path d="M15 12h6" />
   <path d="M6 9l-3 3l3 3" />
   <path d="M3 12h6" />
 </svg>
+    </>
+  )
 }

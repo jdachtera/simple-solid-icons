@@ -17,5 +17,10 @@ export function IonRemoveCircleSharp({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}><path d="M256,48C141.31,48,48,141.31,48,256s93.31,208,208,208,208-93.31,208-208S370.69,48,256,48Zm96,224H160V240H352Z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M256,48C141.31,48,48,141.31,48,256s93.31,208,208,208,208-93.31,208-208S370.69,48,256,48Zm96,224H160V240H352Z"/></svg>
+    </>
+  )
 }

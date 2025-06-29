@@ -17,7 +17,10 @@ export function LucideTentTree({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="4" cy="4" r="2" />
   <path d="m14 5 3-3 3 3" />
   <path d="m14 10 3-3 3 3" />
@@ -26,4 +29,6 @@ export function LucideTentTree({ size = 24, width, height, ...inputProps }) {
   <path d="M8 14v8" />
   <path d="m9 14 5 8" />
 </svg>
+    </>
+  )
 }

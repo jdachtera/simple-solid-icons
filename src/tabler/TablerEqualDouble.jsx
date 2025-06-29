@@ -17,10 +17,15 @@ export function TablerEqualDouble({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 10h7" />
   <path d="M3 14h7" />
   <path d="M14 10h7" />
   <path d="M14 14h7" />
 </svg>
+    </>
+  )
 }

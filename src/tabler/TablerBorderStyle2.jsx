@@ -17,7 +17,10 @@ export function TablerBorderStyle2({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 18v.01" />
   <path d="M8 18v.01" />
   <path d="M12 18v.01" />
@@ -28,4 +31,6 @@ export function TablerBorderStyle2({ size = 24, width, height, ...inputProps }) 
   <path d="M4 12h2" />
   <path d="M4 6h16" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerTicTac({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M3 12h18" />
   <path d="M12 3v18" />
@@ -27,4 +30,6 @@ export function TablerTicTac({ size = 24, width, height, ...inputProps }) {
   <path d="M16 8l4 -4" />
   <path d="M18 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
 </svg>
+    </>
+  )
 }

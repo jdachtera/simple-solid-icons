@@ -17,9 +17,14 @@ export function TablerBrandGoogleDrive({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 10l-6 10l-3 -5l6 -10z" />
   <path d="M9 15h12l-3 5h-12" />
   <path d="M15 15l-6 -10h6l6 10z" />
 </svg>
+    </>
+  )
 }

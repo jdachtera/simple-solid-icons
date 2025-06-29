@@ -17,8 +17,13 @@ export function TablerBrackets({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 4h-3v16h3" />
   <path d="M16 4h3v16h-3" />
 </svg>
+    </>
+  )
 }

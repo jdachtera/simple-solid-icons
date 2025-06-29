@@ -17,7 +17,10 @@ export function LucideKeyboard({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 8h.01" />
   <path d="M12 12h.01" />
   <path d="M14 8h.01" />
@@ -28,4 +31,6 @@ export function LucideKeyboard({ size = 24, width, height, ...inputProps }) {
   <path d="M8 12h.01" />
   <rect width="20" height="16" x="2" y="4" rx="2" />
 </svg>
+    </>
+  )
 }

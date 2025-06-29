@@ -17,9 +17,14 @@ export function TablerMoodLookLeft({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
   <path d="M9 9h.01" />
   <path d="M4 15h4" />
 </svg>
+    </>
+  )
 }

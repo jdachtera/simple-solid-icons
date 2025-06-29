@@ -17,7 +17,12 @@ export function LucideRectangleHorizontal({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <rect width="20" height="12" x="2" y="6" rx="2" />
 </svg>
+    </>
+  )
 }

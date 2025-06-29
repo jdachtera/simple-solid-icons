@@ -17,9 +17,14 @@ export function LucideCheckLine({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20 4L9 15" />
   <path d="M21 19L3 19" />
   <path d="M9 15L4 10" />
 </svg>
+    </>
+  )
 }

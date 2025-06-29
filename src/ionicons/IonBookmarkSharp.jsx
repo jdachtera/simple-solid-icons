@@ -17,5 +17,10 @@ export function IonBookmarkSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M416,480,256,357.41,96,480V32H416Z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M416,480,256,357.41,96,480V32H416Z"/></svg>
+    </>
+  )
 }

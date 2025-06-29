@@ -17,9 +17,14 @@ export function TablerCongruentTo({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 13h14" />
   <path d="M5 17h14" />
   <path d="M5 7.686c2.333 -2.624 4.667 -1.856 7 .064s4.667 2.688 7 .064" />
 </svg>
+    </>
+  )
 }

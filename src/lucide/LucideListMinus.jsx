@@ -17,10 +17,15 @@ export function LucideListMinus({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M11 12H3" />
   <path d="M16 6H3" />
   <path d="M16 18H3" />
   <path d="M21 12h-6" />
 </svg>
+    </>
+  )
 }

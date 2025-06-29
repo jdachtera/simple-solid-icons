@@ -17,8 +17,13 @@ export function LucideTorus({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <ellipse cx="12" cy="11" rx="3" ry="2" />
   <ellipse cx="12" cy="12.5" rx="10" ry="8.5" />
 </svg>
+    </>
+  )
 }

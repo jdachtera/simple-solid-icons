@@ -17,7 +17,10 @@ export function LucideFolderCog({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10.3 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.98a2 2 0 0 1 1.69.9l.66 1.2A2 2 0 0 0 12 6h8a2 2 0 0 1 2 2v3.3" />
   <path d="m14.305 19.53.923-.382" />
   <path d="m15.228 16.852-.923-.383" />
@@ -29,4 +32,6 @@ export function LucideFolderCog({ size = 24, width, height, ...inputProps }) {
   <path d="m20.772 19.148.924.383" />
   <circle cx="18" cy="18" r="3" />
 </svg>
+    </>
+  )
 }

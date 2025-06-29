@@ -17,5 +17,10 @@ export function SimpleKotlin({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><title>Kotlin</title><path d="M24 24H0V0h24L12 12Z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><title>Kotlin</title><path d="M24 24H0V0h24L12 12Z"/></svg>
+    </>
+  )
 }

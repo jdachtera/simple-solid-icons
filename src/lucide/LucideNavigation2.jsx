@@ -17,7 +17,12 @@ export function LucideNavigation2({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <polygon points="12 2 19 21 12 17 5 21 12 2" />
 </svg>
+    </>
+  )
 }

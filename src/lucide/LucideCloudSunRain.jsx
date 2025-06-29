@@ -17,7 +17,10 @@ export function LucideCloudSunRain({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 2v2" />
   <path d="m4.93 4.93 1.41 1.41" />
   <path d="M20 12h2" />
@@ -27,4 +30,6 @@ export function LucideCloudSunRain({ size = 24, width, height, ...inputProps }) 
   <path d="M11 20v2" />
   <path d="M7 19v2" />
 </svg>
+    </>
+  )
 }

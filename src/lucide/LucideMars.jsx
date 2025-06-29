@@ -17,9 +17,14 @@ export function LucideMars({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M16 3h5v5" />
   <path d="m21 3-6.75 6.75" />
   <circle cx="10" cy="14" r="6" />
 </svg>
+    </>
+  )
 }

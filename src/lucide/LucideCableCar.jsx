@@ -17,7 +17,10 @@ export function LucideCableCar({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 3h.01" />
   <path d="M14 2h.01" />
   <path d="m2 9 20-5" />
@@ -27,4 +30,6 @@ export function LucideCableCar({ size = 24, width, height, ...inputProps }) {
   <path d="M15 12v5" />
   <path d="M4 17h16" />
 </svg>
+    </>
+  )
 }

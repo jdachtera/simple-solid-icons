@@ -17,9 +17,14 @@ export function TablerCircleChevronsLeft({ size = 24, width, height, ...inputPro
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 15l-3 -3l3 -3" />
   <path d="M11 15l-3 -3l3 -3" />
   <path d="M21 12a9 9 0 1 0 0 .265l0 -.265z" />
 </svg>
+    </>
+  )
 }

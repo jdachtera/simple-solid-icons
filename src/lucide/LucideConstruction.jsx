@@ -17,7 +17,10 @@ export function LucideConstruction({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <rect x="2" y="6" width="20" height="8" rx="1" />
   <path d="M17 14v7" />
   <path d="M7 14v7" />
@@ -27,4 +30,6 @@ export function LucideConstruction({ size = 24, width, height, ...inputProps }) 
   <path d="m14 6 7.7 7.7" />
   <path d="m8 6 8 8" />
 </svg>
+    </>
+  )
 }

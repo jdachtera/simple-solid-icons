@@ -17,7 +17,12 @@ export function TablerBrandBulma({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 16l1 -9l5 -5l6.5 6l-3.5 4l5 5l-8 5z" />
 </svg>
+    </>
+  )
 }

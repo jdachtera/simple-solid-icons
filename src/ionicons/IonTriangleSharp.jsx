@@ -17,5 +17,10 @@ export function IonTriangleSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><polygon points="256 32 20 464 492 464 256 32"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polygon points="256 32 20 464 492 464 256 32"/></svg>
+    </>
+  )
 }

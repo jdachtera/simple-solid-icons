@@ -17,7 +17,10 @@ export function TablerWoman({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 16v5" />
   <path d="M14 16v5" />
   <path d="M8 16h8l-2 -7h-4z" />
@@ -25,4 +28,6 @@ export function TablerWoman({ size = 24, width, height, ...inputProps }) {
   <path d="M19 11c-1.667 -1.333 -3.333 -2 -5 -2" />
   <path d="M12 4m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
 </svg>
+    </>
+  )
 }

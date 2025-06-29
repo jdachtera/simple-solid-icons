@@ -17,7 +17,10 @@ export function TablerZoomPan({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
   <path d="M17 17l-2.5 -2.5" />
   <path d="M10 4l2 -2l2 2" />
@@ -25,4 +28,6 @@ export function TablerZoomPan({ size = 24, width, height, ...inputProps }) {
   <path d="M4 10l-2 2l2 2" />
   <path d="M10 20l2 2l2 -2" />
 </svg>
+    </>
+  )
 }

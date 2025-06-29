@@ -17,5 +17,10 @@ export function FeatherNavigation({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+    </>
+  )
 }

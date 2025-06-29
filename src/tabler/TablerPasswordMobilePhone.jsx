@@ -17,7 +17,10 @@ export function TablerPasswordMobilePhone({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 17v4" />
   <path d="M10 20l4 -2" />
   <path d="M10 18l4 2" />
@@ -31,4 +34,6 @@ export function TablerPasswordMobilePhone({ size = 24, width, height, ...inputPr
   <path d="M11 5h2" />
   <path d="M12 17v.01" />
 </svg>
+    </>
+  )
 }

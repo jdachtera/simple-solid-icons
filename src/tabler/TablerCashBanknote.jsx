@@ -17,10 +17,15 @@ export function TablerCashBanknote({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
   <path d="M3 8a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
   <path d="M18 12h.01" />
   <path d="M6 12h.01" />
 </svg>
+    </>
+  )
 }

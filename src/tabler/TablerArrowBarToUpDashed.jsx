@@ -17,10 +17,15 @@ export function TablerArrowBarToUpDashed({ size = 24, width, height, ...inputPro
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 10v10" />
   <path d="M12 10l4 4" />
   <path d="M12 10l-4 4" />
   <path d="M4 4h3m13 0h-3m-3.5 0h-3" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerTopologyRing2({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 6a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
   <path d="M7 18a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
   <path d="M21 18a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
@@ -25,4 +28,6 @@ export function TablerTopologyRing2({ size = 24, width, height, ...inputProps })
   <path d="M18 16l-5 -8" />
   <path d="M11 8l-5 8" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerChairDirector({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 21l12 -9" />
   <path d="M6 12l12 9" />
   <path d="M5 12h14" />
@@ -26,4 +29,6 @@ export function TablerChairDirector({ size = 24, width, height, ...inputProps })
   <path d="M6 8h12" />
   <path d="M6 5h12" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerMovieOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 4h10a2 2 0 0 1 2 2v10m-.592 3.42c-.362 .359 -.859 .58 -1.408 .58h-12a2 2 0 0 1 -2 -2v-12c0 -.539 .213 -1.028 .56 -1.388" />
   <path d="M8 8v12" />
   <path d="M16 4v8m0 4v4" />
@@ -27,4 +30,6 @@ export function TablerMovieOff({ size = 24, width, height, ...inputProps }) {
   <path d="M16 8h4" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

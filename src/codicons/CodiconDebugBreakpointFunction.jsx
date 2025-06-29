@@ -17,5 +17,10 @@ export function CodiconDebugBreakpointFunction({ size = 24, width, height, ...in
     },
     inputProps
   )
-  return <svg {...props}><path d="M8 4l4 6.905H4L8 4z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M8 4l4 6.905H4L8 4z"/></svg>
+    </>
+  )
 }

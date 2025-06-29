@@ -17,5 +17,10 @@ export function IonReturnUpForwardSharp({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}><polyline points="400 160 464 224 400 288" style="fill:none;stroke:#000;stroke-linecap:square;stroke-miterlimit:10;stroke-width:32px"/><polyline points="448 224 48 224 48 352" style="fill:none;stroke:#000;stroke-linecap:square;stroke-miterlimit:10;stroke-width:32px"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polyline points="400 160 464 224 400 288" style="fill:none;stroke:#000;stroke-linecap:square;stroke-miterlimit:10;stroke-width:32px"/><polyline points="448 224 48 224 48 352" style="fill:none;stroke:#000;stroke-linecap:square;stroke-miterlimit:10;stroke-width:32px"/></svg>
+    </>
+  )
 }

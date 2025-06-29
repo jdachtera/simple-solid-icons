@@ -17,7 +17,10 @@ export function LucideNotebook({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M2 6h4" />
   <path d="M2 10h4" />
   <path d="M2 14h4" />
@@ -25,4 +28,6 @@ export function LucideNotebook({ size = 24, width, height, ...inputProps }) {
   <rect width="16" height="20" x="4" y="2" rx="2" />
   <path d="M16 2v20" />
 </svg>
+    </>
+  )
 }

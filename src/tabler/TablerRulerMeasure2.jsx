@@ -17,7 +17,10 @@ export function TablerRulerMeasure2({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 19.875c0 .621 -.512 1.125 -1.143 1.125h-5.714a1.134 1.134 0 0 1 -1.143 -1.125v-15.875a1 1 0 0 1 1 -1h5.857c.631 0 1.143 .504 1.143 1.125z" />
   <path d="M12 9h-2" />
   <path d="M12 6h-3" />
@@ -28,4 +31,6 @@ export function TablerRulerMeasure2({ size = 24, width, height, ...inputProps })
   <path d="M19 3v18" />
   <path d="M21 21h-4" />
 </svg>
+    </>
+  )
 }

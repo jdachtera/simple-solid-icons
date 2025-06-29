@@ -17,7 +17,10 @@ export function TablerFountainOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M9 16v-5a2 2 0 1 0 -4 0" />
   <path d="M15 16v-1m0 -4a2 2 0 1 1 4 0" />
   <path d="M12 16v-4m0 -4v-2a3 3 0 0 1 6 0" />
@@ -25,4 +28,6 @@ export function TablerFountainOff({ size = 24, width, height, ...inputProps }) {
   <path d="M20 16h1v1m-.871 3.114a2.99 2.99 0 0 1 -2.129 .886h-12a3 3 0 0 1 -3 -3v-2h13" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerBooks({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 4m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
   <path d="M9 4m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
   <path d="M5 8h4" />
@@ -26,4 +29,6 @@ export function TablerBooks({ size = 24, width, height, ...inputProps }) {
   <path d="M14 9l4 -1" />
   <path d="M16 16l3.923 -.98" />
 </svg>
+    </>
+  )
 }

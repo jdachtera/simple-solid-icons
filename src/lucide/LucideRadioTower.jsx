@@ -17,7 +17,10 @@ export function LucideRadioTower({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9" />
   <path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5" />
   <circle cx="12" cy="9" r="2" />
@@ -26,4 +29,6 @@ export function LucideRadioTower({ size = 24, width, height, ...inputProps }) {
   <path d="M9.5 18h5" />
   <path d="m8 22 4-11 4 11" />
 </svg>
+    </>
+  )
 }

@@ -17,8 +17,13 @@ export function TablerCircuitGroundDigital({ size = 24, width, height, ...inputP
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 13v-10" />
   <path d="M12 21l-6 -8h12z" />
 </svg>
+    </>
+  )
 }

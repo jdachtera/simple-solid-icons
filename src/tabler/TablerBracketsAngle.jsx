@@ -17,8 +17,13 @@ export function TablerBracketsAngle({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 4l-5 8l5 8" />
   <path d="M16 4l5 8l-5 8" />
 </svg>
+    </>
+  )
 }

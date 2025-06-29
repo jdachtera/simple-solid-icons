@@ -17,5 +17,10 @@ export function IonChevronForwardOutline({ size = 24, width, height, ...inputPro
     },
     inputProps
   )
-  return <svg {...props}><polyline points="184 112 328 256 184 400" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polyline points="184 112 328 256 184 400" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/></svg>
+    </>
+  )
 }

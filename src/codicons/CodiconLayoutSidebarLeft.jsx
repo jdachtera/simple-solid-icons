@@ -17,5 +17,10 @@ export function CodiconLayoutSidebarLeft({ size = 24, width, height, ...inputPro
     },
     inputProps
   )
-  return <svg {...props}><path fill-rule="evenodd" clip-rule="evenodd" d="M2 1L1 2V14L2 15H14L15 14V2L14 1H2ZM14 14H7V2H14V14Z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path fill-rule="evenodd" clip-rule="evenodd" d="M2 1L1 2V14L2 15H14L15 14V2L14 1H2ZM14 14H7V2H14V14Z"/></svg>
+    </>
+  )
 }

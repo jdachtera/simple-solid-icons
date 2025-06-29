@@ -17,5 +17,10 @@ export function BoxBxFastForward({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="m19 12-7-5v10zM5 7v10l7-5z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="m19 12-7-5v10zM5 7v10l7-5z"/></svg>
+    </>
+  )
 }

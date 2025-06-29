@@ -17,7 +17,12 @@ export function TablerBorderCornerPill({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 20v-5c0 -6.075 4.925 -11 11 -11h5" />
 </svg>
+    </>
+  )
 }

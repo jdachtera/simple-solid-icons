@@ -17,8 +17,13 @@ export function TablerChartAreaLine({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 19l4 -6l4 2l4 -5l4 4l0 5l-16 0" />
   <path d="M4 12l3 -4l4 2l5 -6l4 4" />
 </svg>
+    </>
+  )
 }

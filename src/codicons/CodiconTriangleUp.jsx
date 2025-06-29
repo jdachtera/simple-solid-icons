@@ -17,5 +17,10 @@ export function CodiconTriangleUp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M14 10.44l-.413.56H2.393L2 10.46 7.627 5h.827L14 10.44z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M14 10.44l-.413.56H2.393L2 10.46 7.627 5h.827L14 10.44z"/></svg>
+    </>
+  )
 }

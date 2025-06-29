@@ -17,5 +17,10 @@ export function BoxBxPlay({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M7 6v12l10-6z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M7 6v12l10-6z"/></svg>
+    </>
+  )
 }

@@ -17,5 +17,10 @@ export function IonAddSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><line x1="256" y1="112" x2="256" y2="400" style="fill:none;stroke:#000;stroke-linecap:square;stroke-linejoin:round;stroke-width:32px"/><line x1="400" y1="256" x2="112" y2="256" style="fill:none;stroke:#000;stroke-linecap:square;stroke-linejoin:round;stroke-width:32px"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><line x1="256" y1="112" x2="256" y2="400" style="fill:none;stroke:#000;stroke-linecap:square;stroke-linejoin:round;stroke-width:32px"/><line x1="400" y1="256" x2="112" y2="256" style="fill:none;stroke:#000;stroke-linecap:square;stroke-linejoin:round;stroke-width:32px"/></svg>
+    </>
+  )
 }

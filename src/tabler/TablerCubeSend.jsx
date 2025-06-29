@@ -17,7 +17,10 @@ export function TablerCubeSend({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M16 12.5l-5 -3l5 -3l5 3v5.5l-5 3z" />
   <path d="M11 9.5v5.5l5 3" />
   <path d="M16 12.545l5 -3.03" />
@@ -25,4 +28,6 @@ export function TablerCubeSend({ size = 24, width, height, ...inputProps }) {
   <path d="M7 12h-3" />
   <path d="M7 15h-1" />
 </svg>
+    </>
+  )
 }

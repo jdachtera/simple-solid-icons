@@ -17,8 +17,13 @@ export function TablerChartCohort({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 9h18v-6h-18v18h6v-18" />
   <path d="M3 15h12v-12" />
 </svg>
+    </>
+  )
 }

@@ -17,8 +17,13 @@ export function TablerPrompt({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 7l5 5l-5 5" />
   <path d="M13 17l6 0" />
 </svg>
+    </>
+  )
 }

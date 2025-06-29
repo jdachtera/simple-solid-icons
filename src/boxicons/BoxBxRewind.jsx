@@ -17,5 +17,10 @@ export function BoxBxRewind({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M12 12V7l-7 5 7 5zm7-5-7 5 7 5z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M12 12V7l-7 5 7 5zm7-5-7 5 7 5z"/></svg>
+    </>
+  )
 }

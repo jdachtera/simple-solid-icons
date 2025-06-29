@@ -17,7 +17,12 @@ export function LucideDot({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="12.1" cy="12.1" r="1" />
 </svg>
+    </>
+  )
 }

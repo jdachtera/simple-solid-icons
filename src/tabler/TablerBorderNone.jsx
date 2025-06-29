@@ -17,7 +17,10 @@ export function TablerBorderNone({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 4l0 .01" />
   <path d="M8 4l0 .01" />
   <path d="M12 4l0 .01" />
@@ -40,4 +43,6 @@ export function TablerBorderNone({ size = 24, width, height, ...inputProps }) {
   <path d="M16 20l0 .01" />
   <path d="M20 20l0 .01" />
 </svg>
+    </>
+  )
 }

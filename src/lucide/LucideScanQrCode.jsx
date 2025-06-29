@@ -17,7 +17,10 @@ export function LucideScanQrCode({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M17 12v4a1 1 0 0 1-1 1h-4" />
   <path d="M17 3h2a2 2 0 0 1 2 2v2" />
   <path d="M17 8V7" />
@@ -27,4 +30,6 @@ export function LucideScanQrCode({ size = 24, width, height, ...inputProps }) {
   <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
   <rect x="7" y="7" width="5" height="5" rx="1" />
 </svg>
+    </>
+  )
 }

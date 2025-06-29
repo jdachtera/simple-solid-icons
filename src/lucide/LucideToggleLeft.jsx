@@ -17,8 +17,13 @@ export function LucideToggleLeft({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="9" cy="12" r="3" />
   <rect width="20" height="14" x="2" y="5" rx="7" />
 </svg>
+    </>
+  )
 }

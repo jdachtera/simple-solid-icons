@@ -17,5 +17,10 @@ export function CodiconRemove({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M15 8H1V7h14v1z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M15 8H1V7h14v1z"/></svg>
+    </>
+  )
 }

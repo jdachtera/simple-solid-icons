@@ -17,7 +17,10 @@ export function TablerHierarchyOff({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M5 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M17.585 17.587a2 2 0 0 0 2.813 2.843" />
@@ -25,4 +28,6 @@ export function TablerHierarchyOff({ size = 24, width, height, ...inputProps }) 
   <path d="M12 7v1m0 4v1" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

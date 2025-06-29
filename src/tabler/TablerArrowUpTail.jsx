@@ -17,9 +17,14 @@ export function TablerArrowUpTail({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 18l0 -15" />
   <path d="M15 6l-3 -3l-3 3" />
   <path d="M15 21l-3 -3l-3 3" />
 </svg>
+    </>
+  )
 }

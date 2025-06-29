@@ -17,7 +17,10 @@ export function TablerProgressDown({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969" />
   <path d="M14 3.223a9.003 9.003 0 0 1 0 17.554" />
   <path d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592" />
@@ -26,4 +29,6 @@ export function TablerProgressDown({ size = 24, width, height, ...inputProps }) 
   <path d="M12 9v6" />
   <path d="M15 12l-3 3l-3 -3" />
 </svg>
+    </>
+  )
 }

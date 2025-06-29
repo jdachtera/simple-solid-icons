@@ -17,7 +17,10 @@ export function LucideKeyboardOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M 20 4 A2 2 0 0 1 22 6" />
   <path d="M 22 6 L 22 16.41" />
   <path d="M 7 16 L 16 16" />
@@ -29,4 +32,6 @@ export function LucideKeyboardOff({ size = 24, width, height, ...inputProps }) {
   <path d="M6 8h.01" />
   <path d="M8 12h.01" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerPhotoSensor3({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M17 4h1a2 2 0 0 1 2 2v1" />
   <path d="M20 17v1a2 2 0 0 1 -2 2h-1" />
   <path d="M7 20h-1a2 2 0 0 1 -2 -2v-1" />
@@ -28,4 +31,6 @@ export function TablerPhotoSensor3({ size = 24, width, height, ...inputProps }) 
   <path d="M12 4v2" />
   <path d="M20 12h-2" />
 </svg>
+    </>
+  )
 }

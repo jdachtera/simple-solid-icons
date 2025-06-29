@@ -17,7 +17,10 @@ export function TablerArrowMergeAltLeft({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 7l4 -4l4 4" />
   <path d="M18 21v.01" />
   <path d="M18 18.01v.01" />
@@ -25,4 +28,6 @@ export function TablerArrowMergeAltLeft({ size = 24, width, height, ...inputProp
   <path d="M14 13.03v.01" />
   <path d="M12 3v5.394a6.737 6.737 0 0 1 -3 5.606a6.737 6.737 0 0 0 -3 5.606v1.394" />
 </svg>
+    </>
+  )
 }

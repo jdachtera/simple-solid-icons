@@ -17,7 +17,10 @@ export function TablerBoxAlignTop({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 10.005h16v-5a1 1 0 0 0 -1 -1h-14a1 1 0 0 0 -1 1v5z" />
   <path d="M4 15.005v-.01" />
   <path d="M4 20.005v-.01" />
@@ -26,4 +29,6 @@ export function TablerBoxAlignTop({ size = 24, width, height, ...inputProps }) {
   <path d="M20 20.005v-.01" />
   <path d="M20 15.005v-.01" />
 </svg>
+    </>
+  )
 }

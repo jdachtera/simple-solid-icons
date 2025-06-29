@@ -17,7 +17,10 @@ export function TablerPokerChip({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
   <path d="M12 12m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" />
   <path d="M12 3v4" />
@@ -29,4 +32,6 @@ export function TablerPokerChip({ size = 24, width, height, ...inputProps }) {
   <path d="M5.636 5.636l2.828 2.828" />
   <path d="M15.536 15.536l2.828 2.828" />
 </svg>
+    </>
+  )
 }

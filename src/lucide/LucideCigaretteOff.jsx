@@ -17,7 +17,10 @@ export function LucideCigaretteOff({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 12H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h13" />
   <path d="M18 8c0-2.5-2-2.5-2-5" />
   <path d="m2 2 20 20" />
@@ -25,4 +28,6 @@ export function LucideCigaretteOff({ size = 24, width, height, ...inputProps }) 
   <path d="M22 8c0-2.5-2-2.5-2-5" />
   <path d="M7 12v4" />
 </svg>
+    </>
+  )
 }

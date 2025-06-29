@@ -17,7 +17,10 @@ export function TablerShoppingCartCog({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
   <path d="M12 17h-6v-14h-2" />
   <path d="M6 5l14 1l-.79 5.526m-3.21 1.474h-10" />
@@ -29,4 +32,6 @@ export function TablerShoppingCartCog({ size = 24, width, height, ...inputProps 
   <path d="M15.97 17.25l1.3 .75" />
   <path d="M20.733 20l1.3 .75" />
 </svg>
+    </>
+  )
 }

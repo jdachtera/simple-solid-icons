@@ -17,7 +17,10 @@ export function TablerBallVolleyball({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
   <path d="M12 12a8 8 0 0 0 8 4" />
   <path d="M7.5 13.5a12 12 0 0 0 8.5 6.5" />
@@ -26,4 +29,6 @@ export function TablerBallVolleyball({ size = 24, width, height, ...inputProps }
   <path d="M12 12a8 8 0 0 0 -.536 -8.928" />
   <path d="M15.549 15.147a12 12 0 0 0 1.38 -10.611" />
 </svg>
+    </>
+  )
 }

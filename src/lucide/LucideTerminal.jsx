@@ -17,8 +17,13 @@ export function LucideTerminal({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 19h8" />
   <path d="m4 17 6-6-6-6" />
 </svg>
+    </>
+  )
 }

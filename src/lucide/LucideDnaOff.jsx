@@ -17,7 +17,10 @@ export function LucideDnaOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 2c-1.35 1.5-2.092 3-2.5 4.5L14 8" />
   <path d="m17 6-2.891-2.891" />
   <path d="M2 15c3.333-3 6.667-3 10-3" />
@@ -29,4 +32,6 @@ export function LucideDnaOff({ size = 24, width, height, ...inputProps }) {
   <path d="m7 18 2.891 2.891" />
   <path d="M9 22c1.35-1.5 2.092-3 2.5-4.5L10 16" />
 </svg>
+    </>
+  )
 }

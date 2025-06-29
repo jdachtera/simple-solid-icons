@@ -17,8 +17,13 @@ export function TablerDirection({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M9 10l3 -3l3 3" />
   <path d="M9 14l3 3l3 -3" />
 </svg>
+    </>
+  )
 }

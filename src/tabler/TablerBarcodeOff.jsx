@@ -17,7 +17,10 @@ export function TablerBarcodeOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 7v-1c0 -.552 .224 -1.052 .586 -1.414" />
   <path d="M4 17v1a2 2 0 0 0 2 2h2" />
   <path d="M16 4h2a2 2 0 0 1 2 2v1" />
@@ -28,4 +31,6 @@ export function TablerBarcodeOff({ size = 24, width, height, ...inputProps }) {
   <path d="M19 11v2" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerArtboardOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 8h3a1 1 0 0 1 1 1v3" />
   <path d="M15.716 15.698a1 1 0 0 1 -.716 .302h-6a1 1 0 0 1 -1 -1v-6c0 -.273 .11 -.52 .287 -.7" />
   <path d="M3 8h1" />
@@ -30,4 +33,6 @@ export function TablerArtboardOff({ size = 24, width, height, ...inputProps }) {
   <path d="M16 20v1" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

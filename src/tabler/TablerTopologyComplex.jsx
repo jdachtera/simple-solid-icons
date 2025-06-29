@@ -17,7 +17,10 @@ export function TablerTopologyComplex({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20 18a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
   <path d="M8 18a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
   <path d="M8 6a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
@@ -29,4 +32,6 @@ export function TablerTopologyComplex({ size = 24, width, height, ...inputProps 
   <path d="M8 6h8" />
   <path d="M16 18h-8" />
 </svg>
+    </>
+  )
 }

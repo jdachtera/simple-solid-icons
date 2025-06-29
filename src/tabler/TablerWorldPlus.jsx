@@ -17,7 +17,10 @@ export function TablerWorldPlus({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20.985 12.518a9 9 0 1 0 -8.45 8.466" />
   <path d="M3.6 9h16.8" />
   <path d="M3.6 15h11.4" />
@@ -26,4 +29,6 @@ export function TablerWorldPlus({ size = 24, width, height, ...inputProps }) {
   <path d="M16 19h6" />
   <path d="M19 16v6" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,12 @@ export function TablerBrandDcos({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 18l18 -12h-18l9 14l9 -14v10l-18 -10z" />
 </svg>
+    </>
+  )
 }

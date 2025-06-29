@@ -17,9 +17,14 @@ export function LucideBatteryLow({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M22 14v-4" />
   <path d="M6 14v-4" />
   <rect x="2" y="6" width="16" height="12" rx="2" />
 </svg>
+    </>
+  )
 }

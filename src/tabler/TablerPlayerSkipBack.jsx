@@ -17,8 +17,13 @@ export function TablerPlayerSkipBack({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20 5v14l-12 -7z" />
   <path d="M4 5l0 14" />
 </svg>
+    </>
+  )
 }

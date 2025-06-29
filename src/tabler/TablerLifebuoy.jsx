@@ -17,7 +17,10 @@ export function TablerLifebuoy({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
   <path d="M15 15l3.35 3.35" />
@@ -25,4 +28,6 @@ export function TablerLifebuoy({ size = 24, width, height, ...inputProps }) {
   <path d="M5.65 5.65l3.35 3.35" />
   <path d="M18.35 5.65l-3.35 3.35" />
 </svg>
+    </>
+  )
 }

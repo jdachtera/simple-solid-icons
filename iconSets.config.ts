@@ -56,7 +56,7 @@ export const iconSetConfigs = [
     name: 'remix',
     repoUrl: 'https://github.com/Remix-Design/RemixIcon.git',
     gitBranch: 'master',
-    svgGlob: 'icons/*.svg',
+    svgGlob: 'icons/**/*.svg',
     componentPrefix: 'Remix',
     cacheDir: '../.icon-cache/remix',
     license: 'Apache-2.0',
@@ -80,27 +80,28 @@ export const iconSetConfigs = [
     componentPrefix: 'Simple',
     cacheDir: '../.icon-cache/simpleicons',
     license: 'CC0-1.0',
-    licenseUrl: 'https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md',
+    licenseUrl:
+      'https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md',
   },
   {
     name: 'eva',
     repoUrl: 'https://github.com/akveo/eva-icons.git',
     gitBranch: 'master',
-    svgGlob: 'outline/*.svg',
-    componentPrefix: 'Eva',
+    variants: [
+      {
+        variant: 'fill',
+        svgGlob: 'package/icons/fill/**/*.svg',
+        componentPrefix: 'EvaFill',
+      },
+      {
+        variant: 'outline',
+        svgGlob: 'package/icons/outline/**/*.svg',
+        componentPrefix: 'EvaOutline',
+      },
+    ],
     cacheDir: '../.icon-cache/eva',
     license: 'MIT',
     licenseUrl: 'https://github.com/akveo/eva-icons/blob/master/LICENSE.txt',
-  },
-  {
-    name: 'phosphor',
-    repoUrl: 'https://github.com/phosphor-icons/phosphor-icons.git',
-    gitBranch: 'master',
-    svgGlob: 'packages/phosphor-icons/src/regular/*.svg',
-    componentPrefix: 'Phosphor',
-    cacheDir: '../.icon-cache/phosphor',
-    license: 'MIT',
-    licenseUrl: 'https://github.com/phosphor-icons/phosphor-icons/blob/master/LICENSE',
   },
   // Zondicons (MIT)
   {
@@ -111,7 +112,8 @@ export const iconSetConfigs = [
     componentPrefix: 'Zondicon',
     cacheDir: '../.icon-cache/zondicons',
     license: 'MIT',
-    licenseUrl: 'https://github.com/dukestreetstudio/zondicons/blob/master/LICENSE',
+    licenseUrl:
+      'https://github.com/dukestreetstudio/zondicons/blob/master/LICENSE',
   },
   // Ionicons (MIT)
   {
@@ -133,6 +135,7 @@ export const iconSetConfigs = [
     componentPrefix: 'Codicon',
     cacheDir: '../.icon-cache/codicons',
     license: 'MIT',
-    licenseUrl: 'https://github.com/microsoft/vscode-codicons/blob/main/LICENSE',
+    licenseUrl:
+      'https://github.com/microsoft/vscode-codicons/blob/main/LICENSE',
   },
 ] as const

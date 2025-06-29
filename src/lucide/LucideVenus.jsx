@@ -17,9 +17,14 @@ export function LucideVenus({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 15v7" />
   <path d="M9 19h6" />
   <circle cx="12" cy="9" r="6" />
 </svg>
+    </>
+  )
 }

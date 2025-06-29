@@ -17,7 +17,10 @@ export function TablerRouter({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 13m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
   <path d="M17 17l0 .01" />
   <path d="M13 17l0 .01" />
@@ -25,4 +28,6 @@ export function TablerRouter({ size = 24, width, height, ...inputProps }) {
   <path d="M11.75 8.75a4 4 0 0 1 6.5 0" />
   <path d="M8.5 6.5a8 8 0 0 1 13 0" />
 </svg>
+    </>
+  )
 }

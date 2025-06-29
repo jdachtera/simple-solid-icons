@@ -17,7 +17,10 @@ export function LucideTableOfContents({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M16 12H3" />
   <path d="M16 18H3" />
   <path d="M16 6H3" />
@@ -25,4 +28,6 @@ export function LucideTableOfContents({ size = 24, width, height, ...inputProps 
   <path d="M21 18h.01" />
   <path d="M21 6h.01" />
 </svg>
+    </>
+  )
 }

@@ -17,5 +17,10 @@ export function FeatherSlash({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+    </>
+  )
 }

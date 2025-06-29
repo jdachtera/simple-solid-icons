@@ -17,7 +17,10 @@ export function LucideBug({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m8 2 1.88 1.88" />
   <path d="M14.12 3.88 16 2" />
   <path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1" />
@@ -30,4 +33,6 @@ export function LucideBug({ size = 24, width, height, ...inputProps }) {
   <path d="M22 13h-4" />
   <path d="M17.2 17c2.1.1 3.8 1.9 3.8 4" />
 </svg>
+    </>
+  )
 }

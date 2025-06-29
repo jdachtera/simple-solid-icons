@@ -17,10 +17,15 @@ export function TablerCurrencyNano({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 20l10 -16" />
   <path d="M7 12h10" />
   <path d="M7 16h10" />
   <path d="M17 20l-10 -16" />
 </svg>
+    </>
+  )
 }

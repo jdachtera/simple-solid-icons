@@ -17,5 +17,10 @@ export function CodiconChromeMaximize({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}><path d="M3 3v10h10V3H3zm9 9H4V4h8v8z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M3 3v10h10V3H3zm9 9H4V4h8v8z"/></svg>
+    </>
+  )
 }

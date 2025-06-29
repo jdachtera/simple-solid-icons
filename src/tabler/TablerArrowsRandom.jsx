@@ -17,7 +17,10 @@ export function TablerArrowsRandom({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20 21h-4v-4" />
   <path d="M16 21l5 -5" />
   <path d="M6.5 9.504l-3.5 -2l2 -3.504" />
@@ -27,4 +30,6 @@ export function TablerArrowsRandom({ size = 24, width, height, ...inputProps }) 
   <path d="M21 5l-.5 4l-4 -.5" />
   <path d="M20.5 9l-4.5 -5.5" />
 </svg>
+    </>
+  )
 }

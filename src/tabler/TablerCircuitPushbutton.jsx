@@ -17,7 +17,10 @@ export function TablerCircuitPushbutton({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M2 17h2" />
   <path d="M20 17h2" />
   <path d="M6 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
@@ -25,4 +28,6 @@ export function TablerCircuitPushbutton({ size = 24, width, height, ...inputProp
   <path d="M6 11h12" />
   <path d="M12 11v-6" />
 </svg>
+    </>
+  )
 }

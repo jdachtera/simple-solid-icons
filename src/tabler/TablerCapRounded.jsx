@@ -17,9 +17,14 @@ export function TablerCapRounded({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20 6h-9a6 6 0 1 0 0 12h9" />
   <path d="M13 12a2 2 0 1 1 -4 0a2 2 0 0 1 4 0" />
   <path d="M13 12h7" />
 </svg>
+    </>
+  )
 }

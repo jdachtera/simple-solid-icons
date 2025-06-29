@@ -17,7 +17,10 @@ export function TablerCircleDottedLetterX({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 8l4 8" />
   <path d="M10 16l4 -8" />
   <path d="M7.5 4.21v.01" />
@@ -33,4 +36,6 @@ export function TablerCircleDottedLetterX({ size = 24, width, height, ...inputPr
   <path d="M16.5 4.21v.01" />
   <path d="M12 3v.01" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function LucideWebhookOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M17 17h-5c-1.09-.02-1.94.92-2.5 1.9A3 3 0 1 1 2.57 15" />
   <path d="M9 3.4a4 4 0 0 1 6.52.66" />
   <path d="m6 17 3.1-5.8a2.5 2.5 0 0 0 .057-2.05" />
@@ -26,4 +29,6 @@ export function LucideWebhookOff({ size = 24, width, height, ...inputProps }) {
   <path d="m12 6 .6 1" />
   <path d="m2 2 20 20" />
 </svg>
+    </>
+  )
 }

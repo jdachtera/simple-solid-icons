@@ -17,7 +17,10 @@ export function TablerRazorElectric({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 3v2" />
   <path d="M12 3v2" />
   <path d="M16 3v2" />
@@ -25,4 +28,6 @@ export function TablerRazorElectric({ size = 24, width, height, ...inputProps })
   <path d="M8 5h8l-1 4h-6z" />
   <path d="M12 17v1" />
 </svg>
+    </>
+  )
 }

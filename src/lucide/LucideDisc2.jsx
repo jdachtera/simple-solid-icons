@@ -17,9 +17,14 @@ export function LucideDisc2({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="12" cy="12" r="10" />
   <circle cx="12" cy="12" r="4" />
   <path d="M12 12h.01" />
 </svg>
+    </>
+  )
 }

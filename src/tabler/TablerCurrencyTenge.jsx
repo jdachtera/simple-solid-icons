@@ -17,9 +17,14 @@ export function TablerCurrencyTenge({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 5h12" />
   <path d="M6 9h12" />
   <path d="M12 9v10" />
 </svg>
+    </>
+  )
 }

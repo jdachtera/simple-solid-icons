@@ -17,7 +17,10 @@ export function TablerBarbellOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M2 12h1" />
   <path d="M6 8h-2a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h2" />
   <path d="M6.298 6.288a1 1 0 0 0 -.298 .712v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-8" />
@@ -27,4 +30,6 @@ export function TablerBarbellOff({ size = 24, width, height, ...inputProps }) {
   <path d="M22 12h-1" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

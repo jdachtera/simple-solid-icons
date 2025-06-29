@@ -17,9 +17,14 @@ export function LucideArrowDownToDot({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 2v14" />
   <path d="m19 9-7 7-7-7" />
   <circle cx="12" cy="21" r="1" />
 </svg>
+    </>
+  )
 }

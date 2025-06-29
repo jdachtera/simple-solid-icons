@@ -17,7 +17,10 @@ export function LucideWifiOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 20h.01" />
   <path d="M8.5 16.429a5 5 0 0 1 7 0" />
   <path d="M5 12.859a10 10 0 0 1 5.17-2.69" />
@@ -26,4 +29,6 @@ export function LucideWifiOff({ size = 24, width, height, ...inputProps }) {
   <path d="M22 8.82a15 15 0 0 0-11.288-3.764" />
   <path d="m2 2 20 20" />
 </svg>
+    </>
+  )
 }

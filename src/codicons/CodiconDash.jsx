@@ -17,5 +17,10 @@ export function CodiconDash({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M5 8h6v1H5z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M5 8h6v1H5z"/></svg>
+    </>
+  )
 }

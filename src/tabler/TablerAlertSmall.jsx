@@ -17,8 +17,13 @@ export function TablerAlertSmall({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 8v4" />
   <path d="M12 16h.01" />
 </svg>
+    </>
+  )
 }

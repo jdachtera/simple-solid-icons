@@ -17,7 +17,10 @@ export function LucideSunrise({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 2v8" />
   <path d="m4.93 10.93 1.41 1.41" />
   <path d="M2 18h2" />
@@ -27,4 +30,6 @@ export function LucideSunrise({ size = 24, width, height, ...inputProps }) {
   <path d="m8 6 4-4 4 4" />
   <path d="M16 18a4 4 0 0 0-8 0" />
 </svg>
+    </>
+  )
 }

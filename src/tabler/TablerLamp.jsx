@@ -17,9 +17,14 @@ export function TablerLamp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M9 20h6" />
   <path d="M12 20v-8" />
   <path d="M5 12h14l-4 -8h-6z" />
 </svg>
+    </>
+  )
 }

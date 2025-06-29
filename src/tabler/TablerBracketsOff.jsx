@@ -17,9 +17,14 @@ export function TablerBracketsOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 5v15h3" />
   <path d="M16 4h3v11m0 4v1h-3" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

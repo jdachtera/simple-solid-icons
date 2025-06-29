@@ -17,5 +17,10 @@ export function ZondiconVolumeMute({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}><path d="M9 7H5v6h4l5 5V2L9 7z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M9 7H5v6h4l5 5V2L9 7z"/></svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerHttpTrace({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 8h4" />
   <path d="M5 8v8" />
   <path d="M10 12h2a2 2 0 1 0 0 -4h-2v8" />
@@ -25,4 +28,6 @@ export function TablerHttpTrace({ size = 24, width, height, ...inputProps }) {
   <path d="M17 16v-6a2 2 0 1 1 4 0v6" />
   <path d="M17 13h4" />
 </svg>
+    </>
+  )
 }

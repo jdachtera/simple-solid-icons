@@ -17,5 +17,10 @@ export function FeatherArrowUpRight({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+    </>
+  )
 }

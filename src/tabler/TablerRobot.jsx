@@ -17,7 +17,10 @@ export function TablerRobot({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 4m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
   <path d="M12 2v2" />
   <path d="M9 12v9" />
@@ -28,4 +31,6 @@ export function TablerRobot({ size = 24, width, height, ...inputProps }) {
   <path d="M10 8v.01" />
   <path d="M14 8v.01" />
 </svg>
+    </>
+  )
 }

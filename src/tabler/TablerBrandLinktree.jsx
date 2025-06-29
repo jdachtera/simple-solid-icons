@@ -17,11 +17,16 @@ export function TablerBrandLinktree({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 10h16" />
   <path d="M6.5 4.5l11 11" />
   <path d="M6.5 15.5l11 -11" />
   <path d="M12 10v-8" />
   <path d="M12 15v7" />
 </svg>
+    </>
+  )
 }

@@ -17,5 +17,10 @@ export function IonStopOutline({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><rect x="96" y="96" width="320" height="320" rx="24" ry="24" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><rect x="96" y="96" width="320" height="320" rx="24" ry="24" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"/></svg>
+    </>
+  )
 }

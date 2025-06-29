@@ -17,7 +17,10 @@ export function LucideFlipHorizontal2({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m3 7 5 5-5 5V7" />
   <path d="m21 7-5 5 5 5V7" />
   <path d="M12 20v2" />
@@ -25,4 +28,6 @@ export function LucideFlipHorizontal2({ size = 24, width, height, ...inputProps 
   <path d="M12 8v2" />
   <path d="M12 2v2" />
 </svg>
+    </>
+  )
 }

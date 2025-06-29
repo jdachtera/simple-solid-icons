@@ -17,9 +17,14 @@ export function TablerArcheryArrow({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 7v3h3l3 -3h-3v-3z" />
   <path d="M14 10l-9 9" />
   <path d="M5 15v4h4" />
 </svg>
+    </>
+  )
 }

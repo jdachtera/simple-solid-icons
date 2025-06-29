@@ -17,8 +17,13 @@ export function LucideMoveDownRight({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M19 13V19H13" />
   <path d="M5 5L19 19" />
 </svg>
+    </>
+  )
 }

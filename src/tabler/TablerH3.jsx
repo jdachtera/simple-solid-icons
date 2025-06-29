@@ -17,7 +17,10 @@ export function TablerH3({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M19 14a2 2 0 1 0 -2 -2" />
   <path d="M17 16a2 2 0 1 0 2 -2" />
   <path d="M4 6v12" />
@@ -28,4 +31,6 @@ export function TablerH3({ size = 24, width, height, ...inputProps }) {
   <path d="M3 6h2" />
   <path d="M11 6h2" />
 </svg>
+    </>
+  )
 }

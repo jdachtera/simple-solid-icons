@@ -17,7 +17,10 @@ export function LucideCalendarArrowUp({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m14 18 4-4 4 4" />
   <path d="M16 2v4" />
   <path d="M18 22v-8" />
@@ -25,4 +28,6 @@ export function LucideCalendarArrowUp({ size = 24, width, height, ...inputProps 
   <path d="M3 10h18" />
   <path d="M8 2v4" />
 </svg>
+    </>
+  )
 }

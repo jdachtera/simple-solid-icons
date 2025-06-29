@@ -17,9 +17,14 @@ export function TablerDivide({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="12" cy="6" r="1" fill="currentColor" />
   <circle cx="12" cy="18" r="1" fill="currentColor" />
   <path d="M5 12l14 0" />
 </svg>
+    </>
+  )
 }

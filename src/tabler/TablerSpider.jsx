@@ -17,7 +17,10 @@ export function TablerSpider({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 4v2l5 5" />
   <path d="M2.5 9.5l1.5 1.5h6" />
   <path d="M4 19v-2l6 -6" />
@@ -27,4 +30,6 @@ export function TablerSpider({ size = 24, width, height, ...inputProps }) {
   <path d="M12 15m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
   <path d="M12 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
 </svg>
+    </>
+  )
 }

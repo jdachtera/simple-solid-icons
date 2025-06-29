@@ -17,7 +17,10 @@ export function TablerRvTruck({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M9 17h6" />
@@ -26,4 +29,6 @@ export function TablerRvTruck({ size = 24, width, height, ...inputProps }) {
   <path d="M15 12v-5" />
   <path d="M6 4m0 1.5a1.5 1.5 0 0 1 1.5 -1.5h7a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1 -1.5 1.5h-7a1.5 1.5 0 0 1 -1.5 -1.5z" />
 </svg>
+    </>
+  )
 }

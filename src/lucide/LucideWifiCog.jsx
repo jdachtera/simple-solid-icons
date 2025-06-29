@@ -17,7 +17,10 @@ export function LucideWifiCog({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m14.305 19.53.923-.382" />
   <path d="m15.228 16.852-.923-.383" />
   <path d="m16.852 15.228-.383-.923" />
@@ -31,4 +34,6 @@ export function LucideWifiCog({ size = 24, width, height, ...inputProps }) {
   <path d="M8.5 15.429a5 5 0 0 1 2.413-1.31" />
   <circle cx="18" cy="18" r="3" />
 </svg>
+    </>
+  )
 }

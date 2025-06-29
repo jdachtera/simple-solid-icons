@@ -17,5 +17,10 @@ export function BoxBxStop({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M7 7h10v10H7z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M7 7h10v10H7z"/></svg>
+    </>
+  )
 }

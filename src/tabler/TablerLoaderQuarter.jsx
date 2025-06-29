@@ -17,9 +17,14 @@ export function TablerLoaderQuarter({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 6l0 -3" />
   <path d="M6 12l-3 0" />
   <path d="M7.75 7.75l-2.15 -2.15" />
 </svg>
+    </>
+  )
 }

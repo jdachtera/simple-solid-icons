@@ -17,7 +17,10 @@ export function LucideMonitorCog({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 17v4" />
   <path d="m14.305 7.53.923-.382" />
   <path d="m15.228 4.852-.923-.383" />
@@ -31,4 +34,6 @@ export function LucideMonitorCog({ size = 24, width, height, ...inputProps }) {
   <path d="M8 21h8" />
   <circle cx="18" cy="6" r="3" />
 </svg>
+    </>
+  )
 }

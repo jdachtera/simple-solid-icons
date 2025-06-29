@@ -17,7 +17,10 @@ export function TablerWorldOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5.657 5.615a9 9 0 1 0 12.717 12.739m1.672 -2.322a9 9 0 0 0 -12.066 -12.084" />
   <path d="M3.6 9h5.4m4 0h7.4" />
   <path d="M3.6 15h11.4m4 0h1.4" />
@@ -25,4 +28,6 @@ export function TablerWorldOff({ size = 24, width, height, ...inputProps }) {
   <path d="M12.5 3a16.982 16.982 0 0 1 2.549 8.005m-.207 3.818a16.979 16.979 0 0 1 -2.342 6.177" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

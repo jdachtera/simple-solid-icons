@@ -17,7 +17,10 @@ export function TablerLockAccessOff({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 8v-2c0 -.554 .225 -1.055 .588 -1.417" />
   <path d="M4 16v2a2 2 0 0 0 2 2h2" />
   <path d="M16 4h2a2 2 0 0 1 2 2v2" />
@@ -26,4 +29,6 @@ export function TablerLockAccessOff({ size = 24, width, height, ...inputProps })
   <path d="M10 11v-1m1.182 -2.826a2 2 0 0 1 2.818 1.826v1" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

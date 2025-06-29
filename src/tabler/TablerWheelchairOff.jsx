@@ -17,7 +17,10 @@ export function TablerWheelchairOff({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 16m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" />
   <path d="M17.582 17.59a2 2 0 0 0 2.833 2.824" />
   <path d="M14 14h-1.4" />
@@ -26,4 +29,6 @@ export function TablerWheelchairOff({ size = 24, width, height, ...inputProps })
   <path d="M15 8v3" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

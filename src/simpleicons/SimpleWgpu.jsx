@@ -17,5 +17,10 @@ export function SimpleWgpu({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><title>wgpu</title><path d="M3.9999 2.0001 0 22h8.0001L12 15.0002l3.9999 6.9997H24L20.0001 2l-5.0003 8L12 6 9.0002 9.9999Z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><title>wgpu</title><path d="M3.9999 2.0001 0 22h8.0001L12 15.0002l3.9999 6.9997H24L20.0001 2l-5.0003 8L12 6 9.0002 9.9999Z"/></svg>
+    </>
+  )
 }

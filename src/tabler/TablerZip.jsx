@@ -17,9 +17,14 @@ export function TablerZip({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M16 16v-8h2a2 2 0 1 1 0 4h-2" />
   <path d="M12 8v8" />
   <path d="M4 8h4l-4 8h4" />
 </svg>
+    </>
+  )
 }

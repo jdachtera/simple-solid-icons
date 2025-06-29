@@ -17,9 +17,14 @@ export function LucideMoveVertical({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 2v20" />
   <path d="m8 18 4 4 4-4" />
   <path d="m8 6 4-4 4 4" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerMathYPlusY({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M2 9l3 5.063" />
   <path d="M8 9l-4.8 9" />
   <path d="M16 9l3 5.063" />
@@ -25,4 +28,6 @@ export function TablerMathYPlusY({ size = 24, width, height, ...inputProps }) {
   <path d="M10 12h4" />
   <path d="M12 10v4" />
 </svg>
+    </>
+  )
 }

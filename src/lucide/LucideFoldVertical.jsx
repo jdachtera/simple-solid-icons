@@ -17,7 +17,10 @@ export function LucideFoldVertical({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 22v-6" />
   <path d="M12 8V2" />
   <path d="M4 12H2" />
@@ -27,4 +30,6 @@ export function LucideFoldVertical({ size = 24, width, height, ...inputProps }) 
   <path d="m15 19-3-3-3 3" />
   <path d="m15 5-3 3-3-3" />
 </svg>
+    </>
+  )
 }

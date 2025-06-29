@@ -17,8 +17,13 @@ export function TablerShieldChevron({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
   <path d="M4 14l8 -3l8 3" />
 </svg>
+    </>
+  )
 }

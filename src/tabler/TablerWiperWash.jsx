@@ -17,7 +17,10 @@ export function TablerWiperWash({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 20m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
   <path d="M3 11l5.5 5.5a5 5 0 0 1 7 0l5.5 -5.5a12 12 0 0 0 -18 0" />
   <path d="M12 20l0 -14" />
@@ -28,4 +31,6 @@ export function TablerWiperWash({ size = 24, width, height, ...inputProps }) {
   <path d="M15 2.1a4 4 0 0 1 2 0" />
   <path d="M20 6a4 4 0 0 0 -.4 -1.8" />
 </svg>
+    </>
+  )
 }

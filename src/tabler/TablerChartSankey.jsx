@@ -17,9 +17,14 @@ export function TablerChartSankey({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 3v18h18" />
   <path d="M3 6h18" />
   <path d="M3 8c10 0 8 9 18 9" />
 </svg>
+    </>
+  )
 }

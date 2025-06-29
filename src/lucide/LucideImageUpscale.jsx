@@ -17,7 +17,10 @@ export function LucideImageUpscale({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M16 3h5v5" />
   <path d="M17 21h2a2 2 0 0 0 2-2" />
   <path d="M21 12v3" />
@@ -27,4 +30,6 @@ export function LucideImageUpscale({ size = 24, width, height, ...inputProps }) 
   <path d="M9 3h3" />
   <rect x="3" y="11" width="10" height="10" rx="1" />
 </svg>
+    </>
+  )
 }

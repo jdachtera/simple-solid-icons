@@ -17,7 +17,10 @@ export function TablerTrashOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 3l18 18" />
   <path d="M4 7h3m4 0h9" />
   <path d="M10 11l0 6" />
@@ -26,4 +29,6 @@ export function TablerTrashOff({ size = 24, width, height, ...inputProps }) {
   <path d="M18.384 14.373l.616 -7.373" />
   <path d="M9 5v-1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
 </svg>
+    </>
+  )
 }

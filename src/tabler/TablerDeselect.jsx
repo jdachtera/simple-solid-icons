@@ -17,7 +17,10 @@ export function TablerDeselect({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 8h3a1 1 0 0 1 1 1v3" />
   <path d="M16 16h-7a1 1 0 0 1 -1 -1v-7" />
   <path d="M12 20v.01" />
@@ -36,4 +39,6 @@ export function TablerDeselect({ size = 24, width, height, ...inputProps }) {
   <path d="M20 16v.01" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

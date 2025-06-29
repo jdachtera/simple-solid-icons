@@ -17,7 +17,10 @@ export function TablerTransactionBitcoin({ size = 24, width, height, ...inputPro
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 12h4.09c1.055 0 1.91 .895 1.91 2s-.855 2 -1.91 2c1.055 0 1.91 .895 1.91 2s-.855 2 -1.91 2h-4.09" />
   <path d="M16 16h4" />
   <path d="M16 11v10v-9" />
@@ -28,4 +31,6 @@ export function TablerTransactionBitcoin({ size = 24, width, height, ...inputPro
   <path d="M7 5h8" />
   <path d="M7 5v8a3 3 0 0 0 3 3h1" />
 </svg>
+    </>
+  )
 }

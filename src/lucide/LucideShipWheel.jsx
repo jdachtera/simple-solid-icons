@@ -17,7 +17,10 @@ export function LucideShipWheel({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="12" cy="12" r="8" />
   <path d="M12 2v7.5" />
   <path d="m19 5-5.23 5.23" />
@@ -29,4 +32,6 @@ export function LucideShipWheel({ size = 24, width, height, ...inputProps }) {
   <path d="M10.23 10.23 5 5" />
   <circle cx="12" cy="12" r="2.5" />
 </svg>
+    </>
+  )
 }

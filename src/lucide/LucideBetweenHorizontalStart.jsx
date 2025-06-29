@@ -17,9 +17,14 @@ export function LucideBetweenHorizontalStart({ size = 24, width, height, ...inpu
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <rect width="13" height="7" x="8" y="3" rx="1" />
   <path d="m2 9 3 3-3 3" />
   <rect width="13" height="7" x="8" y="14" rx="1" />
 </svg>
+    </>
+  )
 }

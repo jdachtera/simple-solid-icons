@@ -17,7 +17,10 @@ export function LucideGrape({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M22 5V2l-5.89 5.89" />
   <circle cx="16.6" cy="15.89" r="3" />
   <circle cx="8.11" cy="7.4" r="3" />
@@ -28,4 +31,6 @@ export function LucideGrape({ size = 24, width, height, ...inputProps }) {
   <circle cx="10.8" cy="17.44" r="3" />
   <circle cx="5" cy="19" r="3" />
 </svg>
+    </>
+  )
 }

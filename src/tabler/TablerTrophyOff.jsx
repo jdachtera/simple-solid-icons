@@ -17,7 +17,10 @@ export function TablerTrophyOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 21h8" />
   <path d="M12 17v4" />
   <path d="M8 4h9" />
@@ -26,4 +29,6 @@ export function TablerTrophyOff({ size = 24, width, height, ...inputProps }) {
   <path d="M19 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

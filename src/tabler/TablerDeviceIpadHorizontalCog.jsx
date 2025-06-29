@@ -17,7 +17,10 @@ export function TablerDeviceIpadHorizontalCog({ size = 24, width, height, ...inp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 20h-7a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v6" />
   <path d="M9 17h3" />
   <path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
@@ -28,4 +31,6 @@ export function TablerDeviceIpadHorizontalCog({ size = 24, width, height, ...inp
   <path d="M15.97 17.25l1.3 .75" />
   <path d="M20.733 20l1.3 .75" />
 </svg>
+    </>
+  )
 }

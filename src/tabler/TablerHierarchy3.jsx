@@ -17,7 +17,10 @@ export function TablerHierarchy3({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M8 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M12 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
@@ -31,4 +34,6 @@ export function TablerHierarchy3({ size = 24, width, height, ...inputProps }) {
   <path d="M15 14l-2 3" />
   <path d="M9 14l2 3" />
 </svg>
+    </>
+  )
 }

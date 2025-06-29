@@ -17,7 +17,10 @@ export function TablerBrandPnpm({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 17h4v4h-4z" />
   <path d="M10 17h4v4h-4z" />
   <path d="M17 17h4v4h-4z" />
@@ -27,4 +30,6 @@ export function TablerBrandPnpm({ size = 24, width, height, ...inputProps }) {
   <path d="M10 3h4v4h-4z" />
   <path d="M3 3h4v4h-4z" />
 </svg>
+    </>
+  )
 }

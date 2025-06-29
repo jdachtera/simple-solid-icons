@@ -17,7 +17,12 @@ export function TablerCurrencyMonero({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 18h3v-11l6 7l6 -7v11h3" />
 </svg>
+    </>
+  )
 }

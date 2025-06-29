@@ -17,7 +17,10 @@ export function LucideExpand({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m15 15 6 6" />
   <path d="m15 9 6-6" />
   <path d="M21 16v5h-5" />
@@ -27,4 +30,6 @@ export function LucideExpand({ size = 24, width, height, ...inputProps }) {
   <path d="M3 8V3h5" />
   <path d="M9 9 3 3" />
 </svg>
+    </>
+  )
 }

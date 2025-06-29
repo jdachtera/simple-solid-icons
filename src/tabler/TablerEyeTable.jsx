@@ -17,7 +17,10 @@ export function TablerEyeTable({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 18h-.011" />
   <path d="M12 18h-.011" />
   <path d="M16 18h-.011" />
@@ -28,4 +31,6 @@ export function TablerEyeTable({ size = 24, width, height, ...inputProps }) {
   <path d="M14 15h1" />
   <path d="M12 11v-4" />
 </svg>
+    </>
+  )
 }

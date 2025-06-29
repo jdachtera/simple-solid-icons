@@ -17,7 +17,10 @@ export function LucideWheatOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m2 22 10-10" />
   <path d="m16 8-1.17 1.17" />
   <path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" />
@@ -29,4 +32,6 @@ export function LucideWheatOff({ size = 24, width, height, ...inputProps }) {
   <path d="M18.74 13.09c.26-.15.51-.34.73-.56L21 11l-1.53-1.53a3.5 3.5 0 0 0-4.62-.28" />
   <line x1="2" x2="22" y1="2" y2="22" />
 </svg>
+    </>
+  )
 }

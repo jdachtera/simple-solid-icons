@@ -17,10 +17,15 @@ export function TablerPencilSearch({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M17 11l1.5 -1.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4h4l3 -3" />
   <path d="M13.5 6.5l4 4" />
   <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
   <path d="M20.2 20.2l1.8 1.8" />
 </svg>
+    </>
+  )
 }

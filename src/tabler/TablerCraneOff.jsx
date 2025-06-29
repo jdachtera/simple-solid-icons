@@ -17,7 +17,10 @@ export function TablerCraneOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 21h6" />
   <path d="M9 21v-12" />
   <path d="M9 5v-2l-1 1" />
@@ -27,4 +30,6 @@ export function TablerCraneOff({ size = 24, width, height, ...inputProps }) {
   <path d="M17 9v4a2 2 0 0 1 2 2m-2 2a2 2 0 0 1 -2 -2" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

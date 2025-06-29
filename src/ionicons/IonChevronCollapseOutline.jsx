@@ -17,5 +17,10 @@ export function IonChevronCollapseOutline({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}><path d="M136 104L256 208L376 104" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M136 408L256 304L376 408" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M136 104L256 208L376 104" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M136 408L256 304L376 408" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+    </>
+  )
 }

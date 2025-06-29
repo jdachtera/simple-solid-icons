@@ -17,9 +17,14 @@ export function TablerArrowRightToArc({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12h12" />
   <path d="M11 8l4 4l-4 4" />
   <path d="M12 21a9 9 0 0 0 0 -18" />
 </svg>
+    </>
+  )
 }

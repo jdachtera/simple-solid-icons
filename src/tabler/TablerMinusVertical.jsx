@@ -17,7 +17,12 @@ export function TablerMinusVertical({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 5v14" />
 </svg>
+    </>
+  )
 }

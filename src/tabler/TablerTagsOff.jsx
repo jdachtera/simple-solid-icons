@@ -17,7 +17,10 @@ export function TablerTagsOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M16.296 12.296l-5.71 -5.71" />
   <path d="M6 6h-1a2 2 0 0 0 -2 2v4.172a2 2 0 0 0 .586 1.414l5.71 5.71a2.41 2.41 0 0 0 3.408 0l3.278 -3.278" />
   <path d="M18 19l.496 -.496" />
@@ -25,4 +28,6 @@ export function TablerTagsOff({ size = 24, width, height, ...inputProps }) {
   <path d="M7 10h-.01" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

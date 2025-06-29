@@ -17,7 +17,10 @@ export function TablerBrandTeams({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 7h10v10h-10z" />
   <path d="M6 10h4" />
   <path d="M8 10v4" />
@@ -26,4 +29,6 @@ export function TablerBrandTeams({ size = 24, width, height, ...inputProps }) {
   <path d="M13.003 8.83a3 3 0 1 0 -1.833 -1.833" />
   <path d="M15.83 8.36a2.5 2.5 0 1 0 .594 -4.117" />
 </svg>
+    </>
+  )
 }

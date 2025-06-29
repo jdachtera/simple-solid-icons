@@ -17,7 +17,10 @@ export function LucideQrCode({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <rect width="5" height="5" x="3" y="3" rx="1" />
   <rect width="5" height="5" x="16" y="3" rx="1" />
   <rect width="5" height="5" x="3" y="16" rx="1" />
@@ -31,4 +34,6 @@ export function LucideQrCode({ size = 24, width, height, ...inputProps }) {
   <path d="M21 12v.01" />
   <path d="M12 21v-1" />
 </svg>
+    </>
+  )
 }

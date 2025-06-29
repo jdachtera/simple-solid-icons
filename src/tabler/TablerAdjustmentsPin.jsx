@@ -17,7 +17,10 @@ export function TablerAdjustmentsPin({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
   <path d="M6 4v4" />
   <path d="M6 12v8" />
@@ -30,4 +33,6 @@ export function TablerAdjustmentsPin({ size = 24, width, height, ...inputProps }
   <path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
   <path d="M19 18v.01" />
 </svg>
+    </>
+  )
 }

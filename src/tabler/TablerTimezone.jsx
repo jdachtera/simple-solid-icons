@@ -17,7 +17,10 @@ export function TablerTimezone({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M20.884 10.554a9 9 0 1 0 -10.337 10.328" />
   <path d="M3.6 9h16.8" />
   <path d="M3.6 15h6.9" />
@@ -26,4 +29,6 @@ export function TablerTimezone({ size = 24, width, height, ...inputProps }) {
   <path d="M18 18m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
   <path d="M18 16.5v1.5l.5 .5" />
 </svg>
+    </>
+  )
 }

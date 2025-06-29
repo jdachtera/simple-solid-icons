@@ -17,8 +17,13 @@ export function TablerCandle({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M9 21h6v-10a1 1 0 0 0 -1 -1h-4a1 1 0 0 0 -1 1z" />
   <path d="M12 2l1.465 1.638a2 2 0 1 1 -3.015 .099z" />
 </svg>
+    </>
+  )
 }

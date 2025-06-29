@@ -17,5 +17,10 @@ export function BoxBxWifi0({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><circle cx="12" cy="18" r="2"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><circle cx="12" cy="18" r="2"/></svg>
+    </>
+  )
 }

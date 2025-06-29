@@ -17,7 +17,10 @@ export function TablerBrandDenodo({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M11 11h2v2h-2z" />
   <path d="M3.634 15.634l1.732 -1l1 1.732l-1.732 1z" />
   <path d="M11 19h2v2h-2z" />
@@ -26,4 +29,6 @@ export function TablerBrandDenodo({ size = 24, width, height, ...inputProps }) {
   <path d="M11 3h2v2h-2z" />
   <path d="M3.634 8.366l1 -1.732l1.732 1l-1 1.732z" />
 </svg>
+    </>
+  )
 }

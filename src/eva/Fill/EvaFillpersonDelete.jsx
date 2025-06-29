@@ -1,0 +1,28 @@
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: eva | License: MIT (<https://github.com/akveo/eva-icons/blob/master/LICENSE.txt>)
+import { mergeProps } from 'solid-js'
+
+export function EvaFillpersonDelete({ size = 24, width, height, ...inputProps }) {
+  const props = mergeProps(
+    {
+      xmlns: 'http://www.w3.org/2000/svg',
+      width: width ?? size,
+      height: height ?? size,
+      viewBox: '0 0 24 24',
+      fill: 'none',
+      stroke: 'currentColor',
+      'stroke-width': '2',
+      'stroke-linecap': 'round',
+      'stroke-linejoin': 'round',
+    },
+    inputProps
+  )
+  return (
+    <>
+      {<style>{
+`.cls-1{fill:#fff;opacity:0;}.cls-2{fill:#231f20;}`
+}</style>}
+      <svg {...props}><defs></defs><title>person-delete</title><g id="Layer_2" data-name="Layer 2"><g id="person-delete"><g id="person-delete-2" data-name="person-delete"><rect width="24" height="24"/><path d="M20.47,7.5l.73-.73A1,1,0,0,0,19.73,5.3L19,6l-.73-.73A1,1,0,0,0,16.8,6.77l.73.73-.73.73A1,1,0,0,0,18.27,9.7L19,9l.73.73A1,1,0,0,0,21.2,8.23Z"/><path d="M10,11A4,4,0,1,0,6,7,4,4,0,0,0,10,11Z"/><path d="M16,21a1,1,0,0,0,1-1A7,7,0,0,0,3,20a1,1,0,0,0,1,1Z"/></g></g></g></svg>
+    </>
+  )
+}

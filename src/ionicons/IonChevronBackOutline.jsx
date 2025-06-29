@@ -17,5 +17,10 @@ export function IonChevronBackOutline({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}><polyline points="328 112 184 256 328 400" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polyline points="328 112 184 256 328 400" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/></svg>
+    </>
+  )
 }

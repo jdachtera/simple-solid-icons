@@ -17,7 +17,10 @@ export function TablerCircuitCellPlus({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M2 12h9" />
   <path d="M15 12h7" />
   <path d="M11 5v14" />
@@ -25,4 +28,6 @@ export function TablerCircuitCellPlus({ size = 24, width, height, ...inputProps 
   <path d="M3 5h4" />
   <path d="M5 3v4" />
 </svg>
+    </>
+  )
 }

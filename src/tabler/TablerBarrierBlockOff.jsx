@@ -17,7 +17,10 @@ export function TablerBarrierBlockOff({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M11 7h8a1 1 0 0 1 1 1v7c0 .27 -.107 .516 -.282 .696" />
   <path d="M16 16h-11a1 1 0 0 1 -1 -1v-7a1 1 0 0 1 1 -1h2" />
   <path d="M7 16v4" />
@@ -32,4 +35,6 @@ export function TablerBarrierBlockOff({ size = 24, width, height, ...inputProps 
   <path d="M17 7v-2" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

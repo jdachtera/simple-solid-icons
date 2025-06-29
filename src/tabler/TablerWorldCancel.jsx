@@ -17,7 +17,10 @@ export function TablerWorldCancel({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M21 12a9 9 0 1 0 -8.985 9" />
   <path d="M3.6 9h16.8" />
   <path d="M3.6 15h9.9" />
@@ -26,4 +29,6 @@ export function TablerWorldCancel({ size = 24, width, height, ...inputProps }) {
   <path d="M19 19m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
   <path d="M17 21l4 -4" />
 </svg>
+    </>
+  )
 }

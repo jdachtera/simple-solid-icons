@@ -17,7 +17,10 @@ export function TablerHttpTraceOff({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 8h4" />
   <path d="M5 8v8" />
   <path d="M10 12h2m2 -2a2 2 0 0 0 -2 -2m-2 2v6" />
@@ -26,4 +29,6 @@ export function TablerHttpTraceOff({ size = 24, width, height, ...inputProps }) 
   <path d="M17 13h4" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

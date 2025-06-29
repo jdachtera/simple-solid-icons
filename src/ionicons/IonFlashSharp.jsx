@@ -17,5 +17,10 @@ export function IonFlashSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M432,208H288L320,16,80,304H224L192,496Z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M432,208H288L320,16,80,304H224L192,496Z"/></svg>
+    </>
+  )
 }

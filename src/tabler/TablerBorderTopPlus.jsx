@@ -17,7 +17,10 @@ export function TablerBorderTopPlus({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 4h16" />
   <path d="M4 8v.01" />
   <path d="M20 8v.01" />
@@ -33,4 +36,6 @@ export function TablerBorderTopPlus({ size = 24, width, height, ...inputProps })
   <path d="M16 20v.01" />
   <path d="M20 20v.01" />
 </svg>
+    </>
+  )
 }

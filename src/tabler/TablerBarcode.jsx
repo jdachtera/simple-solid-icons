@@ -17,7 +17,10 @@ export function TablerBarcode({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 7v-1a2 2 0 0 1 2 -2h2" />
   <path d="M4 17v1a2 2 0 0 0 2 2h2" />
   <path d="M16 4h2a2 2 0 0 1 2 2v1" />
@@ -27,4 +30,6 @@ export function TablerBarcode({ size = 24, width, height, ...inputProps }) {
   <path d="M14 11h1v2h-1z" />
   <path d="M19 11l0 2" />
 </svg>
+    </>
+  )
 }

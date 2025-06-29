@@ -17,7 +17,12 @@ export function TablerEaseOut({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 20s10 -16 18 -16" />
 </svg>
+    </>
+  )
 }

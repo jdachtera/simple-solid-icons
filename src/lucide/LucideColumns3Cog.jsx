@@ -17,7 +17,10 @@ export function LucideColumns3Cog({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10.5 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5.5" />
   <path d="m14.3 19.6 1-.4" />
   <path d="M15 3v7.5" />
@@ -31,4 +34,6 @@ export function LucideColumns3Cog({ size = 24, width, height, ...inputProps }) {
   <path d="M9 3v18" />
   <circle cx="18" cy="18" r="3" />
 </svg>
+    </>
+  )
 }

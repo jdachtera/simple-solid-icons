@@ -17,7 +17,10 @@ export function TablerAdjustmentsHorizontal({ size = 24, width, height, ...input
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M4 6l8 0" />
   <path d="M16 6l4 0" />
@@ -28,4 +31,6 @@ export function TablerAdjustmentsHorizontal({ size = 24, width, height, ...input
   <path d="M4 18l11 0" />
   <path d="M19 18l1 0" />
 </svg>
+    </>
+  )
 }

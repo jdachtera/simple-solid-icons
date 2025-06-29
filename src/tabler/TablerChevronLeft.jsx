@@ -17,7 +17,12 @@ export function TablerChevronLeft({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 6l-6 6l6 6" />
 </svg>
+    </>
+  )
 }

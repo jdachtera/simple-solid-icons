@@ -17,7 +17,10 @@ export function LucideDrama({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 11h.01" />
   <path d="M14 6h.01" />
   <path d="M18 6h.01" />
@@ -27,4 +30,6 @@ export function LucideDrama({ size = 24, width, height, ...inputProps }) {
   <path d="M10.1 7.1C9 7.2 7.7 7.7 6 8.6c-3.5 2-4.7 3.9-3.7 5.6 4.5 7.8 9.5 8.4 11.2 7.4.9-.5 1.9-2.1 1.9-4.7" />
   <path d="M9.1 16.5c.3-1.1 1.4-1.7 2.4-1.4" />
 </svg>
+    </>
+  )
 }

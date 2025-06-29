@@ -17,5 +17,10 @@ export function CodiconChromeMinimize({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}><path d="M14 8v1H3V8h11z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M14 8v1H3V8h11z"/></svg>
+    </>
+  )
 }

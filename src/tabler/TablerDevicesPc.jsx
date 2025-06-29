@@ -17,7 +17,10 @@ export function TablerDevicesPc({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 5h6v14h-6z" />
   <path d="M12 9h10v7h-10z" />
   <path d="M14 19h6" />
@@ -25,4 +28,6 @@ export function TablerDevicesPc({ size = 24, width, height, ...inputProps }) {
   <path d="M6 13v.01" />
   <path d="M6 16v.01" />
 </svg>
+    </>
+  )
 }

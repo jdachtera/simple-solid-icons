@@ -17,7 +17,12 @@ export function TablerMathNot({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 12h14v4" />
 </svg>
+    </>
+  )
 }

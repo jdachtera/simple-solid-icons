@@ -17,7 +17,10 @@ export function LucideAlarmClockPlus({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="12" cy="13" r="8" />
   <path d="M5 3 2 6" />
   <path d="m22 6-3-3" />
@@ -26,4 +29,6 @@ export function LucideAlarmClockPlus({ size = 24, width, height, ...inputProps }
   <path d="M12 10v6" />
   <path d="M9 13h6" />
 </svg>
+    </>
+  )
 }

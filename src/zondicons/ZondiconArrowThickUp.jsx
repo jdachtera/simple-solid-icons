@@ -17,5 +17,10 @@ export function ZondiconArrowThickUp({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}><path d="M7 10v8h6v-8h5l-8-8-8 8h5z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M7 10v8h6v-8h5l-8-8-8 8h5z"/></svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function LucideBrain({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" />
   <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z" />
   <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4" />
@@ -28,4 +31,6 @@ export function LucideBrain({ size = 24, width, height, ...inputProps }) {
   <path d="M6 18a4 4 0 0 1-1.967-.516" />
   <path d="M19.967 17.484A4 4 0 0 1 18 18" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,12 @@ export function LucideTally1({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 4v16" />
 </svg>
+    </>
+  )
 }

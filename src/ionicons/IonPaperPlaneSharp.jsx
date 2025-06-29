@@ -17,5 +17,10 @@ export function IonPaperPlaneSharp({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}><polygon points="496 16 15.88 208 195 289 448 64 223 317 304 496 496 16"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polygon points="496 16 15.88 208 195 289 448 64 223 317 304 496 496 16"/></svg>
+    </>
+  )
 }

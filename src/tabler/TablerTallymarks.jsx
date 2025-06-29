@@ -17,11 +17,16 @@ export function TablerTallymarks({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 5l0 14" />
   <path d="M10 5l0 14" />
   <path d="M14 5l0 14" />
   <path d="M18 5l0 14" />
   <path d="M3 17l18 -10" />
 </svg>
+    </>
+  )
 }

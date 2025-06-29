@@ -17,7 +17,10 @@ export function LucideMemoryStick({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 19v-3" />
   <path d="M10 19v-3" />
   <path d="M14 19v-3" />
@@ -28,4 +31,6 @@ export function LucideMemoryStick({ size = 24, width, height, ...inputProps }) {
   <path d="M2 15h20" />
   <path d="M2 7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v1.1a2 2 0 0 0 0 3.837V17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-5.1a2 2 0 0 0 0-3.837Z" />
 </svg>
+    </>
+  )
 }

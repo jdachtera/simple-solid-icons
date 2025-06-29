@@ -17,7 +17,10 @@ export function TablerCarCrane({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M7 18h8m4 0h2v-6a5 5 0 0 0 -5 -5h-1l1.5 5h4.5" />
@@ -26,4 +29,6 @@ export function TablerCarCrane({ size = 24, width, height, ...inputProps }) {
   <path d="M4 12v-6l18 -3v2" />
   <path d="M8 12v-4l-4 -2" />
 </svg>
+    </>
+  )
 }

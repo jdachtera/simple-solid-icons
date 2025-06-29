@@ -17,7 +17,10 @@ export function TablerVirus({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 12m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" />
   <path d="M12 7v-4" />
   <path d="M11 3h2" />
@@ -36,4 +39,6 @@ export function TablerVirus({ size = 24, width, height, ...inputProps }) {
   <path d="M8.464 8.464l-2.828 -2.828" />
   <path d="M4.929 6.343l1.414 -1.413" />
 </svg>
+    </>
+  )
 }

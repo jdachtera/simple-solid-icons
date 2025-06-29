@@ -17,7 +17,10 @@ export function LucideCalendarSync({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M11 10v4h4" />
   <path d="m11 14 1.535-1.605a5 5 0 0 1 8 1.5" />
   <path d="M16 2v4" />
@@ -27,4 +30,6 @@ export function LucideCalendarSync({ size = 24, width, height, ...inputProps }) 
   <path d="M3 10h4" />
   <path d="M8 2v4" />
 </svg>
+    </>
+  )
 }

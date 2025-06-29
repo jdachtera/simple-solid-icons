@@ -17,7 +17,12 @@ export function TablerActivityHeartbeat({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12h4.5l1.5 -6l4 12l2 -9l1.5 3h4.5" />
 </svg>
+    </>
+  )
 }

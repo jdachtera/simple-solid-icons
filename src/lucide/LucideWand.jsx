@@ -17,7 +17,10 @@ export function LucideWand({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 4V2" />
   <path d="M15 16v-2" />
   <path d="M8 9h2" />
@@ -28,4 +31,6 @@ export function LucideWand({ size = 24, width, height, ...inputProps }) {
   <path d="m3 21 9-9" />
   <path d="M12.2 6.2 11 5" />
 </svg>
+    </>
+  )
 }

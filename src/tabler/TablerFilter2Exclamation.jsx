@@ -17,10 +17,15 @@ export function TablerFilter2Exclamation({ size = 24, width, height, ...inputPro
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 6h16" />
   <path d="M6 12h12" />
   <path d="M9 18h6" />
   <path d="M19 16v3m0 3v.01" />
 </svg>
+    </>
+  )
 }

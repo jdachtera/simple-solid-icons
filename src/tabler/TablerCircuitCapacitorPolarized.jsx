@@ -17,7 +17,10 @@ export function TablerCircuitCapacitorPolarized({ size = 24, width, height, ...i
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M22 12h-8" />
   <path d="M2 12h8" />
   <path d="M10 7v10" />
@@ -25,4 +28,6 @@ export function TablerCircuitCapacitorPolarized({ size = 24, width, height, ...i
   <path d="M17 5h4" />
   <path d="M19 3v4" />
 </svg>
+    </>
+  )
 }

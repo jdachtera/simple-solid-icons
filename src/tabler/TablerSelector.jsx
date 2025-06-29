@@ -17,8 +17,13 @@ export function TablerSelector({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 9l4 -4l4 4" />
   <path d="M16 15l-4 4l-4 -4" />
 </svg>
+    </>
+  )
 }

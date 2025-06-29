@@ -17,8 +17,13 @@ export function TablerBrandYandex({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 20v-16h-2a4 4 0 0 0 -4 4v1a4 4 0 0 0 4 4h2" />
   <path d="M9 20l3 -7" />
 </svg>
+    </>
+  )
 }

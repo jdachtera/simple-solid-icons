@@ -17,5 +17,10 @@ export function IonPlayBackSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><polygon points="496 400 256 256 496 112 496 400"/><polygon points="256 400 16 256 256 112 256 400"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polygon points="496 400 256 256 496 112 496 400"/><polygon points="256 400 16 256 256 112 256 400"/></svg>
+    </>
+  )
 }

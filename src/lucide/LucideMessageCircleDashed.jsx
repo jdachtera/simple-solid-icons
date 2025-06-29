@@ -17,7 +17,10 @@ export function LucideMessageCircleDashed({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M13.5 3.1c-.5 0-1-.1-1.5-.1s-1 .1-1.5.1" />
   <path d="M19.3 6.8a10.45 10.45 0 0 0-2.1-2.1" />
   <path d="M20.9 13.5c.1-.5.1-1 .1-1.5s-.1-1-.1-1.5" />
@@ -27,4 +30,6 @@ export function LucideMessageCircleDashed({ size = 24, width, height, ...inputPr
   <path d="M3.1 10.5c0 .5-.1 1-.1 1.5s.1 1 .1 1.5" />
   <path d="M6.8 4.7a10.45 10.45 0 0 0-2.1 2.1" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerDialpadOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M7 7h-4v-4" />
   <path d="M17 3h4v4h-4z" />
   <path d="M10 6v-3h4v4h-3" />
@@ -27,4 +30,6 @@ export function TablerDialpadOff({ size = 24, width, height, ...inputProps }) {
   <path d="M10 17h4v4h-4z" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

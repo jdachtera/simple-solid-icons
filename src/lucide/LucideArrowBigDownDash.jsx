@@ -17,8 +17,13 @@ export function LucideArrowBigDownDash({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 5H9" />
   <path d="M15 9v3h4l-7 7-7-7h4V9z" />
 </svg>
+    </>
+  )
 }

@@ -1,0 +1,28 @@
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: eva | License: MIT (<https://github.com/akveo/eva-icons/blob/master/LICENSE.txt>)
+import { mergeProps } from 'solid-js'
+
+export function EvaFillfolderRemove({ size = 24, width, height, ...inputProps }) {
+  const props = mergeProps(
+    {
+      xmlns: 'http://www.w3.org/2000/svg',
+      width: width ?? size,
+      height: height ?? size,
+      viewBox: '0 0 24 24',
+      fill: 'none',
+      stroke: 'currentColor',
+      'stroke-width': '2',
+      'stroke-linecap': 'round',
+      'stroke-linejoin': 'round',
+    },
+    inputProps
+  )
+  return (
+    <>
+      {<style>{
+`.cls-1{fill:#fff;opacity:0;}.cls-2{fill:#231f20;}`
+}</style>}
+      <svg {...props}><defs></defs><title>folder-remove</title><g id="Layer_2" data-name="Layer 2"><g id="folder-remove"><g id="folder-remove-2" data-name="folder-remove"><rect width="24" height="24"/><path d="M19.5,7.05h-7L9.87,3.87A1,1,0,0,0,9.1,3.5H4.5A2.47,2.47,0,0,0,2,5.93V18.07A2.47,2.47,0,0,0,4.5,20.5h15A2.47,2.47,0,0,0,22,18.07V9.48A2.47,2.47,0,0,0,19.5,7.05ZM14,15H10a1,1,0,0,1,0-2h4a1,1,0,0,1,0,2Z"/></g></g></g></svg>
+    </>
+  )
+}

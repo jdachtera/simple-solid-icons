@@ -17,7 +17,10 @@ export function TablerCircleDashedLetterD({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 8v8h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2z" />
   <path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
   <path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
@@ -28,4 +31,6 @@ export function TablerCircleDashedLetterD({ size = 24, width, height, ...inputPr
   <path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
   <path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
 </svg>
+    </>
+  )
 }

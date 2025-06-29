@@ -17,8 +17,13 @@ export function TablerBrandInertia({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12.5 8l4 4l-4 4h4.5l4 -4l-4 -4z" />
   <path d="M3.5 8l4 4l-4 4h4.5l4 -4l-4 -4z" />
 </svg>
+    </>
+  )
 }

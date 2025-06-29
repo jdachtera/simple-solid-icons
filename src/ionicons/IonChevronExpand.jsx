@@ -17,5 +17,10 @@ export function IonChevronExpand({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M136 208L256 104L376 208" fill="none" stroke="currentColor" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/><path d="M136 304L256 408L376 304" fill="none" stroke="currentColor" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M136 208L256 104L376 208" fill="none" stroke="currentColor" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/><path d="M136 304L256 408L376 304" fill="none" stroke="currentColor" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </>
+  )
 }

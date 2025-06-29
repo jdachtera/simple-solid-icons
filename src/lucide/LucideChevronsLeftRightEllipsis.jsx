@@ -17,11 +17,16 @@ export function LucideChevronsLeftRightEllipsis({ size = 24, width, height, ...i
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 12h.01" />
   <path d="M16 12h.01" />
   <path d="m17 7 5 5-5 5" />
   <path d="m7 7-5 5 5 5" />
   <path d="M8 12h.01" />
 </svg>
+    </>
+  )
 }

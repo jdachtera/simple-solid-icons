@@ -17,5 +17,10 @@ export function BoxBxSpaceBar({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="M17 13H7V9H5v6h14V9h-2z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M17 13H7V9H5v6h14V9h-2z"/></svg>
+    </>
+  )
 }

@@ -17,10 +17,15 @@ export function TablerMathXy({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 9l3 5.063" />
   <path d="M4 9l6 6" />
   <path d="M4 15l6 -6" />
   <path d="M20 9l-4.8 9" />
 </svg>
+    </>
+  )
 }

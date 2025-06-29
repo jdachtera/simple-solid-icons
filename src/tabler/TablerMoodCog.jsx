@@ -17,7 +17,10 @@ export function TablerMoodCog({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M21 12a9 9 0 1 0 -8.983 9" />
   <path d="M18.001 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M18.001 14.5v1.5" />
@@ -30,4 +33,6 @@ export function TablerMoodCog({ size = 24, width, height, ...inputProps }) {
   <path d="M15 10h.01" />
   <path d="M9.5 15c.658 .64 1.56 1 2.5 1" />
 </svg>
+    </>
+  )
 }

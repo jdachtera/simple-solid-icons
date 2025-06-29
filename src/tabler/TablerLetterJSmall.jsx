@@ -17,7 +17,12 @@ export function TablerLetterJSmall({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 8h4v6a2 2 0 1 1 -4 0" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,12 @@ export function TablerChevronCompactRight({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M11 4l3 8l-3 8" />
 </svg>
+    </>
+  )
 }

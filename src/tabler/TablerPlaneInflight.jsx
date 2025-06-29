@@ -17,8 +17,13 @@ export function TablerPlaneInflight({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 11.085h5a2 2 0 1 1 0 4h-15l-3 -6h3l2 2h3l-2 -7h3l4 7z" />
   <path d="M3 21h18" />
 </svg>
+    </>
+  )
 }

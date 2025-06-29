@@ -17,7 +17,10 @@ export function LucideUsb({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="10" cy="7" r="1" />
   <circle cx="4" cy="20" r="1" />
   <path d="M4.7 19.3 19 5" />
@@ -26,4 +29,6 @@ export function LucideUsb({ size = 24, width, height, ...inputProps }) {
   <path d="m10 14 5 2 3.5-3.5" />
   <path d="m18 12 1-1 1 1-1 1Z" />
 </svg>
+    </>
+  )
 }

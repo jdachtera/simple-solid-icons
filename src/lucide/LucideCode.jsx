@@ -17,8 +17,13 @@ export function LucideCode({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m16 18 6-6-6-6" />
   <path d="m8 6-6 6 6 6" />
 </svg>
+    </>
+  )
 }

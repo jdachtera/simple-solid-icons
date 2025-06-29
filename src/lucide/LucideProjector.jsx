@@ -17,7 +17,10 @@ export function LucideProjector({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 7 3 5" />
   <path d="M9 6V3" />
   <path d="m13 7 2-2" />
@@ -25,4 +28,6 @@ export function LucideProjector({ size = 24, width, height, ...inputProps }) {
   <path d="M11.83 12H20a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h2.17" />
   <path d="M16 16h2" />
 </svg>
+    </>
+  )
 }

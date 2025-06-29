@@ -17,7 +17,10 @@ export function TablerBellCog({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 17h-8a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6a2 2 0 1 1 4 0a7 7 0 0 1 4 6v.5" />
   <path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M19.001 15.5v1.5" />
@@ -28,4 +31,6 @@ export function TablerBellCog({ size = 24, width, height, ...inputProps }) {
   <path d="M20.733 20l1.3 .75" />
   <path d="M9 17v1a3 3 0 0 0 3 3" />
 </svg>
+    </>
+  )
 }

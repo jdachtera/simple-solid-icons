@@ -17,7 +17,10 @@ export function TablerMathXFloorDivideY({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M1.5 19l18 -18" />
   <path d="M4.5 22l18 -18" />
   <path d="M18 15l3 4" />
@@ -25,4 +28,6 @@ export function TablerMathXFloorDivideY({ size = 24, width, height, ...inputProp
   <path d="M1 1l6 6" />
   <path d="M1 7l6 -6" />
 </svg>
+    </>
+  )
 }

@@ -17,10 +17,15 @@ export function LucideMinimize2({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m14 10 7-7" />
   <path d="M20 10h-6V4" />
   <path d="m3 21 7-7" />
   <path d="M4 14h6v6" />
 </svg>
+    </>
+  )
 }

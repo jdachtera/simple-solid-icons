@@ -17,7 +17,12 @@ export function TablerWaveSquare({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12h5v8h4v-16h4v8h5" />
 </svg>
+    </>
+  )
 }

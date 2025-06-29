@@ -17,7 +17,10 @@ export function TablerChartScatter3d({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 20l9 -7" />
   <path d="M12 3v10l9 7" />
   <path d="M17 12v.015" />
@@ -28,4 +31,6 @@ export function TablerChartScatter3d({ size = 24, width, height, ...inputProps }
   <path d="M7 8.015v.015" />
   <path d="M3 4.015v.015" />
 </svg>
+    </>
+  )
 }

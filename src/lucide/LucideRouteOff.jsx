@@ -17,7 +17,10 @@ export function LucideRouteOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="6" cy="19" r="3" />
   <path d="M9 19h8.5c.4 0 .9-.1 1.3-.2" />
   <path d="M5.2 5.2A3.5 3.53 0 0 0 6.5 12H12" />
@@ -26,4 +29,6 @@ export function LucideRouteOff({ size = 24, width, height, ...inputProps }) {
   <path d="M15 5h-4.3" />
   <circle cx="18" cy="5" r="3" />
 </svg>
+    </>
+  )
 }

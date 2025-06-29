@@ -17,5 +17,10 @@ export function IonCaretDownSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><polygon points="64 144 256 368 448 144 64 144"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polygon points="64 144 256 368 448 144 64 144"/></svg>
+    </>
+  )
 }

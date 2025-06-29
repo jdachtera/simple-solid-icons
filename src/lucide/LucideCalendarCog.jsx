@@ -17,7 +17,10 @@ export function LucideCalendarCog({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m15.228 16.852-.923-.383" />
   <path d="m15.228 19.148-.923.383" />
   <path d="M16 2v4" />
@@ -32,4 +35,6 @@ export function LucideCalendarCog({ size = 24, width, height, ...inputProps }) {
   <path d="M8 2v4" />
   <circle cx="18" cy="18" r="3" />
 </svg>
+    </>
+  )
 }

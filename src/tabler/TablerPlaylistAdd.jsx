@@ -17,11 +17,16 @@ export function TablerPlaylistAdd({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M19 8h-14" />
   <path d="M5 12h9" />
   <path d="M11 16h-6" />
   <path d="M15 16h6" />
   <path d="M18 13v6" />
 </svg>
+    </>
+  )
 }

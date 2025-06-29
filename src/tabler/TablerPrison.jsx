@@ -17,7 +17,10 @@ export function TablerPrison({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M18 4v16" />
   <path d="M14 4v16" />
   <path d="M6 4v5" />
@@ -27,4 +30,6 @@ export function TablerPrison({ size = 24, width, height, ...inputProps }) {
   <path d="M10 15v5" />
   <path d="M8 12h-.01" />
 </svg>
+    </>
+  )
 }

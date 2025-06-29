@@ -17,10 +17,15 @@ export function LucideRadioReceiver({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 16v2" />
   <path d="M19 16v2" />
   <rect width="20" height="8" x="2" y="8" rx="2" />
   <path d="M18 12h.01" />
 </svg>
+    </>
+  )
 }

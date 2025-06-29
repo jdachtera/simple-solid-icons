@@ -17,7 +17,10 @@ export function LucideFlaskConicalOff({ size = 24, width, height, ...inputProps 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10 2v2.343" />
   <path d="M14 2v6.343" />
   <path d="m2 2 20 20" />
@@ -25,4 +28,6 @@ export function LucideFlaskConicalOff({ size = 24, width, height, ...inputProps 
   <path d="M6.453 15H15" />
   <path d="M8.5 2h7" />
 </svg>
+    </>
+  )
 }

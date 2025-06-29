@@ -17,7 +17,10 @@ export function TablerFileTypeVue({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 3v4a1 1 0 0 0 1 1h4" />
   <path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
   <path d="M4 15l2 6l2 -6" />
@@ -25,4 +28,6 @@ export function TablerFileTypeVue({ size = 24, width, height, ...inputProps }) {
   <path d="M20 15h-3v6h3" />
   <path d="M17 18h2" />
 </svg>
+    </>
+  )
 }

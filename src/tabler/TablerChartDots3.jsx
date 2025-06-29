@@ -17,7 +17,10 @@ export function TablerChartDots3({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M5 7m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M16 15m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
@@ -26,4 +29,6 @@ export function TablerChartDots3({ size = 24, width, height, ...inputProps }) {
   <path d="M6.5 8.5l7.81 5.37" />
   <path d="M7 7l8 -1" />
 </svg>
+    </>
+  )
 }

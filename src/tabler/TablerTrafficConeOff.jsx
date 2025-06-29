@@ -17,7 +17,10 @@ export function TablerTrafficConeOff({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 20h16" />
   <path d="M9.4 10h.6m4 0h.6" />
   <path d="M7.8 15h7.2" />
@@ -25,4 +28,6 @@ export function TablerTrafficConeOff({ size = 24, width, height, ...inputProps }
   <path d="M10.5 6.5l.5 -1.5h2l2 6m2 6l1 3" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

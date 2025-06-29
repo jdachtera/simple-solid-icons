@@ -17,7 +17,10 @@ export function TablerAugmentedRealityOff({ size = 24, width, height, ...inputPr
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 8v-2c0 -.557 .228 -1.061 .595 -1.424" />
   <path d="M4 16v2a2 2 0 0 0 2 2h2" />
   <path d="M16 4h2a2 2 0 0 1 2 2v2" />
@@ -27,4 +30,6 @@ export function TablerAugmentedRealityOff({ size = 24, width, height, ...inputPr
   <path d="M8 10v4.5l4 2.5" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

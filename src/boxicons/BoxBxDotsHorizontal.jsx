@@ -17,5 +17,10 @@ export function BoxBxDotsHorizontal({ size = 24, width, height, ...inputProps })
     },
     inputProps
   )
-  return <svg {...props}><path d="M10 10h4v4h-4zm6 0h4v4h-4zM4 10h4v4H4z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="M10 10h4v4h-4zm6 0h4v4h-4zM4 10h4v4H4z"/></svg>
+    </>
+  )
 }

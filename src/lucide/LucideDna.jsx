@@ -17,7 +17,10 @@ export function LucideDna({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m10 16 1.5 1.5" />
   <path d="m14 8-1.5-1.5" />
   <path d="M15 2c-1.798 1.998-2.518 3.995-2.807 5.993" />
@@ -30,4 +33,6 @@ export function LucideDna({ size = 24, width, height, ...inputProps }) {
   <path d="m7 18 2.891 2.891" />
   <path d="M9 22c1.798-1.998 2.518-3.995 2.807-5.993" />
 </svg>
+    </>
+  )
 }

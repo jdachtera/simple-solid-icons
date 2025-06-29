@@ -17,5 +17,10 @@ export function FeatherMinusSquare({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+    </>
+  )
 }

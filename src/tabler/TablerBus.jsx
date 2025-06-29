@@ -17,7 +17,10 @@ export function TablerBus({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M18 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
   <path d="M4 17h-2v-11a1 1 0 0 1 1 -1h14a5 7 0 0 1 5 7v5h-2m-4 0h-8" />
@@ -26,4 +29,6 @@ export function TablerBus({ size = 24, width, height, ...inputProps }) {
   <path d="M7 5l0 5" />
   <path d="M12 5l0 5" />
 </svg>
+    </>
+  )
 }

@@ -17,8 +17,13 @@ export function TablerCodeVariableMinus({ size = 24, width, height, ...inputProp
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12.5 16h-6.5a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
   <path d="M16 18h6" />
 </svg>
+    </>
+  )
 }

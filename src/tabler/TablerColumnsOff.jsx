@@ -17,7 +17,10 @@ export function TablerColumnsOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 6h2" />
   <path d="M4 10h5.5" />
   <path d="M4 14h5.5" />
@@ -28,4 +31,6 @@ export function TablerColumnsOff({ size = 24, width, height, ...inputProps }) {
   <path d="M14.5 18h3.5" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

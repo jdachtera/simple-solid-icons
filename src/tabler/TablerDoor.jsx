@@ -17,9 +17,14 @@ export function TablerDoor({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M14 12v.01" />
   <path d="M3 21h18" />
   <path d="M6 21v-16a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v16" />
 </svg>
+    </>
+  )
 }

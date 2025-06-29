@@ -17,7 +17,10 @@ export function TablerWallOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 4h10a2 2 0 0 1 2 2v10m-.589 3.417c-.361 .36 -.86 .583 -1.411 .583h-12a2 2 0 0 1 -2 -2v-12c0 -.55 .222 -1.047 .58 -1.409" />
   <path d="M4 8h4m4 0h8" />
   <path d="M20 12h-4m-4 0h-8" />
@@ -28,4 +31,6 @@ export function TablerWallOff({ size = 24, width, height, ...inputProps }) {
   <path d="M11 16v4" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

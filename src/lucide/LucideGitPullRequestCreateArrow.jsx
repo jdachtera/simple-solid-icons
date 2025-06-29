@@ -17,7 +17,10 @@ export function LucideGitPullRequestCreateArrow({ size = 24, width, height, ...i
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <circle cx="5" cy="6" r="3" />
   <path d="M5 9v12" />
   <path d="m15 9-3-3 3-3" />
@@ -25,4 +28,6 @@ export function LucideGitPullRequestCreateArrow({ size = 24, width, height, ...i
   <path d="M19 15v6" />
   <path d="M22 18h-6" />
 </svg>
+    </>
+  )
 }

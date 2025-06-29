@@ -17,7 +17,10 @@ export function TablerTexture({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M6 3l-3 3" />
   <path d="M21 18l-3 3" />
   <path d="M11 3l-8 8" />
@@ -26,4 +29,6 @@ export function TablerTexture({ size = 24, width, height, ...inputProps }) {
   <path d="M21 8l-13 13" />
   <path d="M21 13l-8 8" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function LucideList({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12h.01" />
   <path d="M3 18h.01" />
   <path d="M3 6h.01" />
@@ -25,4 +28,6 @@ export function LucideList({ size = 24, width, height, ...inputProps }) {
   <path d="M8 18h13" />
   <path d="M8 6h13" />
 </svg>
+    </>
+  )
 }

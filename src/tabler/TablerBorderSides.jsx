@@ -17,10 +17,15 @@ export function TablerBorderSides({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 8v8" />
   <path d="M20 16v-8" />
   <path d="M8 4h8" />
   <path d="M8 20h8" />
 </svg>
+    </>
+  )
 }

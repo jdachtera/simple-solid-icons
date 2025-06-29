@@ -17,5 +17,10 @@ export function SimpleElevenlabs({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><title>ElevenLabs</title><path d="M4.6035 0v24h4.9317V0zm9.8613 0v24h4.9317V0z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><title>ElevenLabs</title><path d="M4.6035 0v24h4.9317V0zm9.8613 0v24h4.9317V0z"/></svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function LucideSprayCan({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 3h.01" />
   <path d="M7 5h.01" />
   <path d="M11 7h.01" />
@@ -29,4 +32,6 @@ export function LucideSprayCan({ size = 24, width, height, ...inputProps }) {
   <path d="m13 14 8-2" />
   <path d="m13 19 8-2" />
 </svg>
+    </>
+  )
 }

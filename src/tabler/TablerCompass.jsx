@@ -17,7 +17,10 @@ export function TablerCompass({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M8 16l2 -6l6 -2l-2 6l-6 2" />
   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
   <path d="M12 3l0 2" />
@@ -25,4 +28,6 @@ export function TablerCompass({ size = 24, width, height, ...inputProps }) {
   <path d="M3 12l2 0" />
   <path d="M19 12l2 0" />
 </svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerCircuitBattery({ size = 24, width, height, ...inputProps }
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M2 12h4" />
   <path d="M18 12h4" />
   <path d="M18 5v14" />
@@ -25,4 +28,6 @@ export function TablerCircuitBattery({ size = 24, width, height, ...inputProps }
   <path d="M10 5v14" />
   <path d="M6 9v6" />
 </svg>
+    </>
+  )
 }

@@ -17,9 +17,14 @@ export function TablerExclamationMarkOff({ size = 24, width, height, ...inputPro
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 19v.01" />
   <path d="M12 15v-3m0 -4v-3" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

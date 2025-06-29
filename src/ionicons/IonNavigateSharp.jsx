@@ -17,5 +17,10 @@ export function IonNavigateSharp({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><polygon points="480 32 32 240 272 240 272 480 480 32"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><polygon points="480 32 32 240 272 240 272 480 480 32"/></svg>
+    </>
+  )
 }

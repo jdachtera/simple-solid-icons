@@ -17,9 +17,14 @@ export function LucideText({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M15 18H3" />
   <path d="M17 6H3" />
   <path d="M21 12H3" />
 </svg>
+    </>
+  )
 }

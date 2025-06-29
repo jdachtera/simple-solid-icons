@@ -17,7 +17,10 @@ export function TablerMistOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M12 5h9" />
   <path d="M3 10h7" />
   <path d="M18 10h1" />
@@ -26,4 +29,6 @@ export function TablerMistOff({ size = 24, width, height, ...inputProps }) {
   <path d="M3 20h9m4 0h3" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

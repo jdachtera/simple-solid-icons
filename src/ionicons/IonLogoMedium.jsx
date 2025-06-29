@@ -17,7 +17,10 @@ export function IonLogoMedium({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
 <g id="boxes" style="display:none;">
 </g>
 <g id="icons">
@@ -27,4 +30,6 @@ export function IonLogoMedium({ size = 24, width, height, ...inputProps }) {
 		c0.38-3.76-1.05-7.48-3.86-10.01l-28.6-34.46v-5.15h88.81l68.65,150.55l60.35-150.55h84.66V136.04z"/>
 </g>
 </svg>
+    </>
+  )
 }

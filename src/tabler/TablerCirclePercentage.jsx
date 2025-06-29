@@ -17,10 +17,15 @@ export function TablerCirclePercentage({ size = 24, width, height, ...inputProps
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
   <path d="M9 15.075l6 -6" />
   <path d="M9 9.105v.015" />
   <path d="M15 15.12v.015" />
 </svg>
+    </>
+  )
 }

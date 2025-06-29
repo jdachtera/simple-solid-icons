@@ -17,5 +17,10 @@ export function BoxBxCaretDown({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><path d="m11.998 17 7-8h-14z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><path d="m11.998 17 7-8h-14z"/></svg>
+    </>
+  )
 }

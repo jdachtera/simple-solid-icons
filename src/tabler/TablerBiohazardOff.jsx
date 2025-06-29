@@ -17,7 +17,10 @@ export function TablerBiohazardOff({ size = 24, width, height, ...inputProps }) 
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M10.586 10.586a2 2 0 1 0 2.836 2.82" />
   <path d="M11.939 14c0 .173 .048 .351 .056 .533v.217a4.75 4.75 0 0 1 -4.533 4.745h-.217" />
   <path d="M2.495 14.745a4.75 4.75 0 0 1 7.737 -3.693" />
@@ -27,4 +30,6 @@ export function TablerBiohazardOff({ size = 24, width, height, ...inputProps }) 
   <path d="M15.349 3.133a4.75 4.75 0 0 1 -.836 7.385" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

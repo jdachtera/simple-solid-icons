@@ -17,5 +17,10 @@ export function SimpleRadar({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}><title>Radar</title><path d="M12 0L2.197 23.975 12 19.952 21.803 24z"/></svg>
+  return (
+    <>
+      {}
+      <svg {...props}><title>Radar</title><path d="M12 0L2.197 23.975 12 19.952 21.803 24z"/></svg>
+    </>
+  )
 }

@@ -17,7 +17,10 @@ export function TablerMarqueeOff({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="M4 6c0 -.556 .227 -1.059 .593 -1.421" />
   <path d="M9 4h1.5" />
   <path d="M13.5 4h1.5" />
@@ -32,4 +35,6 @@ export function TablerMarqueeOff({ size = 24, width, height, ...inputProps }) {
   <path d="M4 10.5v-1.5" />
   <path d="M3 3l18 18" />
 </svg>
+    </>
+  )
 }

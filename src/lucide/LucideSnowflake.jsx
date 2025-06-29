@@ -17,7 +17,10 @@ export function LucideSnowflake({ size = 24, width, height, ...inputProps }) {
     },
     inputProps
   )
-  return <svg {...props}>
+  return (
+    <>
+      {}
+      <svg {...props}>
   <path d="m10 20-1.25-2.5L6 18" />
   <path d="M10 4 8.75 6.5 6 6" />
   <path d="m14 20 1.25-2.5L18 18" />
@@ -31,4 +34,6 @@ export function LucideSnowflake({ size = 24, width, height, ...inputProps }) {
   <path d="m7 21 3-6-1.5-3" />
   <path d="m7 3 3 6h4" />
 </svg>
+    </>
+  )
 }
