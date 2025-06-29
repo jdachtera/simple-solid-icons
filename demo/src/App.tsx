@@ -1,29 +1,35 @@
-import { createSignal, For } from 'solid-js'
-import * as TablerIcons from 'simple-solid-icons/tabler'
-import * as HeroIcons from 'simple-solid-icons/heroicons'
-import * as LucideIcons from 'simple-solid-icons/lucide'
-import * as FeatherIcons from 'simple-solid-icons/feather'
-import * as BootstrapIcons from 'simple-solid-icons/bootstrap'
-import * as BoxIcons from 'simple-solid-icons/boxicons'
-import * as SimpleIcons from 'simple-solid-icons/simpleicons'
-import * as EvaIcons from 'simple-solid-icons/eva'
-import * as Zondicons from 'simple-solid-icons/zondicons'
-import * as Ionicons from 'simple-solid-icons/ionicons'
-import * as Codicons from 'simple-solid-icons/codicons'
+import { createSignal, For, onMount } from 'solid-js'
+import { iconSetConfigs } from '../../../iconSets.config'
 
-const ICON_SETS = [
-  { name: 'Tabler', icons: TablerIcons },
-  { name: 'Heroicons', icons: HeroIcons },
-  { name: 'Lucide', icons: LucideIcons },
-  { name: 'Feather', icons: FeatherIcons },
-  { name: 'Bootstrap', icons: BootstrapIcons },
-  { name: 'Boxicons', icons: BoxIcons },
-  { name: 'SimpleIcons', icons: SimpleIcons },
-  { name: 'Eva', icons: EvaIcons },
-  { name: 'Zondicons', icons: Zondicons },
-  { name: 'Ionicons', icons: Ionicons },
-  { name: 'Codicons', icons: Codicons },
-]
+interface IconSet {
+  name: string
+  icons: Record<string, any>
+  importPathPrefix: string
+}
+
+const ICON_SETS: IconSet[] = []
+
+onMount(async () => {
+  for (const set of iconSetConfigs) {
+    if (set.variants) {
+      for (const variant of set.variants) {
+        const mod = await import(`../../src/${set.name}/${variant.variant}`)
+        ICON_SETS.push({
+          name: variant.componentPrefix,
+          icons: mod,
+          importPathPrefix: `../../src/${set.name}/${variant.variant}`,
+        })
+      }
+    } else {
+      const mod = await import(`../../src/${set.name}`)
+      ICON_SETS.push({
+        name: set.componentPrefix,
+        icons: mod,
+        importPathPrefix: `../../src/${set.name}`,
+      })
+    }
+  }
+})
 
 function getAllIcons() {
   return ICON_SETS.flatMap(set =>
@@ -31,16 +37,21 @@ function getAllIcons() {
       set: set.name,
       name,
       Icon,
-      importPath: `import { ${name} } from 'simple-solid-icons/${set.name.toLowerCase()}'`,
+      importPath: `import { ${name} } from '${set.importPathPrefix}'`,
     }))
   )
 }
 
 export default function App() {
   const [search, setSearch] = createSignal('')
-  const allIcons = getAllIcons()
+  const [icons, setIcons] = createSignal<any[]>([])
+
+  onMount(() => {
+    setIcons(getAllIcons())
+  })
+
   const filteredIcons = () =>
-    allIcons.filter(
+    icons().filter(
       i =>
         i.name.toLowerCase().includes(search().toLowerCase()) ||
         i.set.toLowerCase().includes(search().toLowerCase())
