@@ -1,0 +1,21 @@
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: codicons | License: MIT (<https://github.com/microsoft/vscode-codicons/blob/main/LICENSE>)
+import { mergeProps } from 'solid-js'
+
+export function CodiconGitStashPop({ size = 24, width, height, ...inputProps }) {
+  const props = mergeProps(
+    {
+      xmlns: 'http://www.w3.org/2000/svg',
+      width: width ?? size,
+      height: height ?? size,
+      viewBox: '0 0 24 24',
+      fill: 'none',
+      stroke: 'currentColor',
+      'stroke-width': '2',
+      'stroke-linecap': 'round',
+      'stroke-linejoin': 'round',
+    },
+    inputProps
+  )
+  return <svg {...props}><path fill-rule="evenodd" clip-rule="evenodd" d="M7.00013 3.20711L7.00013 9H8.00013L8.00013 3.20711L10.6466 5.85356L11.3537 5.14645L7.85368 1.64645H7.14658L3.64658 5.14645L4.35368 5.85356L7.00013 3.20711Z"/><path d="M1.50012 9L1.00012 9.5V14.5L1.50012 15H13.5001L14.0001 14.5V9.5L13.5001 9H9.95012C9.71848 10.1411 8.7096 11 7.50012 11C6.29064 11 5.28177 10.1411 5.05013 9H1.50012ZM10.6633 10H13.0001V14H2.00012V10H4.33694C4.89867 11.1825 6.10392 12 7.50012 12C8.89632 12 10.1016 11.1825 10.6633 10Z"/></svg>
+}

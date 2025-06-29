@@ -1,0 +1,21 @@
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: codicons | License: MIT (<https://github.com/microsoft/vscode-codicons/blob/main/LICENSE>)
+import { mergeProps } from 'solid-js'
+
+export function CodiconBeaker({ size = 24, width, height, ...inputProps }) {
+  const props = mergeProps(
+    {
+      xmlns: 'http://www.w3.org/2000/svg',
+      width: width ?? size,
+      height: height ?? size,
+      viewBox: '0 0 24 24',
+      fill: 'none',
+      stroke: 'currentColor',
+      'stroke-width': '2',
+      'stroke-linecap': 'round',
+      'stroke-linejoin': 'round',
+    },
+    inputProps
+  )
+  return <svg {...props}><path d="M13.893 13.558L10 6.006v-4h1v-1H9.994V1l-.456.005H5V2h1v3.952l-3.894 7.609A1 1 0 0 0 3 15.006h10a1 1 0 0 0 .893-1.448zm-7-7.15L7 6.193V2.036l2-.024v4.237l.11.215 1.827 3.542H5.049l1.844-3.598zM3 14.017l1.54-3.011h6.916l1.547 3L3 14.017z"/></svg>
+}

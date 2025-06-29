@@ -1,0 +1,23 @@
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: bootstrap | License: MIT (<https://github.com/twbs/icons/blob/main/LICENSE.md>)
+import { mergeProps } from 'solid-js'
+
+export function BootstrapGooglePlay({ size = 24, width, height, ...inputProps }) {
+  const props = mergeProps(
+    {
+      xmlns: 'http://www.w3.org/2000/svg',
+      width: width ?? size,
+      height: height ?? size,
+      viewBox: '0 0 24 24',
+      fill: 'none',
+      stroke: 'currentColor',
+      'stroke-width': '2',
+      'stroke-linecap': 'round',
+      'stroke-linejoin': 'round',
+    },
+    inputProps
+  )
+  return <svg {...props}>
+  <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27"/>
+</svg>
+}

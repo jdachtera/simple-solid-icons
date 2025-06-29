@@ -1,5 +1,5 @@
 node_modules/
-dist/
-src/generated/
 *.log
 .DS_Store
+# Icon cache for local repo clones
+.icon-cache/

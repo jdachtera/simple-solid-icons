@@ -1,0 +1,25 @@
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: tabler | License: MIT (<https://github.com/tabler/tabler-icons/blob/main/LICENSE>)
+import { mergeProps } from 'solid-js'
+
+export function TablerMessageCirclePin({ size = 24, width, height, ...inputProps }) {
+  const props = mergeProps(
+    {
+      xmlns: 'http://www.w3.org/2000/svg',
+      width: width ?? size,
+      height: height ?? size,
+      viewBox: '0 0 24 24',
+      fill: 'none',
+      stroke: 'currentColor',
+      'stroke-width': '2',
+      'stroke-linecap': 'round',
+      'stroke-linejoin': 'round',
+    },
+    inputProps
+  )
+  return <svg {...props}>
+  <path d="M12.337 19.974a9.891 9.891 0 0 1 -4.637 -.974l-4.7 1l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c1.63 1.39 2.554 3.21 2.736 5.085" />
+  <path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+  <path d="M19 18v.01" />
+</svg>
+}

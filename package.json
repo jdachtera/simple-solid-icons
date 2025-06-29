@@ -1,41 +1,36 @@
 {
-  "name": "solid-icons-ssr",
-  "version": "0.1.0",
-  "description": "SSR-safe icon library for SolidJS with auto-generated components from popular icon sets",
+  "name": "simple-solid-icons",
+  "version": "1.0.0",
+  "description": "SSR-safe, simple, and auto-generated icon library for SolidJS with components from popular open-source icon sets.",
   "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": "./src/index.js",
+      "types": "./src/index.d.ts"
     },
     "./tabler": {
-      "import": "./dist/tabler/index.js",
-      "types": "./dist/tabler/index.d.ts"
+      "import": "./src/tabler/index.js",
+      "types": "./src/tabler/index.d.ts"
     },
     "./heroicons": {
-      "import": "./dist/heroicons/index.js",
-      "types": "./dist/heroicons/index.d.ts"
+      "import": "./src/heroicons/index.js",
+      "types": "./src/heroicons/index.d.ts"
     },
     "./lucide": {
-      "import": "./dist/lucide/index.js",
-      "types": "./dist/lucide/index.d.ts"
+      "import": "./src/lucide/index.js",
+      "types": "./src/lucide/index.d.ts"
     }
   },
   "files": [
-    "dist"
+    "src"
   ],
   "scripts": {
-    "generate": "tsx scripts/generate-icons.ts",
-    "build": "tsx scripts/build-ssr.ts && pnpm run build:types",
-    "build:types": "tsc --emitDeclarationOnly --declaration --outDir dist",
-    "dev": "tsx scripts/build-ssr.ts --watch",
-    "clean": "rm -rf dist src/generated",
-    "format": "prettier --write \"src/**/*.{ts,tsx}\" \"scripts/**/*.ts\"",
-    "update": "npm run clean && npm run generate && npm run build",
-    "prepublishOnly": "npm run update",
-    "build:template": "tsx scripts/generateFromTemplate.ts"
+    "clean": "rm -rf src/tabler src/heroicons src/lucide src/index.js src/index.d.ts src/generated",
+    "update:repos": "tsx scripts/cloneIconRepos.ts",
+    "generate:icons": "tsx scripts/generateFromTemplate.ts",
+    "update:all": "pnpm update:repos && pnpm generate:icons"
   },
   "keywords": [
     "solidjs",
@@ -44,28 +39,31 @@
     "vike",
     "tabler",
     "heroicons",
-    "lucide"
+    "lucide",
+    "feather",
+    "bootstrap",
+    "remix",
+    "boxicons",
+    "simpleicons",
+    "eva",
+    "phosphor",
+    "svg",
+    "auto-generated"
   ],
-  "author": "Your Name",
+  "author": "Jascha Dachtera",
   "license": "MIT",
   "peerDependencies": {
     "solid-js": "^1.8.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/plugin-transform-typescript": "^7.27.1",
-    "@babel/preset-env": "^7.26.0",
     "@types/node": "^20.0.0",
-    "babel-preset-solid": "^1.9.5",
     "glob": "^11.0.0",
     "prettier": "^3.4.2",
     "tsx": "^4.0.0",
-    "typescript": "^5.0.0",
-    "vite": "^6.0.3",
-    "vite-plugin-solid": "^2.11.7"
+    "typescript": "^5.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/solid-icons-ssr.git"
+    "url": "https://github.com/jdachtera/simple-solid-icons.git"
   }
 }

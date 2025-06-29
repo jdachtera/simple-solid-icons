@@ -1,27 +1,28 @@
-# solid-icons-ssr
+# simple-solid-icons
 
-SSR-safe icon library for SolidJS with auto-generated components from popular icon sets.
+SSR-safe, simple, and auto-generated icon library for SolidJS with components from popular open-source icon sets.
 
 ## Features
 
 - ✅ **SSR Compatible** - Works perfectly with Vike, SolidStart, and other SSR frameworks
 - 🔄 **Auto-generated** - Icons are automatically generated from upstream sources
 - 🎯 **Tree-shakable** - Only bundle the icons you use
-- 📦 **Multiple icon sets** - Tabler, Heroicons, Lucide, and more
+- 📦 **Multiple icon sets** - Tabler, Heroicons, Lucide, Feather, Bootstrap, Remix, Boxicons, Simple Icons, Eva, Phosphor, and more
 - 🚀 **TypeScript** - Full TypeScript support with proper types
+- 🛡️ **License Attribution** - Every icon file includes license and source info
 
 ## Installation
 
 ```bash
-npm install solid-icons-ssr
+pnpm add simple-solid-icons
 # or
-pnpm add solid-icons-ssr
+npm install simple-solid-icons
 ```
 
 ## Usage
 
 ```tsx
-import { TablerHeart, HeroHome, LucideSettings } from 'solid-icons-ssr'
+import { TablerHeart, HeroHome, LucideSettings } from 'simple-solid-icons'
 
 function MyComponent() {
   return (
@@ -37,37 +38,57 @@ function MyComponent() {
 ### Selective imports (recommended for smaller bundles)
 
 ```tsx
-import { TablerHeart } from 'solid-icons-ssr/tabler'
-import { HeroHome } from 'solid-icons-ssr/heroicons'
-import { LucideSettings } from 'solid-icons-ssr/lucide'
+import { TablerHeart } from 'simple-solid-icons/tabler'
+import { HeroHome } from 'simple-solid-icons/heroicons'
+import { LucideSettings } from 'simple-solid-icons/lucide'
 ```
 
 ## Icon Sets
 
-- **Tabler Icons** (`Tabler*`) - 4,000+ icons
-- **Heroicons** (`Hero*`) - 300+ icons  
-- **Lucide** (`Lucide*`) - 1,000+ icons
+- **Tabler Icons** (`Tabler*`) — MIT
+- **Heroicons** (`Hero*`) — MIT
+- **Lucide** (`Lucide*`) — ISC
+- **Feather** (`Feather*`) — MIT
+- **Bootstrap Icons** (`Bootstrap*`) — MIT
+- **Remix Icon** (`Remix*`) — Apache-2.0
+- **Boxicons** (`Box*`) — MIT
+- **Simple Icons** (`Simple*`) — CC0-1.0
+- **Eva Icons** (`Eva*`) — MIT
+- **Phosphor Icons** (`Phosphor*`) — MIT
+
+Each icon file includes a header with license and source info. See the source repos for full license details.
 
 ## Development
 
 ```bash
 # Install dependencies
-npm install
+pnpm install
 
-# Generate icons from upstream sources
-npm run generate
+# Update icon repos (clone/pull latest SVGs)
+pnpm update:repos
 
-# Build the library
-npm run build
+# Generate icon components/types from SVGs
+pnpm generate:icons
 
-# Update everything (clean + generate + build)
-npm run update
+# Update everything (repos + generate)
+pnpm update:all
+
+# Clean all generated files
+pnpm clean
 ```
 
 ## Why This Exists
 
 Popular icon libraries like `solid-icons`, `@tabler/icons-solidjs`, and `lucide-solid` have SSR compatibility issues with frameworks like Vike. This library generates clean, simple SolidJS components that work perfectly with SSR.
 
-## License
+## License & Attribution
 
-MIT
+- This package is MIT licensed (codegen and wrapper code).
+- **All icons are copyright their respective authors.**
+- Each icon set is included under its original open-source license (see file headers and above).
+- No icons or trademarks are claimed by this package or its authors.
+- See each icon set's repo for full license terms and attribution requirements.
+
+---
+
+**Generated and maintained by the Saztunes team.**
