@@ -1,5 +1,5 @@
 import { createSignal, For, onMount } from 'solid-js'
-import { iconSetConfigs } from '../../../iconSets.config'
+import { iconSetConfigs } from '../../iconSets.config'
 
 interface IconSet {
   name: string
@@ -11,7 +11,7 @@ const ICON_SETS: IconSet[] = []
 
 onMount(async () => {
   for (const set of iconSetConfigs) {
-    if (set.variants) {
+    if ('variants' in set) {
       for (const variant of set.variants) {
         const mod = await import(`../../src/${set.name}/${variant.variant}`)
         ICON_SETS.push({
