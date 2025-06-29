@@ -128,8 +128,10 @@ async function generateIcons(): Promise<void> {
           const { style, svg: svgNoStyle } = extractStyle(svgContent)
           const cleanedSvg = stripStyleAndClass(svgNoStyle)
           const baseName = path.basename(svgFile, '.svg')
-          const componentName =
-            camelize((variant ? variant.componentPrefix : (set as any).componentPrefix) + baseName)
+          const componentName = camelize(
+            (variant ? variant.componentPrefix : (set as any).componentPrefix) +
+              baseName
+          )
           const jsxDistPath = path.join(outDir, `${componentName}.jsx`)
           // JSX
           let jsxCode = jsxTemplate
@@ -164,7 +166,10 @@ async function generateIcons(): Promise<void> {
         }
         // Index for this set/variant
         const exports = generatedComponentNames
-          .map(componentName => `export { ${componentName} } from './${componentName}.jsx'`)
+          .map(
+            componentName =>
+              `export { ${componentName} } from './${componentName}.jsx'`
+          )
           .join('\n')
         const indexPath = path.join(outDir, 'index.js')
         await fs.writeFile(indexPath, exports)
@@ -242,7 +247,10 @@ async function generateIcons(): Promise<void> {
       }
       // Index for this set
       const exports = generatedComponentNames
-        .map(componentName => `export { ${componentName} } from './${componentName}.jsx'`)
+        .map(
+          componentName =>
+            `export { ${componentName} } from './${componentName}.jsx'`
+        )
         .join('\n')
       const indexPath = path.join(outDir, 'index.js')
       await fs.writeFile(indexPath, exports)
