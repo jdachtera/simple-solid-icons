@@ -1,6 +1,7 @@
 [build]
-  publish = "demo/dist"
-  command = "pnpm install --frozen-lockfile && cd demo && pnpm install --frozen-lockfile && pnpm run build"
+  base = "demo"
+  publish = "dist"
+  command = "pnpm install --frozen-lockfile && pnpm run build"
 
 [dev]
   command = "pnpm run dev"
