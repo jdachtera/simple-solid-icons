@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      simple-solid-icons:
-        specifier: workspace:..
-        version: link:..
       solid-js:
         specifier: ^1.9.7
         version: 1.9.7
