@@ -1,57 +1,19 @@
-import { createSignal, For, onMount } from 'solid-js'
-import { iconSetConfigs } from '../../iconSets.config'
-
-interface IconSet {
-  name: string
-  icons: Record<string, any>
-  importPathPrefix: string
-}
-
-const ICON_SETS: IconSet[] = []
-
-onMount(async () => {
-  for (const set of iconSetConfigs) {
-    if ('variants' in set) {
-      for (const variant of set.variants) {
-        const mod = await import(`../../src/${set.name}/${variant.variant}`)
-        ICON_SETS.push({
-          name: variant.componentPrefix,
-          icons: mod,
-          importPathPrefix: `../../src/${set.name}/${variant.variant}`,
-        })
-      }
-    } else {
-      const mod = await import(`../../src/${set.name}`)
-      ICON_SETS.push({
-        name: set.componentPrefix,
-        icons: mod,
-        importPathPrefix: `../../src/${set.name}`,
-      })
-    }
-  }
-})
-
-function getAllIcons() {
-  return ICON_SETS.flatMap(set =>
-    Object.entries(set.icons).map(([name, Icon]) => ({
-      set: set.name,
-      name,
-      Icon,
-      importPath: `import { ${name} } from '${set.importPathPrefix}'`,
-    }))
-  )
-}
+import { createSignal, For } from 'solid-js'
+import { iconSets } from './iconSets'
 
 export default function App() {
   const [search, setSearch] = createSignal('')
-  const [icons, setIcons] = createSignal<any[]>([])
 
-  onMount(() => {
-    setIcons(getAllIcons())
-  })
+  const icons = iconSets.flatMap(set =>
+      Object.entries(set.icons).map(([name, Icon]) => ({
+        set: set.name,
+        name,
+        Icon,
+        importPath: `import { ${name} } from '${set.importPathPrefix}'`,
+      }))) 
 
   const filteredIcons = () =>
-    icons().filter(
+    icons.filter(
       i =>
         i.name.toLowerCase().includes(search().toLowerCase()) ||
         i.set.toLowerCase().includes(search().toLowerCase())

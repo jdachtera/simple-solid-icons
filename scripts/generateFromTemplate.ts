@@ -282,4 +282,36 @@ async function generateIcons(): Promise<void> {
   await updatePackageJsonExports(iconSetNames)
 }
 
-generateIcons().catch(console.error)
+async function generateDemoAllIcons() {
+  const demoIconsPath = path.resolve(__dirname, '../demo/src/iconSets.ts')
+  let content = ''
+  let iconSetsArr = 'export const iconSets = [\n'
+  for (const set of iconSetConfigs) {
+    if ('variants' in set) {
+      for (const variant of set.variants) {
+        const importName = `${capitalize(set.name)}${capitalize(variant.variant)}Icons`
+        const importPath = `../../src/${set.name}/${variant.variant}/index.js`
+        content += `import * as ${importName} from '${importPath}'\n`
+        iconSetsArr += `  { name: '${capitalize(set.name)}${capitalize(variant.variant)}', icons: ${importName}, importPathPrefix: '../../src/${set.name}/${variant.variant}' },\n`
+      }
+    } else {
+      const importName = `${capitalize(set.name)}Icons`
+      const importPath = `../../src/${set.name}/index.js`
+      content += `import * as ${importName} from '${importPath}'\n`
+      iconSetsArr += `  { name: '${capitalize(set.name)}', icons: ${importName}, importPathPrefix: '../../src/${set.name}' },\n`
+    }
+  }
+  iconSetsArr += ']\n'
+  content += '\n' + iconSetsArr
+  content = `function capitalize(str) { return str.charAt(0).toUpperCase() + str.slice(1) }\n` + content
+  await fs.writeFile(demoIconsPath, content)
+  console.log('✓ demo/src/iconSets.ts generated')
+}
+
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1)
+}
+
+generateIcons()
+  .then(generateDemoAllIcons)
+  .catch(console.error)
