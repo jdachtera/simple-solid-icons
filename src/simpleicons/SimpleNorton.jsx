@@ -1,32 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><title>Norton</title><path d="M23.978 12c0 6.617-5.373 12-11.978 12C5.395 24 .022 18.617.022 12S5.395 0 12 0c1.826 0 3.557.41 5.107 1.146l-1.99 2.567A8.787 8.787 0 0 0 12 3.145c-4.657 0-8.484 3.627-8.815 8.21a9.595 9.595 0 0 0-.023.645c0 4.883 3.964 8.855 8.838 8.855 4.874 0 8.838-3.972 8.838-8.855 0-.652-.07-1.29-.205-1.902l2.309-2.979A11.948 11.948 0 0 1 23.978 12m-2.442-7.253L19.518 7.35l-7.082 9.14-5.778-5.175L8.75 8.97l3.27 2.928L17.38 4.98l1.924-2.484a12.08 12.08 0 0 1 2.231 2.25">`);
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
 import { mergeProps } from 'solid-js';
-
 export function SimpleNorton(props) {
-  const merged = mergeProps(
-    {
-      size: 32,
-      color: 'currentColor',
-      fill: 'currentColor',
-      stroke: 'none',
-      'stroke-width': 2,
-      xmlns: 'http://www.w3.org/2000/svg',
-      viewBox: '0 0 24 24',
-      'stroke-linecap': 'round',
-      'stroke-linejoin': 'round',
-    },
-    props,
-  );
-  return (
-    <svg
-      {...merged}
-      width={merged.width ?? merged.size}
-      height={merged.height ?? merged.size}
-      stroke={merged.stroke ?? merged.color}
-      fill={merged.fill}
-    >
-      <title>Norton</title>
-      <path d="M23.978 12c0 6.617-5.373 12-11.978 12C5.395 24 .022 18.617.022 12S5.395 0 12 0c1.826 0 3.557.41 5.107 1.146l-1.99 2.567A8.787 8.787 0 0 0 12 3.145c-4.657 0-8.484 3.627-8.815 8.21a9.595 9.595 0 0 0-.023.645c0 4.883 3.964 8.855 8.838 8.855 4.874 0 8.838-3.972 8.838-8.855 0-.652-.07-1.29-.205-1.902l2.309-2.979A11.948 11.948 0 0 1 23.978 12m-2.442-7.253L19.518 7.35l-7.082 9.14-5.778-5.175L8.75 8.97l3.27 2.928L17.38 4.98l1.924-2.484a12.08 12.08 0 0 1 2.231 2.25" />
-    </svg>
-  );
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
 }

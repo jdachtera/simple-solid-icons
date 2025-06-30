@@ -1,40 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><rect x=4 y=4 width=16 height=16 rx=2 ry=2></rect><rect x=9 y=9 width=6 height=6></rect><line x1=9 y1=1 x2=9 y2=4></line><line x1=15 y1=1 x2=15 y2=4></line><line x1=9 y1=20 x2=9 y2=23></line><line x1=15 y1=20 x2=15 y2=23></line><line x1=20 y1=9 x2=23 y2=9></line><line x1=20 y1=14 x2=23 y2=14></line><line x1=1 y1=9 x2=4 y2=9></line><line x1=1 y1=14 x2=4 y2=14>`);
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: feather | License: MIT (<https://github.com/feathericons/feather/blob/main/LICENSE>)
 import { mergeProps } from 'solid-js';
-
 export function FeatherCpu(props) {
-  const merged = mergeProps(
-    {
-      size: 32,
-      color: 'currentColor',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': 2,
-      xmlns: 'http://www.w3.org/2000/svg',
-      viewBox: '0 0 24 24',
-      'stroke-linecap': 'round',
-      'stroke-linejoin': 'round',
-    },
-    props,
-  );
-  return (
-    <svg
-      {...merged}
-      width={merged.width ?? merged.size}
-      height={merged.height ?? merged.size}
-      stroke={merged.stroke ?? merged.color}
-      fill={merged.fill}
-    >
-      <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
-      <rect x="9" y="9" width="6" height="6" />
-      <line x1="9" y1="1" x2="9" y2="4" />
-      <line x1="15" y1="1" x2="15" y2="4" />
-      <line x1="9" y1="20" x2="9" y2="23" />
-      <line x1="15" y1="20" x2="15" y2="23" />
-      <line x1="20" y1="9" x2="23" y2="9" />
-      <line x1="20" y1="14" x2="23" y2="14" />
-      <line x1="1" y1="9" x2="4" y2="9" />
-      <line x1="1" y1="14" x2="4" y2="14" />
-    </svg>
-  );
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'none',
+    stroke: 'currentColor',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
 }

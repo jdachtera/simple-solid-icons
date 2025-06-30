@@ -1,31 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><path d="M7.1939 2.1017C7.52403 1.43278 8.47789 1.43277 8.80802 2.1017L10.3291 5.18375L13.7304 5.67798C14.4685 5.78525 14.7633 6.69242 14.2291 7.2131L11.768 9.61215L12.349 12.9997C12.4751 13.7349 11.7034 14.2955 11.0431 13.9484L8.00096 12.349L4.95879 13.9484C4.29853 14.2955 3.52684 13.7349 3.65294 12.9997L4.23394 9.61215L1.77277 7.2131C1.23861 6.69242 1.53336 5.78525 2.27156 5.67798L5.67281 5.18375L7.1939 2.1017ZM8.00096 2.72596L6.54628 5.67346C6.41519 5.93909 6.16178 6.1232 5.86864 6.1658L2.61588 6.63845L4.9696 8.93276C5.18171 9.13952 5.27851 9.43742 5.22843 9.72938L4.6728 12.969L7.58215 11.4395C7.84434 11.3016 8.15758 11.3016 8.41977 11.4395L11.3291 12.969L10.7735 9.72938C10.7234 9.43742 10.8202 9.13952 11.0323 8.93276L13.386 6.63845L10.1333 6.1658C9.84014 6.1232 9.58673 5.93909 9.45564 5.67346L8.00096 2.72596Z">`);
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: codicons | License: MIT (<https://github.com/microsoft/vscode-codicons/blob/main/LICENSE>)
 import { mergeProps } from 'solid-js';
-
 export function CodiconStarEmpty(props) {
-  const merged = mergeProps(
-    {
-      size: 32,
-      color: 'currentColor',
-      fill: 'currentColor',
-      stroke: 'none',
-      'stroke-width': 2,
-      xmlns: 'http://www.w3.org/2000/svg',
-      viewBox: '0 0 16 16',
-      'stroke-linecap': 'round',
-      'stroke-linejoin': 'round',
-    },
-    props,
-  );
-  return (
-    <svg
-      {...merged}
-      width={merged.width ?? merged.size}
-      height={merged.height ?? merged.size}
-      stroke={merged.stroke ?? merged.color}
-      fill={merged.fill}
-    >
-      <path d="M7.1939 2.1017C7.52403 1.43278 8.47789 1.43277 8.80802 2.1017L10.3291 5.18375L13.7304 5.67798C14.4685 5.78525 14.7633 6.69242 14.2291 7.2131L11.768 9.61215L12.349 12.9997C12.4751 13.7349 11.7034 14.2955 11.0431 13.9484L8.00096 12.349L4.95879 13.9484C4.29853 14.2955 3.52684 13.7349 3.65294 12.9997L4.23394 9.61215L1.77277 7.2131C1.23861 6.69242 1.53336 5.78525 2.27156 5.67798L5.67281 5.18375L7.1939 2.1017ZM8.00096 2.72596L6.54628 5.67346C6.41519 5.93909 6.16178 6.1232 5.86864 6.1658L2.61588 6.63845L4.9696 8.93276C5.18171 9.13952 5.27851 9.43742 5.22843 9.72938L4.6728 12.969L7.58215 11.4395C7.84434 11.3016 8.15758 11.3016 8.41977 11.4395L11.3291 12.969L10.7735 9.72938C10.7234 9.43742 10.8202 9.13952 11.0323 8.93276L13.386 6.63845L10.1333 6.1658C9.84014 6.1232 9.58673 5.93909 9.45564 5.67346L8.00096 2.72596Z" />
-    </svg>
-  );
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 16 16',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
 }

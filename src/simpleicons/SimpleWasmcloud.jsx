@@ -1,32 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><title>wasmCloud</title><path d="M21.805 5.477 12.797.215a1.591 1.591 0 0 0-1.6 0L2.19 5.477a1.41 1.41 0 0 0-.697 1.215v10.604a1.438 1.438 0 0 0 .715 1.243l9.023 5.251a1.553 1.553 0 0 0 1.558 0l8.998-5.25a1.438 1.438 0 0 0 .72-1.244V6.692a1.41 1.41 0 0 0-.702-1.215zm-2.001 10.428a.277.277 0 0 1-.139.238l-7.527 4.388a.277.277 0 0 1-.282 0l-7.524-4.385a.29.29 0 0 1-.14-.257v-7.8a.277.277 0 0 1 .138-.239l2.732-1.6a.284.284 0 0 1 .279 0 .277.277 0 0 1 .14.242v7.324l2.469-1.432v-7.65a.274.274 0 0 1 .138-.241l1.781-1.04a.277.277 0 0 1 .282 0l1.794 1.042a.28.28 0 0 1 .136.241v7.642l2.455 1.43V6.484a.277.277 0 0 1 .141-.24.28.28 0 0 1 .28 0l2.731 1.603a.277.277 0 0 1 .139.239z">`);
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
 import { mergeProps } from 'solid-js';
-
 export function SimpleWasmcloud(props) {
-  const merged = mergeProps(
-    {
-      size: 32,
-      color: 'currentColor',
-      fill: 'currentColor',
-      stroke: 'none',
-      'stroke-width': 2,
-      xmlns: 'http://www.w3.org/2000/svg',
-      viewBox: '0 0 24 24',
-      'stroke-linecap': 'round',
-      'stroke-linejoin': 'round',
-    },
-    props,
-  );
-  return (
-    <svg
-      {...merged}
-      width={merged.width ?? merged.size}
-      height={merged.height ?? merged.size}
-      stroke={merged.stroke ?? merged.color}
-      fill={merged.fill}
-    >
-      <title>wasmCloud</title>
-      <path d="M21.805 5.477 12.797.215a1.591 1.591 0 0 0-1.6 0L2.19 5.477a1.41 1.41 0 0 0-.697 1.215v10.604a1.438 1.438 0 0 0 .715 1.243l9.023 5.251a1.553 1.553 0 0 0 1.558 0l8.998-5.25a1.438 1.438 0 0 0 .72-1.244V6.692a1.41 1.41 0 0 0-.702-1.215zm-2.001 10.428a.277.277 0 0 1-.139.238l-7.527 4.388a.277.277 0 0 1-.282 0l-7.524-4.385a.29.29 0 0 1-.14-.257v-7.8a.277.277 0 0 1 .138-.239l2.732-1.6a.284.284 0 0 1 .279 0 .277.277 0 0 1 .14.242v7.324l2.469-1.432v-7.65a.274.274 0 0 1 .138-.241l1.781-1.04a.277.277 0 0 1 .282 0l1.794 1.042a.28.28 0 0 1 .136.241v7.642l2.455 1.43V6.484a.277.277 0 0 1 .141-.24.28.28 0 0 1 .28 0l2.731 1.603a.277.277 0 0 1 .139.239z" />
-    </svg>
-  );
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
 }

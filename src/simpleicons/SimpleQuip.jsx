@@ -1,32 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><title>Quip</title><path d="M22.154 22.154H12a10.06 10.06 0 01-7.4-3.201C2.66 16.89 1.69 14.19 1.868 11.35c.315-5.091 4.39-9.168 9.482-9.484.22-.014.44-.02.657-.02A10.058 10.059 0 0118.952 4.6a10.058 10.059 0 013.202 7.4zm-1.938-18.9C17.778.963 14.59-.186 11.236.024 5.218.399.398 5.219.024 11.237c-.207 3.353.94 6.543 3.231 8.98A12.047 12.048 0 0012 24h11.077c.51 0 .923-.413.923-.922V12a12.047 12.048 0 00-3.784-8.745m-4.062 11.976H7.846a.923.923 0 000 1.846h8.308a.923.923 0 000-1.846M7.846 8.77h8.308a.923.923 0 000-1.847H7.846a.923.923 0 000 1.847m-2.769 2.308a.923.923 0 000 1.845h13.846a.923.923 0 000-1.846H5.077Z">`);
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
 import { mergeProps } from 'solid-js';
-
 export function SimpleQuip(props) {
-  const merged = mergeProps(
-    {
-      size: 32,
-      color: 'currentColor',
-      fill: 'currentColor',
-      stroke: 'none',
-      'stroke-width': 2,
-      xmlns: 'http://www.w3.org/2000/svg',
-      viewBox: '0 0 24 24',
-      'stroke-linecap': 'round',
-      'stroke-linejoin': 'round',
-    },
-    props,
-  );
-  return (
-    <svg
-      {...merged}
-      width={merged.width ?? merged.size}
-      height={merged.height ?? merged.size}
-      stroke={merged.stroke ?? merged.color}
-      fill={merged.fill}
-    >
-      <title>Quip</title>
-      <path d="M22.154 22.154H12a10.06 10.06 0 01-7.4-3.201C2.66 16.89 1.69 14.19 1.868 11.35c.315-5.091 4.39-9.168 9.482-9.484.22-.014.44-.02.657-.02A10.058 10.059 0 0118.952 4.6a10.058 10.059 0 013.202 7.4zm-1.938-18.9C17.778.963 14.59-.186 11.236.024 5.218.399.398 5.219.024 11.237c-.207 3.353.94 6.543 3.231 8.98A12.047 12.048 0 0012 24h11.077c.51 0 .923-.413.923-.922V12a12.047 12.048 0 00-3.784-8.745m-4.062 11.976H7.846a.923.923 0 000 1.846h8.308a.923.923 0 000-1.846M7.846 8.77h8.308a.923.923 0 000-1.847H7.846a.923.923 0 000 1.847m-2.769 2.308a.923.923 0 000 1.845h13.846a.923.923 0 000-1.846H5.077Z" />
-    </svg>
-  );
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
 }

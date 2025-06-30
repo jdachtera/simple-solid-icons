@@ -11,6 +11,9 @@ importers:
       '@ant-design/icons-svg':
         specifier: ^4.4.2
         version: 4.4.2
+      '@babel/core':
+        specifier: ^7.27.7
+        version: 7.27.7
       '@fortawesome/fontawesome-free':
         specifier: ^6.7.2
         version: 6.7.2
@@ -23,12 +26,18 @@ importers:
       '@vscode/codicons':
         specifier: ^0.0.36
         version: 0.0.36
+      babel-preset-solid:
+        specifier: ^1.9.6
+        version: 1.9.6(@babel/core@7.27.7)
       bootstrap-icons:
         specifier: ^1.13.1
         version: 1.13.1
       boxicons:
         specifier: ^2.1.4
         version: 2.1.4
+      core:
+        specifier: link:@types/@babel/core
+        version: link:@types/@babel/core
       feather-icons:
         specifier: ^4.29.2
         version: 4.29.2

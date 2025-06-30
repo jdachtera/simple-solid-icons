@@ -1,0 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><defs></defs><title>volume-off</title><g id=Layer_2 data-name="Layer 2"><g id=volume-off><g id=volume-off-2 data-name=volume-off><path d=M16.91,14.08l1.44,1.44a6,6,0,0,0-.07-7.15,1,1,0,1,0-1.56,1.26A4,4,0,0,1,16.91,14.08Z></path><path d=M21,12a6.51,6.51,0,0,1-1.78,4.39l1.42,1.42A8.53,8.53,0,0,0,23,12a8.75,8.75,0,0,0-3.36-6.77,1,1,0,1,0-1.28,1.54A6.8,6.8,0,0,1,21,12Z></path><path d=M15,12.17V4a1,1,0,0,0-1.57-.83L9,6.2Z></path><path d=M4.74,7.57H2a1,1,0,0,0-1,1v6.86a1,1,0,0,0,1,1H7l6.41,4.4A1.06,1.06,0,0,0,14,21a1,1,0,0,0,1-1V17.83Z></path><path d=M4.71,3.29A1,1,0,0,0,3.29,4.71l16,16a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z>`);
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: eva | License: MIT (<https://github.com/akveo/eva-icons/blob/master/LICENSE.txt>)
+import { mergeProps } from 'solid-js';
+export function EvaFillVolumeOff(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
+}

@@ -1,32 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><title>Nordic Semiconductor</title><path d="m11.3384 12.4477 12.0796 6.9917-2.8939 1.73-1.92 1.0924c-.2979.1987-.5627.298-.8938.1656h-.033c-.0331 0-.0663 0-.0994-.0331L6.1572 15.8067v6.72c-.2453 0-.3825-.0384-.5627-.1324L.5627 19.448C.2317 19.2495 0 18.8853 0 18.488V5.8713l10.7656 6.2395.5728.3369zm5.7544-10.7733-4.4662 2.5522 4.4662 2.5965V1.6744zm6.0465 2.546-4.4359-2.5489c-.2648-.1324-.5627-.1986-.8606-.1986v6.6538l-9.9642-5.793-1.1255-.629c-.4966-.2649-.9269-.298-1.4234-.0663L3.3765 2.7971.8607 4.2536c-.331.1986-.5628.4634-.7283.8276l.2437.1412 3.2623 1.8908 7.4234 4.3024-.6586-.3817.7385.428.577.3392 5.0774 2.939 6.9976 4.0502.107.062c.0662-.2318.0993-.6536.0993-.6536V5.7101c0-.629-.331-1.1917-.8607-1.4896zM6.9073 22.2528l4.4525-2.5792-4.4526-2.5683v5.1475z">`);
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
 import { mergeProps } from 'solid-js';
-
 export function SimpleNordicsemiconductor(props) {
-  const merged = mergeProps(
-    {
-      size: 32,
-      color: 'currentColor',
-      fill: 'currentColor',
-      stroke: 'none',
-      'stroke-width': 2,
-      xmlns: 'http://www.w3.org/2000/svg',
-      viewBox: '0 0 24 24',
-      'stroke-linecap': 'round',
-      'stroke-linejoin': 'round',
-    },
-    props,
-  );
-  return (
-    <svg
-      {...merged}
-      width={merged.width ?? merged.size}
-      height={merged.height ?? merged.size}
-      stroke={merged.stroke ?? merged.color}
-      fill={merged.fill}
-    >
-      <title>Nordic Semiconductor</title>
-      <path d="m11.3384 12.4477 12.0796 6.9917-2.8939 1.73-1.92 1.0924c-.2979.1987-.5627.298-.8938.1656h-.033c-.0331 0-.0663 0-.0994-.0331L6.1572 15.8067v6.72c-.2453 0-.3825-.0384-.5627-.1324L.5627 19.448C.2317 19.2495 0 18.8853 0 18.488V5.8713l10.7656 6.2395.5728.3369zm5.7544-10.7733-4.4662 2.5522 4.4662 2.5965V1.6744zm6.0465 2.546-4.4359-2.5489c-.2648-.1324-.5627-.1986-.8606-.1986v6.6538l-9.9642-5.793-1.1255-.629c-.4966-.2649-.9269-.298-1.4234-.0663L3.3765 2.7971.8607 4.2536c-.331.1986-.5628.4634-.7283.8276l.2437.1412 3.2623 1.8908 7.4234 4.3024-.6586-.3817.7385.428.577.3392 5.0774 2.939 6.9976 4.0502.107.062c.0662-.2318.0993-.6536.0993-.6536V5.7101c0-.629-.331-1.1917-.8607-1.4896zM6.9073 22.2528l4.4525-2.5792-4.4526-2.5683v5.1475z" />
-    </svg>
-  );
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
 }

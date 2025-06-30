@@ -1,0 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><defs></defs><title>facebook</title><g id=Layer_2 data-name="Layer 2"><g id=facebook><g id=facebook-2 data-name=facebook><path d=M13,22H9a1,1,0,0,1-1-1V14.8H6a1,1,0,0,1-1-1V10.2a1,1,0,0,1,1-1H8V7.5A5.77,5.77,0,0,1,14,2h3a1,1,0,0,1,1,1V6.6a1,1,0,0,1-1,1H14V9.2h3a1,1,0,0,1,.8.39,1,1,0,0,1,.16.88l-1,3.6a1,1,0,0,1-1,.73H14V21A1,1,0,0,1,13,22Zm-3-2h2V13.8a1,1,0,0,1,1-1h2.24l.44-1.6H13a1,1,0,0,1-1-1V7.5a2,2,0,0,1,2-1.9h2V4H14a3.78,3.78,0,0,0-4,3.5v2.7a1,1,0,0,1-1,1H7v1.6H9a1,1,0,0,1,1,1Z>`);
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: eva | License: MIT (<https://github.com/akveo/eva-icons/blob/master/LICENSE.txt>)
+import { mergeProps } from 'solid-js';
+export function EvaOutlineFacebookOutline(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
+}

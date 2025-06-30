@@ -1,32 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><title>Gumtree</title><path d="M18.846 6.582a.698.698 0 0 1-.333-.599C18.181 2.66 15.39 0 12 0 8.609 0 5.75 2.593 5.485 5.983a.796.796 0 0 1-.332.599C3.49 7.778 2.36 9.707 2.36 11.9c0 2.991 2.061 5.584 4.853 6.316.465.133.998.2 1.13.066.333-.2.798-1.862.599-2.194-.134-.2-.533-.399-1.064-.532-1.662-.465-2.86-1.928-2.86-3.723 0-.997.4-1.861.998-2.592a2.927 2.927 0 0 1 .998-.798c.73-.4 1.13-1.13 1.13-1.928 0-.4.066-.798.2-1.196.531-1.53 1.927-2.66 3.656-2.66 1.728 0 3.125 1.13 3.656 2.66.132.399.2.798.2 1.196 0 .798.397 1.529 1.13 1.928.398.2.664.465.997.798a3.918 3.918 0 0 1 .997 2.592 3.859 3.859 0 0 1-3.855 3.856c-2.46 0-4.388 1.995-4.388 4.455v2.526c0 .465.066.997.2 1.13.266.267 1.995.267 2.26 0 .133-.133.2-.665.2-1.13v-2.593c0-.93.797-1.728 1.728-1.728 3.59 0 6.515-2.925 6.515-6.515-.002-2.128-1.133-4.056-2.794-5.252z">`);
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
 import { mergeProps } from 'solid-js';
-
 export function SimpleGumtree(props) {
-  const merged = mergeProps(
-    {
-      size: 32,
-      color: 'currentColor',
-      fill: 'currentColor',
-      stroke: 'none',
-      'stroke-width': 2,
-      xmlns: 'http://www.w3.org/2000/svg',
-      viewBox: '0 0 24 24',
-      'stroke-linecap': 'round',
-      'stroke-linejoin': 'round',
-    },
-    props,
-  );
-  return (
-    <svg
-      {...merged}
-      width={merged.width ?? merged.size}
-      height={merged.height ?? merged.size}
-      stroke={merged.stroke ?? merged.color}
-      fill={merged.fill}
-    >
-      <title>Gumtree</title>
-      <path d="M18.846 6.582a.698.698 0 0 1-.333-.599C18.181 2.66 15.39 0 12 0 8.609 0 5.75 2.593 5.485 5.983a.796.796 0 0 1-.332.599C3.49 7.778 2.36 9.707 2.36 11.9c0 2.991 2.061 5.584 4.853 6.316.465.133.998.2 1.13.066.333-.2.798-1.862.599-2.194-.134-.2-.533-.399-1.064-.532-1.662-.465-2.86-1.928-2.86-3.723 0-.997.4-1.861.998-2.592a2.927 2.927 0 0 1 .998-.798c.73-.4 1.13-1.13 1.13-1.928 0-.4.066-.798.2-1.196.531-1.53 1.927-2.66 3.656-2.66 1.728 0 3.125 1.13 3.656 2.66.132.399.2.798.2 1.196 0 .798.397 1.529 1.13 1.928.398.2.664.465.997.798a3.918 3.918 0 0 1 .997 2.592 3.859 3.859 0 0 1-3.855 3.856c-2.46 0-4.388 1.995-4.388 4.455v2.526c0 .465.066.997.2 1.13.266.267 1.995.267 2.26 0 .133-.133.2-.665.2-1.13v-2.593c0-.93.797-1.728 1.728-1.728 3.59 0 6.515-2.925 6.515-6.515-.002-2.128-1.133-4.056-2.794-5.252z" />
-    </svg>
-  );
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
 }

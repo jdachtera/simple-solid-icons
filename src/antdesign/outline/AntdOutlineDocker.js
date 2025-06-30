@@ -1,0 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><path d="M555.88 488.24h-92.62v-82.79h92.62zm0-286.24h-92.62v85.59h92.62zm109.45 203.45H572.7v82.79h92.62zm-218.9-101.02h-92.61v84.18h92.6zm109.45 0h-92.61v84.18h92.6zm388.69 140.3c-19.65-14.02-67.36-18.23-102.44-11.22-4.2-33.67-23.85-63.14-57.53-89.8l-19.65-12.62-12.62 19.64c-25.26 39.29-32.28 103.83-5.62 145.92-12.63 7.02-36.48 15.44-67.35 15.44H67.56c-12.63 71.56 8.42 164.16 61.74 227.3C181.22 801.13 259.8 832 360.83 832c220.3 0 384.48-101.02 460.25-286.24 29.47 0 95.42 0 127.7-63.14 1.4-2.8 9.82-18.24 11.22-23.85zm-717.04-39.28h-92.61v82.79h92.6zm109.45 0h-92.61v82.79h92.6zm109.45 0h-92.61v82.79h92.6zM336.98 304.43h-92.61v84.19h92.6z">`);
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: antdesign | License: MIT (<https://github.com/ant-design/ant-design-icons/blob/master/LICENSE>)
+import { mergeProps } from 'solid-js';
+export function AntdOutlineDocker(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '64 64 896 896',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
+}

@@ -1,31 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><path d="M5.68897 3.568L4.95897 2.838C5.86797 2.302 6.90997 2 7.99997 2C11.241 2 13.889 4.582 13.996 7.797L15.146 6.647L15.853 7.354L13.853 9.354H13.146L11.146 7.354L11.853 6.647L12.995 7.789C12.884 5.13 10.686 3.001 7.99997 3.001C7.18097 3.001 6.39197 3.202 5.68897 3.568ZM7.99997 13C5.31397 13 3.11597 10.871 3.00497 8.212L4.14697 9.354L4.85397 8.647L2.85397 6.647H2.14697L0.146973 8.647L0.853973 9.354L2.00397 8.204C2.11197 11.419 4.75997 14.001 7.99997 14.001C9.08897 14.001 10.132 13.699 11.041 13.163L10.311 12.433C9.60797 12.8 8.81897 13.001 7.99997 13.001V13ZM1.64597 2.354L13.646 14.354L14.353 13.647L2.35397 1.646L1.64697 2.353L1.64597 2.354Z">`);
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: codicons | License: MIT (<https://github.com/microsoft/vscode-codicons/blob/main/LICENSE>)
 import { mergeProps } from 'solid-js';
-
 export function CodiconSyncIgnored(props) {
-  const merged = mergeProps(
-    {
-      size: 32,
-      color: 'currentColor',
-      fill: 'currentColor',
-      stroke: 'none',
-      'stroke-width': 2,
-      xmlns: 'http://www.w3.org/2000/svg',
-      viewBox: '0 0 16 16',
-      'stroke-linecap': 'round',
-      'stroke-linejoin': 'round',
-    },
-    props,
-  );
-  return (
-    <svg
-      {...merged}
-      width={merged.width ?? merged.size}
-      height={merged.height ?? merged.size}
-      stroke={merged.stroke ?? merged.color}
-      fill={merged.fill}
-    >
-      <path d="M5.68897 3.568L4.95897 2.838C5.86797 2.302 6.90997 2 7.99997 2C11.241 2 13.889 4.582 13.996 7.797L15.146 6.647L15.853 7.354L13.853 9.354H13.146L11.146 7.354L11.853 6.647L12.995 7.789C12.884 5.13 10.686 3.001 7.99997 3.001C7.18097 3.001 6.39197 3.202 5.68897 3.568ZM7.99997 13C5.31397 13 3.11597 10.871 3.00497 8.212L4.14697 9.354L4.85397 8.647L2.85397 6.647H2.14697L0.146973 8.647L0.853973 9.354L2.00397 8.204C2.11197 11.419 4.75997 14.001 7.99997 14.001C9.08897 14.001 10.132 13.699 11.041 13.163L10.311 12.433C9.60797 12.8 8.81897 13.001 7.99997 13.001V13ZM1.64597 2.354L13.646 14.354L14.353 13.647L2.35397 1.646L1.64697 2.353L1.64597 2.354Z" />
-    </svg>
-  );
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 16 16',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
 }
