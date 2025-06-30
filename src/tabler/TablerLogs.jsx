@@ -25,6 +25,7 @@ export function TablerLogs(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 12h.01" />
       <path d="M4 6h.01" />
       <path d="M4 18h.01" />

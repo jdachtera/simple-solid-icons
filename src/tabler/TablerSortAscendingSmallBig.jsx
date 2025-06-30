@@ -25,6 +25,7 @@ export function TablerSortAscendingSmallBig(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 15l3 3l3 -3" />
       <path d="M7 6v12" />
       <path d="M14 5.667c0 -.369 .298 -.667 .667 -.667h2.666c.369 0 .667 .298 .667 .667v2.666a.667 .667 0 0 1 -.667 .667h-2.666a.667 .667 0 0 1 -.667 -.667v-2.666z" />

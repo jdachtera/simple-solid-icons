@@ -25,6 +25,7 @@ export function TablerBrandTripadvisor(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M6.5 13.5m-1.5 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0" />
       <path d="M17.5 13.5m-1.5 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0" />
       <path d="M17.5 9a4.5 4.5 0 1 0 3.5 1.671l1 -1.671h-4.5z" />

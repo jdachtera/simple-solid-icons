@@ -25,6 +25,7 @@ export function TablerBorderRadius(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 12v-4a4 4 0 0 1 4 -4h4" />
       <path d="M16 4l0 .01" />
       <path d="M20 4l0 .01" />

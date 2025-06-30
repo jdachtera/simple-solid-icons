@@ -25,6 +25,7 @@ export function TablerZoomReplace(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M21 21l-6 -6" />
       <path d="M3.291 8a7 7 0 0 1 5.077 -4.806a7.021 7.021 0 0 1 8.242 4.403" />
       <path d="M17 4v4h-4" />

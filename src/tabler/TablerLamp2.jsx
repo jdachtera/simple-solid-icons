@@ -25,6 +25,7 @@ export function TablerLamp2(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M5 21h9" />
       <path d="M10 21l-7 -8l8.5 -5.5" />
       <path d="M13 14c-2.148 -2.148 -2.148 -5.852 0 -8c2.088 -2.088 5.842 -1.972 8 0l-8 8z" />

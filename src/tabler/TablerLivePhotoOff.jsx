@@ -25,6 +25,7 @@ export function TablerLivePhotoOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M11.296 11.29a1 1 0 1 0 1.414 1.415" />
       <path d="M8.473 8.456a5 5 0 1 0 7.076 7.066m1.365 -2.591a5 5 0 0 0 -5.807 -5.851" />
       <path d="M15.9 20.11v.01" />

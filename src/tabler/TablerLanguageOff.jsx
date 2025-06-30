@@ -25,6 +25,7 @@ export function TablerLanguageOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 5h1m4 0h2" />
       <path d="M9 3v2m-.508 3.517c-.814 2.655 -2.52 4.483 -4.492 4.483" />
       <path d="M5 9c0 2.144 2.952 3.908 6.7 4" />

@@ -25,6 +25,7 @@ export function TablerSignal4gPlus(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M17 12h4" />
       <path d="M3 8v3a1 1 0 0 0 1 1h3" />
       <path d="M7 8v8" />

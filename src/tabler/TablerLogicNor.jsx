@@ -25,6 +25,7 @@ export function TablerLogicNor(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M22 12h-4" />
       <path d="M2 9h5" />
       <path d="M2 15h5" />

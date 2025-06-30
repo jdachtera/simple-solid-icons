@@ -25,6 +25,7 @@ export function TablerBrandDenodo(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M11 11h2v2h-2z" />
       <path d="M3.634 15.634l1.732 -1l1 1.732l-1.732 1z" />
       <path d="M11 19h2v2h-2z" />

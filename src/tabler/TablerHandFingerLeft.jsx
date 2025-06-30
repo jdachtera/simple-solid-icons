@@ -25,6 +25,7 @@ export function TablerHandFingerLeft(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 8h-8.5a1.5 1.5 0 0 0 0 3h7.5" />
       <path d="M10.5 11h-2a1.5 1.5 0 1 0 0 3h2.5" />
       <path d="M9.5 14a1.5 1.5 0 0 0 0 3h1.5" />

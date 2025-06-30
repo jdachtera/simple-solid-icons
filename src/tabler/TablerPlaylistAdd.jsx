@@ -25,6 +25,7 @@ export function TablerPlaylistAdd(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M19 8h-14" />
       <path d="M5 12h9" />
       <path d="M11 16h-6" />

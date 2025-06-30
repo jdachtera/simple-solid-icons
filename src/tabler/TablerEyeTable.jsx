@@ -25,6 +25,7 @@ export function TablerEyeTable(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 18h-.011" />
       <path d="M12 18h-.011" />
       <path d="M16 18h-.011" />

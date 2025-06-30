@@ -25,6 +25,7 @@ export function TablerArrowBarUp(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 4l0 10" />
       <path d="M12 4l4 4" />
       <path d="M12 4l-4 4" />

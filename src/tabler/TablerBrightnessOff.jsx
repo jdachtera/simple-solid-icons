@@ -25,6 +25,7 @@ export function TablerBrightnessOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 3v5m0 4v9" />
       <path d="M5.641 5.631a9 9 0 1 0 12.719 12.738m1.68 -2.318a9 9 0 0 0 -12.074 -12.098" />
       <path d="M12.5 8.5l4.15 -4.15" />

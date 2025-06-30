@@ -25,6 +25,7 @@ export function TablerMathGreater(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M5 18l14 -6l-14 -6" />
     </svg>
   );

@@ -25,6 +25,7 @@ export function TablerBrandNpm(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M1 8h22v7h-12v2h-4v-2h-6z" />
       <path d="M7 8v7" />
       <path d="M14 8v7" />

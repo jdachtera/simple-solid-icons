@@ -25,6 +25,7 @@ export function TablerBorderStyle2(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 18v.01" />
       <path d="M8 18v.01" />
       <path d="M12 18v.01" />

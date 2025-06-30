@@ -25,6 +25,7 @@ export function TablerWindsock(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M6 3v18" />
       <path d="M6 11l12 -1v-4l-12 -1" />
       <path d="M10 5.5v5" />

@@ -25,6 +25,7 @@ export function TablerSubtask(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M6 9l6 0" />
       <path d="M4 5l4 0" />
       <path d="M6 5v11a1 1 0 0 0 1 1h5" />

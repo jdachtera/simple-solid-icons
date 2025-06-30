@@ -25,6 +25,7 @@ export function TablerAd2(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M11.933 5h-6.933v16h13v-8" />
       <path d="M14 17h-5" />
       <path d="M9 13h5v-4h-5z" />

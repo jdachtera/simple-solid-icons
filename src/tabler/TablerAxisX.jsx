@@ -25,6 +25,7 @@ export function TablerAxisX(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 13v.01" />
       <path d="M4 9v.01" />
       <path d="M4 5v.01" />

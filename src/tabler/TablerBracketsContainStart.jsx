@@ -25,6 +25,7 @@ export function TablerBracketsContainStart(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M9 4h-4v16h4" />
       <path d="M18 16h-.01" />
       <path d="M14 16h-.01" />

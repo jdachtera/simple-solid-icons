@@ -25,6 +25,7 @@ export function TablerCircuitBulb(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M2 12h5" />
       <path d="M17 12h5" />
       <path d="M12 12m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" />

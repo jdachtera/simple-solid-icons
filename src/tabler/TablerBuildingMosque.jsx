@@ -25,6 +25,7 @@ export function TablerBuildingMosque(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 21h7v-2a2 2 0 1 1 4 0v2h7" />
       <path d="M4 21v-10" />
       <path d="M20 21v-10" />

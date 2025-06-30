@@ -25,6 +25,7 @@ export function TablerCodeDots(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M15 12h.01" />
       <path d="M12 12h.01" />
       <path d="M9 12h.01" />

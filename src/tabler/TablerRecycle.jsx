@@ -25,6 +25,7 @@ export function TablerRecycle(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 17l-2 2l2 2" />
       <path d="M10 19h9a2 2 0 0 0 1.75 -2.75l-.55 -1" />
       <path d="M8.536 11l-.732 -2.732l-2.732 .732" />

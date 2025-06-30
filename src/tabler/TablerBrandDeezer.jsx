@@ -25,6 +25,7 @@ export function TablerBrandDeezer(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 16.5h2v.5h-2z" />
       <path d="M8 16.5h2.5v.5h-2.5z" />
       <path d="M16 17h-2.5v-.5h2.5z" />

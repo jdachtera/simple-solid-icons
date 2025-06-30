@@ -25,6 +25,7 @@ export function TablerSolarPanel2(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 2a4 4 0 1 0 8 0" />
       <path d="M4 3h1" />
       <path d="M19 3h1" />

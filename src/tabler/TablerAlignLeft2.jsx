@@ -25,6 +25,7 @@ export function TablerAlignLeft2(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 4v16" />
       <path d="M8 6h12" />
       <path d="M8 12h6" />

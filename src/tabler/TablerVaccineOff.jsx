@@ -25,6 +25,7 @@ export function TablerVaccineOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M17 3l4 4" />
       <path d="M19 5l-4.5 4.5" />
       <path d="M11.5 6.5l6 6" />

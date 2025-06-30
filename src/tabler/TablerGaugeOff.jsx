@@ -25,6 +25,7 @@ export function TablerGaugeOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M20.038 16.052a9 9 0 0 0 -12.067 -12.102m-2.333 1.686a9 9 0 1 0 12.73 12.726" />
       <path d="M11.283 11.303a1 1 0 0 0 1.419 1.41" />
       <path d="M14 10l2 -2" />

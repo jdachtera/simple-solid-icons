@@ -25,6 +25,7 @@ export function TablerHaze(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 12h1" />
       <path d="M12 3v1" />
       <path d="M20 12h1" />

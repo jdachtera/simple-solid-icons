@@ -25,6 +25,7 @@ export function TablerBed(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M7 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
       <path d="M22 17v-3h-20" />
       <path d="M2 8v9" />

@@ -25,6 +25,7 @@ export function TablerToiletPaperOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4.27 4.28c-.768 1.27 -1.27 3.359 -1.27 5.72c0 3.866 1.343 7 3 7s3 -3.134 3 -7c0 -.34 -.01 -.672 -.03 -1" />
       <path d="M21 10c0 -3.866 -1.343 -7 -3 -7" />
       <path d="M7 3h11" />

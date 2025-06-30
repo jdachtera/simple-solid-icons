@@ -25,6 +25,7 @@ export function TablerFileTextShield(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M13 3v4a.997 .997 0 0 0 1 1h4" />
       <path d="M11 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v3.5" />
       <path d="M8 9h1" />

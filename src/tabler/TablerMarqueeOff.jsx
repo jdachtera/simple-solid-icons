@@ -25,6 +25,7 @@ export function TablerMarqueeOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 6c0 -.556 .227 -1.059 .593 -1.421" />
       <path d="M9 4h1.5" />
       <path d="M13.5 4h1.5" />

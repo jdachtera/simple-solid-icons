@@ -25,6 +25,7 @@ export function TablerDeviceMobileCog(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 21h-4a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v6.5" />
       <path d="M11 4h2" />
       <path d="M12 17v.01" />

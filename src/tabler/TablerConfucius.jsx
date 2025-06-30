@@ -25,6 +25,7 @@ export function TablerConfucius(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M9 19l3 2v-18" />
       <path d="M4 10l8 -2" />
       <path d="M4 18l8 -10" />

@@ -25,6 +25,7 @@ export function TablerMonkeybar(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 21v-15l5 -3l5 3v15" />
       <path d="M8 21v-7" />
       <path d="M3 14h10" />

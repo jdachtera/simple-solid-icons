@@ -25,6 +25,7 @@ export function TablerDelta(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 20h16l-8 -16z" />
     </svg>
   );

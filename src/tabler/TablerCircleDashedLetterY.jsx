@@ -25,6 +25,7 @@ export function TablerCircleDashedLetterY(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M10 8l2 5l2 -5" />
       <path d="M12 16v-3" />
       <path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />

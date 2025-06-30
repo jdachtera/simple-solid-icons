@@ -25,6 +25,7 @@ export function TablerCodeAsterisk(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M6 19a2 2 0 0 1 -2 -2v-4l-1 -1l1 -1v-4a2 2 0 0 1 2 -2" />
       <path d="M12 11.875l3 -1.687" />
       <path d="M12 11.875v3.375" />

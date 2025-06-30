@@ -25,6 +25,7 @@ export function TablerChevronCompactLeft(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M13 20l-3 -8l3 -8" />
     </svg>
   );

@@ -25,6 +25,7 @@ export function TablerCast(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 19l.01 0" />
       <path d="M7 19a4 4 0 0 0 -4 -4" />
       <path d="M11 19a8 8 0 0 0 -8 -8" />

@@ -25,6 +25,7 @@ export function TablerWorldWww(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M19.5 7a9 9 0 0 0 -7.5 -4a8.991 8.991 0 0 0 -7.484 4" />
       <path d="M11.5 3a16.989 16.989 0 0 0 -1.826 4" />
       <path d="M12.5 3a16.989 16.989 0 0 1 1.828 4" />

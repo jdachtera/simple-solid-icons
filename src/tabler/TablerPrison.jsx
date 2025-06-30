@@ -25,6 +25,7 @@ export function TablerPrison(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M18 4v16" />
       <path d="M14 4v16" />
       <path d="M6 4v5" />

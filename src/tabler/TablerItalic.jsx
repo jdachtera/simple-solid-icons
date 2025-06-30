@@ -25,6 +25,7 @@ export function TablerItalic(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M11 5l6 0" />
       <path d="M7 19l6 0" />
       <path d="M14 5l-4 14" />

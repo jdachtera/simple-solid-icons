@@ -25,6 +25,7 @@ export function TablerWifiOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 18l.01 0" />
       <path d="M9.172 15.172a4 4 0 0 1 5.656 0" />
       <path d="M6.343 12.343a7.963 7.963 0 0 1 3.864 -2.14m4.163 .155a7.965 7.965 0 0 1 3.287 2" />

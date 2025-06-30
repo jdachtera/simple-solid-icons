@@ -25,6 +25,7 @@ export function TablerConfetti(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 5h2" />
       <path d="M5 4v2" />
       <path d="M11.5 4l-.5 2" />

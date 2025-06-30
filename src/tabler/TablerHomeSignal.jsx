@@ -25,6 +25,7 @@ export function TablerHomeSignal(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M15 22v-2" />
       <path d="M18 22v-4" />
       <path d="M21 22v-6" />

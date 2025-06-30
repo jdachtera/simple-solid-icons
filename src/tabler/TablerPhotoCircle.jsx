@@ -25,6 +25,7 @@ export function TablerPhotoCircle(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M15 8h.01" />
       <path d="M4 15l4 -4c.928 -.893 2.072 -.893 3 0l5 5" />
       <path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l2 2" />

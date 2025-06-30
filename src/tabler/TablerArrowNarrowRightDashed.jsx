@@ -25,6 +25,7 @@ export function TablerArrowNarrowRightDashed(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M5 12h.5m3 0h1.5m3 0h6" />
       <path d="M15 16l4 -4" />
       <path d="M15 8l4 4" />

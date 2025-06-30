@@ -25,6 +25,7 @@ export function TablerSquaresSelected(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 10a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
       <path d="M8 14.5l6.492 -6.492" />
       <path d="M13.496 20l6.504 -6.504z" />

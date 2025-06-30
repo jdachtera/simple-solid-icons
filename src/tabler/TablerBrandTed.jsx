@@ -25,6 +25,7 @@ export function TablerBrandTed(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M2 8h4" />
       <path d="M4 8v8" />
       <path d="M13 8h-4v8h4" />

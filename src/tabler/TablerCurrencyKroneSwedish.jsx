@@ -25,6 +25,7 @@ export function TablerCurrencyKroneSwedish(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M5 6v12" />
       <path d="M5 12c3.5 0 6 -3 6 -6" />
       <path d="M5 12c3.5 0 6 3 6 6" />

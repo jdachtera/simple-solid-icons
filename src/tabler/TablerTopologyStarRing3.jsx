@@ -25,6 +25,7 @@ export function TablerTopologyStarRing3(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M10 19a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
       <path d="M18 5a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
       <path d="M10 5a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />

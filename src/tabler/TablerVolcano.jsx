@@ -25,6 +25,7 @@ export function TablerVolcano(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M9 8v-1a2 2 0 1 0 -4 0" />
       <path d="M15 8v-1a2 2 0 1 1 4 0" />
       <path d="M4 20l3.472 -7.812a2 2 0 0 1 1.828 -1.188h5.4a2 2 0 0 1 1.828 1.188l3.472 7.812" />

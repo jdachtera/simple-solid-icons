@@ -25,6 +25,7 @@ export function TablerDevicesPcOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M9 9v10h-6v-14h2" />
       <path d="M13 9h9v7h-2m-4 0h-4v-4" />
       <path d="M14 19h5" />

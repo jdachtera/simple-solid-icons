@@ -25,6 +25,7 @@ export function TablerMatrix(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 16h.013" />
       <path d="M12.01 16h.005" />
       <path d="M16.015 16h.005" />

@@ -25,6 +25,7 @@ export function TablerCashBanknoteEdit(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M11 18h-6a2 2 0 0 1 -2 -2v-8a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v3" />
       <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
       <path d="M6 12h.01" />

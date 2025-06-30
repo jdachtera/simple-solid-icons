@@ -25,6 +25,7 @@ export function TablerSkiJumping(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M11 3a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
       <path d="M17 17.5l-5 -4.5v-6l5 4" />
       <path d="M7 17.5l5 -4.5" />

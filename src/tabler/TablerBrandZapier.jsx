@@ -25,6 +25,7 @@ export function TablerBrandZapier(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 12h6" />
       <path d="M21 12h-6" />
       <path d="M12 3v6" />

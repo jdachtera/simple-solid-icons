@@ -25,6 +25,7 @@ export function TablerVipOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 5h2m4 0h12" />
       <path d="M3 19h16" />
       <path d="M4 9l2 6h1l2 -6" />

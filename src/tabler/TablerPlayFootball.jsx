@@ -25,6 +25,7 @@ export function TablerPlayFootball(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M11 4a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
       <path d="M3 17l5 1l.75 -1.5" />
       <path d="M14 21v-4l-4 -3l1 -6" />

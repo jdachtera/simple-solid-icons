@@ -25,6 +25,7 @@ export function TablerPassword(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 10v4" />
       <path d="M10 13l4 -2" />
       <path d="M10 11l4 2" />

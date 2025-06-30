@@ -25,6 +25,7 @@ export function TablerSlash(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M17 5l-10 14" />
     </svg>
   );

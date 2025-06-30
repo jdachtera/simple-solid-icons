@@ -25,6 +25,7 @@ export function TablerAdjustmentsAlt(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 8h4v4h-4z" />
       <path d="M6 4l0 4" />
       <path d="M6 12l0 8" />

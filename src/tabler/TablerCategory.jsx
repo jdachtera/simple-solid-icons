@@ -25,6 +25,7 @@ export function TablerCategory(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 4h6v6h-6z" />
       <path d="M14 4h6v6h-6z" />
       <path d="M4 14h6v6h-6z" />

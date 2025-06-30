@@ -25,6 +25,7 @@ export function TablerArrowsDoubleNeSw(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 14l11 -11" />
       <path d="M10 3h4v4" />
       <path d="M10 17v4h4" />

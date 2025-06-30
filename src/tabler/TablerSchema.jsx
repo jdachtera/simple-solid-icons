@@ -25,6 +25,7 @@ export function TablerSchema(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M5 2h5v4h-5z" />
       <path d="M15 10h5v4h-5z" />
       <path d="M5 18h5v4h-5z" />

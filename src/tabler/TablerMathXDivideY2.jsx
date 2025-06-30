@@ -25,6 +25,7 @@ export function TablerMathXDivideY2(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 21l18 -18" />
       <path d="M15 14l3 4.5" />
       <path d="M21 14l-4.5 7" />

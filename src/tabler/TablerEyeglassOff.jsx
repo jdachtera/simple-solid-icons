@@ -25,6 +25,7 @@ export function TablerEyeglassOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M5.536 5.546l-2.536 8.454" />
       <path d="M16 4h2l3 10" />
       <path d="M10 16h4" />

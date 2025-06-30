@@ -25,6 +25,7 @@ export function TablerArrowsRandom(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M20 21h-4v-4" />
       <path d="M16 21l5 -5" />
       <path d="M6.5 9.504l-3.5 -2l2 -3.504" />

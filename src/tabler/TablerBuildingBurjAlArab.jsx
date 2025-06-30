@@ -25,6 +25,7 @@ export function TablerBuildingBurjAlArab(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 21h18" />
       <path d="M7 21v-18" />
       <path d="M7 4c5.675 .908 10 5.613 10 11.28a11 11 0 0 1 -1.605 5.72" />

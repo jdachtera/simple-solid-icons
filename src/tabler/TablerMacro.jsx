@@ -25,6 +25,7 @@ export function TablerMacro(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M6 15a6 6 0 1 0 12 0" />
       <path d="M18 15a6 6 0 0 0 -6 6" />
       <path d="M12 21a6 6 0 0 0 -6 -6" />

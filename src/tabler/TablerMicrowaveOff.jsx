@@ -25,6 +25,7 @@ export function TablerMicrowaveOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M18 18h-14a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1h2m4 0h10a1 1 0 0 1 1 1v10" />
       <path d="M15 6v5m0 4v3" />
       <path d="M18 12h.01" />

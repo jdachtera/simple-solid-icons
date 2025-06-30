@@ -25,6 +25,7 @@ export function TablerCircleDottedLetterH(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M10 16v-8m4 0v8" />
       <path d="M10 12h4" />
       <path d="M7.5 4.21v.01" />

@@ -25,6 +25,7 @@ export function TablerSalt(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 13v.01" />
       <path d="M10 16v.01" />
       <path d="M14 16v.01" />

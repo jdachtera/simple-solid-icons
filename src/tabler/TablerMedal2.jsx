@@ -25,6 +25,7 @@ export function TablerMedal2(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M9 3h6l3 7l-6 2l-6 -2z" />
       <path d="M12 12l-3 -9" />
       <path d="M15 11l-3 -8" />

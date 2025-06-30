@@ -25,6 +25,7 @@ export function TablerToolsKitchen(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 3h8l-1 9h-6z" />
       <path d="M7 18h2v3h-2z" />
       <path d="M20 3v12h-5c-.023 -3.681 .184 -7.406 5 -12z" />

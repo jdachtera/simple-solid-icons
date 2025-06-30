@@ -25,6 +25,7 @@ export function TablerArrowAutofitHeight(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 20h-6a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h6" />
       <path d="M18 14v7" />
       <path d="M18 3v7" />

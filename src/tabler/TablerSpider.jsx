@@ -25,6 +25,7 @@ export function TablerSpider(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M5 4v2l5 5" />
       <path d="M2.5 9.5l1.5 1.5h6" />
       <path d="M4 19v-2l6 -6" />

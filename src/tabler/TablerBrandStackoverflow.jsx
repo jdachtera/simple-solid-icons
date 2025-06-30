@@ -25,6 +25,7 @@ export function TablerBrandStackoverflow(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 17v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-1" />
       <path d="M8 16h8" />
       <path d="M8.322 12.582l7.956 .836" />

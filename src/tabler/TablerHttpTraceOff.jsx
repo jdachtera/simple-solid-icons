@@ -25,6 +25,7 @@ export function TablerHttpTraceOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 8h4" />
       <path d="M5 8v8" />
       <path d="M10 12h2m2 -2a2 2 0 0 0 -2 -2m-2 2v6" />

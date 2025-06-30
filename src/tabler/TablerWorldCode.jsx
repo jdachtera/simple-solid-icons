@@ -25,6 +25,7 @@ export function TablerWorldCode(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M20.942 13.02a9 9 0 1 0 -9.47 7.964" />
       <path d="M3.6 9h16.8" />
       <path d="M3.6 15h9.9" />

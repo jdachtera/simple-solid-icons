@@ -25,6 +25,7 @@ export function TablerUnlink(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M17 22v-2" />
       <path d="M9 15l6 -6" />
       <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />

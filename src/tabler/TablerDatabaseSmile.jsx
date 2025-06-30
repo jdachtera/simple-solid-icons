@@ -25,6 +25,7 @@ export function TablerDatabaseSmile(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M10 14h.01" />
       <path d="M14 14h.01" />
       <path d="M10 17a3.5 3.5 0 0 0 4 0" />

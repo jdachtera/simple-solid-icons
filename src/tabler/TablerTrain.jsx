@@ -25,6 +25,7 @@ export function TablerTrain(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M21 13c0 -3.87 -3.37 -7 -10 -7h-8" />
       <path d="M3 15h16a2 2 0 0 0 2 -2" />
       <path d="M3 6v5h17.5" />

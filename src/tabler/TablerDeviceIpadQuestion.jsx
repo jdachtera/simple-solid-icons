@@ -25,6 +25,7 @@ export function TablerDeviceIpadQuestion(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M15 21h-9a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6" />
       <path d="M9 18h5" />
       <path d="M19 22v.01" />

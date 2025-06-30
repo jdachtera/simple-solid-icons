@@ -25,6 +25,7 @@ export function TablerHandGrab(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 11v-3.5a1.5 1.5 0 0 1 3 0v2.5" />
       <path d="M11 9.5v-3a1.5 1.5 0 0 1 3 0v3.5" />
       <path d="M14 7.5a1.5 1.5 0 0 1 3 0v2.5" />

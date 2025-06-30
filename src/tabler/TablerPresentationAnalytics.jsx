@@ -25,6 +25,7 @@ export function TablerPresentationAnalytics(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M9 12v-4" />
       <path d="M15 12v-2" />
       <path d="M12 12v-1" />

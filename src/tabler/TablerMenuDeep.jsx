@@ -25,6 +25,7 @@ export function TablerMenuDeep(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 6h16" />
       <path d="M7 12h13" />
       <path d="M10 18h10" />

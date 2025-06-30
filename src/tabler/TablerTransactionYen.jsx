@@ -25,6 +25,7 @@ export function TablerTransactionYen(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M15 16h6" />
       <path d="M15 12l3 4.5" />
       <path d="M21 12l-3 4.5v4.5" />

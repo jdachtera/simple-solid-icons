@@ -25,6 +25,7 @@ export function TablerFenceOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 12h-8v4h12m4 0v-4h-4" />
       <path d="M6 16v4h4v-4" />
       <path d="M10 12v-2m0 -4l-2 -2m-2 2v6" />

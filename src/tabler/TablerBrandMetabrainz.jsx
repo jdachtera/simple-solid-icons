@@ -25,6 +25,7 @@ export function TablerBrandMetabrainz(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 7v10l7 4v-18z" />
       <path d="M21 7v10l-7 4v-18z" />
     </svg>

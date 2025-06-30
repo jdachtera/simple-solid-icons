@@ -25,6 +25,7 @@ export function TablerScale(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M7 20l10 0" />
       <path d="M6 6l6 -1l6 1" />
       <path d="M12 3l0 17" />

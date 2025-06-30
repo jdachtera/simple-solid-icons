@@ -25,6 +25,7 @@ export function TablerBrandCpp(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M18 12h4" />
       <path d="M20 10v4" />
       <path d="M11 12h4" />

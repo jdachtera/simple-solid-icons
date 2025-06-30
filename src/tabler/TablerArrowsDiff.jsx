@@ -25,6 +25,7 @@ export function TablerArrowsDiff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M11 16h10" />
       <path d="M11 16l4 4" />
       <path d="M11 16l4 -4" />

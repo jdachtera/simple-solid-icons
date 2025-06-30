@@ -25,6 +25,7 @@ export function TablerMoodCog(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M21 12a9 9 0 1 0 -8.983 9" />
       <path d="M18.001 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
       <path d="M18.001 14.5v1.5" />

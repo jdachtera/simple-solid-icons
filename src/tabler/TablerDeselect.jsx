@@ -25,6 +25,7 @@ export function TablerDeselect(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 8h3a1 1 0 0 1 1 1v3" />
       <path d="M16 16h-7a1 1 0 0 1 -1 -1v-7" />
       <path d="M12 20v.01" />

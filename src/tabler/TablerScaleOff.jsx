@@ -25,6 +25,7 @@ export function TablerScaleOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M7 20h10" />
       <path d="M9.452 5.425l2.548 -.425l6 1" />
       <path d="M12 3v5m0 4v8" />

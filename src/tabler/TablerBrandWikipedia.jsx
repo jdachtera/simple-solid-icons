@@ -25,6 +25,7 @@ export function TablerBrandWikipedia(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 4.984h2" />
       <path d="M8 4.984h2.5" />
       <path d="M14.5 4.984h2.5" />

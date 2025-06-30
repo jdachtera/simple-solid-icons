@@ -25,6 +25,7 @@ export function TablerSortDescending(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 6l9 0" />
       <path d="M4 12l7 0" />
       <path d="M4 18l7 0" />

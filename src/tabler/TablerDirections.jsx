@@ -25,6 +25,7 @@ export function TablerDirections(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 21v-4" />
       <path d="M12 13v-4" />
       <path d="M12 5v-2" />

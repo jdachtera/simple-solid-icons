@@ -25,6 +25,7 @@ export function TablerGymnastics(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M7 7a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
       <path d="M13 21l1 -9l7 -6" />
       <path d="M3 11h6l5 1" />

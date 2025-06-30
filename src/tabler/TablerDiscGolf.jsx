@@ -25,6 +25,7 @@ export function TablerDiscGolf(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M5 5h14" />
       <path d="M6 5c.32 6.744 2.74 9.246 6 10" />
       <path d="M18 5c-.32 6.744 -2.74 9.246 -6 10" />

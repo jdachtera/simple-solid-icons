@@ -25,6 +25,7 @@ export function TablerNumber11(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 20v-16l-5 5" />
       <path d="M18 20v-16l-5 5" />
     </svg>

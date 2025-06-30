@@ -25,6 +25,7 @@ export function TablerBaselineDensitySmall(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 3h16" />
       <path d="M4 9h16" />
       <path d="M4 15h16" />

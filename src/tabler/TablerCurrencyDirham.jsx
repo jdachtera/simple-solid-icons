@@ -25,6 +25,7 @@ export function TablerCurrencyDirham(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8.5 19h-3.5" />
       <path d="M8.599 16.479a1.5 1.5 0 1 0 -1.099 2.521" />
       <path d="M7 4v9" />

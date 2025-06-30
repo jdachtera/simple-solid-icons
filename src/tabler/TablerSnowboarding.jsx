@@ -25,6 +25,7 @@ export function TablerSnowboarding(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M15 3a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
       <path d="M7 19l4 -2.5l-.5 -1.5" />
       <path d="M16 21l-1 -6l-4.5 -3l3.5 -6" />

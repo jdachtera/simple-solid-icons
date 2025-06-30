@@ -25,6 +25,7 @@ export function TablerAntennaOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M20 4v8" />
       <path d="M16 4.5v7" />
       <path d="M12 5v3m0 4v9" />

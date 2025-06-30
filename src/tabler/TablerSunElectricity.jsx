@@ -25,6 +25,7 @@ export function TablerSunElectricity(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 12a4 4 0 0 0 4 4m0 -8a4 4 0 0 0 -4 4" />
       <path d="M3 12h1" />
       <path d="M12 3v1" />

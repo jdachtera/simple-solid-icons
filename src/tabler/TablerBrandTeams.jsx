@@ -25,6 +25,7 @@ export function TablerBrandTeams(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 7h10v10h-10z" />
       <path d="M6 10h4" />
       <path d="M8 10v4" />

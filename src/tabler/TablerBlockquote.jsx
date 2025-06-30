@@ -25,6 +25,7 @@ export function TablerBlockquote(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M6 15h15" />
       <path d="M21 19h-15" />
       <path d="M15 11h6" />

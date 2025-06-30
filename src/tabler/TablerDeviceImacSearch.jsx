@@ -25,6 +25,7 @@ export function TablerDeviceImacSearch(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M11 17h-7a1 1 0 0 1 -1 -1v-12a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v8" />
       <path d="M3 13h10" />
       <path d="M8 21h4" />

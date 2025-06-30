@@ -25,6 +25,7 @@ export function TablerSkateboarding(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M16 4a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
       <path d="M5.5 15h3.5l.75 -1.5" />
       <path d="M14 19v-5l-2.5 -3l2.5 -4" />

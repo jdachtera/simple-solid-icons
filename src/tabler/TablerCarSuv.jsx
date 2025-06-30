@@ -25,6 +25,7 @@ export function TablerCarSuv(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M5 17a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
       <path d="M16 17a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
       <path d="M5 9l2 -4h7.438a2 2 0 0 1 1.94 1.515l.622 2.485h3a2 2 0 0 1 2 2v3" />

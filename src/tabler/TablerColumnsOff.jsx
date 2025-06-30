@@ -25,6 +25,7 @@ export function TablerColumnsOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 6h2" />
       <path d="M4 10h5.5" />
       <path d="M4 14h5.5" />

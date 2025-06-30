@@ -25,6 +25,7 @@ export function TablerGlassCocktail(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 21h8" />
       <path d="M12 15v6" />
       <path d="M12 5m-7 0a7 2 0 1 0 14 0a7 2 0 1 0 -14 0" />

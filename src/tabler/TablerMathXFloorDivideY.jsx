@@ -25,6 +25,7 @@ export function TablerMathXFloorDivideY(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M1.5 19l18 -18" />
       <path d="M4.5 22l18 -18" />
       <path d="M18 15l3 4" />

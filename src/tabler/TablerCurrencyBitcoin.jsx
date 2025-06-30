@@ -25,6 +25,7 @@ export function TablerCurrencyBitcoin(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M6 6h8a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-8" />
       <path d="M8 6l0 12" />
       <path d="M8 12l6 0" />

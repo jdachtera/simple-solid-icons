@@ -25,6 +25,7 @@ export function TablerChartScatter3d(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 20l9 -7" />
       <path d="M12 3v10l9 7" />
       <path d="M17 12v.015" />

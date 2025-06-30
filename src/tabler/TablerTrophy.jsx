@@ -25,6 +25,7 @@ export function TablerTrophy(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 21l8 0" />
       <path d="M12 17l0 4" />
       <path d="M7 4l10 0" />

@@ -25,6 +25,7 @@ export function TablerCubeSend(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M16 12.5l-5 -3l5 -3l5 3v5.5l-5 3z" />
       <path d="M11 9.5v5.5l5 3" />
       <path d="M16 12.545l5 -3.03" />

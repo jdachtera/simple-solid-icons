@@ -25,6 +25,7 @@ export function TablerFileTypeTxt(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M14 3v4a1 1 0 0 0 1 1h4" />
       <path d="M14 3v4a1 1 0 0 0 1 1h4" />
       <path d="M16.5 15h3" />

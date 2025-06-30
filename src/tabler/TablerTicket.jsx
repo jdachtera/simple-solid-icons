@@ -25,6 +25,7 @@ export function TablerTicket(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M15 5l0 2" />
       <path d="M15 11l0 2" />
       <path d="M15 17l0 2" />

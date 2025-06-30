@@ -25,6 +25,7 @@ export function TablerCurrencyTugrik(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M7 6h10" />
       <path d="M12 6v13" />
       <path d="M8 17l8 -3" />

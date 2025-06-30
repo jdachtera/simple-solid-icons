@@ -25,6 +25,7 @@ export function TablerPhotoShield(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M15 8h.01" />
       <path d="M11.5 20h-4.5a3 3 0 0 1 -3 -3v-10a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v4" />
       <path d="M4 15l4 -4c.928 -.893 2.072 -.893 3 0l1.5 1.5" />

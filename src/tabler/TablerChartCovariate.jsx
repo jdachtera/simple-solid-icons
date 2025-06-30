@@ -25,6 +25,7 @@ export function TablerChartCovariate(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M18 11h.009" />
       <path d="M14 15h.009" />
       <path d="M12 6h.009" />

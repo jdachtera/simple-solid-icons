@@ -25,6 +25,7 @@ export function TablerFountainOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M9 16v-5a2 2 0 1 0 -4 0" />
       <path d="M15 16v-1m0 -4a2 2 0 1 1 4 0" />
       <path d="M12 16v-4m0 -4v-2a3 3 0 0 1 6 0" />

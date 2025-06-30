@@ -25,6 +25,7 @@ export function TablerFerry(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M2 18h15.293c1.02 0 1.972 -.503 2.536 -1.34l2.171 -3.66h-18.479z" />
       <path d="M14 8l-1 -2" />
       <path d="M6.107 12.675l1.384 -4.675h8l2.675 4.598" />

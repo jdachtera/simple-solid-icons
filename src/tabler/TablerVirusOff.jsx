@@ -25,6 +25,7 @@ export function TablerVirusOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 3l18 18" />
       <path d="M8.469 8.46a5 5 0 0 0 7.058 7.084" />
       <path d="M16.913 12.936a5 5 0 0 0 -5.826 -5.853" />

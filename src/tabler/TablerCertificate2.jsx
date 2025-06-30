@@ -25,6 +25,7 @@ export function TablerCertificate2(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 15m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
       <path d="M10 7h4" />
       <path d="M10 18v4l2 -1l2 1v-4" />

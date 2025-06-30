@@ -25,6 +25,7 @@ export function TablerTextDirectionLtr(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M5 19h14" />
       <path d="M17 21l2 -2l-2 -2" />
       <path d="M16 4h-6.5a3.5 3.5 0 0 0 0 7h.5" />

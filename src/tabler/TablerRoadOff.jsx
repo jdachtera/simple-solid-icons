@@ -25,6 +25,7 @@ export function TablerRoadOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 19l3.332 -11.661" />
       <path d="M16 5l2.806 9.823" />
       <path d="M12 8v-2" />

@@ -25,6 +25,7 @@ export function TablerLadder(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 3v18" />
       <path d="M16 3v18" />
       <path d="M8 14h8" />

@@ -25,6 +25,7 @@ export function TablerBrandLinkedin(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 11v5" />
       <path d="M8 8v.01" />
       <path d="M12 16v-5" />

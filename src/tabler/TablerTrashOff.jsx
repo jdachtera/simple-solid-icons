@@ -25,6 +25,7 @@ export function TablerTrashOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 3l18 18" />
       <path d="M4 7h3m4 0h9" />
       <path d="M10 11l0 6" />

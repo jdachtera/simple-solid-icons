@@ -25,6 +25,7 @@ export function TablerCliffJumping(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M14 7a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
       <path d="M10.5 18l2.5 2l2 -2" />
       <path d="M18 21l3 -3l-4 -2l-1 -5" />

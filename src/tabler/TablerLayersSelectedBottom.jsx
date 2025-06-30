@@ -25,6 +25,7 @@ export function TablerLayersSelectedBottom(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 14.5l4 -4" />
       <path d="M9.496 20l4.004 -4z" />
       <path d="M4.586 19.414l3.914 -3.914" />

@@ -25,6 +25,7 @@ export function TablerReport(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h5.697" />
       <path d="M18 14v4h4" />
       <path d="M18 11v-4a2 2 0 0 0 -2 -2h-2" />

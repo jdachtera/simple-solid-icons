@@ -25,6 +25,7 @@ export function TablerTrendingUp(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 17l6 -6l4 4l8 -8" />
       <path d="M14 7l7 0l0 7" />
     </svg>

@@ -25,6 +25,7 @@ export function TablerHours24(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 13c.325 2.532 1.881 4.781 4 6" />
       <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2" />
       <path d="M4 5v4h4" />

@@ -25,6 +25,7 @@ export function TablerBoxAlignLeft(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M10.002 20.003v-16h-5a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1h5z" />
       <path d="M15.002 20.003h-.01" />
       <path d="M20.003 20.003h-.011" />

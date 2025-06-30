@@ -25,6 +25,7 @@ export function TablerBrandVisa(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M21 15l-1 -6l-2.5 6" />
       <path d="M9 15l1 -6" />
       <path d="M3 9h1v6h.5l2.5 -6" />

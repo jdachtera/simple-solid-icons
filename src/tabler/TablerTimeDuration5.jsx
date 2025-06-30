@@ -25,6 +25,7 @@ export function TablerTimeDuration5(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M10 15h2a1.5 1.5 0 0 0 0 -3h-2v-3h3.5" />
       <path d="M3 12v.01" />
       <path d="M21 12v.01" />

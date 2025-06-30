@@ -25,6 +25,7 @@ export function TablerBrandZhihu(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M14 6h6v12h-2l-2 2l-1 -2h-1z" />
       <path d="M4 12h6.5" />
       <path d="M10.5 6h-5" />

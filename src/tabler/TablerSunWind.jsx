@@ -25,6 +25,7 @@ export function TablerSunWind(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M14.468 10a4 4 0 1 0 -5.466 5.46" />
       <path d="M2 12h1" />
       <path d="M11 3v1" />

@@ -25,6 +25,7 @@ export function TablerLinkOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M9 15l3 -3m2 -2l1 -1" />
       <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
       <path d="M3 3l18 18" />

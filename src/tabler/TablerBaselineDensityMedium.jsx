@@ -25,6 +25,7 @@ export function TablerBaselineDensityMedium(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 20h16" />
       <path d="M4 12h16" />
       <path d="M4 4h16" />

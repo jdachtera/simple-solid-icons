@@ -25,6 +25,7 @@ export function TablerCaretLeftRight(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M14 18l6 -6l-6 -6v12" />
       <path d="M10 18l-6 -6l6 -6v12" />
     </svg>

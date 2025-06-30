@@ -25,6 +25,7 @@ export function TablerOld(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M11 21l-1 -4l-2 -3v-6" />
       <path d="M5 14l-1 -3l4 -3l3 2l3 .5" />
       <path d="M8 4m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />

@@ -25,6 +25,7 @@ export function TablerCaretUpDown(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M18 10l-6 -6l-6 6h12" />
       <path d="M18 14l-6 6l-6 -6h12" />
     </svg>

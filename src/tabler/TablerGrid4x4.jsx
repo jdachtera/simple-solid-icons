@@ -25,6 +25,7 @@ export function TablerGrid4x4(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 6h18" />
       <path d="M3 12h18" />
       <path d="M3 18h18" />

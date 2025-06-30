@@ -25,6 +25,7 @@ export function TablerArrowsCross(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M16 4h4v4" />
       <path d="M15 9l5 -5" />
       <path d="M4 20l5 -5" />

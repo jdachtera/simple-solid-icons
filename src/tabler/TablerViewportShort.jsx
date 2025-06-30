@@ -25,6 +25,7 @@ export function TablerViewportShort(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 3v7l3 -3" />
       <path d="M9 7l3 3" />
       <path d="M12 21v-7l3 3" />

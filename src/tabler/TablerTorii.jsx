@@ -25,6 +25,7 @@ export function TablerTorii(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 4c5.333 1.333 10.667 1.333 16 0" />
       <path d="M4 8h16" />
       <path d="M12 5v3" />

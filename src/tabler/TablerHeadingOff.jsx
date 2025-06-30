@@ -25,6 +25,7 @@ export function TablerHeadingOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M7 12h5m4 0h1" />
       <path d="M7 7v12" />
       <path d="M17 5v8m0 4v2" />

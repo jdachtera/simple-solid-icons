@@ -25,6 +25,7 @@ export function TablerArrowsDiagonalMinimize2(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M18 10h-4v-4" />
       <path d="M20 4l-6 6" />
       <path d="M6 14h4v4" />

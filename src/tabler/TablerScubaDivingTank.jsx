@@ -25,6 +25,7 @@ export function TablerScubaDivingTank(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 11a4 4 0 1 1 8 0v5h-8z" />
       <path d="M8 16v3a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-3" />
       <path d="M9 4h6" />

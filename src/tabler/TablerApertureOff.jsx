@@ -25,6 +25,7 @@ export function TablerApertureOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3.6 15h10.55" />
       <path d="M5.641 5.631a9 9 0 1 0 12.719 12.738m1.68 -2.318a9 9 0 0 0 -12.074 -12.098" />
       <path d="M7.395 7.534l2.416 7.438" />

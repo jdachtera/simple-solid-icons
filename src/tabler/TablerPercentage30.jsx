@@ -25,6 +25,7 @@ export function TablerPercentage30(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path
         d="M12 3a9 9 0 0 1 8.495 11.973l-8.495 -2.973z"
         fill="currentColor"

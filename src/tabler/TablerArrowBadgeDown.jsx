@@ -25,6 +25,7 @@ export function TablerArrowBadgeDown(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M17 13v-6l-5 4l-5 -4v6l5 4z" />
     </svg>
   );

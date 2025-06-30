@@ -25,6 +25,7 @@ export function TablerDevicesPc(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 5h6v14h-6z" />
       <path d="M12 9h10v7h-10z" />
       <path d="M14 19h6" />

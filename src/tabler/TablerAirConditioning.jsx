@@ -25,6 +25,7 @@ export function TablerAirConditioning(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 16a3 3 0 0 1 -3 3" />
       <path d="M16 16a3 3 0 0 0 3 3" />
       <path d="M12 16v4" />

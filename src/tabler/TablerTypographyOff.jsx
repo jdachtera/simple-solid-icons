@@ -25,6 +25,7 @@ export function TablerTypographyOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 20h3" />
       <path d="M14 20h6" />
       <path d="M6.9 15h6.9" />

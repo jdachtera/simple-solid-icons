@@ -25,6 +25,7 @@ export function TablerPlant2(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M2 9a10 10 0 1 0 20 0" />
       <path d="M12 19a10 10 0 0 1 10 -10" />
       <path d="M2 9a10 10 0 0 1 10 10" />

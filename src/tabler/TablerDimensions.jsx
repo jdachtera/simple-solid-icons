@@ -25,6 +25,7 @@ export function TablerDimensions(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 5h11" />
       <path d="M12 7l2 -2l-2 -2" />
       <path d="M5 3l-2 2l2 2" />

@@ -25,6 +25,7 @@ export function TablerCircuitCellPlus(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M2 12h9" />
       <path d="M15 12h7" />
       <path d="M11 5v14" />

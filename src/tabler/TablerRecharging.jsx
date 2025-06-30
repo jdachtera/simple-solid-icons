@@ -25,6 +25,7 @@ export function TablerRecharging(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M7.038 4.5a9 9 0 0 0 -2.495 2.47" />
       <path d="M3.186 10.209a9 9 0 0 0 0 3.508" />
       <path d="M4.5 16.962a9 9 0 0 0 2.47 2.495" />

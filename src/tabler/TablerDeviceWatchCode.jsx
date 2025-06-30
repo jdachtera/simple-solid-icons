@@ -25,6 +25,7 @@ export function TablerDeviceWatchCode(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M11 18h-2a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3v4" />
       <path d="M20 21l2 -2l-2 -2" />
       <path d="M17 17l-2 2l2 2" />

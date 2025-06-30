@@ -32,8 +32,15 @@ export async function generateIcons(): Promise<void> {
       const root = set.name
       multiVariantRoots[root] = []
       for (const variant of (set as any).variants) {
-        const svgDir = path.resolve(__dirname, '../../', set.cacheDir)
-        const svgFiles: string[] = await glob(variant.svgGlob, { cwd: svgDir })
+        let svgFiles: string[] = []
+        let svgDir = ''
+        if (set.sourceType === 'npm') {
+          // svgGlob is absolute or relative to project root (node_modules/...)
+          svgFiles = await glob(variant.svgGlob, { absolute: true })
+        } else {
+          svgDir = path.resolve(__dirname, '../../', set.cacheDir)
+          svgFiles = await glob(variant.svgGlob, { cwd: svgDir })
+        }
         if (!svgFiles.length) {
           missingSets.push(`${set.name}/${variant.variant}`)
           continue
@@ -45,7 +52,7 @@ export async function generateIcons(): Promise<void> {
         await fs.mkdir(outDir, { recursive: true })
         let generatedComponentNames: string[] = []
         for (const svgFile of svgFiles) {
-          const svgPath = path.join(svgDir, svgFile)
+          const svgPath = set.sourceType === 'npm' ? svgFile : path.join(svgDir, svgFile)
           let svgContent = await fs.readFile(svgPath, 'utf-8')
           // Clean SVG and extract viewBox
           let svgNoStyle = svgContent
@@ -65,7 +72,7 @@ export async function generateIcons(): Promise<void> {
           )
           const jsxDistPath = path.join(outDir, `${componentName}.jsx`)
           // JSX
-         const defaultProps = getSetDefaultProps(variant)
+          const defaultProps = getSetDefaultProps(variant)
           let jsxCode = jsxTemplate
             .replace('ICON_SET_NAME', set.name)
             .replace('ICON_SET_LICENSE', set.license)
@@ -142,10 +149,15 @@ export async function generateIcons(): Promise<void> {
       }
     } else {
       // Single-variant (default) sets
-      const svgDir = path.resolve(__dirname, '../../', set.cacheDir)
-      const svgFiles: string[] = await glob((set as any).svgGlob, {
-        cwd: svgDir,
-      })
+      let svgFiles: string[] = []
+      let svgDir = ''
+      const globPattern = set.svgGlob || '**/*.svg'
+      if (set.sourceType === 'npm') {
+        svgFiles = await glob(globPattern, { absolute: true })
+      } else {
+        svgDir = path.resolve(__dirname, '../../', set.cacheDir)
+        svgFiles = await glob(globPattern, { cwd: svgDir })
+      }
       if (!svgFiles.length) {
         missingSets.push(set.name)
         continue
@@ -155,7 +167,7 @@ export async function generateIcons(): Promise<void> {
       await fs.mkdir(outDir, { recursive: true })
       let generatedComponentNames: string[] = []
       for (const svgFile of svgFiles) {
-        const svgPath = path.join(svgDir, svgFile)
+        const svgPath = set.sourceType === 'npm' ? svgFile : path.join(svgDir, svgFile)
         let svgContent = await fs.readFile(svgPath, 'utf-8')
         // Clean SVG and extract viewBox
         let svgNoStyle = svgContent

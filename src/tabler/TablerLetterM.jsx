@@ -25,6 +25,7 @@ export function TablerLetterM(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M6 20v-16l6 14l6 -14v16" />
     </svg>
   );

@@ -25,6 +25,7 @@ export function TablerSignRight(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 21h4" />
       <path d="M10 21v-10" />
       <path d="M10 6v-3" />

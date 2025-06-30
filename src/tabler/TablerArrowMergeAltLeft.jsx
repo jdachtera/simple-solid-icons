@@ -25,6 +25,7 @@ export function TablerArrowMergeAltLeft(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 7l4 -4l4 4" />
       <path d="M18 21v.01" />
       <path d="M18 18.01v.01" />

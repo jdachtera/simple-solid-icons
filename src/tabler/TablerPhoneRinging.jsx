@@ -25,6 +25,7 @@ export function TablerPhoneRinging(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M20 4l-2 2" />
       <path d="M22 10.5l-2.5 -.5" />
       <path d="M13.5 2l.5 2.5" />

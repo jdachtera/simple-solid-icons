@@ -25,6 +25,7 @@ export function TablerBrandCinema4d(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M9.65 6.956a5.39 5.39 0 0 0 7.494 7.495" />
       <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
       <path d="M17.7 12.137a5.738 5.738 0 1 1 -5.737 -5.737" />

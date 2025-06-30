@@ -25,6 +25,7 @@ export function TablerWorldStar(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M21 12a9 9 0 1 0 -9.968 8.948" />
       <path d="M3.6 9h16.8" />
       <path d="M3.6 15h6.4" />

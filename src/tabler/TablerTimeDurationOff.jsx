@@ -25,6 +25,7 @@ export function TablerTimeDurationOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 12v.01" />
       <path d="M7.5 19.8v.01" />
       <path d="M4.2 16.5v.01" />

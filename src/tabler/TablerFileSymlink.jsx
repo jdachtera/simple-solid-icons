@@ -25,6 +25,7 @@ export function TablerFileSymlink(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 21v-4a3 3 0 0 1 3 -3h5" />
       <path d="M9 17l3 -3l-3 -3" />
       <path d="M14 3v4a1 1 0 0 0 1 1h4" />

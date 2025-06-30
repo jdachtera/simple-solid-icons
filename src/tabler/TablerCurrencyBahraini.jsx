@@ -25,6 +25,7 @@ export function TablerCurrencyBahraini(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 10v1a4 4 0 0 0 4 4h2a2 2 0 0 0 2 -2v-3" />
       <path d="M7 19.01v-.01" />
       <path d="M14 15.01v-.01" />

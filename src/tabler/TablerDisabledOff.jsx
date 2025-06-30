@@ -25,6 +25,7 @@ export function TablerDisabledOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M11 7a2 2 0 1 0 -2 -2" />
       <path d="M11 11v4h4l4 5" />
       <path d="M15 11h1" />

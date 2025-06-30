@@ -25,6 +25,7 @@ export function TablerExposureOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3.6 20.4l8.371 -8.371m2.04 -2.04l6.389 -6.389" />
       <path d="M6 8h2m0 0v2" />
       <path d="M14 16h2" />

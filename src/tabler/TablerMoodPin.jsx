@@ -25,6 +25,7 @@ export function TablerMoodPin(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M21 12a9 9 0 1 0 -8.352 8.977" />
       <path d="M9 10h.01" />
       <path d="M15 10h.01" />

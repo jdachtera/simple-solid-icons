@@ -10,6 +10,10 @@
       "import": "./src/index.js",
       "types": "./src/index.d.ts"
     },
+    "./fontawesome": {
+      "import": "./src/fontawesome/index.js",
+      "types": "./src/fontawesome/index.d.ts"
+    },
     "./tabler": {
       "import": "./src/tabler/index.js",
       "types": "./src/tabler/index.d.ts"
@@ -76,11 +80,11 @@
   },
   "scripts": {
     "clean": "rm -rf src/* dist/*",
-    "update:repos": "tsx scripts/cloneIconRepos.ts",
+    "update:sources": "tsx scripts/updateIconSources.ts",
     "generate:icons": "tsx scripts/generateIcons.ts",
     "generate:icon-index": "tsx scripts/generateIconIndex.ts",
     "generate:all": "pnpm generate:icons && pnpm generate:icon-index",
-    "update:all": "pnpm update:repos && pnpm generate:all",
+    "update:all": "pnpm update:sources && pnpm generate:all",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -99,7 +103,6 @@
     "boxicons",
     "simpleicons",
     "eva",
-    "phosphor",
     "svg",
     "auto-generated"
   ],
@@ -125,5 +128,19 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jdachtera/simple-solid-icons.git"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@heroicons/react": "^2.2.0",
+    "@tabler/icons": "^3.34.0",
+    "@vscode/codicons": "^0.0.36",
+    "bootstrap-icons": "^1.13.1",
+    "boxicons": "^2.1.4",
+    "feather-icons": "^4.29.2",
+    "ionicons": "^8.0.9",
+    "lucide-static": "^0.525.0",
+    "remixicon": "^4.6.0",
+    "simple-icons": "^15.4.0",
+    "tar": "^7.4.3"
   }
 }

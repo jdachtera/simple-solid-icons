@@ -25,6 +25,7 @@ export function TablerSteeringWheelOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M20.04 16.048a9 9 0 0 0 -12.083 -12.09m-2.32 1.678a9 9 0 1 0 12.737 12.719" />
       <path d="M10.595 10.576a2 2 0 1 0 2.827 2.83" />
       <path d="M12 14v7" />

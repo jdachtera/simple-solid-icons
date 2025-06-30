@@ -25,6 +25,7 @@ export function TablerTexture(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M6 3l-3 3" />
       <path d="M21 18l-3 3" />
       <path d="M11 3l-8 8" />

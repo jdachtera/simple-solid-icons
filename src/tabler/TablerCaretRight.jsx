@@ -25,6 +25,7 @@ export function TablerCaretRight(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M10 18l6 -6l-6 -6v12" />
     </svg>
   );

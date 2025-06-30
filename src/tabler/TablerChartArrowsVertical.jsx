@@ -25,6 +25,7 @@ export function TablerChartArrowsVertical(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M18 21v-14" />
       <path d="M9 15l3 -3l3 3" />
       <path d="M15 10l3 -3l3 3" />

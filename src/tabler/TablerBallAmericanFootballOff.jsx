@@ -25,6 +25,7 @@ export function TablerBallAmericanFootballOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M15 9l-1 1m-2 2l-3 3" />
       <path d="M10 12l2 2" />
       <path d="M8 21a5 5 0 0 0 -5 -5" />

@@ -25,6 +25,7 @@ export function TablerFreezeColumn(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M9 9.5l-6 6" />
       <path d="M9 4l-6 6" />
       <path d="M9 15l-5 5" />

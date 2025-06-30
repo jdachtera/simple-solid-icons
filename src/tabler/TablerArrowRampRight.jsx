@@ -25,6 +25,7 @@ export function TablerArrowRampRight(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M7 3l0 8.707" />
       <path d="M11 7l-4 -4l-4 4" />
       <path d="M17 14l4 -4l-4 -4" />

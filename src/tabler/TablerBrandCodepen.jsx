@@ -25,6 +25,7 @@ export function TablerBrandCodepen(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 15l9 6l9 -6l-9 -6l-9 6" />
       <path d="M3 9l9 6l9 -6l-9 -6l-9 6" />
       <path d="M3 9l0 6" />

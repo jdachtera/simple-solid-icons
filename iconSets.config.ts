@@ -31,6 +31,7 @@ export type IconSetConfig = {
   defaultProps?: IconSetDefaultProps
   variants?: IconSetVariantConfig[]
   removeClasses?: string[]
+  sourceType?: 'git' | 'npm'
 }
 
 const defaultProps: IconSetDefaultProps = {
@@ -49,11 +50,29 @@ export const getSetDefaultProps = (setConfig: IconSetConfig): Required<IconSetDe
 }
 
 export const iconSetConfigs: IconSetConfig[] = [
+  // Font Awesome Free (npm)
+  {
+    name: 'fontawesome',
+    repoUrl: '@fortawesome/fontawesome-free',
+    gitBranch: '', // not used for npm
+    svgGlob: 'node_modules/@fortawesome/fontawesome-free/svgs/{solid,regular,brands}/*.svg',
+    componentPrefix: 'Fa',
+    cacheDir: './.icon-cache/fontawesome',
+    license: 'CC BY 4.0',
+    licenseUrl: 'https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt',
+    defaultProps: {
+      size: 32,
+      fill: 'currentColor',
+      stroke: 'none',
+    },
+    sourceType: 'npm',
+  },
+  // Tabler Icons (npm)
   {
     name: 'tabler',
-    repoUrl: 'https://github.com/tabler/tabler-icons.git',
-    gitBranch: 'main',
-    svgGlob: 'icons/outline/*.svg',
+    repoUrl: '@tabler/icons',
+    gitBranch: '', // not used for npm
+    svgGlob: 'node_modules/@tabler/icons/icons/outline/*.svg',
     componentPrefix: 'Tabler',
     cacheDir: './.icon-cache/tabler',
     license: 'MIT',
@@ -64,6 +83,7 @@ export const iconSetConfigs: IconSetConfig[] = [
       stroke: 'currentColor',
       'stroke-width': 2,
     },
+    sourceType: 'npm',
   },
   {
     name: 'heroicons',
@@ -83,9 +103,9 @@ export const iconSetConfigs: IconSetConfig[] = [
   },
   {
     name: 'lucide',
-    repoUrl: 'https://github.com/lucide-icons/lucide.git',
-    gitBranch: 'main',
-    svgGlob: 'icons/*.svg',
+    repoUrl: 'lucide-static',
+    gitBranch: '', // not used for npm
+    svgGlob: 'node_modules/lucide-static/icons/*.svg',
     componentPrefix: 'Lucide',
     cacheDir: './.icon-cache/lucide',
     license: 'ISC',
@@ -96,6 +116,7 @@ export const iconSetConfigs: IconSetConfig[] = [
       stroke: 'currentColor',
       'stroke-width': 2,
     },
+    sourceType: 'npm',
   },
   {
     name: 'feather',
@@ -108,7 +129,6 @@ export const iconSetConfigs: IconSetConfig[] = [
     licenseUrl: 'https://github.com/feathericons/feather/blob/main/LICENSE',
     defaultProps: {
       size: 32,
-
       fill: 'none',
       stroke: 'currentColor',
       'stroke-width': 2,
@@ -116,9 +136,9 @@ export const iconSetConfigs: IconSetConfig[] = [
   },
   {
     name: 'bootstrap',
-    repoUrl: 'https://github.com/twbs/icons.git',
-    gitBranch: 'main',
-    svgGlob: 'icons/*.svg',
+    repoUrl: 'bootstrap-icons',
+    gitBranch: '', // not used for npm
+    svgGlob: 'node_modules/bootstrap-icons/icons/*.svg',
     componentPrefix: 'Bootstrap',
     cacheDir: './.icon-cache/bootstrap',
     license: 'MIT',
@@ -129,44 +149,45 @@ export const iconSetConfigs: IconSetConfig[] = [
       stroke: 'none',
       'stroke-width': 0.5,
     },
+    sourceType: 'npm',
   },
   {
     name: 'remix',
-    repoUrl: 'https://github.com/Remix-Design/RemixIcon.git',
-    gitBranch: 'master',
-    svgGlob: 'icons/**/*.svg',
+    repoUrl: 'remixicon',
+    gitBranch: '', // not used for npm
+    svgGlob: 'node_modules/remixicon/icons/**/*.svg',
     componentPrefix: 'Remix',
     cacheDir: './.icon-cache/remix',
     license: 'Apache-2.0',
     licenseUrl: 'https://github.com/Remix-Design/RemixIcon/blob/master/LICENSE',
     defaultProps: {
       size: 32,
-
       fill: 'currentColor',
       stroke: 'none',
     },
+    sourceType: 'npm',
   },
   {
     name: 'boxicons',
-    repoUrl: 'https://github.com/atisawd/boxicons.git',
-    gitBranch: 'master',
-    svgGlob: 'svg/regular/*.svg',
+    repoUrl: 'boxicons',
+    gitBranch: '', // not used for npm
+    svgGlob: 'node_modules/boxicons/svg/regular/*.svg',
     componentPrefix: 'Box',
     cacheDir: './.icon-cache/boxicons',
     license: 'MIT',
     licenseUrl: 'https://github.com/atisawd/boxicons/blob/master/LICENSE',
     defaultProps: {
       size: 32,
-
       fill: 'currentColor',
       stroke: 'none',
     },
+    sourceType: 'npm',
   },
   {
     name: 'simpleicons',
-    repoUrl: 'https://github.com/simple-icons/simple-icons.git',
-    gitBranch: 'develop',
-    svgGlob: 'icons/*.svg',
+    repoUrl: 'simple-icons',
+    gitBranch: '', // not used for npm
+    svgGlob: 'node_modules/simple-icons/icons/*.svg',
     componentPrefix: 'Simple',
     cacheDir: './.icon-cache/simpleicons',
     license: 'CC0-1.0',
@@ -174,10 +195,10 @@ export const iconSetConfigs: IconSetConfig[] = [
       'https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md',
     defaultProps: {
       size: 32,
-
       fill: 'currentColor',
       stroke: 'none',
     },
+    sourceType: 'npm',
   },
   {
     name: 'eva',

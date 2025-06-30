@@ -25,6 +25,7 @@ export function TablerEaseOut(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 20s10 -16 18 -16" />
     </svg>
   );

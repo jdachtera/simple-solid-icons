@@ -25,6 +25,7 @@ export function TablerWifi0(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 18l.01 0" />
     </svg>
   );

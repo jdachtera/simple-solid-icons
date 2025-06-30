@@ -25,6 +25,7 @@ export function TablerBoxMargin(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 8h8v8h-8z" />
       <path d="M4 4v.01" />
       <path d="M8 4v.01" />

@@ -25,6 +25,7 @@ export function TablerNetwork(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M6 9a6 6 0 1 0 12 0a6 6 0 0 0 -12 0" />
       <path d="M12 3c1.333 .333 2 2.333 2 6s-.667 5.667 -2 6" />
       <path d="M12 3c-1.333 .333 -2 2.333 -2 6s.667 5.667 2 6" />

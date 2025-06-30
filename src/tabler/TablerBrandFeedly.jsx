@@ -25,6 +25,7 @@ export function TablerBrandFeedly(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M7.833 12.278l4.445 -4.445" />
       <path d="M10.055 14.5l2.223 -2.222" />
       <path d="M12.278 16.722l.555 -.555" />

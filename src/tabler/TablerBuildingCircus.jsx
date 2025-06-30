@@ -25,6 +25,7 @@ export function TablerBuildingCircus(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 11h16" />
       <path d="M12 6.5c0 1 -5 4.5 -8 4.5" />
       <path d="M12 6.5c0 1 5 4.5 8 4.5" />

@@ -25,6 +25,7 @@ export function TablerExposure(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3.6 20.4l16.8 -16.8" />
       <path d="M6 8h4m-2 -2v4" />
       <path d="M14 16h4" />

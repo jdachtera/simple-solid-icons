@@ -25,6 +25,7 @@ export function TablerFeatherOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 20l8 -8" />
       <path d="M14 5v5h5" />
       <path d="M9 11v4h4" />

@@ -25,6 +25,7 @@ export function TablerBrandWordpress(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M9.5 9h3" />
       <path d="M4 9h2.5" />
       <path d="M11 9l3 11l4 -9" />

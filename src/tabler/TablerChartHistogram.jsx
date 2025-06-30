@@ -25,6 +25,7 @@ export function TablerChartHistogram(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 3v18h18" />
       <path d="M20 18v3" />
       <path d="M16 16v5" />

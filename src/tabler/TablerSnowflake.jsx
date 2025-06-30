@@ -25,6 +25,7 @@ export function TablerSnowflake(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M10 4l2 1l2 -1" />
       <path d="M12 2v6.5l3 1.72" />
       <path d="M17.928 6.268l.134 2.232l1.866 1.232" />

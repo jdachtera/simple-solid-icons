@@ -25,6 +25,7 @@ export function TablerGenderTransgender(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
       <path d="M15 9l6 -6" />
       <path d="M21 7v-4h-4" />

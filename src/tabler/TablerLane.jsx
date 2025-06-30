@@ -25,6 +25,7 @@ export function TablerLane(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 6v13" />
       <path d="M20 6v13" />
     </svg>

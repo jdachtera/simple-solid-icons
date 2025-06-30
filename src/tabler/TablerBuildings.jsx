@@ -25,6 +25,7 @@ export function TablerBuildings(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 21v-15c0 -1 1 -2 2 -2h5c1 0 2 1 2 2v15" />
       <path d="M16 8h2c1 0 2 1 2 2v11" />
       <path d="M3 21h18" />

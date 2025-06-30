@@ -25,6 +25,7 @@ export function TablerAperture(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
       <path d="M3.6 15h10.55" />
       <path d="M6.551 4.938l3.26 10.034" />

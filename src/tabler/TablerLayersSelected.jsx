@@ -25,6 +25,7 @@ export function TablerLayersSelected(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 10.5l6.492 -6.492" />
       <path d="M13.496 16l6.504 -6.504z" />
       <path d="M8.586 15.414l10.827 -10.827" />

@@ -25,6 +25,7 @@ export function TablerBrandHbo(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M2 16v-8" />
       <path d="M6 8v8" />
       <path d="M2 12h4" />

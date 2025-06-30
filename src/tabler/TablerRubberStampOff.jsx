@@ -25,6 +25,7 @@ export function TablerRubberStampOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8.273 8.273c.805 2.341 2.857 5.527 -1.484 5.527c-2.368 0 -3.789 0 -3.789 4.05h14.85" />
       <path d="M5 21h14" />
       <path d="M3 3l18 18" />

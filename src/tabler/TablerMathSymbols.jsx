@@ -25,6 +25,7 @@ export function TablerMathSymbols(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 12l18 0" />
       <path d="M12 3l0 18" />
       <path d="M16.5 4.5l3 3" />
