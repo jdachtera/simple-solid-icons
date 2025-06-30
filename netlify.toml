@@ -17,3 +17,6 @@
 
 [context.production.environment]
   NODE_ENV = "production"
+
+[env]
+  PNPM_VERSION = "10"
