@@ -62,6 +62,18 @@
       "import": "./src/ionicons/index.js",
       "types": "./src/ionicons/index.d.ts"
     },
+    "./antdesign/Outline": {
+      "import": "./src/antdesign/Outline/index.js",
+      "types": "./src/antdesign/Outline/index.d.ts"
+    },
+    "./antdesign/Fill": {
+      "import": "./src/antdesign/Fill/index.js",
+      "types": "./src/antdesign/Fill/index.d.ts"
+    },
+    "./antdesign/Twotone": {
+      "import": "./src/antdesign/Twotone/index.js",
+      "types": "./src/antdesign/Twotone/index.d.ts"
+    },
     "./codicons": {
       "import": "./src/codicons/index.js",
       "types": "./src/codicons/index.d.ts"
@@ -69,6 +81,10 @@
     "./eva": {
       "import": "./src/eva/index.js",
       "types": "./src/eva/index.d.ts"
+    },
+    "./antdesign": {
+      "import": "./src/antdesign/index.js",
+      "types": "./src/antdesign/index.d.ts"
     }
   },
   "files": [
@@ -130,6 +146,7 @@
     "url": "https://github.com/jdachtera/simple-solid-icons.git"
   },
   "dependencies": {
+    "@ant-design/icons-svg": "^4.4.2",
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@heroicons/react": "^2.2.0",
     "@tabler/icons": "^3.34.0",

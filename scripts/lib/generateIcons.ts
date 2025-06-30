@@ -51,7 +51,7 @@ export async function generateIcons(): Promise<void> {
         const outDir = path.join(outRoot, set.name, variantName)
         await fs.mkdir(outDir, { recursive: true })
         let generatedComponentNames: string[] = []
-        for (const svgFile of svgFiles) {
+        await Promise.all(svgFiles.map(async (svgFile) => {
           const svgPath = set.sourceType === 'npm' ? svgFile : path.join(svgDir, svgFile)
           let svgContent = await fs.readFile(svgPath, 'utf-8')
           // Clean SVG and extract viewBox
@@ -116,10 +116,10 @@ export async function generateIcons(): Promise<void> {
           const dtsDistPath = path.join(outDir, `${componentName}.d.ts`)
           await fs.writeFile(dtsDistPath, dtsCode)
           iconCount++
-          console.log(`✓ ${set.name}/${variant.variant}/${componentName}`)
+          // (logging removed for speed)
           // Save the componentName for index export
           generatedComponentNames.push(componentName)
-        }
+        }))
         // Index for this set/variant (sorted)
         generatedComponentNames.sort((a, b) => a.localeCompare(b))
         const exports = generatedComponentNames
@@ -234,7 +234,7 @@ export async function generateIcons(): Promise<void> {
         const dtsDistPath = path.join(outDir, `${componentName}.d.ts`)
         await fs.writeFile(dtsDistPath, dtsCode)
         iconCount++
-        console.log(`✓ ${set.name}/${componentName}`)
+        // (logging removed for speed)
         // Save the componentName for index export
         generatedComponentNames.push(componentName)
       }

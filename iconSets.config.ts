@@ -261,6 +261,39 @@ export const iconSetConfigs: IconSetConfig[] = [
       stroke: 'none',
     },
   },
+  // Ant Design Icons (Variants: outline, fill, twotone; MIT)
+  {
+    name: 'antdesign',
+    repoUrl: '@ant-design/icons-svg',
+    gitBranch: '', // not used for npm
+    componentPrefix: 'Antd',
+    cacheDir: './.icon-cache/antdesign',
+    license: 'MIT',
+    licenseUrl: 'https://github.com/ant-design/ant-design-icons/blob/master/LICENSE',
+    defaultProps: {
+      size: 32,
+      fill: 'currentColor',
+      stroke: 'none',
+    },
+    sourceType: 'npm',
+    variants: [
+      {
+        variant: 'outline',
+        svgGlob: 'node_modules/@ant-design/icons-svg/inline-svg/outlined/*.svg',
+        componentPrefix: 'AntdOutline',
+      },
+      {
+        variant: 'fill',
+        svgGlob: 'node_modules/@ant-design/icons-svg/inline-svg/filled/*.svg',
+        componentPrefix: 'AntdFill',
+      },
+      {
+        variant: 'twotone',
+        svgGlob: 'node_modules/@ant-design/icons-svg/inline-svg/twotone/*.svg',
+        componentPrefix: 'AntdTwotone',
+      },
+    ],
+  },
   // Codicons (MIT)
   {
     name: 'codicons',
