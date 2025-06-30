@@ -5,7 +5,26 @@
 
 **🌐 [Live Icon Search & Demo](https://simplesolidicons.netlify.app/)**
 
+
 SSR-safe, simple, and auto-generated icon library for SolidJS with components from popular open-source icon sets.
+
+---
+
+## Quick Start
+
+```bash
+pnpm add simple-solid-icons
+# or
+npm install simple-solid-icons
+```
+
+```tsx
+import { TablerHeart } from 'simple-solid-icons/tabler/TablerHeart'
+// or
+import { TablerHeart } from 'simple-solid-icons/tabler'
+```
+
+---
 
 ## Features
 
@@ -23,11 +42,16 @@ pnpm add simple-solid-icons
 # or
 npm install simple-solid-icons
 ```
-
 ## Usage
 
 ```tsx
-import { TablerHeart, HeroHome, LucideSettings } from 'simple-solid-icons'
+// Import an icon directly from its file for maximum tree-shaking:
+import { TablerHeart } from 'simple-solid-icons/tabler/TablerHeart'
+
+// Or import from a set (recommended for most users):
+import { TablerHeart } from 'simple-solid-icons/tabler'
+import { HeroHome } from 'simple-solid-icons/heroicons'
+import { LucideSettings } from 'simple-solid-icons/lucide'
 
 function MyComponent() {
   return (
@@ -39,13 +63,7 @@ function MyComponent() {
   )
 }
 ```
-
-### Selective imports (recommended for smaller bundles)
-
-```tsx
-import { TablerHeart } from 'simple-solid-icons/tabler'
-import { HeroHome } from 'simple-solid-icons/heroicons'
-import { LucideSettings } from 'simple-solid-icons/lucide'
+}
 ```
 
 ## Icon Sets
@@ -64,6 +82,8 @@ import { LucideSettings } from 'simple-solid-icons/lucide'
 Each icon file includes a header with license and source info. See the source repos for full license details.
 
 ## Development
+
+The demo app and icon generator scripts are not included in the npm package. To work on the icons or demo locally:
 
 ```bash
 # Install dependencies
@@ -85,6 +105,13 @@ pnpm clean
 ## Why This Exists
 
 Popular icon libraries like `solid-icons`, `@tabler/icons-solidjs`, and `lucide-solid` have SSR compatibility issues with frameworks like Vike. This library generates clean, simple SolidJS components that work perfectly with SSR.
+
+**Note:** This package is tested with Vike and plain SolidJS. If you use SolidStart and encounter any issues, please open an issue or PR!
+## Contributing
+
+Contributions, bug reports, and feature requests are welcome! Please open an issue or PR on GitHub.
+
+---
 
 ## License & Attribution
 
