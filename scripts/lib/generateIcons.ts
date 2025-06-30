@@ -113,7 +113,8 @@ export async function generateIcons(): Promise<void> {
           // Save the componentName for index export
           generatedComponentNames.push(componentName)
         }
-        // Index for this set/variant
+        // Index for this set/variant (sorted)
+        generatedComponentNames.sort((a, b) => a.localeCompare(b))
         const exports = generatedComponentNames
           .map(
             componentName =>
@@ -124,7 +125,7 @@ export async function generateIcons(): Promise<void> {
         await fs.writeFile(indexPath, exports)
         // Types index
         await fs.writeFile(path.join(outDir, 'index.d.ts'), exports)
-        console.log(`✓ ${set.name}/${variant.variant}/index.js`)
+        console.log(`✓ ${set.name}/${variant.variant}/index.js (sorted)`)
       }
       // Root index for multi-variant set
       if (multiVariantRoots[root].length) {
@@ -225,6 +226,8 @@ export async function generateIcons(): Promise<void> {
         // Save the componentName for index export
         generatedComponentNames.push(componentName)
       }
+      // Index for this set (sorted)
+      generatedComponentNames.sort((a, b) => a.localeCompare(b))
       const exports = generatedComponentNames
         .map(
           componentName =>
@@ -235,7 +238,7 @@ export async function generateIcons(): Promise<void> {
       await fs.writeFile(indexPath, exports)
       // Types index
       await fs.writeFile(path.join(outDir, 'index.d.ts'), exports)
-      console.log(`✓ ${set.name}/index.js`)
+      console.log(`✓ ${set.name}/index.js (sorted)`)
     }
   }
   // (No main index.js or index.d.ts generated)
