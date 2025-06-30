@@ -2,12 +2,12 @@ import { execSync } from 'child_process'
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import { iconSetConfigs } from '../../iconSets.config'
+import { iconSetConfigs } from '../iconSets.config'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const cacheDir = path.resolve(__dirname, '../../.icon-cache')
+const cacheDir = path.resolve(__dirname, '../.icon-cache')
 
 console.log(`Using cache directory: ${cacheDir}`)
 

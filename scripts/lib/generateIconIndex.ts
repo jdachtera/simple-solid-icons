@@ -44,9 +44,16 @@ export async function generateIconIndex() {
       }
     }
   }
+  // Sort entries alphabetically by set, then name, then variant (if present)
+  entries.sort((a, b) => {
+    if (a.set !== b.set) return a.set.localeCompare(b.set)
+    if (a.name !== b.name) return a.name.localeCompare(b.name)
+    if ((a.variant || '') !== (b.variant || '')) return (a.variant || '').localeCompare(b.variant || '')
+    return 0
+  })
   const typeDef = `// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.\n\nexport type IconIndexEntry = {\n  set: string;\n  name: string;\n  variant: string;\n  importPath: string;\n};\n\nexport const iconIndex: IconIndexEntry[] = [\n`;
   const arr = entries.map(e => `  { set: '${e.set}', ${e.variant?`variant: '${e.variant}',`:' '}name: '${e.name}', importPath: '${e.importPath}' },`).join('\n');
   const fileContent = `${typeDef}${arr}\n]\n`;
   await fs.writeFile(iconIndexPath, fileContent);
-  console.log('✓ demo/iconIndex.ts generated');
+  console.log('✓ demo/iconIndex.ts generated (sorted)');
 }
