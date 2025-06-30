@@ -1,8 +1,9 @@
 # simple-solid-icons
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_NETLIFY_SITE_ID/deploy-status)](https://your-site-name.netlify.app)
 
-**🌐 [Live Icon Search & Demo](https://your-site-name.netlify.app)**
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4ea370d8-122e-488b-aaff-1505138d62bb/deploy-status)](https://simplesolidicons.netlify.app/)
+
+**🌐 [Live Icon Search & Demo](https://simplesolidicons.netlify.app/)**
 
 SSR-safe, simple, and auto-generated icon library for SolidJS with components from popular open-source icon sets.
 
