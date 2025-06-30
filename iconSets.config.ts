@@ -50,13 +50,11 @@ export const getSetDefaultProps = (setConfig: IconSetConfig): Required<IconSetDe
 }
 
 export const iconSetConfigs: IconSetConfig[] = [
-  // Font Awesome Free (npm)
+  // Font Awesome Free (npm, multi-variant)
   {
     name: 'fontawesome',
     repoUrl: '@fortawesome/fontawesome-free',
     gitBranch: '', // not used for npm
-    svgGlob: 'node_modules/@fortawesome/fontawesome-free/svgs/{solid,regular,brands}/*.svg',
-    componentPrefix: 'Fa',
     cacheDir: './.icon-cache/fontawesome',
     license: 'CC BY 4.0',
     licenseUrl: 'https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt',
@@ -66,6 +64,24 @@ export const iconSetConfigs: IconSetConfig[] = [
       stroke: 'none',
     },
     sourceType: 'npm',
+    componentPrefix: 'Fa', // required for type, not used for variants
+    variants: [
+      {
+        variant: 'solid',
+        svgGlob: 'node_modules/@fortawesome/fontawesome-free/svgs/solid/*.svg',
+        componentPrefix: 'FaSolid',
+      },
+      {
+        variant: 'regular',
+        svgGlob: 'node_modules/@fortawesome/fontawesome-free/svgs/regular/*.svg',
+        componentPrefix: 'FaRegular',
+      },
+      {
+        variant: 'brands',
+        svgGlob: 'node_modules/@fortawesome/fontawesome-free/svgs/brands/*.svg',
+        componentPrefix: 'FaBrands',
+      },
+    ],
   },
   // Tabler Icons (npm)
   {

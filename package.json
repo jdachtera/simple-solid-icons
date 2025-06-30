@@ -10,9 +10,17 @@
       "import": "./src/index.js",
       "types": "./src/index.d.ts"
     },
-    "./fontawesome": {
-      "import": "./src/fontawesome/index.js",
-      "types": "./src/fontawesome/index.d.ts"
+    "./fontawesome/Solid": {
+      "import": "./src/fontawesome/Solid/index.js",
+      "types": "./src/fontawesome/Solid/index.d.ts"
+    },
+    "./fontawesome/Regular": {
+      "import": "./src/fontawesome/Regular/index.js",
+      "types": "./src/fontawesome/Regular/index.d.ts"
+    },
+    "./fontawesome/Brands": {
+      "import": "./src/fontawesome/Brands/index.js",
+      "types": "./src/fontawesome/Brands/index.d.ts"
     },
     "./tabler": {
       "import": "./src/tabler/index.js",
@@ -77,6 +85,10 @@
     "./codicons": {
       "import": "./src/codicons/index.js",
       "types": "./src/codicons/index.d.ts"
+    },
+    "./fontawesome": {
+      "import": "./src/fontawesome/index.js",
+      "types": "./src/fontawesome/index.d.ts"
     },
     "./eva": {
       "import": "./src/eva/index.js",
