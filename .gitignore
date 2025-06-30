@@ -3,3 +3,4 @@ node_modules/
 .DS_Store
 # Icon cache for local repo clones
 .icon-cache/
+dist

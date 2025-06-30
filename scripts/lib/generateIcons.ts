@@ -238,20 +238,8 @@ export async function generateIcons(): Promise<void> {
       console.log(`✓ ${set.name}/index.js`)
     }
   }
-  // Main index.js
-  const mainIndexContent = iconSetNames
-    .map(set => {
-      if (set.includes('/')) {
-        const [setName, variant] = set.split('/')
-        return `export * from './${setName}/${variant}/index.js'`
-      }
-      return `export * from './${set}/index.js'`
-    })
-    .join('\n')
-  await fs.writeFile(path.join(outRoot, 'index.js'), mainIndexContent)
-  // Main index.d.ts
-  await fs.writeFile(path.join(outRoot, 'index.d.ts'), mainIndexContent)
-  console.log('✓ main index.js and index.d.ts')
+  // (No main index.js or index.d.ts generated)
+  // console.log('✓ main index.js and index.d.ts')
   console.log(
     `Generated ${iconCount} icons in ${iconSetNames.length} sets/variants.`
   )
