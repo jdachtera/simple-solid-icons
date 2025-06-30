@@ -249,8 +249,7 @@ export const iconSetConfigs: IconSetConfig[] = [
     componentPrefix: 'Codicon',
     cacheDir: './.icon-cache/codicons',
     license: 'MIT',
-    licenseUrl:
-      'https://github.com/microsoft/vscode-codicons/blob/main/LICENSE',
+    licenseUrl: 'https://github.com/microsoft/vscode-codicons/blob/main/LICENSE',
     defaultProps: {
       size: 32,
       fill: 'currentColor',

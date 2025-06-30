@@ -68,6 +68,7 @@ function MyComponent() {
 
 ## Icon Sets
 
+
 - **Tabler Icons** (`Tabler*`) — MIT
 - **Heroicons** (`Hero*`) — MIT
 - **Lucide** (`Lucide*`) — ISC
@@ -77,7 +78,11 @@ function MyComponent() {
 - **Boxicons** (`Box*`) — MIT
 - **Simple Icons** (`Simple*`) — CC0-1.0
 - **Eva Icons** (`Eva*`) — MIT
-- **Phosphor Icons** (`Phosphor*`) — MIT
+- **Zondicons** (`Zondicon*`) — MIT
+- **Ionicons** (`Ion*`) — MIT
+- **Codicons** (`Codicon*`) — MIT
+
+Each icon file includes a header with license and source info. See the source repos for full license details.
 
 Each icon file includes a header with license and source info. See the source repos for full license details.
 
