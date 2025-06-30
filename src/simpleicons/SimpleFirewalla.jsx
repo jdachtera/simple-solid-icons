@@ -1,26 +1,32 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function SimpleFirewalla({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function SimpleFirewalla(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}><title>Firewalla</title><path d="M12.156 0c-3.602 4.89.391 7.768 2.61 11.893-.751 1.527-1.745 3.08-2.733 4.836l-.072.025c-.849-.983-1.99-1.85-3.033-2.967 2.606-5.783-.809-9.812-.809-9.812a12.555 12.555 0 0 0-1.916 2.021c-2.296 3.06-2.027 5.897-2.027 5.897C4.176 19.07 12.125 24 12.125 24a21.738 21.738 0 0 0 2.139-1.594c5.864-4.974 5.564-10.513 5.564-10.513.122-4.308-1.622-5.905-4.82-9.014A83.864 83.864 0 0 1 12.156 0zm.281 17.37zm.397.687a4.298 4.298 0 0 1 .14.328 4.463 4.463 0 0 0-.14-.328zm.266.718a4.289 4.289 0 0 1 .14.791c.024.286.023.588-.006.91a5.23 5.23 0 0 0 .006-.91 4.513 4.513 0 0 0-.14-.79z"/></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <title>Firewalla</title>
+      <path d="M12.156 0c-3.602 4.89.391 7.768 2.61 11.893-.751 1.527-1.745 3.08-2.733 4.836l-.072.025c-.849-.983-1.99-1.85-3.033-2.967 2.606-5.783-.809-9.812-.809-9.812a12.555 12.555 0 0 0-1.916 2.021c-2.296 3.06-2.027 5.897-2.027 5.897C4.176 19.07 12.125 24 12.125 24a21.738 21.738 0 0 0 2.139-1.594c5.864-4.974 5.564-10.513 5.564-10.513.122-4.308-1.622-5.905-4.82-9.014A83.864 83.864 0 0 1 12.156 0zm.281 17.37zm.397.687a4.298 4.298 0 0 1 .14.328 4.463 4.463 0 0 0-.14-.328zm.266.718a4.289 4.289 0 0 1 .14.791c.024.286.023.588-.006.91a5.23 5.23 0 0 0 .006-.91 4.513 4.513 0 0 0-.14-.79z" />
+    </svg>
+  );
 }

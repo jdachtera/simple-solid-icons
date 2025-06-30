@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: feather | License: MIT (<https://github.com/feathericons/feather/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function FeatherFlag(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function FeatherFlag(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,8 @@ export function FeatherFlag(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/>
+      <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+      <line x1="4" y1="22" x2="4" y2="15" />
     </svg>
-  )
+  );
 }

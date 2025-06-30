@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: bootstrap | License: MIT (<https://github.com/twbs/icons/blob/main/LICENSE.md>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function BootstrapShiftFill(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function BootstrapShiftFill(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,9 +25,7 @@ export function BootstrapShiftFill(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M7.27 2.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v3a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-3H1.654C.78 10.5.326 9.455.924 8.816z"/>
-
+      <path d="M7.27 2.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v3a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-3H1.654C.78 10.5.326 9.455.924 8.816z" />
     </svg>
-  )
+  );
 }

@@ -1,30 +1,33 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: tabler | License: MIT (<https://github.com/tabler/tabler-icons/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function TablerHazeMoon({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function TablerHazeMoon(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}>
-  <path d="M3 16h18" />
-  <path d="M3 20h18" />
-  <path d="M8.296 16c-2.268 -1.4 -3.598 -4.087 -3.237 -6.916c.443 -3.48 3.308 -6.083 6.698 -6.084v.006h.296c-1.991 1.916 -2.377 5.03 -.918 7.405c1.459 2.374 4.346 3.33 6.865 2.275a6.888 6.888 0 0 1 -2.777 3.314" />
-</svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <path d="M3 16h18" />
+      <path d="M3 20h18" />
+      <path d="M8.296 16c-2.268 -1.4 -3.598 -4.087 -3.237 -6.916c.443 -3.48 3.308 -6.083 6.698 -6.084v.006h.296c-1.991 1.916 -2.377 5.03 -.918 7.405c1.459 2.374 4.346 3.33 6.865 2.275a6.888 6.888 0 0 1 -2.777 3.314" />
+    </svg>
+  );
 }

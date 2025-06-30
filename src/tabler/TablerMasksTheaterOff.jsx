@@ -1,34 +1,37 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: tabler | License: MIT (<https://github.com/tabler/tabler-icons/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function TablerMasksTheaterOff({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function TablerMasksTheaterOff(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}>
-  <path d="M13 9c.058 0 .133 0 .192 0h6.616a2 2 0 0 1 1.992 2.183l-.554 6.041m-1.286 2.718a3.99 3.99 0 0 1 -2.71 1.058h-1.5a4 4 0 0 1 -3.983 -3.635l-.567 -6.182" />
-  <path d="M18 13h.01" />
-  <path d="M15 16.5c.657 .438 1.313 .588 1.97 .451" />
-  <path d="M8.632 15.982a4.05 4.05 0 0 1 -.382 .018h-1.5a4 4 0 0 1 -3.983 -3.635l-.567 -6.182a2 2 0 0 1 .514 -1.531a1.99 1.99 0 0 1 1.286 -.652m4 0h2.808a2 2 0 0 1 2 2" />
-  <path d="M6 8h.01" />
-  <path d="M6 12c.764 -.51 1.528 -.63 2.291 -.36" />
-  <path d="M3 3l18 18" />
-</svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <path d="M13 9c.058 0 .133 0 .192 0h6.616a2 2 0 0 1 1.992 2.183l-.554 6.041m-1.286 2.718a3.99 3.99 0 0 1 -2.71 1.058h-1.5a4 4 0 0 1 -3.983 -3.635l-.567 -6.182" />
+      <path d="M18 13h.01" />
+      <path d="M15 16.5c.657 .438 1.313 .588 1.97 .451" />
+      <path d="M8.632 15.982a4.05 4.05 0 0 1 -.382 .018h-1.5a4 4 0 0 1 -3.983 -3.635l-.567 -6.182a2 2 0 0 1 .514 -1.531a1.99 1.99 0 0 1 1.286 -.652m4 0h2.808a2 2 0 0 1 2 2" />
+      <path d="M6 8h.01" />
+      <path d="M6 12c.764 -.51 1.528 -.63 2.291 -.36" />
+      <path d="M3 3l18 18" />
+    </svg>
+  );
 }

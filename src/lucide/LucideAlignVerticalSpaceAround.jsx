@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideAlignVerticalSpaceAround(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideAlignVerticalSpaceAround(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideAlignVerticalSpaceAround(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <rect width="10" height="6" x="7" y="9" rx="2" />
-  <path d="M22 20H2" />
-  <path d="M22 4H2" />
-
+      <rect width="10" height="6" x="7" y="9" rx="2" />
+      <path d="M22 20H2" />
+      <path d="M22 4H2" />
     </svg>
-  )
+  );
 }

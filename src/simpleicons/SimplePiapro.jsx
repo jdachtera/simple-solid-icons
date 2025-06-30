@@ -1,26 +1,32 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function SimplePiapro({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function SimplePiapro(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}><title>Piapro</title><path d="M11.988 0c-4.705 0-8.7 3.492-9.351 8.168-.06.207-.09.444-.09.68V24l5.21-3.403V9.44c0-2.338 1.893-4.261 4.231-4.261s4.261 1.894 4.261 4.232c0 2.337-1.894 4.261-4.231 4.261-.77 0-1.54-.207-2.22-.621v5.563A9.45 9.45 0 0 0 21.191 11.6C22.405 6.51 19.268 1.45 14.207.266A9.48 9.48 0 0 0 11.988 0Z"/></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <title>Piapro</title>
+      <path d="M11.988 0c-4.705 0-8.7 3.492-9.351 8.168-.06.207-.09.444-.09.68V24l5.21-3.403V9.44c0-2.338 1.893-4.261 4.231-4.261s4.261 1.894 4.261 4.232c0 2.337-1.894 4.261-4.231 4.261-.77 0-1.54-.207-2.22-.621v5.563A9.45 9.45 0 0 0 21.191 11.6C22.405 6.51 19.268 1.45 14.207.266A9.48 9.48 0 0 0 11.988 0Z" />
+    </svg>
+  );
 }

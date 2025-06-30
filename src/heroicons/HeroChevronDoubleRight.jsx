@@ -1,13 +1,13 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: heroicons | License: MIT (<https://github.com/tailwindlabs/heroicons/blob/master/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function HeroChevronDoubleRight(props) {
   const merged = mergeProps(
     {
       size: 32,
       color: 'currentColor',
-      fill: 'currentColor',
+      fill: 'none',
       stroke: 'currentColor',
       'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
@@ -15,8 +15,8 @@ export function HeroChevronDoubleRight(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,9 +25,13 @@ export function HeroChevronDoubleRight(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-<path d="M5.25 4.5L12.75 12L5.25 19.5M11.25 4.5L18.75 12L11.25 19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-
+      <path
+        d="M5.25 4.5L12.75 12L5.25 19.5M11.25 4.5L18.75 12L11.25 19.5"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </svg>
-  )
+  );
 }

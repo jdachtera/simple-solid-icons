@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideGalleryVerticalEnd(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideGalleryVerticalEnd(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideGalleryVerticalEnd(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M7 2h10" />
-  <path d="M5 6h14" />
-  <rect width="18" height="12" x="3" y="10" rx="2" />
-
+      <path d="M7 2h10" />
+      <path d="M5 6h14" />
+      <rect width="18" height="12" x="3" y="10" rx="2" />
     </svg>
-  )
+  );
 }

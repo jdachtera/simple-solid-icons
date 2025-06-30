@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: feather | License: MIT (<https://github.com/feathericons/feather/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function FeatherVideo(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function FeatherVideo(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,8 @@ export function FeatherVideo(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+      <polygon points="23 7 16 12 23 17 23 7" />
+      <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
     </svg>
-  )
+  );
 }

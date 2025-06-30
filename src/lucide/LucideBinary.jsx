@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideBinary(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideBinary(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,14 +25,12 @@ export function LucideBinary(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <rect x="14" y="14" width="4" height="6" rx="2" />
-  <rect x="6" y="4" width="4" height="6" rx="2" />
-  <path d="M6 20h4" />
-  <path d="M14 10h4" />
-  <path d="M6 14h2v6" />
-  <path d="M14 4h2v6" />
-
+      <rect x="14" y="14" width="4" height="6" rx="2" />
+      <rect x="6" y="4" width="4" height="6" rx="2" />
+      <path d="M6 20h4" />
+      <path d="M14 10h4" />
+      <path d="M6 14h2v6" />
+      <path d="M14 4h2v6" />
     </svg>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideCornerDownLeft(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideCornerDownLeft(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,10 +25,8 @@ export function LucideCornerDownLeft(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M20 4v7a4 4 0 0 1-4 4H4" />
-  <path d="m9 10-5 5 5 5" />
-
+      <path d="M20 4v7a4 4 0 0 1-4 4H4" />
+      <path d="m9 10-5 5 5 5" />
     </svg>
-  )
+  );
 }

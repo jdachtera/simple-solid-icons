@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideCircleParkingOff(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideCircleParkingOff(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,12 +25,10 @@ export function LucideCircleParkingOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <circle cx="12" cy="12" r="10" />
-  <path d="m5 5 14 14" />
-  <path d="M13 13a3 3 0 1 0 0-6H9v2" />
-  <path d="M9 17v-2.34" />
-
+      <circle cx="12" cy="12" r="10" />
+      <path d="m5 5 14 14" />
+      <path d="M13 13a3 3 0 1 0 0-6H9v2" />
+      <path d="M9 17v-2.34" />
     </svg>
-  )
+  );
 }

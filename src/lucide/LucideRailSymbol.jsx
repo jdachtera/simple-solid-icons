@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideRailSymbol(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideRailSymbol(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideRailSymbol(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M5 15h14" />
-  <path d="M5 9h14" />
-  <path d="m14 20-5-5 6-6-5-5" />
-
+      <path d="M5 15h14" />
+      <path d="M5 9h14" />
+      <path d="m14 20-5-5 6-6-5-5" />
     </svg>
-  )
+  );
 }

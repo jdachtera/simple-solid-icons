@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: codicons | License: MIT (<https://github.com/microsoft/vscode-codicons/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function CodiconCircleSmallFilled(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function CodiconCircleSmallFilled(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,7 @@ export function CodiconCircleSmallFilled(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+      <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
     </svg>
-  )
+  );
 }

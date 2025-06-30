@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: feather | License: MIT (<https://github.com/feathericons/feather/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function FeatherVoicemail(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function FeatherVoicemail(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,9 @@ export function FeatherVoicemail(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <circle cx="5.5" cy="11.5" r="4.5"/><circle cx="18.5" cy="11.5" r="4.5"/><line x1="5.5" y1="16" x2="18.5" y2="16"/>
+      <circle cx="5.5" cy="11.5" r="4.5" />
+      <circle cx="18.5" cy="11.5" r="4.5" />
+      <line x1="5.5" y1="16" x2="18.5" y2="16" />
     </svg>
-  )
+  );
 }

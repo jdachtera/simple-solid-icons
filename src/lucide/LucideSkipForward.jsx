@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideSkipForward(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideSkipForward(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,10 +25,8 @@ export function LucideSkipForward(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <polygon points="5 4 15 12 5 20 5 4" />
-  <line x1="19" x2="19" y1="5" y2="19" />
-
+      <polygon points="5 4 15 12 5 20 5 4" />
+      <line x1="19" x2="19" y1="5" y2="19" />
     </svg>
-  )
+  );
 }

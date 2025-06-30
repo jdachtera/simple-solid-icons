@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: remix | License: Apache-2.0 (<https://github.com/Remix-Design/RemixIcon/blob/master/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function RemixArrowUpFill(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function RemixArrowUpFill(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,7 @@ export function RemixArrowUpFill(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path d="M13 12V20H11V12H4L12 4L20 12H13Z"/>
+      <path d="M13 12V20H11V12H4L12 4L20 12H13Z" />
     </svg>
-  )
+  );
 }

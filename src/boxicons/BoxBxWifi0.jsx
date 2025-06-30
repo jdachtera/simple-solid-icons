@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: boxicons | License: MIT (<https://github.com/atisawd/boxicons/blob/master/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function BoxBxWifi0(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function BoxBxWifi0(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,7 @@ export function BoxBxWifi0(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <circle cx="12" cy="18" r="2"/>
+      <circle cx="12" cy="18" r="2" />
     </svg>
-  )
+  );
 }

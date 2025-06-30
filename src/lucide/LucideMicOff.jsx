@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideMicOff(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideMicOff(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,14 +25,12 @@ export function LucideMicOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <line x1="2" x2="22" y1="2" y2="22" />
-  <path d="M18.89 13.23A7.12 7.12 0 0 0 19 12v-2" />
-  <path d="M5 10v2a7 7 0 0 0 12 5" />
-  <path d="M15 9.34V5a3 3 0 0 0-5.68-1.33" />
-  <path d="M9 9v3a3 3 0 0 0 5.12 2.12" />
-  <line x1="12" x2="12" y1="19" y2="22" />
-
+      <line x1="2" x2="22" y1="2" y2="22" />
+      <path d="M18.89 13.23A7.12 7.12 0 0 0 19 12v-2" />
+      <path d="M5 10v2a7 7 0 0 0 12 5" />
+      <path d="M15 9.34V5a3 3 0 0 0-5.68-1.33" />
+      <path d="M9 9v3a3 3 0 0 0 5.12 2.12" />
+      <line x1="12" x2="12" y1="19" y2="22" />
     </svg>
-  )
+  );
 }

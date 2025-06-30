@@ -1,13 +1,13 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: heroicons | License: MIT (<https://github.com/tailwindlabs/heroicons/blob/master/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function HeroPlus(props) {
   const merged = mergeProps(
     {
       size: 32,
       color: 'currentColor',
-      fill: 'currentColor',
+      fill: 'none',
       stroke: 'currentColor',
       'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
@@ -15,8 +15,8 @@ export function HeroPlus(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,9 +25,13 @@ export function HeroPlus(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-<path d="M12 4.5V19.5M19.5 12L4.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-
+      <path
+        d="M12 4.5V19.5M19.5 12L4.5 12"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </svg>
-  )
+  );
 }

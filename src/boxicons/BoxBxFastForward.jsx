@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: boxicons | License: MIT (<https://github.com/atisawd/boxicons/blob/master/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function BoxBxFastForward(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function BoxBxFastForward(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,7 @@ export function BoxBxFastForward(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path d="m19 12-7-5v10zM5 7v10l7-5z"/>
+      <path d="m19 12-7-5v10zM5 7v10l7-5z" />
     </svg>
-  )
+  );
 }

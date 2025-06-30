@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideCalendarRange(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideCalendarRange(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,16 +25,14 @@ export function LucideCalendarRange(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <rect width="18" height="18" x="3" y="4" rx="2" />
-  <path d="M16 2v4" />
-  <path d="M3 10h18" />
-  <path d="M8 2v4" />
-  <path d="M17 14h-6" />
-  <path d="M13 18H7" />
-  <path d="M7 14h.01" />
-  <path d="M17 18h.01" />
-
+      <rect width="18" height="18" x="3" y="4" rx="2" />
+      <path d="M16 2v4" />
+      <path d="M3 10h18" />
+      <path d="M8 2v4" />
+      <path d="M17 14h-6" />
+      <path d="M13 18H7" />
+      <path d="M7 14h.01" />
+      <path d="M17 18h.01" />
     </svg>
-  )
+  );
 }

@@ -1,13 +1,13 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: heroicons | License: MIT (<https://github.com/tailwindlabs/heroicons/blob/master/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function HeroShieldExclamation(props) {
   const merged = mergeProps(
     {
       size: 32,
       color: 'currentColor',
-      fill: 'currentColor',
+      fill: 'none',
       stroke: 'currentColor',
       'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
@@ -15,8 +15,8 @@ export function HeroShieldExclamation(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,9 +25,13 @@ export function HeroShieldExclamation(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-<path d="M12 9V12.75M12 2.71426C9.8495 4.75089 6.94563 6.00001 3.75 6.00001C3.69922 6.00001 3.64852 5.9997 3.59789 5.99907C3.2099 7.17918 3 8.44011 3 9.75006C3 15.3416 6.82432 20.0399 12 21.372C17.1757 20.0399 21 15.3416 21 9.75006C21 8.44011 20.7901 7.17918 20.4021 5.99907C20.3515 5.9997 20.3008 6.00001 20.25 6.00001C17.0544 6.00001 14.1505 4.75089 12 2.71426ZM12 15.75H12.0075V15.7575H12V15.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-
+      <path
+        d="M12 9V12.75M12 2.71426C9.8495 4.75089 6.94563 6.00001 3.75 6.00001C3.69922 6.00001 3.64852 5.9997 3.59789 5.99907C3.2099 7.17918 3 8.44011 3 9.75006C3 15.3416 6.82432 20.0399 12 21.372C17.1757 20.0399 21 15.3416 21 9.75006C21 8.44011 20.7901 7.17918 20.4021 5.99907C20.3515 5.9997 20.3008 6.00001 20.25 6.00001C17.0544 6.00001 14.1505 4.75089 12 2.71426ZM12 15.75H12.0075V15.7575H12V15.75Z"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </svg>
-  )
+  );
 }

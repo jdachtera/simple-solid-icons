@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideBarcode(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideBarcode(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,13 +25,11 @@ export function LucideBarcode(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M3 5v14" />
-  <path d="M8 5v14" />
-  <path d="M12 5v14" />
-  <path d="M17 5v14" />
-  <path d="M21 5v14" />
-
+      <path d="M3 5v14" />
+      <path d="M8 5v14" />
+      <path d="M12 5v14" />
+      <path d="M17 5v14" />
+      <path d="M21 5v14" />
     </svg>
-  )
+  );
 }

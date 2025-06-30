@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideSword(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideSword(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,12 +25,10 @@ export function LucideSword(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" />
-  <line x1="13" x2="19" y1="19" y2="13" />
-  <line x1="16" x2="20" y1="16" y2="20" />
-  <line x1="19" x2="21" y1="21" y2="19" />
-
+      <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" />
+      <line x1="13" x2="19" y1="19" y2="13" />
+      <line x1="16" x2="20" y1="16" y2="20" />
+      <line x1="19" x2="21" y1="21" y2="19" />
     </svg>
-  )
+  );
 }

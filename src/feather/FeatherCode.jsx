@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: feather | License: MIT (<https://github.com/feathericons/feather/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function FeatherCode(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function FeatherCode(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,8 @@ export function FeatherCode(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+      <polyline points="16 18 22 12 16 6" />
+      <polyline points="8 6 2 12 8 18" />
     </svg>
-  )
+  );
 }

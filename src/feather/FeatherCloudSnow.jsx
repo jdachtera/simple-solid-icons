@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: feather | License: MIT (<https://github.com/feathericons/feather/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function FeatherCloudSnow(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function FeatherCloudSnow(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,13 @@ export function FeatherCloudSnow(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"/><line x1="8" y1="16" x2="8.01" y2="16"/><line x1="8" y1="20" x2="8.01" y2="20"/><line x1="12" y1="18" x2="12.01" y2="18"/><line x1="12" y1="22" x2="12.01" y2="22"/><line x1="16" y1="16" x2="16.01" y2="16"/><line x1="16" y1="20" x2="16.01" y2="20"/>
+      <path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25" />
+      <line x1="8" y1="16" x2="8.01" y2="16" />
+      <line x1="8" y1="20" x2="8.01" y2="20" />
+      <line x1="12" y1="18" x2="12.01" y2="18" />
+      <line x1="12" y1="22" x2="12.01" y2="22" />
+      <line x1="16" y1="16" x2="16.01" y2="16" />
+      <line x1="16" y1="20" x2="16.01" y2="20" />
     </svg>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideMessageSquareQuote(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideMessageSquareQuote(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideMessageSquareQuote(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-  <path d="M8 12a2 2 0 0 0 2-2V8H8" />
-  <path d="M14 12a2 2 0 0 0 2-2V8h-2" />
-
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+      <path d="M8 12a2 2 0 0 0 2-2V8H8" />
+      <path d="M14 12a2 2 0 0 0 2-2V8h-2" />
     </svg>
-  )
+  );
 }

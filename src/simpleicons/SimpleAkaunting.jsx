@@ -1,26 +1,32 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function SimpleAkaunting({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function SimpleAkaunting(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}><title>Akaunting</title><path d="M15.146 18.673a7.352 7.352 0 0 1-3.148.704 7.344 7.344 0 0 1-4.538-1.561l-3.013 3.511A11.956 11.956 0 0 0 11.998 24c1.913 0 3.721-.448 5.326-1.244l-2.178-4.083Zm4.229 2.792V24h4.623V12c0-6.627-5.372-12-12-12C5.473 0 .165 5.208.002 11.693h4.626a7.377 7.377 0 1 1 11.034 6.711l2.177 4.081a12 12 0 0 0 1.536-1.02ZM7.016 17.44a7.352 7.352 0 0 1-2.389-5.165H.002a11.97 11.97 0 0 0 4.002 8.675l3.012-3.51Z"/></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <title>Akaunting</title>
+      <path d="M15.146 18.673a7.352 7.352 0 0 1-3.148.704 7.344 7.344 0 0 1-4.538-1.561l-3.013 3.511A11.956 11.956 0 0 0 11.998 24c1.913 0 3.721-.448 5.326-1.244l-2.178-4.083Zm4.229 2.792V24h4.623V12c0-6.627-5.372-12-12-12C5.473 0 .165 5.208.002 11.693h4.626a7.377 7.377 0 1 1 11.034 6.711l2.177 4.081a12 12 0 0 0 1.536-1.02ZM7.016 17.44a7.352 7.352 0 0 1-2.389-5.165H.002a11.97 11.97 0 0 0 4.002 8.675l3.012-3.51Z" />
+    </svg>
+  );
 }

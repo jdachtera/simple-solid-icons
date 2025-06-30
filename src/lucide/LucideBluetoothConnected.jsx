@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideBluetoothConnected(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideBluetoothConnected(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideBluetoothConnected(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="m7 7 10 10-5 5V2l5 5L7 17" />
-  <line x1="18" x2="21" y1="12" y2="12" />
-  <line x1="3" x2="6" y1="12" y2="12" />
-
+      <path d="m7 7 10 10-5 5V2l5 5L7 17" />
+      <line x1="18" x2="21" y1="12" y2="12" />
+      <line x1="3" x2="6" y1="12" y2="12" />
     </svg>
-  )
+  );
 }

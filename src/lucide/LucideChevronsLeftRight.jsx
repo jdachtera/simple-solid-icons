@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideChevronsLeftRight(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideChevronsLeftRight(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,10 +25,8 @@ export function LucideChevronsLeftRight(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="m9 7-5 5 5 5" />
-  <path d="m15 7 5 5-5 5" />
-
+      <path d="m9 7-5 5 5 5" />
+      <path d="m15 7 5 5-5 5" />
     </svg>
-  )
+  );
 }

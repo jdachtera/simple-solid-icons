@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideVoicemail(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideVoicemail(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideVoicemail(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <circle cx="6" cy="12" r="4" />
-  <circle cx="18" cy="12" r="4" />
-  <line x1="6" x2="18" y1="16" y2="16" />
-
+      <circle cx="6" cy="12" r="4" />
+      <circle cx="18" cy="12" r="4" />
+      <line x1="6" x2="18" y1="16" y2="16" />
     </svg>
-  )
+  );
 }

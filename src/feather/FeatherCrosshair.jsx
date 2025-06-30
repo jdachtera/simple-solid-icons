@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: feather | License: MIT (<https://github.com/feathericons/feather/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function FeatherCrosshair(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function FeatherCrosshair(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,11 @@ export function FeatherCrosshair(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/>
+      <circle cx="12" cy="12" r="10" />
+      <line x1="22" y1="12" x2="18" y2="12" />
+      <line x1="6" y1="12" x2="2" y2="12" />
+      <line x1="12" y1="6" x2="12" y2="2" />
+      <line x1="12" y1="22" x2="12" y2="18" />
     </svg>
-  )
+  );
 }

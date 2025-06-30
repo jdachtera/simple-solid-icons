@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideTouchpadOff(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideTouchpadOff(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,14 +25,12 @@ export function LucideTouchpadOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M12 20v-6" />
-  <path d="M19.656 14H22" />
-  <path d="M2 14h12" />
-  <path d="m2 2 20 20" />
-  <path d="M20 20H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2" />
-  <path d="M9.656 4H20a2 2 0 0 1 2 2v10.344" />
-
+      <path d="M12 20v-6" />
+      <path d="M19.656 14H22" />
+      <path d="M2 14h12" />
+      <path d="m2 2 20 20" />
+      <path d="M20 20H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2" />
+      <path d="M9.656 4H20a2 2 0 0 1 2 2v10.344" />
     </svg>
-  )
+  );
 }

@@ -1,28 +1,31 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: tabler | License: MIT (<https://github.com/tabler/tabler-icons/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function TablerBrandEmber({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function TablerBrandEmber(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}>
-  <path d="M3 12.958c8.466 1.647 11.112 -1.196 12.17 -2.294c2.116 -2.196 0 -6.589 -2.646 -5.49c-2.644 1.096 -6.35 7.686 -3.174 12.078c2.116 2.928 6 2.178 11.65 -2.252" />
-</svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <path d="M3 12.958c8.466 1.647 11.112 -1.196 12.17 -2.294c2.116 -2.196 0 -6.589 -2.646 -5.49c-2.644 1.096 -6.35 7.686 -3.174 12.078c2.116 2.928 6 2.178 11.65 -2.252" />
+    </svg>
+  );
 }

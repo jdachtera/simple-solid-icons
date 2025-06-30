@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: boxicons | License: MIT (<https://github.com/atisawd/boxicons/blob/master/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function BoxBxCollapseAlt(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function BoxBxCollapseAlt(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,7 @@ export function BoxBxCollapseAlt(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path d="M2 15h7v7h2v-9H2v2zM15 2h-2v9h9V9h-7V2z"/>
+      <path d="M2 15h7v7h2v-9H2v2zM15 2h-2v9h9V9h-7V2z" />
     </svg>
-  )
+  );
 }

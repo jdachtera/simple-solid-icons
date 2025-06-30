@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideMoonStar(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideMoonStar(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideMoonStar(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9" />
-  <path d="M20 3v4" />
-  <path d="M22 5h-4" />
-
+      <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9" />
+      <path d="M20 3v4" />
+      <path d="M22 5h-4" />
     </svg>
-  )
+  );
 }

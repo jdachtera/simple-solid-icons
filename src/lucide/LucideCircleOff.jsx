@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideCircleOff(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideCircleOff(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideCircleOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="m2 2 20 20" />
-  <path d="M8.35 2.69A10 10 0 0 1 21.3 15.65" />
-  <path d="M19.08 19.08A10 10 0 1 1 4.92 4.92" />
-
+      <path d="m2 2 20 20" />
+      <path d="M8.35 2.69A10 10 0 0 1 21.3 15.65" />
+      <path d="M19.08 19.08A10 10 0 1 1 4.92 4.92" />
     </svg>
-  )
+  );
 }

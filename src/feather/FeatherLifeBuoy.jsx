@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: feather | License: MIT (<https://github.com/feathericons/feather/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function FeatherLifeBuoy(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function FeatherLifeBuoy(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,13 @@ export function FeatherLifeBuoy(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"/><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"/><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"/>
+      <circle cx="12" cy="12" r="10" />
+      <circle cx="12" cy="12" r="4" />
+      <line x1="4.93" y1="4.93" x2="9.17" y2="9.17" />
+      <line x1="14.83" y1="14.83" x2="19.07" y2="19.07" />
+      <line x1="14.83" y1="9.17" x2="19.07" y2="4.93" />
+      <line x1="14.83" y1="9.17" x2="18.36" y2="5.64" />
+      <line x1="4.93" y1="19.07" x2="9.17" y2="14.83" />
     </svg>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: feather | License: MIT (<https://github.com/feathericons/feather/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function FeatherCornerDownLeft(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function FeatherCornerDownLeft(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,8 @@ export function FeatherCornerDownLeft(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <polyline points="9 10 4 15 9 20"/><path d="M20 4v7a4 4 0 0 1-4 4H4"/>
+      <polyline points="9 10 4 15 9 20" />
+      <path d="M20 4v7a4 4 0 0 1-4 4H4" />
     </svg>
-  )
+  );
 }

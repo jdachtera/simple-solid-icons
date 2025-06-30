@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: feather | License: MIT (<https://github.com/feathericons/feather/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function FeatherDroplet(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function FeatherDroplet(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,7 @@ export function FeatherDroplet(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+      <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
     </svg>
-  )
+  );
 }

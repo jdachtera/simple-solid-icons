@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: codicons | License: MIT (<https://github.com/microsoft/vscode-codicons/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function CodiconDebugBreakpointData(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function CodiconDebugBreakpointData(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,7 @@ export function CodiconDebugBreakpointData(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path d="M12.238 8l-2.31 4H5.31L3 8l2.31-4h4.618l2.31 4z"/>
+      <path d="M12.238 8l-2.31 4H5.31L3 8l2.31-4h4.618l2.31 4z" />
     </svg>
-  )
+  );
 }

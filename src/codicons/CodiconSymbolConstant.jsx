@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: codicons | License: MIT (<https://github.com/microsoft/vscode-codicons/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function CodiconSymbolConstant(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function CodiconSymbolConstant(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,16 @@ export function CodiconSymbolConstant(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6h8v1H4V6zm8 3H4v1h8V9z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M1 4l1-1h12l1 1v8l-1 1H2l-1-1V4zm1 0v8h12V4H2z"/>
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M4 6h8v1H4V6zm8 3H4v1h8V9z"
+      />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M1 4l1-1h12l1 1v8l-1 1H2l-1-1V4zm1 0v8h12V4H2z"
+      />
     </svg>
-  )
+  );
 }

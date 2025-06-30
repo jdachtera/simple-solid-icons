@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideRotateCwSquare(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideRotateCwSquare(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideRotateCwSquare(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M12 5H6a2 2 0 0 0-2 2v3" />
-  <path d="m9 8 3-3-3-3" />
-  <path d="M4 14v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
-
+      <path d="M12 5H6a2 2 0 0 0-2 2v3" />
+      <path d="m9 8 3-3-3-3" />
+      <path d="M4 14v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
     </svg>
-  )
+  );
 }

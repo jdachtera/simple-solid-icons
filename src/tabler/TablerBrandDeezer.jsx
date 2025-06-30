@@ -1,37 +1,40 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: tabler | License: MIT (<https://github.com/tabler/tabler-icons/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function TablerBrandDeezer({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function TablerBrandDeezer(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}>
-  <path d="M3 16.5h2v.5h-2z" />
-  <path d="M8 16.5h2.5v.5h-2.5z" />
-  <path d="M16 17h-2.5v-.5h2.5z" />
-  <path d="M21.5 17h-2.5v-.5h2.5z" />
-  <path d="M21.5 13h-2.5v.5h2.5z" />
-  <path d="M21.5 9.5h-2.5v.5h2.5z" />
-  <path d="M21.5 6h-2.5v.5h2.5z" />
-  <path d="M16 13h-2.5v.5h2.5z" />
-  <path d="M8 13.5h2.5v-.5h-2.5z" />
-  <path d="M8 9.5h2.5v.5h-2.5z" />
-</svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <path d="M3 16.5h2v.5h-2z" />
+      <path d="M8 16.5h2.5v.5h-2.5z" />
+      <path d="M16 17h-2.5v-.5h2.5z" />
+      <path d="M21.5 17h-2.5v-.5h2.5z" />
+      <path d="M21.5 13h-2.5v.5h2.5z" />
+      <path d="M21.5 9.5h-2.5v.5h2.5z" />
+      <path d="M21.5 6h-2.5v.5h2.5z" />
+      <path d="M16 13h-2.5v.5h2.5z" />
+      <path d="M8 13.5h2.5v-.5h-2.5z" />
+      <path d="M8 9.5h2.5v.5h-2.5z" />
+    </svg>
+  );
 }

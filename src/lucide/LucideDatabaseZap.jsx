@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideDatabaseZap(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideDatabaseZap(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,13 +25,11 @@ export function LucideDatabaseZap(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <ellipse cx="12" cy="5" rx="9" ry="3" />
-  <path d="M3 5V19A9 3 0 0 0 15 21.84" />
-  <path d="M21 5V8" />
-  <path d="M21 12L18 17H22L19 22" />
-  <path d="M3 12A9 3 0 0 0 14.59 14.87" />
-
+      <ellipse cx="12" cy="5" rx="9" ry="3" />
+      <path d="M3 5V19A9 3 0 0 0 15 21.84" />
+      <path d="M21 5V8" />
+      <path d="M21 12L18 17H22L19 22" />
+      <path d="M3 12A9 3 0 0 0 14.59 14.87" />
     </svg>
-  )
+  );
 }

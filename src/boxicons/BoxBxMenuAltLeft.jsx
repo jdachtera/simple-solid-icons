@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: boxicons | License: MIT (<https://github.com/atisawd/boxicons/blob/master/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function BoxBxMenuAltLeft(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function BoxBxMenuAltLeft(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,7 @@ export function BoxBxMenuAltLeft(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path d="M4 11h12v2H4zm0-5h16v2H4zm0 12h7.235v-2H4z"/>
+      <path d="M4 11h12v2H4zm0-5h16v2H4zm0 12h7.235v-2H4z" />
     </svg>
-  )
+  );
 }

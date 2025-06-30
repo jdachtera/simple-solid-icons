@@ -1,26 +1,32 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function SimplePinescript({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function SimplePinescript(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}><title>Pine Script</title><path d="M3.785 16.14.124 21.287c-.311.437 0 1.044.536 1.044h22.681c.535 0 .846-.608.536-1.045l-4.2-5.927-1.979 1.161c-.037 1.063-.907 1.913-1.976 1.913-1.092 0-1.977-.887-1.977-1.982 0-.055.003-.11.007-.165l-3.173-2.328c-.341.278-.775.445-1.249.445-.56 0-1.065-.234-1.425-.609l-4.12 2.346Zm7.693-14.194L3.813 12.732c-.222.314-.132.751.197.95l.691.417 2.66-1.515a1.747 1.747 0 0 1-.007-.163c0-1.095.885-1.982 1.977-1.982 1.091 0 1.976.887 1.976 1.982 0 .138-.014.273-.041.403l3.047 2.237c.359-.366.858-.592 1.409-.592.634 0 1.198.299 1.56.764l2.831-1.66c.219-.222.258-.581.068-.849L12.553 1.948c-.262-.371-.812-.373-1.075-.002Z"/></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <title>Pine Script</title>
+      <path d="M3.785 16.14.124 21.287c-.311.437 0 1.044.536 1.044h22.681c.535 0 .846-.608.536-1.045l-4.2-5.927-1.979 1.161c-.037 1.063-.907 1.913-1.976 1.913-1.092 0-1.977-.887-1.977-1.982 0-.055.003-.11.007-.165l-3.173-2.328c-.341.278-.775.445-1.249.445-.56 0-1.065-.234-1.425-.609l-4.12 2.346Zm7.693-14.194L3.813 12.732c-.222.314-.132.751.197.95l.691.417 2.66-1.515a1.747 1.747 0 0 1-.007-.163c0-1.095.885-1.982 1.977-1.982 1.091 0 1.976.887 1.976 1.982 0 .138-.014.273-.041.403l3.047 2.237c.359-.366.858-.592 1.409-.592.634 0 1.198.299 1.56.764l2.831-1.66c.219-.222.258-.581.068-.849L12.553 1.948c-.262-.371-.812-.373-1.075-.002Z" />
+    </svg>
+  );
 }

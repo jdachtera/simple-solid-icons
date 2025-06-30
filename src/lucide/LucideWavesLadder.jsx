@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideWavesLadder(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideWavesLadder(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,13 +25,11 @@ export function LucideWavesLadder(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M19 5a2 2 0 0 0-2 2v11" />
-  <path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" />
-  <path d="M7 13h10" />
-  <path d="M7 9h10" />
-  <path d="M9 5a2 2 0 0 0-2 2v11" />
-
+      <path d="M19 5a2 2 0 0 0-2 2v11" />
+      <path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" />
+      <path d="M7 13h10" />
+      <path d="M7 9h10" />
+      <path d="M9 5a2 2 0 0 0-2 2v11" />
     </svg>
-  )
+  );
 }

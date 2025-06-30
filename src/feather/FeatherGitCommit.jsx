@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: feather | License: MIT (<https://github.com/feathericons/feather/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function FeatherGitCommit(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function FeatherGitCommit(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,9 @@ export function FeatherGitCommit(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <circle cx="12" cy="12" r="4"/><line x1="1.05" y1="12" x2="7" y2="12"/><line x1="17.01" y1="12" x2="22.96" y2="12"/>
+      <circle cx="12" cy="12" r="4" />
+      <line x1="1.05" y1="12" x2="7" y2="12" />
+      <line x1="17.01" y1="12" x2="22.96" y2="12" />
     </svg>
-  )
+  );
 }

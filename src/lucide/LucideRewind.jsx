@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideRewind(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideRewind(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,10 +25,8 @@ export function LucideRewind(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <polygon points="11 19 2 12 11 5 11 19" />
-  <polygon points="22 19 13 12 22 5 22 19" />
-
+      <polygon points="11 19 2 12 11 5 11 19" />
+      <polygon points="22 19 13 12 22 5 22 19" />
     </svg>
-  )
+  );
 }

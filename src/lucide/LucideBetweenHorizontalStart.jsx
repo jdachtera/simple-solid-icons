@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideBetweenHorizontalStart(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideBetweenHorizontalStart(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideBetweenHorizontalStart(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <rect width="13" height="7" x="8" y="3" rx="1" />
-  <path d="m2 9 3 3-3 3" />
-  <rect width="13" height="7" x="8" y="14" rx="1" />
-
+      <rect width="13" height="7" x="8" y="3" rx="1" />
+      <path d="m2 9 3 3-3 3" />
+      <rect width="13" height="7" x="8" y="14" rx="1" />
     </svg>
-  )
+  );
 }

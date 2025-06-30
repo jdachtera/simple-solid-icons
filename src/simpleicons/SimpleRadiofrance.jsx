@@ -1,26 +1,32 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function SimpleRadiofrance({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function SimpleRadiofrance(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}><title>Radio France</title><path d="M12 24C6.144 24 1.397 19.497 1.397 13.94a9.6 9.6 0 0 1 .208-1.991h5.99a4.4 4.4 0 0 0-.474 1.991c0 2.557 2.184 4.63 4.88 4.63.6 0 1.175-.104 1.706-.292v5.592Q12.872 24 12 24m10.355-7.888H16.31a4.4 4.4 0 0 0 .57-2.172c0-2.557-2.184-4.63-4.879-4.63-.504 0-.99.073-1.448.208V0h5.25v4.546c3.978 1.45 6.802 5.109 6.802 9.394a9.6 9.6 0 0 1-.249 2.172"/></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <title>Radio France</title>
+      <path d="M12 24C6.144 24 1.397 19.497 1.397 13.94a9.6 9.6 0 0 1 .208-1.991h5.99a4.4 4.4 0 0 0-.474 1.991c0 2.557 2.184 4.63 4.88 4.63.6 0 1.175-.104 1.706-.292v5.592Q12.872 24 12 24m10.355-7.888H16.31a4.4 4.4 0 0 0 .57-2.172c0-2.557-2.184-4.63-4.879-4.63-.504 0-.99.073-1.448.208V0h5.25v4.546c3.978 1.45 6.802 5.109 6.802 9.394a9.6 9.6 0 0 1-.249 2.172" />
+    </svg>
+  );
 }

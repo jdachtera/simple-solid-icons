@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucidePercent(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucidePercent(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucidePercent(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <line x1="19" x2="5" y1="5" y2="19" />
-  <circle cx="6.5" cy="6.5" r="2.5" />
-  <circle cx="17.5" cy="17.5" r="2.5" />
-
+      <line x1="19" x2="5" y1="5" y2="19" />
+      <circle cx="6.5" cy="6.5" r="2.5" />
+      <circle cx="17.5" cy="17.5" r="2.5" />
     </svg>
-  )
+  );
 }

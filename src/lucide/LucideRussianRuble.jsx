@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideRussianRuble(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideRussianRuble(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,10 +25,8 @@ export function LucideRussianRuble(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M6 11h8a4 4 0 0 0 0-8H9v18" />
-  <path d="M6 15h8" />
-
+      <path d="M6 11h8a4 4 0 0 0 0-8H9v18" />
+      <path d="M6 15h8" />
     </svg>
-  )
+  );
 }

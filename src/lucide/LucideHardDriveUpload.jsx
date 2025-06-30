@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideHardDriveUpload(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideHardDriveUpload(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,13 +25,11 @@ export function LucideHardDriveUpload(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="m16 6-4-4-4 4" />
-  <path d="M12 2v8" />
-  <rect width="20" height="8" x="2" y="14" rx="2" />
-  <path d="M6 18h.01" />
-  <path d="M10 18h.01" />
-
+      <path d="m16 6-4-4-4 4" />
+      <path d="M12 2v8" />
+      <rect width="20" height="8" x="2" y="14" rx="2" />
+      <path d="M6 18h.01" />
+      <path d="M10 18h.01" />
     </svg>
-  )
+  );
 }

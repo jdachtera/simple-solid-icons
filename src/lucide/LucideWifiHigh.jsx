@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideWifiHigh(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideWifiHigh(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideWifiHigh(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M12 20h.01" />
-  <path d="M5 12.859a10 10 0 0 1 14 0" />
-  <path d="M8.5 16.429a5 5 0 0 1 7 0" />
-
+      <path d="M12 20h.01" />
+      <path d="M5 12.859a10 10 0 0 1 14 0" />
+      <path d="M8.5 16.429a5 5 0 0 1 7 0" />
     </svg>
-  )
+  );
 }

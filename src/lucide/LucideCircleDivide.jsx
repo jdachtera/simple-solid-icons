@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideCircleDivide(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideCircleDivide(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,12 +25,10 @@ export function LucideCircleDivide(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <line x1="8" x2="16" y1="12" y2="12" />
-  <line x1="12" x2="12" y1="16" y2="16" />
-  <line x1="12" x2="12" y1="8" y2="8" />
-  <circle cx="12" cy="12" r="10" />
-
+      <line x1="8" x2="16" y1="12" y2="12" />
+      <line x1="12" x2="12" y1="16" y2="16" />
+      <line x1="12" x2="12" y1="8" y2="8" />
+      <circle cx="12" cy="12" r="10" />
     </svg>
-  )
+  );
 }

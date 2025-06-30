@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideLandPlot(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideLandPlot(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,12 +25,10 @@ export function LucideLandPlot(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="m12 8 6-3-6-3v10" />
-  <path d="m8 11.99-5.5 3.14a1 1 0 0 0 0 1.74l8.5 4.86a2 2 0 0 0 2 0l8.5-4.86a1 1 0 0 0 0-1.74L16 12" />
-  <path d="m6.49 12.85 11.02 6.3" />
-  <path d="M17.51 12.85 6.5 19.15" />
-
+      <path d="m12 8 6-3-6-3v10" />
+      <path d="m8 11.99-5.5 3.14a1 1 0 0 0 0 1.74l8.5 4.86a2 2 0 0 0 2 0l8.5-4.86a1 1 0 0 0 0-1.74L16 12" />
+      <path d="m6.49 12.85 11.02 6.3" />
+      <path d="M17.51 12.85 6.5 19.15" />
     </svg>
-  )
+  );
 }

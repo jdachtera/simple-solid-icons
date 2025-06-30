@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideArrowBigLeft(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideArrowBigLeft(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,9 +25,7 @@ export function LucideArrowBigLeft(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M18 15h-6v4l-7-7 7-7v4h6v6z" />
-
+      <path d="M18 15h-6v4l-7-7 7-7v4h6v6z" />
     </svg>
-  )
+  );
 }

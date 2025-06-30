@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: boxicons | License: MIT (<https://github.com/atisawd/boxicons/blob/master/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function BoxBxRewind(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function BoxBxRewind(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,7 @@ export function BoxBxRewind(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path d="M12 12V7l-7 5 7 5zm7-5-7 5 7 5z"/>
+      <path d="M12 12V7l-7 5 7 5zm7-5-7 5 7 5z" />
     </svg>
-  )
+  );
 }

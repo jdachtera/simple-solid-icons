@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideAlignVerticalJustifyCenter(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideAlignVerticalJustifyCenter(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideAlignVerticalJustifyCenter(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <rect width="14" height="6" x="5" y="16" rx="2" />
-  <rect width="10" height="6" x="7" y="2" rx="2" />
-  <path d="M2 12h20" />
-
+      <rect width="14" height="6" x="5" y="16" rx="2" />
+      <rect width="10" height="6" x="7" y="2" rx="2" />
+      <path d="M2 12h20" />
     </svg>
-  )
+  );
 }

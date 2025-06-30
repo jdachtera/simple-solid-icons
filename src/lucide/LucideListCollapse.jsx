@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideListCollapse(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideListCollapse(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,13 +25,11 @@ export function LucideListCollapse(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M10 12h11" />
-  <path d="M10 18h11" />
-  <path d="M10 6h11" />
-  <path d="m3 10 3-3-3-3" />
-  <path d="m3 20 3-3-3-3" />
-
+      <path d="M10 12h11" />
+      <path d="M10 18h11" />
+      <path d="M10 6h11" />
+      <path d="m3 10 3-3-3-3" />
+      <path d="m3 20 3-3-3-3" />
     </svg>
-  )
+  );
 }

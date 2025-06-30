@@ -1,26 +1,32 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function SimpleGooglecloudcomposer({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function SimpleGooglecloudcomposer(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}><title>Google Cloud Composer</title><path d="M9.636 4.752h-6.42V0h17.556v4.728h-6.36v6.396H9.636V4.752zm-6.42 1.692h4.74v6.36h6.408V24H9.636v-6.42h-6.42V6.444zm12.84-.012h4.728V24h-4.728V6.432zM7.92 24H3.216v-4.728H7.92V24z"/></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <title>Google Cloud Composer</title>
+      <path d="M9.636 4.752h-6.42V0h17.556v4.728h-6.36v6.396H9.636V4.752zm-6.42 1.692h4.74v6.36h6.408V24H9.636v-6.42h-6.42V6.444zm12.84-.012h4.728V24h-4.728V6.432zM7.92 24H3.216v-4.728H7.92V24z" />
+    </svg>
+  );
 }

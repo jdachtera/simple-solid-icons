@@ -61,7 +61,7 @@ export const iconSetConfigs: IconSetConfig[] = [
     licenseUrl: 'https://github.com/tailwindlabs/heroicons/blob/master/LICENSE',
     defaultProps: {
       size: 32,
-      fill: 'currentColor',
+      fill: 'none',
       stroke: 'currentColor',
       'stroke-width': 2,
     },

@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideBotMessageSquare(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideBotMessageSquare(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,14 +25,12 @@ export function LucideBotMessageSquare(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M12 6V2H8" />
-  <path d="m8 18-4 4V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2Z" />
-  <path d="M2 12h2" />
-  <path d="M9 11v2" />
-  <path d="M15 11v2" />
-  <path d="M20 12h2" />
-
+      <path d="M12 6V2H8" />
+      <path d="m8 18-4 4V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2Z" />
+      <path d="M2 12h2" />
+      <path d="M9 11v2" />
+      <path d="M15 11v2" />
+      <path d="M20 12h2" />
     </svg>
-  )
+  );
 }

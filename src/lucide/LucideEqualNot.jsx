@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideEqualNot(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideEqualNot(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideEqualNot(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <line x1="5" x2="19" y1="9" y2="9" />
-  <line x1="5" x2="19" y1="15" y2="15" />
-  <line x1="19" x2="5" y1="5" y2="19" />
-
+      <line x1="5" x2="19" y1="9" y2="9" />
+      <line x1="5" x2="19" y1="15" y2="15" />
+      <line x1="19" x2="5" y1="5" y2="19" />
     </svg>
-  )
+  );
 }

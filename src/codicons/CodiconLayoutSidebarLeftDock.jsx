@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: codicons | License: MIT (<https://github.com/microsoft/vscode-codicons/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function CodiconLayoutSidebarLeftDock(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function CodiconLayoutSidebarLeftDock(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,8 @@ export function CodiconLayoutSidebarLeftDock(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path d="M15 2V14L14 15H2L1 14V2L2 1H14L15 2ZM7 14H14V2H7V14Z"/><path d="M13 7.5H9.70703L10.8535 6.35351L10.1465 5.64648L8.14648 7.64648V8.35351L10.1465 10.3535L10.8535 9.64648L9.70703 8.5H13V7.5Z"/>
+      <path d="M15 2V14L14 15H2L1 14V2L2 1H14L15 2ZM7 14H14V2H7V14Z" />
+      <path d="M13 7.5H9.70703L10.8535 6.35351L10.1465 5.64648L8.14648 7.64648V8.35351L10.1465 10.3535L10.8535 9.64648L9.70703 8.5H13V7.5Z" />
     </svg>
-  )
+  );
 }

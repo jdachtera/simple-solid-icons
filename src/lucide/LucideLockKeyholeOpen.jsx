@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideLockKeyholeOpen(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideLockKeyholeOpen(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideLockKeyholeOpen(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <circle cx="12" cy="16" r="1" />
-  <rect width="18" height="12" x="3" y="10" rx="2" />
-  <path d="M7 10V7a5 5 0 0 1 9.33-2.5" />
-
+      <circle cx="12" cy="16" r="1" />
+      <rect width="18" height="12" x="3" y="10" rx="2" />
+      <path d="M7 10V7a5 5 0 0 1 9.33-2.5" />
     </svg>
-  )
+  );
 }

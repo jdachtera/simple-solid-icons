@@ -1,26 +1,32 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function SimplePortableappsdotcom({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function SimplePortableappsdotcom(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}><title>PortableApps.com</title><path d="M12 0C7.977 0 4.419 1.984 2.24 5.022c-1.816 4.295.987 7.619 4.001 7.532 2.925-.084 5.264-1.365 7.04-3.4l-3.02-3.015h10.635l-.037 10.577-2.788-2.782c-2.739 2.974-5.493 5.443-9.741 5.208C3.168 18.855.553 14.7.09 10.558.033 11.032 0 11.512 0 12 0 18.63 5.37 24 12 24s12-5.371 12-12S18.625 0 12 0z"/></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <title>PortableApps.com</title>
+      <path d="M12 0C7.977 0 4.419 1.984 2.24 5.022c-1.816 4.295.987 7.619 4.001 7.532 2.925-.084 5.264-1.365 7.04-3.4l-3.02-3.015h10.635l-.037 10.577-2.788-2.782c-2.739 2.974-5.493 5.443-9.741 5.208C3.168 18.855.553 14.7.09 10.558.033 11.032 0 11.512 0 12 0 18.63 5.37 24 12 24s12-5.371 12-12S18.625 0 12 0z" />
+    </svg>
+  );
 }

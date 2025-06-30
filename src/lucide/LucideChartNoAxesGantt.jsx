@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideChartNoAxesGantt(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideChartNoAxesGantt(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideChartNoAxesGantt(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M8 6h10" />
-  <path d="M6 12h9" />
-  <path d="M11 18h7" />
-
+      <path d="M8 6h10" />
+      <path d="M6 12h9" />
+      <path d="M11 18h7" />
     </svg>
-  )
+  );
 }

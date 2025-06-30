@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: boxicons | License: MIT (<https://github.com/atisawd/boxicons/blob/master/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function BoxBxHappy(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function BoxBxHappy(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,10 @@ export function BoxBxHappy(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/><circle cx="8.5" cy="10.5" r="1.5"/><circle cx="15.493" cy="10.493" r="1.493"/><path d="M12 18c4 0 5-4 5-4H7s1 4 5 4z"/>
+      <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" />
+      <circle cx="8.5" cy="10.5" r="1.5" />
+      <circle cx="15.493" cy="10.493" r="1.493" />
+      <path d="M12 18c4 0 5-4 5-4H7s1 4 5 4z" />
     </svg>
-  )
+  );
 }

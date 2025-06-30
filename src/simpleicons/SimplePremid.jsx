@@ -1,26 +1,32 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function SimplePremid({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function SimplePremid(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}><title>PreMiD</title><path d="M22.46 4.075c.85 0 1.54.69 1.54 1.54v12.77c0 .85-.69 1.54-1.54 1.54H1.54c-.85 0-1.54-.69-1.54-1.54V5.615c0-.85.69-1.54 1.54-1.54ZM3.442 8.485c-.4 0-.725.323-.725.724v5.673a.725.725 0 0 0 1.08.631l5.043-2.836a.725.725 0 0 0 0-1.263L3.797 8.577a.7.7 0 0 0-.355-.093m17.162 5.372h-7.698a.68.68 0 1 0 0 1.358h7.698a.68.68 0 1 0 0-1.358m0-2.446h-7.698a.68.68 0 1 0 0 1.359h7.698a.68.68 0 1 0 0-1.359m-3.17-2.445h-4.528a.68.68 0 1 0 0 1.359h4.528a.68.68 0 1 0 0-1.359"/></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <title>PreMiD</title>
+      <path d="M22.46 4.075c.85 0 1.54.69 1.54 1.54v12.77c0 .85-.69 1.54-1.54 1.54H1.54c-.85 0-1.54-.69-1.54-1.54V5.615c0-.85.69-1.54 1.54-1.54ZM3.442 8.485c-.4 0-.725.323-.725.724v5.673a.725.725 0 0 0 1.08.631l5.043-2.836a.725.725 0 0 0 0-1.263L3.797 8.577a.7.7 0 0 0-.355-.093m17.162 5.372h-7.698a.68.68 0 1 0 0 1.358h7.698a.68.68 0 1 0 0-1.358m0-2.446h-7.698a.68.68 0 1 0 0 1.359h7.698a.68.68 0 1 0 0-1.359m-3.17-2.445h-4.528a.68.68 0 1 0 0 1.359h4.528a.68.68 0 1 0 0-1.359" />
+    </svg>
+  );
 }

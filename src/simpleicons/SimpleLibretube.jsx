@@ -1,26 +1,32 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function SimpleLibretube({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function SimpleLibretube(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}><title>LibreTube</title><path d="M2.12 0c-.2688.004-.5138.2196-.5138.5206v4.9981c0 .1875.1009.3604.2641.4525l9.8769 5.5768c.3522.199.3522.7062 0 .9051L1.8703 18.03a.52.52 0 0 0-.264.4526v4.997c0 .4016.436.6514.7824.4484L22.207 12.3121a.3777.3777 0 0 0-.0003-.652L2.3883.072A.516.516 0 0 0 2.1199 0zm-.005 7.9458c-.2671.006-.5088.2216-.5088.5203v7.056c0 .3982.4296.6484.776.452l6.222-3.528c.3512-.199.3512-.705 0-.904l-6.222-3.528a.515.515 0 0 0-.2674-.0683z"/></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <title>LibreTube</title>
+      <path d="M2.12 0c-.2688.004-.5138.2196-.5138.5206v4.9981c0 .1875.1009.3604.2641.4525l9.8769 5.5768c.3522.199.3522.7062 0 .9051L1.8703 18.03a.52.52 0 0 0-.264.4526v4.997c0 .4016.436.6514.7824.4484L22.207 12.3121a.3777.3777 0 0 0-.0003-.652L2.3883.072A.516.516 0 0 0 2.1199 0zm-.005 7.9458c-.2671.006-.5088.2216-.5088.5203v7.056c0 .3982.4296.6484.776.452l6.222-3.528c.3512-.199.3512-.705 0-.904l-6.222-3.528a.515.515 0 0 0-.2674-.0683z" />
+    </svg>
+  );
 }

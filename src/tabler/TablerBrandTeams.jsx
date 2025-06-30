@@ -1,34 +1,37 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: tabler | License: MIT (<https://github.com/tabler/tabler-icons/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function TablerBrandTeams({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function TablerBrandTeams(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}>
-  <path d="M3 7h10v10h-10z" />
-  <path d="M6 10h4" />
-  <path d="M8 10v4" />
-  <path d="M8.104 17c.47 2.274 2.483 4 4.896 4a5 5 0 0 0 5 -5v-7h-5" />
-  <path d="M18 18a4 4 0 0 0 4 -4v-5h-4" />
-  <path d="M13.003 8.83a3 3 0 1 0 -1.833 -1.833" />
-  <path d="M15.83 8.36a2.5 2.5 0 1 0 .594 -4.117" />
-</svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <path d="M3 7h10v10h-10z" />
+      <path d="M6 10h4" />
+      <path d="M8 10v4" />
+      <path d="M8.104 17c.47 2.274 2.483 4 4.896 4a5 5 0 0 0 5 -5v-7h-5" />
+      <path d="M18 18a4 4 0 0 0 4 -4v-5h-4" />
+      <path d="M13.003 8.83a3 3 0 1 0 -1.833 -1.833" />
+      <path d="M15.83 8.36a2.5 2.5 0 1 0 .594 -4.117" />
+    </svg>
+  );
 }

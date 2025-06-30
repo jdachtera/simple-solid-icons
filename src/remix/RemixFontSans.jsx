@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: remix | License: Apache-2.0 (<https://github.com/Remix-Design/RemixIcon/blob/master/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function RemixFontSans(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function RemixFontSans(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,7 @@ export function RemixFontSans(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path d="M7 4H19V6H10V12H18V14H10V21H7V4Z"/>
+      <path d="M7 4H19V6H10V12H18V14H10V21H7V4Z" />
     </svg>
-  )
+  );
 }

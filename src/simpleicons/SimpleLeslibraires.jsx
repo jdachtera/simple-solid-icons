@@ -1,26 +1,32 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function SimpleLeslibraires({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function SimpleLeslibraires(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}><title>Les libraires</title><path d="M11.79.002a10.579 10.579 0 0 0-7.735 3.575C.18 7.958.593 14.647 4.981 18.518a10.557 10.557 0 0 0 5.3 2.51L12.002 24l1.717-2.971a10.56 10.56 0 0 0 6.227-3.437c3.876-4.38 3.461-11.07-.926-14.94a10.567 10.567 0 0 0-7.23-2.65zM11.277 7.5l.613.512-1.862 2.444c-.005.007-.048.06-.048.115 0 .056.045.112.045.113l1.866 2.461-.615.502-2.573-2.403a.883.883 0 0 1-.3-.667c0-.38.22-.596.304-.678zm3.265 0 .613.512-1.863 2.444c-.005.007-.048.06-.048.115 0 .056.045.112.046.113l1.866 2.461-.615.502-2.573-2.403a.883.883 0 0 1-.301-.667c0-.38.222-.596.305-.678z"/></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <title>Les libraires</title>
+      <path d="M11.79.002a10.579 10.579 0 0 0-7.735 3.575C.18 7.958.593 14.647 4.981 18.518a10.557 10.557 0 0 0 5.3 2.51L12.002 24l1.717-2.971a10.56 10.56 0 0 0 6.227-3.437c3.876-4.38 3.461-11.07-.926-14.94a10.567 10.567 0 0 0-7.23-2.65zM11.277 7.5l.613.512-1.862 2.444c-.005.007-.048.06-.048.115 0 .056.045.112.045.113l1.866 2.461-.615.502-2.573-2.403a.883.883 0 0 1-.3-.667c0-.38.22-.596.304-.678zm3.265 0 .613.512-1.863 2.444c-.005.007-.048.06-.048.115 0 .056.045.112.046.113l1.866 2.461-.615.502-2.573-2.403a.883.883 0 0 1-.301-.667c0-.38.222-.596.305-.678z" />
+    </svg>
+  );
 }

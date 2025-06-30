@@ -1,26 +1,32 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function SimpleNobaralinux({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function SimpleNobaralinux(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}><title>Nobara Linux</title><path d="M23.808 11.808v8.281a3.542 3.542 0 0 1-3.542 3.527h-.46a3.543 3.543 0 0 1-3.083-3.513v-7.282l3.543-1.013-3.66-1.045a4.724 4.724 0 0 0-9.33 1.045v2.362a2.362 2.362 0 0 0 2.362 2.362 3.543 3.543 0 0 1 3.543 3.542V24a3.539 3.539 0 0 0-3.542-3.542 3.537 3.537 0 0 0-3.063 1.76 3.54 3.54 0 0 1-2.382 1.398h-.46A3.542 3.542 0 0 1 .192 20.09V3.543a3.542 3.542 0 0 1 6.323-2.194A11.756 11.756 0 0 1 12 0c6.521 0 11.808 5.287 11.808 11.808zm-9.446 0A2.359 2.359 0 0 1 12 14.17a2.362 2.362 0 1 1 2.362-2.362z"/></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <title>Nobara Linux</title>
+      <path d="M23.808 11.808v8.281a3.542 3.542 0 0 1-3.542 3.527h-.46a3.543 3.543 0 0 1-3.083-3.513v-7.282l3.543-1.013-3.66-1.045a4.724 4.724 0 0 0-9.33 1.045v2.362a2.362 2.362 0 0 0 2.362 2.362 3.543 3.543 0 0 1 3.543 3.542V24a3.539 3.539 0 0 0-3.542-3.542 3.537 3.537 0 0 0-3.063 1.76 3.54 3.54 0 0 1-2.382 1.398h-.46A3.542 3.542 0 0 1 .192 20.09V3.543a3.542 3.542 0 0 1 6.323-2.194A11.756 11.756 0 0 1 12 0c6.521 0 11.808 5.287 11.808 11.808zm-9.446 0A2.359 2.359 0 0 1 12 14.17a2.362 2.362 0 1 1 2.362-2.362z" />
+    </svg>
+  );
 }

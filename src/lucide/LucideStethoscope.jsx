@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideStethoscope(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideStethoscope(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,13 +25,11 @@ export function LucideStethoscope(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M11 2v2" />
-  <path d="M5 2v2" />
-  <path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1" />
-  <path d="M8 15a6 6 0 0 0 12 0v-3" />
-  <circle cx="20" cy="10" r="2" />
-
+      <path d="M11 2v2" />
+      <path d="M5 2v2" />
+      <path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1" />
+      <path d="M8 15a6 6 0 0 0 12 0v-3" />
+      <circle cx="20" cy="10" r="2" />
     </svg>
-  )
+  );
 }

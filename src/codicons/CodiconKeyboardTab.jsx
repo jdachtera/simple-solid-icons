@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: codicons | License: MIT (<https://github.com/microsoft/vscode-codicons/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function CodiconKeyboardTab(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function CodiconKeyboardTab(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,12 @@ export function CodiconKeyboardTab(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00001 13.8871L14 8.88711V8.18L9.00001 3.18L8.2929 3.88711L12.4393 8.03355L2 8.03355L2 9.03355L12.4393 9.03355L8.2929 13.18L9.00001 13.8871Z"/><path d="M15 3H16V14H15V3Z"/>
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M9.00001 13.8871L14 8.88711V8.18L9.00001 3.18L8.2929 3.88711L12.4393 8.03355L2 8.03355L2 9.03355L12.4393 9.03355L8.2929 13.18L9.00001 13.8871Z"
+      />
+      <path d="M15 3H16V14H15V3Z" />
     </svg>
-  )
+  );
 }

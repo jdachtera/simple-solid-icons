@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideClockAlert(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideClockAlert(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,12 +25,10 @@ export function LucideClockAlert(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M12 6v6l4 2" />
-  <path d="M20 12v5" />
-  <path d="M20 21h.01" />
-  <path d="M21.25 8.2A10 10 0 1 0 16 21.16" />
-
+      <path d="M12 6v6l4 2" />
+      <path d="M20 12v5" />
+      <path d="M20 21h.01" />
+      <path d="M21.25 8.2A10 10 0 1 0 16 21.16" />
     </svg>
-  )
+  );
 }

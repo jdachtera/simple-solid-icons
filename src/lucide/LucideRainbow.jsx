@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideRainbow(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideRainbow(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideRainbow(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M22 17a10 10 0 0 0-20 0" />
-  <path d="M6 17a6 6 0 0 1 12 0" />
-  <path d="M10 17a2 2 0 0 1 4 0" />
-
+      <path d="M22 17a10 10 0 0 0-20 0" />
+      <path d="M6 17a6 6 0 0 1 12 0" />
+      <path d="M10 17a2 2 0 0 1 4 0" />
     </svg>
-  )
+  );
 }

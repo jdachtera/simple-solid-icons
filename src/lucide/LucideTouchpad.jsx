@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideTouchpad(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideTouchpad(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideTouchpad(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <rect width="20" height="16" x="2" y="4" rx="2" />
-  <path d="M2 14h20" />
-  <path d="M12 20v-6" />
-
+      <rect width="20" height="16" x="2" y="4" rx="2" />
+      <path d="M2 14h20" />
+      <path d="M12 20v-6" />
     </svg>
-  )
+  );
 }

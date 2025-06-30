@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideMicrowave(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideMicrowave(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,13 +25,11 @@ export function LucideMicrowave(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <rect width="20" height="15" x="2" y="4" rx="2" />
-  <rect width="8" height="7" x="6" y="8" rx="1" />
-  <path d="M18 8v7" />
-  <path d="M6 19v2" />
-  <path d="M18 19v2" />
-
+      <rect width="20" height="15" x="2" y="4" rx="2" />
+      <rect width="8" height="7" x="6" y="8" rx="1" />
+      <path d="M18 8v7" />
+      <path d="M6 19v2" />
+      <path d="M18 19v2" />
     </svg>
-  )
+  );
 }

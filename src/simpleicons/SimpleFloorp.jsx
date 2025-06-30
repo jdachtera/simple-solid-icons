@@ -1,26 +1,32 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function SimpleFloorp({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function SimpleFloorp(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}><title>Floorp</title><path d="M8.348 1.146c-1.917 0-2.807.326-3.84 2.116L.717 9.852S0 10.779 0 11.998c0 1.22.717 2.156.717 2.156l3.803 6.584c1.033 1.79 1.92 2.116 3.837 2.116h7.286c1.917 0 2.804-.326 3.837-2.116l3.803-6.584s.717-.937.717-2.156-.717-2.146-.717-2.146l-3.79-6.59c-1.034-1.79-1.924-2.116-3.84-2.116Zm.02 2.788.134.003h7c.74-.02 1.174.048 1.605.795l1.116 1.932c.223.386.031.502-.147.502H8.97c-.282 0-.4.079-.4.338v3.102c0 .258.118.337.4.337h11.379c.176 0 .757.145.756 1.016a1.27 1.27 0 0 1-.206.75l-.634 1.1c-.145.22-.28.384-.604.384H8.97v.002c-.282 0-.4.081-.4.34v5.137c0 .197-.122.394-.464.394-.76 0-1.128-.63-1.166-.695l-2.908-5.035-.66-1.147c-.657-1.137-.654-1.216 0-2.35l2.41-4.175 1.115-1.932c.405-.7.811-.805 1.471-.798"/></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <title>Floorp</title>
+      <path d="M8.348 1.146c-1.917 0-2.807.326-3.84 2.116L.717 9.852S0 10.779 0 11.998c0 1.22.717 2.156.717 2.156l3.803 6.584c1.033 1.79 1.92 2.116 3.837 2.116h7.286c1.917 0 2.804-.326 3.837-2.116l3.803-6.584s.717-.937.717-2.156-.717-2.146-.717-2.146l-3.79-6.59c-1.034-1.79-1.924-2.116-3.84-2.116Zm.02 2.788.134.003h7c.74-.02 1.174.048 1.605.795l1.116 1.932c.223.386.031.502-.147.502H8.97c-.282 0-.4.079-.4.338v3.102c0 .258.118.337.4.337h11.379c.176 0 .757.145.756 1.016a1.27 1.27 0 0 1-.206.75l-.634 1.1c-.145.22-.28.384-.604.384H8.97v.002c-.282 0-.4.081-.4.34v5.137c0 .197-.122.394-.464.394-.76 0-1.128-.63-1.166-.695l-2.908-5.035-.66-1.147c-.657-1.137-.654-1.216 0-2.35l2.41-4.175 1.115-1.932c.405-.7.811-.805 1.471-.798" />
+    </svg>
+  );
 }

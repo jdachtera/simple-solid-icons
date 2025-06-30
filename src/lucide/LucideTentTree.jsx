@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideTentTree(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideTentTree(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,15 +25,13 @@ export function LucideTentTree(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <circle cx="4" cy="4" r="2" />
-  <path d="m14 5 3-3 3 3" />
-  <path d="m14 10 3-3 3 3" />
-  <path d="M17 14V2" />
-  <path d="M17 14H7l-5 8h20Z" />
-  <path d="M8 14v8" />
-  <path d="m9 14 5 8" />
-
+      <circle cx="4" cy="4" r="2" />
+      <path d="m14 5 3-3 3 3" />
+      <path d="m14 10 3-3 3 3" />
+      <path d="M17 14V2" />
+      <path d="M17 14H7l-5 8h20Z" />
+      <path d="M8 14v8" />
+      <path d="m9 14 5 8" />
     </svg>
-  )
+  );
 }

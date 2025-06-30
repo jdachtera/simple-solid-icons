@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideWebcam(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideWebcam(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,12 +25,10 @@ export function LucideWebcam(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <circle cx="12" cy="10" r="8" />
-  <circle cx="12" cy="10" r="3" />
-  <path d="M7 22h10" />
-  <path d="M12 22v-4" />
-
+      <circle cx="12" cy="10" r="8" />
+      <circle cx="12" cy="10" r="3" />
+      <path d="M7 22h10" />
+      <path d="M12 22v-4" />
     </svg>
-  )
+  );
 }

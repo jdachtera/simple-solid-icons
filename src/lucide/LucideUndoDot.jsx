@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideUndoDot(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideUndoDot(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideUndoDot(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M21 17a9 9 0 0 0-15-6.7L3 13" />
-  <path d="M3 7v6h6" />
-  <circle cx="12" cy="17" r="1" />
-
+      <path d="M21 17a9 9 0 0 0-15-6.7L3 13" />
+      <path d="M3 7v6h6" />
+      <circle cx="12" cy="17" r="1" />
     </svg>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucidePilcrow(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucidePilcrow(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucidePilcrow(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M13 4v16" />
-  <path d="M17 4v16" />
-  <path d="M19 4H9.5a4.5 4.5 0 0 0 0 9H13" />
-
+      <path d="M13 4v16" />
+      <path d="M17 4v16" />
+      <path d="M19 4H9.5a4.5 4.5 0 0 0 0 9H13" />
     </svg>
-  )
+  );
 }

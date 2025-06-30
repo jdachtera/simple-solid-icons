@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideCigaretteOff(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideCigaretteOff(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,14 +25,12 @@ export function LucideCigaretteOff(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M12 12H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h13" />
-  <path d="M18 8c0-2.5-2-2.5-2-5" />
-  <path d="m2 2 20 20" />
-  <path d="M21 12a1 1 0 0 1 1 1v2a1 1 0 0 1-.5.866" />
-  <path d="M22 8c0-2.5-2-2.5-2-5" />
-  <path d="M7 12v4" />
-
+      <path d="M12 12H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h13" />
+      <path d="M18 8c0-2.5-2-2.5-2-5" />
+      <path d="m2 2 20 20" />
+      <path d="M21 12a1 1 0 0 1 1 1v2a1 1 0 0 1-.5.866" />
+      <path d="M22 8c0-2.5-2-2.5-2-5" />
+      <path d="M7 12v4" />
     </svg>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideChartNoAxesColumnIncreasing(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideChartNoAxesColumnIncreasing(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideChartNoAxesColumnIncreasing(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <line x1="12" x2="12" y1="20" y2="10" />
-  <line x1="18" x2="18" y1="20" y2="4" />
-  <line x1="6" x2="6" y1="20" y2="16" />
-
+      <line x1="12" x2="12" y1="20" y2="10" />
+      <line x1="18" x2="18" y1="20" y2="4" />
+      <line x1="6" x2="6" y1="20" y2="16" />
     </svg>
-  )
+  );
 }

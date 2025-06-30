@@ -1,32 +1,35 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: tabler | License: MIT (<https://github.com/tabler/tabler-icons/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function TablerIrregularPolyhedronOff({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function TablerIrregularPolyhedronOff(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}>
-  <path d="M4.706 4.73a1 1 0 0 0 -.458 1.14l1.752 6.13l-1.752 6.13a1 1 0 0 0 .592 1.205l6.282 2.503a2.46 2.46 0 0 0 1.756 0l6.282 -2.503c.04 -.016 .079 -.035 .116 -.055m-.474 -4.474l-.802 -2.806l1.752 -6.13a1 1 0 0 0 -.592 -1.205l-6.282 -2.503a2.46 2.46 0 0 0 -1.756 0l-3.544 1.412" />
-  <path d="M4.5 5.5c.661 .214 1.161 .38 1.5 .5m6 2c.29 -.003 .603 -.06 .878 -.17l6.622 -2.33" />
-  <path d="M6 12l5.21 1.862a2.34 2.34 0 0 0 1.58 0l.742 -.265m2.956 -1.057c.312 -.11 .816 -.291 1.512 -.54" />
-  <path d="M12 22v-10" />
-  <path d="M3 3l18 18" />
-</svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <path d="M4.706 4.73a1 1 0 0 0 -.458 1.14l1.752 6.13l-1.752 6.13a1 1 0 0 0 .592 1.205l6.282 2.503a2.46 2.46 0 0 0 1.756 0l6.282 -2.503c.04 -.016 .079 -.035 .116 -.055m-.474 -4.474l-.802 -2.806l1.752 -6.13a1 1 0 0 0 -.592 -1.205l-6.282 -2.503a2.46 2.46 0 0 0 -1.756 0l-3.544 1.412" />
+      <path d="M4.5 5.5c.661 .214 1.161 .38 1.5 .5m6 2c.29 -.003 .603 -.06 .878 -.17l6.622 -2.33" />
+      <path d="M6 12l5.21 1.862a2.34 2.34 0 0 0 1.58 0l.742 -.265m2.956 -1.057c.312 -.11 .816 -.291 1.512 -.54" />
+      <path d="M12 22v-10" />
+      <path d="M3 3l18 18" />
+    </svg>
+  );
 }

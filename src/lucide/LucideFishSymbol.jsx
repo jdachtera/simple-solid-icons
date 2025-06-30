@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideFishSymbol(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideFishSymbol(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,9 +25,7 @@ export function LucideFishSymbol(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M2 16s9-15 20-4C11 23 2 8 2 8" />
-
+      <path d="M2 16s9-15 20-4C11 23 2 8 2 8" />
     </svg>
-  )
+  );
 }

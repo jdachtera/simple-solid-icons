@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideUnderline(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideUnderline(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,10 +25,8 @@ export function LucideUnderline(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M6 4v6a6 6 0 0 0 12 0V4" />
-  <line x1="4" x2="20" y1="20" y2="20" />
-
+      <path d="M6 4v6a6 6 0 0 0 12 0V4" />
+      <line x1="4" x2="20" y1="20" y2="20" />
     </svg>
-  )
+  );
 }

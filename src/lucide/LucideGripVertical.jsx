@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideGripVertical(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideGripVertical(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,14 +25,12 @@ export function LucideGripVertical(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <circle cx="9" cy="12" r="1" />
-  <circle cx="9" cy="5" r="1" />
-  <circle cx="9" cy="19" r="1" />
-  <circle cx="15" cy="12" r="1" />
-  <circle cx="15" cy="5" r="1" />
-  <circle cx="15" cy="19" r="1" />
-
+      <circle cx="9" cy="12" r="1" />
+      <circle cx="9" cy="5" r="1" />
+      <circle cx="9" cy="19" r="1" />
+      <circle cx="15" cy="12" r="1" />
+      <circle cx="15" cy="5" r="1" />
+      <circle cx="15" cy="19" r="1" />
     </svg>
-  )
+  );
 }

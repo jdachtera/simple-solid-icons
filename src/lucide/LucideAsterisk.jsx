@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideAsterisk(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideAsterisk(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideAsterisk(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M12 6v12" />
-  <path d="M17.196 9 6.804 15" />
-  <path d="m6.804 9 10.392 6" />
-
+      <path d="M12 6v12" />
+      <path d="M17.196 9 6.804 15" />
+      <path d="m6.804 9 10.392 6" />
     </svg>
-  )
+  );
 }

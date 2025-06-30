@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: codicons | License: MIT (<https://github.com/microsoft/vscode-codicons/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function CodiconMapFilled(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function CodiconMapFilled(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,9 @@ export function CodiconMapFilled(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path d="M2 5.5V13L5.5 10.8125V3.3125L2 5.5Z"/><path d="M9.5 12.6875V5.1875L6.5 3.3125V10.8125L9.5 12.6875Z"/><path d="M10.5 12.6875V5.1875L14 3V10.5L10.5 12.6875Z"/>
+      <path d="M2 5.5V13L5.5 10.8125V3.3125L2 5.5Z" />
+      <path d="M9.5 12.6875V5.1875L6.5 3.3125V10.8125L9.5 12.6875Z" />
+      <path d="M10.5 12.6875V5.1875L14 3V10.5L10.5 12.6875Z" />
     </svg>
-  )
+  );
 }

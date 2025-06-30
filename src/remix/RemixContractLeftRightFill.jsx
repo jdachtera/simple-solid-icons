@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: remix | License: Apache-2.0 (<https://github.com/Remix-Design/RemixIcon/blob/master/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function RemixContractLeftRightFill(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function RemixContractLeftRightFill(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,7 +25,7 @@ export function RemixContractLeftRightFill(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      <path d="M5 18 11 12 5 6V18ZM19 6 13 12 19 18V6Z"/>
+      <path d="M5 18 11 12 5 6V18ZM19 6 13 12 19 18V6Z" />
     </svg>
-  )
+  );
 }

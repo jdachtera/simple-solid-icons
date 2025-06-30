@@ -1,6 +1,6 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
 export function LucideArrowDownFromLine(props) {
   const merged = mergeProps(
@@ -15,8 +15,8 @@ export function LucideArrowDownFromLine(props) {
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    props
-  )
+    props,
+  );
   return (
     <svg
       {...merged}
@@ -25,11 +25,9 @@ export function LucideArrowDownFromLine(props) {
       stroke={merged.stroke ?? merged.color}
       fill={merged.fill}
     >
-      
-  <path d="M19 3H5" />
-  <path d="M12 21V7" />
-  <path d="m6 15 6 6 6-6" />
-
+      <path d="M19 3H5" />
+      <path d="M12 21V7" />
+      <path d="m6 15 6 6 6-6" />
     </svg>
-  )
+  );
 }

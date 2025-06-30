@@ -1,36 +1,39 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: tabler | License: MIT (<https://github.com/tabler/tabler-icons/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function TablerWallOff({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function TablerWallOff(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}>
-  <path d="M8 4h10a2 2 0 0 1 2 2v10m-.589 3.417c-.361 .36 -.86 .583 -1.411 .583h-12a2 2 0 0 1 -2 -2v-12c0 -.55 .222 -1.047 .58 -1.409" />
-  <path d="M4 8h4m4 0h8" />
-  <path d="M20 12h-4m-4 0h-8" />
-  <path d="M4 16h12" />
-  <path d="M9 4v1" />
-  <path d="M14 8v2" />
-  <path d="M8 12v4" />
-  <path d="M11 16v4" />
-  <path d="M3 3l18 18" />
-</svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <path d="M8 4h10a2 2 0 0 1 2 2v10m-.589 3.417c-.361 .36 -.86 .583 -1.411 .583h-12a2 2 0 0 1 -2 -2v-12c0 -.55 .222 -1.047 .58 -1.409" />
+      <path d="M4 8h4m4 0h8" />
+      <path d="M20 12h-4m-4 0h-8" />
+      <path d="M4 16h12" />
+      <path d="M9 4v1" />
+      <path d="M14 8v2" />
+      <path d="M8 12v4" />
+      <path d="M11 16v4" />
+      <path d="M3 3l18 18" />
+    </svg>
+  );
 }
