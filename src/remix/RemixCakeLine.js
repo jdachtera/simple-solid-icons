@@ -1,0 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><path d="M13 6.99993V10.9999L20 10.9999C20.5523 10.9999 21 11.4476 21 11.9999V19.9999L23 19.9999V21.9999H1V19.9999L3 19.9999V11.9999C3 11.4476 3.44772 10.9999 4 10.9999L11 10.9999V6.99993H13ZM19 12.9999H5V19.9999H19V12.9999ZM13.8301 0.401855C14.6586 1.83673 14.1669 3.6715 12.7321 4.49993L11 5.49993C10.1716 4.06505 10.6632 2.23028 12.0981 1.40186L13.8301 0.401855Z">`);
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: remix | License: Apache-2.0 (<https://github.com/Remix-Design/RemixIcon/blob/master/LICENSE>)
+import { mergeProps } from 'solid-js';
+export function RemixCakeLine(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
+}

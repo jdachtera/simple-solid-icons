@@ -1,0 +1,34 @@
+import { ssrElement as _$ssrElement } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { ssr as _$ssr } from "solid-js/web";
+var _tmpl$ = "<path d=\"M15.575.006a.5.5 0 0 1 .327.79l-.048.058-.122.12A2.5 2.5 0 0 0 15 2.743V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V2.742a2.5 2.5 0 0 0-.566-1.584L.268.975.146.854A.5.5 0 0 1 .5 0h15zM11.5 13a.5.5 0 1 0 0 1H13v-1zm-2-2a.5.5 0 0 0 0 1H13v-1zm2-2a.5.5 0 1 0 0 1H13V9zm-2-2a.5.5 0 1 0 0 1H13V7zm2-2a.5.5 0 1 0 0 1H13V5zm-2-2a.5.5 0 1 0 0 1H13V3z\"></path>";
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: bootstrap | License: MIT (<https://github.com/twbs/icons/blob/main/LICENSE.md>)
+import { mergeProps } from 'solid-js';
+export function BootstrapBeakerFill(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 0.5,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 16 16',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return _$ssrElement("svg", _$mergeProps(merged, {
+    get width() {
+      return merged.width ?? merged.size;
+    },
+    get height() {
+      return merged.height ?? merged.size;
+    },
+    get stroke() {
+      return merged.stroke ?? merged.color;
+    },
+    get fill() {
+      return merged.fill;
+    }
+  }), () => _$ssr(_tmpl$), true);
+}

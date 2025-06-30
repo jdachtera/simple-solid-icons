@@ -1,0 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><path stroke=none d="M0 0h24v24H0z"fill=none></path><path d="M7.05 11.293l4.243 -4.243a2 2 0 0 1 2.828 0l2.829 2.83a2 2 0 0 1 0 2.828l-4.243 4.243a2 2 0 0 1 -2.828 0l-2.829 -2.831a2 2 0 0 1 0 -2.828z"></path><path d="M16.243 9.172l3.086 -.772a1.5 1.5 0 0 0 .697 -2.516l-2.216 -2.217a1.5 1.5 0 0 0 -2.44 .47l-1.248 2.913"></path><path d="M9.172 16.243l-.772 3.086a1.5 1.5 0 0 1 -2.516 .697l-2.217 -2.216a1.5 1.5 0 0 1 .47 -2.44l2.913 -1.248">`);
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: tabler | License: MIT (<https://github.com/tabler/tabler-icons/blob/main/LICENSE>)
+import { mergeProps } from 'solid-js';
+export function TablerCandy(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'none',
+    stroke: 'currentColor',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
+}

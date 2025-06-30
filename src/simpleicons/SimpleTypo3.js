@@ -1,0 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><title>TYPO3</title><path d="M18.08 16.539c-.356.105-.64.144-1.012.144-3.048 0-7.524-10.652-7.524-14.197 0-1.305.31-1.74.745-2.114C6.56.808 2.082 2.177.651 3.917c-.31.436-.497 1.12-.497 1.99C.154 11.442 6.06 24 10.228 24c1.928 0 5.178-3.168 7.852-7.46M16.134 0c3.855 0 7.713.622 7.713 2.798 0 4.415-2.8 9.765-4.23 9.765-2.549 0-5.72-7.09-5.72-10.635C13.897.31 14.518 0 16.134 0">`);
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
+import { mergeProps } from 'solid-js';
+export function SimpleTypo3(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
+}

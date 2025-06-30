@@ -1,0 +1,35 @@
+import { ssrElement as _$ssrElement } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { ssr as _$ssr } from "solid-js/web";
+var _tmpl$ = "<title>EBOX</title>",
+  _tmpl$2 = "<path d=\"m.939 14.973 10.97 6.4V24L.94 17.6v-2.626zm22.123 0v2.626l-10.971 6.4v-2.626l10.97-6.401ZM.939 10.66l10.97 6.4v2.627l-7.223-4.214-1.068.622-2.253-1.313 1.07-.623-1.496-.873V10.66zm22.123 0v2.626l-1.496.873 1.07.624-2.253 1.313-1.07-.623-7.224 4.214V17.06l10.972-6.4ZM.939 6.347l10.97 6.4v2.627l-3.525-2.057-1.067.622-2.252-1.314 1.067-.622-1.429-.833-1.066.622-2.253-1.314 1.068-.622-1.514-.883Zm22.123 0v2.626l-1.514.883 1.07.622-2.254 1.315-1.068-.623-1.428.833 1.068.622-2.252 1.314-1.07-.622-3.525 2.057v-2.627l10.972-6.4ZM12 8.584l3.236 1.885-2.252 1.314-.983-.573-.982.573-2.252-1.314 3.235-1.885Zm0-4.293 6.916 4.03-2.252 1.315L12 6.918 7.338 9.635 5.085 8.321ZM12 0l10.597 6.175-2.252 1.314L12 2.627 3.657 7.489 1.405 6.175 12 0Z\"></path>";
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
+import { mergeProps } from 'solid-js';
+export function SimpleEbox(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return _$ssrElement("svg", _$mergeProps(merged, {
+    get width() {
+      return merged.width ?? merged.size;
+    },
+    get height() {
+      return merged.height ?? merged.size;
+    },
+    get stroke() {
+      return merged.stroke ?? merged.color;
+    },
+    get fill() {
+      return merged.fill;
+    }
+  }), () => [_$ssr(_tmpl$), _$ssr(_tmpl$2)], true);
+}

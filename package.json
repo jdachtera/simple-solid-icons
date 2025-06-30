@@ -8,95 +8,118 @@
   "exports": {
     ".": {
       "import": "./src/index.js",
-      "types": "./src/index.d.ts"
+      "types": "./src/index.d.ts",
+      "solid-server": "./src/index.ssr.js"
     },
     "./fontawesome/solid": {
       "import": "./src/fontawesome/solid/index.js",
-      "types": "./src/fontawesome/solid/index.d.ts"
+      "types": "./src/fontawesome/solid/index.d.ts",
+      "solid-server": "./src/fontawesome/solid/index.ssr.js"
     },
     "./fontawesome/regular": {
       "import": "./src/fontawesome/regular/index.js",
-      "types": "./src/fontawesome/regular/index.d.ts"
+      "types": "./src/fontawesome/regular/index.d.ts",
+      "solid-server": "./src/fontawesome/regular/index.ssr.js"
     },
     "./fontawesome/brands": {
       "import": "./src/fontawesome/brands/index.js",
-      "types": "./src/fontawesome/brands/index.d.ts"
+      "types": "./src/fontawesome/brands/index.d.ts",
+      "solid-server": "./src/fontawesome/brands/index.ssr.js"
     },
     "./tabler": {
       "import": "./src/tabler/index.js",
-      "types": "./src/tabler/index.d.ts"
+      "types": "./src/tabler/index.d.ts",
+      "solid-server": "./src/tabler/index.ssr.js"
     },
     "./heroicons": {
       "import": "./src/heroicons/index.js",
-      "types": "./src/heroicons/index.d.ts"
+      "types": "./src/heroicons/index.d.ts",
+      "solid-server": "./src/heroicons/index.ssr.js"
     },
     "./lucide": {
       "import": "./src/lucide/index.js",
-      "types": "./src/lucide/index.d.ts"
+      "types": "./src/lucide/index.d.ts",
+      "solid-server": "./src/lucide/index.ssr.js"
     },
     "./feather": {
       "import": "./src/feather/index.js",
-      "types": "./src/feather/index.d.ts"
+      "types": "./src/feather/index.d.ts",
+      "solid-server": "./src/feather/index.ssr.js"
     },
     "./bootstrap": {
       "import": "./src/bootstrap/index.js",
-      "types": "./src/bootstrap/index.d.ts"
+      "types": "./src/bootstrap/index.d.ts",
+      "solid-server": "./src/bootstrap/index.ssr.js"
     },
     "./remix": {
       "import": "./src/remix/index.js",
-      "types": "./src/remix/index.d.ts"
+      "types": "./src/remix/index.d.ts",
+      "solid-server": "./src/remix/index.ssr.js"
     },
     "./boxicons": {
       "import": "./src/boxicons/index.js",
-      "types": "./src/boxicons/index.d.ts"
+      "types": "./src/boxicons/index.d.ts",
+      "solid-server": "./src/boxicons/index.ssr.js"
     },
     "./simpleicons": {
       "import": "./src/simpleicons/index.js",
-      "types": "./src/simpleicons/index.d.ts"
+      "types": "./src/simpleicons/index.d.ts",
+      "solid-server": "./src/simpleicons/index.ssr.js"
     },
     "./eva/fill": {
       "import": "./src/eva/fill/index.js",
-      "types": "./src/eva/fill/index.d.ts"
+      "types": "./src/eva/fill/index.d.ts",
+      "solid-server": "./src/eva/fill/index.ssr.js"
     },
     "./eva/outline": {
       "import": "./src/eva/outline/index.js",
-      "types": "./src/eva/outline/index.d.ts"
+      "types": "./src/eva/outline/index.d.ts",
+      "solid-server": "./src/eva/outline/index.ssr.js"
     },
     "./zondicons": {
       "import": "./src/zondicons/index.js",
-      "types": "./src/zondicons/index.d.ts"
+      "types": "./src/zondicons/index.d.ts",
+      "solid-server": "./src/zondicons/index.ssr.js"
     },
     "./ionicons": {
       "import": "./src/ionicons/index.js",
-      "types": "./src/ionicons/index.d.ts"
+      "types": "./src/ionicons/index.d.ts",
+      "solid-server": "./src/ionicons/index.ssr.js"
     },
     "./antdesign/outline": {
       "import": "./src/antdesign/outline/index.js",
-      "types": "./src/antdesign/outline/index.d.ts"
+      "types": "./src/antdesign/outline/index.d.ts",
+      "solid-server": "./src/antdesign/outline/index.ssr.js"
     },
     "./antdesign/fill": {
       "import": "./src/antdesign/fill/index.js",
-      "types": "./src/antdesign/fill/index.d.ts"
+      "types": "./src/antdesign/fill/index.d.ts",
+      "solid-server": "./src/antdesign/fill/index.ssr.js"
     },
     "./antdesign/twotone": {
       "import": "./src/antdesign/twotone/index.js",
-      "types": "./src/antdesign/twotone/index.d.ts"
+      "types": "./src/antdesign/twotone/index.d.ts",
+      "solid-server": "./src/antdesign/twotone/index.ssr.js"
     },
     "./codicons": {
       "import": "./src/codicons/index.js",
-      "types": "./src/codicons/index.d.ts"
+      "types": "./src/codicons/index.d.ts",
+      "solid-server": "./src/codicons/index.ssr.js"
     },
     "./fontawesome": {
       "import": "./src/fontawesome/index.js",
-      "types": "./src/fontawesome/index.d.ts"
+      "types": "./src/fontawesome/index.d.ts",
+      "solid-server": "./src/fontawesome/index.ssr.js"
     },
     "./eva": {
       "import": "./src/eva/index.js",
-      "types": "./src/eva/index.d.ts"
+      "types": "./src/eva/index.d.ts",
+      "solid-server": "./src/eva/index.ssr.js"
     },
     "./antdesign": {
       "import": "./src/antdesign/index.js",
-      "types": "./src/antdesign/index.d.ts"
+      "types": "./src/antdesign/index.d.ts",
+      "solid-server": "./src/antdesign/index.ssr.js"
     }
   },
   "files": [

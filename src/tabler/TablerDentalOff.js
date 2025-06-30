@@ -1,0 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><path stroke=none d="M0 0h24v24H0z"fill=none></path><path d="M19.277 15.281c.463 -1.75 .723 -3.844 .723 -6.281c0 -3.74 -1.908 -5 -4 -5c-1.423 0 -2.92 .911 -4 1.5c-1.074 -.586 -2.583 -1.5 -4 -1.5m-2.843 1.153c-.707 .784 -1.157 2.017 -1.157 3.847c0 4.899 1.056 8.41 2.671 10.537c.573 .756 1.97 .521 2.567 -.236c.398 -.505 .819 -1.439 1.262 -2.801c.292 -.771 .892 -1.504 1.5 -1.5c.602 0 1.21 .737 1.5 1.5c.443 1.362 .864 2.295 1.262 2.8c.597 .759 2 .993 2.567 .237c.305 -.402 .59 -.853 .852 -1.353"></path><path d="M12 5.5l3 1.5"></path><path d="M3 3l18 18">`);
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: tabler | License: MIT (<https://github.com/tabler/tabler-icons/blob/main/LICENSE>)
+import { mergeProps } from 'solid-js';
+export function TablerDentalOff(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'none',
+    stroke: 'currentColor',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
+}

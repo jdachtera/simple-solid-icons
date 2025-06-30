@@ -1,0 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><title>Coggle</title><path d="M3.684 0A3.683 3.683 0 0 0 0 3.684v10.92c2.052-.535 3.606-1.577 5.158-3.13h7.367v7.368c-1.88 1.88-5.438 4.598-8.052 5.158h15.843A3.683 3.683 0 0 0 24 20.316V8.881c-1.544.537-3.087 1.575-4.63 3.119l-4.74 4.736V9.37H7.265l3.683-3.685c2.35-2.35 5.96-5.119 8.58-5.684H3.684z">`);
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
+import { mergeProps } from 'solid-js';
+export function SimpleCoggle(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
+}

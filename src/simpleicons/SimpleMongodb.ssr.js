@@ -1,0 +1,35 @@
+import { ssrElement as _$ssrElement } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { ssr as _$ssr } from "solid-js/web";
+var _tmpl$ = "<title>MongoDB</title>",
+  _tmpl$2 = "<path d=\"M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z\"></path>";
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
+import { mergeProps } from 'solid-js';
+export function SimpleMongodb(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return _$ssrElement("svg", _$mergeProps(merged, {
+    get width() {
+      return merged.width ?? merged.size;
+    },
+    get height() {
+      return merged.height ?? merged.size;
+    },
+    get stroke() {
+      return merged.stroke ?? merged.color;
+    },
+    get fill() {
+      return merged.fill;
+    }
+  }), () => [_$ssr(_tmpl$), _$ssr(_tmpl$2)], true);
+}

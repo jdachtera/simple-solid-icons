@@ -1,0 +1,34 @@
+import { ssrElement as _$ssrElement } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { ssr as _$ssr } from "solid-js/web";
+var _tmpl$ = "<path d=\"M5.5 12H4V7H2V5H8V7H6V9.79548L15.8131 7.16607L15.2327 5H12V3H15.9784C16.4286 2.98994 16.8442 3.28693 16.9659 3.74118L18.5188 9.53674L16.587 10.0544L16.3307 9.09792L5.5 12ZM5 21C2.79086 21 1 19.2091 1 17C1 14.7909 2.79086 13 5 13C7.20914 13 9 14.7909 9 17C9 19.2091 7.20914 21 5 21ZM5 18C5.55228 18 6 17.5523 6 17C6 16.4477 5.55228 16 5 16C4.44772 16 4 16.4477 4 17C4 17.5523 4.44772 18 5 18ZM18 21C15.2386 21 13 18.7614 13 16C13 13.2386 15.2386 11 18 11C20.7614 11 23 13.2386 23 16C23 18.7614 20.7614 21 18 21ZM18 17C18.5523 17 19 16.5523 19 16C19 15.4477 18.5523 15 18 15C17.4477 15 17 15.4477 17 16C17 16.5523 17.4477 17 18 17Z\"></path>";
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: remix | License: Apache-2.0 (<https://github.com/Remix-Design/RemixIcon/blob/master/LICENSE>)
+import { mergeProps } from 'solid-js';
+export function RemixBikeFill(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return _$ssrElement("svg", _$mergeProps(merged, {
+    get width() {
+      return merged.width ?? merged.size;
+    },
+    get height() {
+      return merged.height ?? merged.size;
+    },
+    get stroke() {
+      return merged.stroke ?? merged.color;
+    },
+    get fill() {
+      return merged.fill;
+    }
+  }), () => _$ssr(_tmpl$), true);
+}

@@ -1,0 +1,34 @@
+import { ssrElement as _$ssrElement } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { ssr as _$ssr } from "solid-js/web";
+var _tmpl$ = "<path d=\"m12 22 1-2v-3h5a1 1 0 0 0 1-1v-1.586c0-.526-.214-1.042-.586-1.414L17 11.586V8a1 1 0 0 0 1-1V4c0-1.103-.897-2-2-2H8c-1.103 0-2 .897-2 2v3a1 1 0 0 0 1 1v3.586L5.586 13A2.01 2.01 0 0 0 5 14.414V16a1 1 0 0 0 1 1h5v3l1 2zM8 4h8v2H8V4zM7 14.414l1.707-1.707A.996.996 0 0 0 9 12V8h6v4c0 .266.105.52.293.707L17 14.414V15H7v-.586z\"></path>";
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: boxicons | License: MIT (<https://github.com/atisawd/boxicons/blob/master/LICENSE>)
+import { mergeProps } from 'solid-js';
+export function BoxBxPin(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return _$ssrElement("svg", _$mergeProps(merged, {
+    get width() {
+      return merged.width ?? merged.size;
+    },
+    get height() {
+      return merged.height ?? merged.size;
+    },
+    get stroke() {
+      return merged.stroke ?? merged.color;
+    },
+    get fill() {
+      return merged.fill;
+    }
+  }), () => _$ssr(_tmpl$), true);
+}

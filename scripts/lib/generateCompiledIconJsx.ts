@@ -1,24 +1,24 @@
-import * as babel from '@babel/core';
-import fs from 'fs/promises';
-import { IconSetConfig, getSetDefaultProps } from '../../iconSets.config';
-import { jsxTemplate } from './generateIcons';
-import { stripStyleAndClass } from './stripStyleAndClass';
+import * as babel from '@babel/core'
+import fs from 'fs/promises'
+import { IconSetConfig, getSetDefaultProps } from '../../iconSets.config'
+import { jsxTemplate } from './generateIcons'
+import { stripStyleAndClass } from './stripStyleAndClass'
 
 export const generateCompiledIconJsx = async (
   set: IconSetConfig,
   componentName: string,
   svgPath: string
 ) => {
-  const defaultProps = getSetDefaultProps(set);
-  let svgContent = await fs.readFile(svgPath, 'utf-8');
+  const defaultProps = getSetDefaultProps(set)
+  let svgContent = await fs.readFile(svgPath, 'utf-8')
   // Clean SVG and extract viewBox
-  let svgNoStyle = svgContent;
-  let viewBox = '0 0 24 24';
-  const viewBoxMatch = svgNoStyle.match(/viewBox="([^"]+)"/i);
+  let svgNoStyle = svgContent
+  let viewBox = '0 0 24 24'
+  const viewBoxMatch = svgNoStyle.match(/viewBox="([^"]+)"/i)
   if (viewBoxMatch) {
-    viewBox = viewBoxMatch[1];
+    viewBox = viewBoxMatch[1]
   }
-  const cleanedSvg = stripStyleAndClass(svgNoStyle, set.removeClasses);
+  const cleanedSvg = stripStyleAndClass(svgNoStyle, set.removeClasses)
   let jsxCode = jsxTemplate
     .replace('ICON_SET_NAME', set.name)
     .replace('ICON_SET_LICENSE', set.license)
@@ -31,11 +31,15 @@ export const generateCompiledIconJsx = async (
     .replace('__DEFAULT_FILL__', `'${defaultProps.fill}'`)
     .replace('__DEFAULT_STROKE__', `'${defaultProps.stroke}'`)
     .replace('__DEFAULT_STROKE_WIDTH__', `${defaultProps['stroke-width']}`)
-    .replace('/*__ICON_STYLE__*/', '');
+    .replace('/*__ICON_STYLE__*/', '')
 
   const jsCode = await babel.transformAsync(jsxCode, {
-    presets: [['solid', { hydratable: true }]],
-  });
+    presets: [['solid', { generate: 'dom', hydratable: true }]],
+  })
 
-  return jsCode.code;
-};
+  const jsSsrCode = await babel.transformAsync(jsxCode, {
+    presets: [['solid', { generate: 'ssr', hydratable: true }]],
+  })
+
+  return { dom: jsCode.code, ssr: jsSsrCode.code }
+}

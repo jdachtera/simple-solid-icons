@@ -1,0 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><path d=M464,184H453.1a78.72,78.72,0,0,0-16-7.18C419.5,171,396.26,168,368,168s-51.5,3-69.06,8.82c-14.06,4.69-20.25,9.86-22.25,11.87h0a47.94,47.94,0,0,0-41.36,0h0c-2-2-8.19-7.18-22.25-11.87C195.5,171,172.26,168,144,168s-51.5,3-69.06,8.82a78.72,78.72,0,0,0-16,7.18H48a16,16,0,0,0,0,32h.17c1,45.46,6.44,72.78,18.11,92.23a66.78,66.78,0,0,0,31.92,28c12.23,5.24,27.22,7.79,45.8,7.79,24.15,0,58.48-3.71,77.72-35.77,9.68-16.14,15.09-37.69,17.21-70.52A16,16,0,0,0,240,232a16,16,0,0,1,32,0,16,16,0,0,0,1.07,5.71c2.12,32.83,7.53,54.38,17.21,70.52a66.78,66.78,0,0,0,31.92,28c12.23,5.24,27.22,7.79,45.8,7.79,24.15,0,58.48-3.71,77.72-35.77,11.67-19.45,17.13-46.77,18.11-92.23H464a16,16,0,0,0,0-32Z>`);
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: ionicons | License: MIT (<https://github.com/ionic-team/ionicons/blob/main/LICENSE>)
+import { mergeProps } from 'solid-js';
+export function IonGlasses(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 512 512',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
+}

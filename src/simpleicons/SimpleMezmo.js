@@ -1,0 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><title>Mezmo</title><path d="M10.537 18.084c0 1.28.578 2.176 1.926 2.176 1.025 0 1.731-.767 2.117-1.856l3.594-10.369c.288-.862.738-1.342 1.636-1.342.675 0 1.253.48 1.253 1.342v11.778a.17.17 0 0 0 .195.195h2.544a.17.17 0 0 0 .196-.195V7.965c0-2.369-1.83-4.225-4.11-4.225-2.214 0-3.69 1.366-4.396 3.456l-1.7 4.991c-.065.195-.097.258-.196.258a.117.117 0 0 1-.13-.129V7.965c0-2.369-1.829-4.225-4.109-4.225-2.215 0-3.69 1.366-4.396 3.456l-1.7 4.991c-.065.195-.097.258-.196.258a.118.118 0 0 1-.128-.129V4.187a.17.17 0 0 0-.195-.195H.198a.17.17 0 0 0-.196.195v13.89c0 1.28.587 2.175 1.926 2.175 1.027 0 1.733-.767 2.119-1.856L7.64 8.027c.288-.8.803-1.342 1.636-1.342.681 0 1.26.48 1.26 1.342z">`);
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
+import { mergeProps } from 'solid-js';
+export function SimpleMezmo(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
+}

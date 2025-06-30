@@ -1,0 +1,35 @@
+import { ssrElement as _$ssrElement } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { ssr as _$ssr } from "solid-js/web";
+var _tmpl$ = "<title>OneStream</title>",
+  _tmpl$2 = "<path d=\"M23.457 8.42h-2.311a9.79 9.79 0 0 1 .676 3.58c0 5.425-4.397 9.822-9.822 9.822a9.767 9.767 0 0 1-4.98-1.357 9.12 9.12 0 0 0 5.625-6.457l.817-3.529a6.918 6.918 0 0 1 2.488-3.903 6.221 6.221 0 0 1 1.52-.87 7.616 7.616 0 0 1 2.765-.51l1.642-.003C19.711 2.063 16.094 0 12 0 5.372 0 0 5.373 0 12c0 1.247.19 2.448.543 3.579h2.31A9.79 9.79 0 0 1 2.179 12c0-5.424 4.398-9.822 9.822-9.822 1.819 0 3.52.495 4.98 1.357a9.118 9.118 0 0 0-5.625 6.457l-.816 3.53a6.917 6.917 0 0 1-2.488 3.903 6.22 6.22 0 0 1-1.52.869c-.737.295-1.655.51-2.887.51l-1.522.002C4.288 21.936 7.906 24 12 24c6.628 0 12-5.373 12-12a12 12 0 0 0-.543-3.58Z\"></path>";
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
+import { mergeProps } from 'solid-js';
+export function SimpleOnestream(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return _$ssrElement("svg", _$mergeProps(merged, {
+    get width() {
+      return merged.width ?? merged.size;
+    },
+    get height() {
+      return merged.height ?? merged.size;
+    },
+    get stroke() {
+      return merged.stroke ?? merged.color;
+    },
+    get fill() {
+      return merged.fill;
+    }
+  }), () => [_$ssr(_tmpl$), _$ssr(_tmpl$2)], true);
+}

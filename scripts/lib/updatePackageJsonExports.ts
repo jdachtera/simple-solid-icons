@@ -18,10 +18,11 @@ export type ExportsField = {
 export async function updatePackageJsonExports(iconSetNames: string[]) {
   const pkgRaw = await fs.readFile(packageJsonPath, 'utf-8');
   const pkg = JSON.parse(pkgRaw);
-  const newExports: ExportsField = {
+  const newExports: Record<string, any> = {
     '.': {
       import: './src/index.js',
       types: './src/index.d.ts',
+      "solid-server": './src/index.ssr.js',
     },
   };
   // Track root and variant exports
@@ -32,12 +33,14 @@ export async function updatePackageJsonExports(iconSetNames: string[]) {
       newExports[`./${root}/${variant}`] = {
         import: `./src/${root}/${variant}/index.js`,
         types: `./src/${root}/${variant}/index.d.ts`,
+        "solid-server": `./src/${root}/${variant}/index.ssr.js`,
       };
       rootExports[root] = true;
     } else {
       newExports[`./${setName}`] = {
         import: `./src/${setName}/index.js`,
         types: `./src/${setName}/index.d.ts`,
+        "solid-server": `./src/${setName}/index.ssr.js`,
       };
     }
   }
@@ -46,9 +49,10 @@ export async function updatePackageJsonExports(iconSetNames: string[]) {
     newExports[`./${root}`] = {
       import: `./src/${root}/index.js`,
       types: `./src/${root}/index.d.ts`,
+      "solid-server": `./src/${root}/index.ssr.js`,
     };
   }
   pkg.exports = newExports;
   await fs.writeFile(packageJsonPath, JSON.stringify(pkg, null, 2) + '\n');
-  console.log('✓ package.json exports updated');
+  console.log('✓ package.json exports updated (with SSR files)');
 }

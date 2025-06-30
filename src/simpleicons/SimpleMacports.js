@@ -1,0 +1,42 @@
+import { template as _$template } from "solid-js/web";
+import { getNextElement as _$getNextElement } from "solid-js/web";
+import { runHydrationEvents as _$runHydrationEvents } from "solid-js/web";
+import { spread as _$spread } from "solid-js/web";
+import { mergeProps as _$mergeProps } from "solid-js/web";
+import { memo as _$memo } from "solid-js/web";
+var _tmpl$ = /*#__PURE__*/_$template(`<svg><title>MacPorts</title><path d="M14.055 4.154c-1.323 0-2.395 1.16-2.395 2.593v10.506c0 1.432 1.072 2.593 2.395 2.593h7.55c1.323 0 2.395-1.161 2.395-2.593V6.747c0-1.432-1.072-2.593-2.395-2.593zm3.604 3.004c1.34 0 2.296.256 2.938.77.628.485 1.027 1.283 1.027 2.225 0 .941-.3 1.754-.884 2.282-.742.685-1.84 1.013-3.124 1.013-.285 0-.542-.015-.741-.057v3.451H14.72V7.357c.67-.114 1.612-.2 2.938-.2zM.614 7.193 0 16.807h2.011l.186-3.652c.057-1.198.114-2.681.156-3.979h.029c.243 1.255.557 2.624.87 3.765L4.28 16.65h1.697l1.17-3.751A60.6 60.6 0 0 0 8.23 9.176h.029c0 1.398.042 2.796.085 3.95l.157 3.68h2.11L10.1 7.194H7.246l-1.013 3.195a53.196 53.196 0 0 0-.913 3.452h-.057a41.43 41.43 0 0 0-.813-3.438L3.51 7.193zm17.145 1.62c-.428 0-.727.028-.884.07v2.839c.185.043.399.057.727.057 1.155 0 1.868-.585 1.868-1.555 0-.884-.613-1.412-1.711-1.412z">`);
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: simpleicons | License: CC0-1.0 (<https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md>)
+import { mergeProps } from 'solid-js';
+export function SimpleMacports(props) {
+  const merged = mergeProps({
+    size: 32,
+    color: 'currentColor',
+    fill: 'currentColor',
+    stroke: 'none',
+    'stroke-width': 2,
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    'stroke-linecap': 'round',
+    'stroke-linejoin': 'round'
+  }, props);
+  return (() => {
+    var _el$ = _$getNextElement(_tmpl$);
+    _$spread(_el$, _$mergeProps(merged, {
+      get width() {
+        return merged.width ?? merged.size;
+      },
+      get height() {
+        return merged.height ?? merged.size;
+      },
+      get stroke() {
+        return merged.stroke ?? merged.color;
+      },
+      get fill() {
+        return merged.fill;
+      }
+    }), true, true);
+    _$runHydrationEvents();
+    return _el$;
+  })();
+}

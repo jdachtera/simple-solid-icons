@@ -1,12 +1,8 @@
 import fs from 'fs/promises'
 import { glob } from 'glob'
 import path from 'path'
-import {
-  iconSetConfigs,
-  
-} from '../../iconSets.config'
+import { iconSetConfigs } from '../../iconSets.config'
 import { camelize } from './camelize'
-
 
 import { updatePackageJsonExports } from './updatePackageJsonExports'
 import { fileURLToPath } from 'url'
@@ -68,15 +64,18 @@ export async function generateIcons(): Promise<void> {
               (variant
                 ? variant.componentPrefix
                 : (set as any).componentPrefix) + pascalName
-            const jsxDistPath = path.join(outDir, `${componentName}.js`)
 
-            const formattedJs = await generateCompiledIconJsx(
+            const { dom, ssr } = await generateCompiledIconJsx(
               { ...set, ...variant },
               componentName,
               svgPath
             )
 
-            await fs.writeFile(jsxDistPath, formattedJs)
+            await fs.writeFile(path.join(outDir, `${componentName}.js`), dom)
+            await fs.writeFile(
+              path.join(outDir, `${componentName}.ssr.js`),
+              ssr
+            )
             // DTS
             const dtsCode = dtsTemplate
               .replace('ICON_SET_NAME', set.name)
@@ -99,8 +98,16 @@ export async function generateIcons(): Promise<void> {
               `export { ${componentName} } from './${componentName}.js'`
           )
           .join('\n')
+        const ssrExports = generatedComponentNames
+          .map(
+            componentName =>
+              `export { ${componentName} } from './${componentName}.ssr.js'`
+          )
+          .join('\n')
         const indexPath = path.join(outDir, 'index.js')
+        const ssrIndexPath = path.join(outDir, 'index.ssr.js')
         await fs.writeFile(indexPath, exports)
+        await fs.writeFile(ssrIndexPath, ssrExports)
         // Types index
         await fs.writeFile(path.join(outDir, 'index.d.ts'), exports)
         console.log(`✓ ${set.name}/${variant.variant}/index.js (sorted)`)
@@ -110,8 +117,13 @@ export async function generateIcons(): Promise<void> {
         const rootIndexContent = multiVariantRoots[root]
           .map(v => `export * from './${v}/index.js'`)
           .join('\n')
+        const rootSsrIndexContent = multiVariantRoots[root]
+          .map(v => `export * from './${v}/index.ssr.js'`)
+          .join('\n')
         const rootIndexPath = path.join(outRoot, root, 'index.js')
+        const rootSsrIndexPath = path.join(outRoot, root, 'index.ssr.js')
         await fs.writeFile(rootIndexPath, rootIndexContent)
+        await fs.writeFile(rootSsrIndexPath, rootSsrIndexContent)
         await fs.writeFile(
           path.join(outRoot, root, 'index.d.ts'),
           rootIndexContent
@@ -143,13 +155,16 @@ export async function generateIcons(): Promise<void> {
 
         const baseName = path.basename(svgFile, '.svg')
         const componentName =
-          camelize((set as any).componentPrefix) + camelize(baseName)
-        const jsxDistPath = path.join(outDir, `${componentName}.jsx`)
-        // JSX
+          camelize((set as any).componentPrefix) + camelize(baseName)      
 
-        const formattedJs = await generateCompiledIconJsx(set, componentName, svgPath)
+        const { dom, ssr } = await generateCompiledIconJsx(
+          set,
+          componentName,
+          svgPath
+        )
 
-        await fs.writeFile(jsxDistPath, formattedJs)
+        await fs.writeFile(path.join(outDir, `${componentName}.js`), dom)
+        await fs.writeFile(path.join(outDir, `${componentName}.ssr.js`), ssr)
 
         // DTS
         const dtsCode = dtsTemplate
@@ -169,11 +184,19 @@ export async function generateIcons(): Promise<void> {
       const exports = generatedComponentNames
         .map(
           componentName =>
-            `export { ${componentName} } from './${componentName}.jsx'`
+            `export { ${componentName} } from './${componentName}.js'`
+        )
+        .join('\n')
+      const ssrExports = generatedComponentNames
+        .map(
+          componentName =>
+            `export { ${componentName} } from './${componentName}.ssr.js'`
         )
         .join('\n')
       const indexPath = path.join(outDir, 'index.js')
+      const ssrIndexPath = path.join(outDir, 'index.ssr.js')
       await fs.writeFile(indexPath, exports)
+      await fs.writeFile(ssrIndexPath, ssrExports)
       // Types index
       await fs.writeFile(path.join(outDir, 'index.d.ts'), exports)
       console.log(`✓ ${set.name}/index.js (sorted)`)
@@ -189,5 +212,3 @@ export async function generateIcons(): Promise<void> {
   }
   await updatePackageJsonExports(iconSetNames)
 }
-
-
