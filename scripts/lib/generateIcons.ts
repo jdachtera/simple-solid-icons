@@ -1,7 +1,7 @@
 import fs from 'fs/promises'
 import { glob } from 'glob'
 import path from 'path'
-import { iconSetConfigs } from '../../iconSets.config'
+import { getSetDefaultProps, iconSetConfigs } from '../../iconSets.config'
 import { camelize } from './camelize'
 import prettier from 'prettier'
 
@@ -65,12 +65,7 @@ export async function generateIcons(): Promise<void> {
           )
           const jsxDistPath = path.join(outDir, `${componentName}.jsx`)
           // JSX
-          const defaultProps = variant.defaultProps ||
-            set.defaultProps || {
-              size: 24,
-              color: 'currentColor',
-              'stroke-width': 2,
-            }
+         const defaultProps = getSetDefaultProps(variant)
           let jsxCode = jsxTemplate
             .replace('ICON_SET_NAME', set.name)
             .replace('ICON_SET_LICENSE', set.license)
@@ -78,26 +73,22 @@ export async function generateIcons(): Promise<void> {
             .replace('ICON_NAME', componentName)
             .replace('SVG_PATHS', cleanedSvg)
             .replace('VIEW_BOX', viewBox)
-            .replace('__DEFAULT_SIZE__', defaultProps.size ?? 24)
+            .replace('__DEFAULT_SIZE__', `${defaultProps.size}`)
             .replace(
               '__DEFAULT_COLOR__',
-              `'${defaultProps.color ?? 'currentColor'}'`
+              `'${defaultProps.color}'`
             )
             .replace(
               '__DEFAULT_FILL__',
-              defaultProps.fill !== undefined
-                ? `'${defaultProps.fill}'`
-                : 'undefined'
+              `'${defaultProps.fill}'`
             )
             .replace(
               '__DEFAULT_STROKE__',
-              defaultProps.stroke !== undefined
-                ? `'${defaultProps.stroke}'`
-                : 'undefined'
+              `'${defaultProps.stroke}'`
             )
             .replace(
               '__DEFAULT_STROKE_WIDTH__',
-              defaultProps['stroke-width'] ?? 2
+              `${defaultProps['stroke-width']}`
             )
             .replace('/*__ICON_STYLE__*/', '')
 
@@ -181,11 +172,7 @@ export async function generateIcons(): Promise<void> {
           camelize((set as any).componentPrefix) + camelize(baseName)
         const jsxDistPath = path.join(outDir, `${componentName}.jsx`)
         // JSX
-        const defaultProps = set.defaultProps || {
-          size: 24,
-          color: 'currentColor',
-          'stroke-width': 2,
-        }
+        const defaultProps = getSetDefaultProps(set)
         const jsxCode = jsxTemplate
           .replace('ICON_SET_NAME', set.name)
           .replace('ICON_SET_LICENSE', set.license)

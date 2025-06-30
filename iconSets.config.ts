@@ -33,6 +33,21 @@ export type IconSetConfig = {
   removeClasses?: string[]
 }
 
+const defaultProps: IconSetDefaultProps = {
+  size: 32,
+  color: 'currentColor',
+  fill: 'currentColor',
+  stroke: 'none',
+  'stroke-width': 2,
+}
+
+export const getSetDefaultProps = (setConfig: IconSetConfig): Required<IconSetDefaultProps> => {
+  return {
+    ...defaultProps,
+    ...setConfig.defaultProps,
+  } as Required<IconSetDefaultProps>
+}
+
 export const iconSetConfigs: IconSetConfig[] = [
   {
     name: 'tabler',
@@ -189,7 +204,7 @@ export const iconSetConfigs: IconSetConfig[] = [
       fill: 'currentColor',
       stroke: 'none',
     },
-    removeClasses:['cls-1']
+    removeClasses: ['cls-1'],
   },
   // Zondicons (MIT)
   {
