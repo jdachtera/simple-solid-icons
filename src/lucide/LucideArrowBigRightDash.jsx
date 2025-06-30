@@ -2,28 +2,33 @@
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
 import { mergeProps } from 'solid-js'
 
-export function LucideArrowBigRightDash({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function LucideArrowBigRightDash(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
+    props
   )
   return (
-    <>
-      {}
-      <svg {...props}>
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      
   <path d="M5 9v6" />
   <path d="M9 9h3V5l7 7-7 7v-4H9V9z" />
-</svg>
-    </>
+
+    </svg>
   )
 }

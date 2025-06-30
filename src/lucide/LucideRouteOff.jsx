@@ -2,25 +2,30 @@
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
 import { mergeProps } from 'solid-js'
 
-export function LucideRouteOff({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function LucideRouteOff(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
+    props
   )
   return (
-    <>
-      {}
-      <svg {...props}>
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      
   <circle cx="6" cy="19" r="3" />
   <path d="M9 19h8.5c.4 0 .9-.1 1.3-.2" />
   <path d="M5.2 5.2A3.5 3.53 0 0 0 6.5 12H12" />
@@ -28,7 +33,7 @@ export function LucideRouteOff({ size = 24, width, height, ...inputProps }) {
   <path d="M21 15.3a3.5 3.5 0 0 0-3.3-3.3" />
   <path d="M15 5h-4.3" />
   <circle cx="18" cy="5" r="3" />
-</svg>
-    </>
+
+    </svg>
   )
 }

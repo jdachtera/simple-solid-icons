@@ -2,25 +2,30 @@
 // Icon set: remix | License: Apache-2.0 (<https://github.com/Remix-Design/RemixIcon/blob/master/LICENSE>)
 import { mergeProps } from 'solid-js'
 
-export function RemixServiceBellLine({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function RemixServiceBellLine(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
+    props
   )
   return (
-    <>
-      {}
-      <svg {...props}><path d="M15 3H9V5H11V6.04938C5.94668 6.5511 2 10.8147 2 16V17H22V16C22 10.8147 18.0533 6.5511 13 6.04938V5H15V3ZM12 8C16.0796 8 19.446 11.0537 19.9381 15H4.06189C4.55399 11.0537 7.92038 8 12 8ZM23 20V18H1V20H23Z"/></svg>
-    </>
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <path d="M15 3H9V5H11V6.04938C5.94668 6.5511 2 10.8147 2 16V17H22V16C22 10.8147 18.0533 6.5511 13 6.04938V5H15V3ZM12 8C16.0796 8 19.446 11.0537 19.9381 15H4.06189C4.55399 11.0537 7.92038 8 12 8ZM23 20V18H1V20H23Z"/>
+    </svg>
   )
 }

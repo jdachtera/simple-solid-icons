@@ -2,25 +2,30 @@
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
 import { mergeProps } from 'solid-js'
 
-export function LucideCircleDotDashed({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function LucideCircleDotDashed(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
+    props
   )
   return (
-    <>
-      {}
-      <svg {...props}>
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      
   <path d="M10.1 2.18a9.93 9.93 0 0 1 3.8 0" />
   <path d="M17.6 3.71a9.95 9.95 0 0 1 2.69 2.7" />
   <path d="M21.82 10.1a9.93 9.93 0 0 1 0 3.8" />
@@ -30,7 +35,7 @@ export function LucideCircleDotDashed({ size = 24, width, height, ...inputProps 
   <path d="M2.18 13.9a9.93 9.93 0 0 1 0-3.8" />
   <path d="M3.71 6.4a9.95 9.95 0 0 1 2.7-2.69" />
   <circle cx="12" cy="12" r="1" />
-</svg>
-    </>
+
+    </svg>
   )
 }

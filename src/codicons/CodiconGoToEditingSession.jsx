@@ -2,25 +2,30 @@
 // Icon set: codicons | License: MIT (<https://github.com/microsoft/vscode-codicons/blob/main/LICENSE>)
 import { mergeProps } from 'solid-js'
 
-export function CodiconGoToEditingSession({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function CodiconGoToEditingSession(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
+      viewBox: '0 0 16 16',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
+    props
   )
   return (
-    <>
-      {}
-      <svg {...props}><path d="M10.002 1H9V1.99902H3V13.999H13V6H14V13.999L13 14.999H3L2 13.999V1.99902L3 0.999023H10L10.002 1Z"/><path d="M10 11.999H5V10.999H10V11.999Z"/><path d="M8 5.99902L10 6V6.99902H8V9H7V6.99902H5V5.99902H7V4H8V5.99902Z"/><path d="M14.5 0H11V1H13.293L10.646 3.646L11.354 4.354L14 1.707V4H15V0.5L14.5 0Z"/></svg>
-    </>
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <path d="M10.002 1H9V1.99902H3V13.999H13V6H14V13.999L13 14.999H3L2 13.999V1.99902L3 0.999023H10L10.002 1Z"/><path d="M10 11.999H5V10.999H10V11.999Z"/><path d="M8 5.99902L10 6V6.99902H8V9H7V6.99902H5V5.99902H7V4H8V5.99902Z"/><path d="M14.5 0H11V1H13.293L10.646 3.646L11.354 4.354L14 1.707V4H15V0.5L14.5 0Z"/>
+    </svg>
   )
 }

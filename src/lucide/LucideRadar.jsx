@@ -2,25 +2,30 @@
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
 import { mergeProps } from 'solid-js'
 
-export function LucideRadar({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function LucideRadar(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
+    props
   )
   return (
-    <>
-      {}
-      <svg {...props}>
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      
   <path d="M19.07 4.93A10 10 0 0 0 6.99 3.34" />
   <path d="M4 6h.01" />
   <path d="M2.29 9.62A10 10 0 1 0 21.31 8.35" />
@@ -29,7 +34,7 @@ export function LucideRadar({ size = 24, width, height, ...inputProps }) {
   <path d="M17.99 11.66A6 6 0 0 1 15.77 16.67" />
   <circle cx="12" cy="12" r="2" />
   <path d="m13.41 10.59 5.66-5.66" />
-</svg>
-    </>
+
+    </svg>
   )
 }

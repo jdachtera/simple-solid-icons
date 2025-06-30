@@ -2,25 +2,30 @@
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
 import { mergeProps } from 'solid-js'
 
-export function LucideSquircleDashed({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function LucideSquircleDashed(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
+    props
   )
   return (
-    <>
-      {}
-      <svg {...props}>
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      
   <path d="M13.77 3.043a34 34 0 0 0-3.54 0" />
   <path d="M13.771 20.956a33 33 0 0 1-3.541.001" />
   <path d="M20.18 17.74c-.51 1.15-1.29 1.93-2.439 2.44" />
@@ -29,7 +34,7 @@ export function LucideSquircleDashed({ size = 24, width, height, ...inputProps }
   <path d="M3.043 10.23a34 34 0 0 0 .001 3.541" />
   <path d="M6.26 20.179c-1.15-.508-1.93-1.29-2.44-2.438" />
   <path d="M6.26 3.82c-1.149.51-1.93 1.291-2.44 2.44" />
-</svg>
-    </>
+
+    </svg>
   )
 }

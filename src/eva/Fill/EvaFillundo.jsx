@@ -1,28 +1,39 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: eva | License: MIT (<https://github.com/akveo/eva-icons/blob/master/LICENSE.txt>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function EvaFillundo({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function EvaFillundo(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {<style>{
-`.cls-1{fill:#fff;opacity:0;}.cls-2{fill:#231f20;}`
-}</style>}
-      <svg {...props}><defs></defs><title>undo</title><g id="Layer_2" data-name="Layer 2"><g id="undo"><g id="undo-2" data-name="undo"><rect width="24" height="24" transform="translate(0 24) rotate(-90)"/><path d="M20.22,21a1,1,0,0,1-1-.76,8.91,8.91,0,0,0-7.8-6.69v1.12a1.78,1.78,0,0,1-1.09,1.64A2,2,0,0,1,8.18,16L3.12,11.59a1.76,1.76,0,0,1,0-2.68L8.18,4.49a2,2,0,0,1,2.18-.3,1.78,1.78,0,0,1,1.09,1.64V7A10.89,10.89,0,0,1,21.5,17.75a10.29,10.29,0,0,1-.31,2.49,1,1,0,0,1-1,.76Z"/></g></g></g></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <defs></defs>
+      <title>undo</title>
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="undo">
+          <g id="undo-2" data-name="undo">
+            <path d="M20.22,21a1,1,0,0,1-1-.76,8.91,8.91,0,0,0-7.8-6.69v1.12a1.78,1.78,0,0,1-1.09,1.64A2,2,0,0,1,8.18,16L3.12,11.59a1.76,1.76,0,0,1,0-2.68L8.18,4.49a2,2,0,0,1,2.18-.3,1.78,1.78,0,0,1,1.09,1.64V7A10.89,10.89,0,0,1,21.5,17.75a10.29,10.29,0,0,1-.31,2.49,1,1,0,0,1-1,.76Z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
 }

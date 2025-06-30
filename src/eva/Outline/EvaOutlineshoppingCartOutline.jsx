@@ -1,28 +1,41 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: eva | License: MIT (<https://github.com/akveo/eva-icons/blob/master/LICENSE.txt>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function EvaOutlineshoppingCartOutline({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function EvaOutlineshoppingCartOutline(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {<style>{
-`.cls-1{fill:#fff;opacity:0;}.cls-2{fill:#231f20;}`
-}</style>}
-      <svg {...props}><defs></defs><title>shopping-cart</title><g id="Layer_2" data-name="Layer 2"><g id="shopping-cart"><g id="shopping-cart-2" data-name="shopping-cart"><rect width="24" height="24"/><path d="M21.08,7a2,2,0,0,0-1.7-1H6.58L6,3.74A1,1,0,0,0,5,3H3A1,1,0,0,0,3,5H4.24L7,15.26A1,1,0,0,0,8,16h9a1,1,0,0,0,.89-.55l3.28-6.56A2,2,0,0,0,21.08,7ZM16.38,14H8.76L7.13,8H19.38Z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="17.5" cy="19.5" r="1.5"/></g></g></g></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <defs></defs>
+      <title>shopping-cart</title>
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="shopping-cart">
+          <g id="shopping-cart-2" data-name="shopping-cart">
+            <path d="M21.08,7a2,2,0,0,0-1.7-1H6.58L6,3.74A1,1,0,0,0,5,3H3A1,1,0,0,0,3,5H4.24L7,15.26A1,1,0,0,0,8,16h9a1,1,0,0,0,.89-.55l3.28-6.56A2,2,0,0,0,21.08,7ZM16.38,14H8.76L7.13,8H19.38Z" />
+            <circle cx="7.5" cy="19.5" r="1.5" />
+            <circle cx="17.5" cy="19.5" r="1.5" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
 }

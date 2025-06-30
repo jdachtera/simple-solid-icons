@@ -2,32 +2,37 @@
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
 import { mergeProps } from 'solid-js'
 
-export function LucideBellElectric({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function LucideBellElectric(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
+    props
   )
   return (
-    <>
-      {}
-      <svg {...props}>
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      
   <path d="M18.518 17.347A7 7 0 0 1 14 19" />
   <path d="M18.8 4A11 11 0 0 1 20 9" />
   <path d="M9 9h.01" />
   <circle cx="20" cy="16" r="2" />
   <circle cx="9" cy="9" r="7" />
   <rect x="4" y="16" width="10" height="6" rx="2" />
-</svg>
-    </>
+
+    </svg>
   )
 }

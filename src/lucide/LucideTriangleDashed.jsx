@@ -2,25 +2,30 @@
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
 import { mergeProps } from 'solid-js'
 
-export function LucideTriangleDashed({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function LucideTriangleDashed(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
+    props
   )
   return (
-    <>
-      {}
-      <svg {...props}>
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      
   <path d="M10.17 4.193a2 2 0 0 1 3.666.013" />
   <path d="M14 21h2" />
   <path d="m15.874 7.743 1 1.732" />
@@ -30,7 +35,7 @@ export function LucideTriangleDashed({ size = 24, width, height, ...inputProps }
   <path d="m5.136 12.952-1 1.732" />
   <path d="M8 21h2" />
   <path d="m8.102 7.743-1 1.732" />
-</svg>
-    </>
+
+    </svg>
   )
 }

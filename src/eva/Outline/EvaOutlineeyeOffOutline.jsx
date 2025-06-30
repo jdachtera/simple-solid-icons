@@ -1,28 +1,41 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: eva | License: MIT (<https://github.com/akveo/eva-icons/blob/master/LICENSE.txt>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function EvaOutlineeyeOffOutline({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function EvaOutlineeyeOffOutline(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {<style>{
-`.cls-1{fill:#fff;opacity:0;}.cls-2{fill:#231f20;}`
-}</style>}
-      <svg {...props}><defs></defs><title>eye-off</title><g id="Layer_2" data-name="Layer 2"><g id="eye-off"><g id="eye-off-2" data-name="eye-off"><rect width="24" height="24"/><path d="M4.71,3.29A1,1,0,0,0,3.29,4.71l5.63,5.63a3.5,3.5,0,0,0,4.74,4.74l5.63,5.63a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42ZM12,13.5A1.5,1.5,0,0,1,10.5,12s0-.05,0-.07l1.56,1.56Z"/><path d="M12.22,17c-4.3.1-7.12-3.59-8-5A13.7,13.7,0,0,1,6.46,9.28L5,7.87A15.89,15.89,0,0,0,2.13,11.5a1,1,0,0,0,0,1c.63,1.09,4,6.5,9.89,6.5h.25a9.48,9.48,0,0,0,3.23-.67l-1.58-1.58A7.74,7.74,0,0,1,12.22,17Z"/><path d="M21.87,11.5C21.23,10.39,17.7,4.82,11.73,5a9.48,9.48,0,0,0-3.23.67l1.58,1.58A7.74,7.74,0,0,1,11.78,7c4.29-.11,7.11,3.59,8,5a13.7,13.7,0,0,1-2.29,2.72L19,16.13a15.89,15.89,0,0,0,2.91-3.63A1,1,0,0,0,21.87,11.5Z"/></g></g></g></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <defs></defs>
+      <title>eye-off</title>
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="eye-off">
+          <g id="eye-off-2" data-name="eye-off">
+            <path d="M4.71,3.29A1,1,0,0,0,3.29,4.71l5.63,5.63a3.5,3.5,0,0,0,4.74,4.74l5.63,5.63a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42ZM12,13.5A1.5,1.5,0,0,1,10.5,12s0-.05,0-.07l1.56,1.56Z" />
+            <path d="M12.22,17c-4.3.1-7.12-3.59-8-5A13.7,13.7,0,0,1,6.46,9.28L5,7.87A15.89,15.89,0,0,0,2.13,11.5a1,1,0,0,0,0,1c.63,1.09,4,6.5,9.89,6.5h.25a9.48,9.48,0,0,0,3.23-.67l-1.58-1.58A7.74,7.74,0,0,1,12.22,17Z" />
+            <path d="M21.87,11.5C21.23,10.39,17.7,4.82,11.73,5a9.48,9.48,0,0,0-3.23.67l1.58,1.58A7.74,7.74,0,0,1,11.78,7c4.29-.11,7.11,3.59,8,5a13.7,13.7,0,0,1-2.29,2.72L19,16.13a15.89,15.89,0,0,0,2.91-3.63A1,1,0,0,0,21.87,11.5Z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
 }

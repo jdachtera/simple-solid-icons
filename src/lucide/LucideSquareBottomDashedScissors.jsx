@@ -2,25 +2,30 @@
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
 import { mergeProps } from 'solid-js'
 
-export function LucideSquareBottomDashedScissors({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function LucideSquareBottomDashedScissors(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
+    props
   )
   return (
-    <>
-      {}
-      <svg {...props}>
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      
   <path d="M4 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2" />
   <path d="M10 22H8" />
   <path d="M16 22h-2" />
@@ -29,7 +34,7 @@ export function LucideSquareBottomDashedScissors({ size = 24, width, height, ...
   <path d="M14.8 14.8 18 18" />
   <circle cx="8" cy="16" r="2" />
   <path d="m18 6-8.586 8.586" />
-</svg>
-    </>
+
+    </svg>
   )
 }

@@ -2,25 +2,30 @@
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
 import { mergeProps } from 'solid-js'
 
-export function LucideShowerHead({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function LucideShowerHead(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
+    props
   )
   return (
-    <>
-      {}
-      <svg {...props}>
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      
   <path d="m4 4 2.5 2.5" />
   <path d="M13.5 6.5a4.95 4.95 0 0 0-7 7" />
   <path d="M15 5 5 15" />
@@ -31,7 +36,7 @@ export function LucideShowerHead({ size = 24, width, height, ...inputProps }) {
   <path d="M11 20v.01" />
   <path d="M17 14v.01" />
   <path d="M20 11v.01" />
-</svg>
-    </>
+
+    </svg>
   )
 }

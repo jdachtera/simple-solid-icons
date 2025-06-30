@@ -2,25 +2,30 @@
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
 import { mergeProps } from 'solid-js'
 
-export function LucideTelescope({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function LucideTelescope(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
+    props
   )
   return (
-    <>
-      {}
-      <svg {...props}>
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      
   <path d="m10.065 12.493-6.18 1.318a.934.934 0 0 1-1.108-.702l-.537-2.15a1.07 1.07 0 0 1 .691-1.265l13.504-4.44" />
   <path d="m13.56 11.747 4.332-.924" />
   <path d="m16 21-3.105-6.21" />
@@ -28,7 +33,7 @@ export function LucideTelescope({ size = 24, width, height, ...inputProps }) {
   <path d="m6.158 8.633 1.114 4.456" />
   <path d="m8 21 3.105-6.21" />
   <circle cx="12" cy="13" r="2" />
-</svg>
-    </>
+
+    </svg>
   )
 }

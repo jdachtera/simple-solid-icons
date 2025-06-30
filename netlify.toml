@@ -1,5 +1,4 @@
-[build]
-  base = "demo"
+[build]  
   publish = "dist"
   command = "pnpm install --frozen-lockfile && pnpm run build"
 

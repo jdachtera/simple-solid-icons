@@ -1,16 +1,54 @@
 // Central icon set and repo config for solid-icons-ssr
 // Used by both generateFromTemplate.ts and clone-icon-repos.ts
 
-export const iconSetConfigs = [
+// Type definitions for icon set config
+export type IconSetDefaultProps = {
+  size?: number
+  color?: 'none' | 'currentColor'
+  fill?: 'none' | 'currentColor'
+  stroke?: 'none' | 'currentColor'
+  'stroke-width'?: number
+  [key: string]: any
+}
+
+export type IconSetVariantConfig = {
+  variant: string
+  svgGlob: string
+  componentPrefix: string
+  defaultProps?: IconSetDefaultProps
+  removeClasses?: string[]
+}
+
+export type IconSetConfig = {
+  name: string
+  repoUrl: string
+  gitBranch: string
+  svgGlob?: string
+  componentPrefix: string
+  cacheDir: string
+  license: string
+  licenseUrl: string
+  defaultProps?: IconSetDefaultProps
+  variants?: IconSetVariantConfig[]
+  removeClasses?: string[]
+}
+
+export const iconSetConfigs: IconSetConfig[] = [
   {
     name: 'tabler',
     repoUrl: 'https://github.com/tabler/tabler-icons.git',
     gitBranch: 'main',
     svgGlob: 'icons/outline/*.svg',
     componentPrefix: 'Tabler',
-    cacheDir: '../.icon-cache/tabler',
+    cacheDir: './.icon-cache/tabler',
     license: 'MIT',
     licenseUrl: 'https://github.com/tabler/tabler-icons/blob/main/LICENSE',
+    defaultProps: {
+      size: 32,
+      fill: 'none',
+      stroke: 'currentColor',
+      'stroke-width': 2,
+    },
   },
   {
     name: 'heroicons',
@@ -18,9 +56,15 @@ export const iconSetConfigs = [
     gitBranch: 'master',
     svgGlob: 'src/24/outline/*.svg',
     componentPrefix: 'Hero',
-    cacheDir: '../.icon-cache/heroicons',
+    cacheDir: './.icon-cache/heroicons',
     license: 'MIT',
     licenseUrl: 'https://github.com/tailwindlabs/heroicons/blob/master/LICENSE',
+    defaultProps: {
+      size: 32,
+      fill: 'currentColor',
+      stroke: 'currentColor',
+      'stroke-width': 2,
+    },
   },
   {
     name: 'lucide',
@@ -28,9 +72,15 @@ export const iconSetConfigs = [
     gitBranch: 'main',
     svgGlob: 'icons/*.svg',
     componentPrefix: 'Lucide',
-    cacheDir: '../.icon-cache/lucide',
+    cacheDir: './.icon-cache/lucide',
     license: 'ISC',
     licenseUrl: 'https://github.com/lucide-icons/lucide/blob/main/LICENSE',
+    defaultProps: {
+      size: 32,
+      fill: 'none',
+      stroke: 'currentColor',
+      'stroke-width': 2,
+    },
   },
   {
     name: 'feather',
@@ -38,9 +88,16 @@ export const iconSetConfigs = [
     gitBranch: 'main',
     svgGlob: 'icons/*.svg',
     componentPrefix: 'Feather',
-    cacheDir: '../.icon-cache/feather',
+    cacheDir: './.icon-cache/feather',
     license: 'MIT',
     licenseUrl: 'https://github.com/feathericons/feather/blob/main/LICENSE',
+    defaultProps: {
+      size: 32,
+
+      fill: 'none',
+      stroke: 'currentColor',
+      'stroke-width': 2,
+    },
   },
   {
     name: 'bootstrap',
@@ -48,9 +105,15 @@ export const iconSetConfigs = [
     gitBranch: 'main',
     svgGlob: 'icons/*.svg',
     componentPrefix: 'Bootstrap',
-    cacheDir: '../.icon-cache/bootstrap',
+    cacheDir: './.icon-cache/bootstrap',
     license: 'MIT',
     licenseUrl: 'https://github.com/twbs/icons/blob/main/LICENSE.md',
+    defaultProps: {
+      size: 32,
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 0.5,
+    },
   },
   {
     name: 'remix',
@@ -58,9 +121,15 @@ export const iconSetConfigs = [
     gitBranch: 'master',
     svgGlob: 'icons/**/*.svg',
     componentPrefix: 'Remix',
-    cacheDir: '../.icon-cache/remix',
+    cacheDir: './.icon-cache/remix',
     license: 'Apache-2.0',
     licenseUrl: 'https://github.com/Remix-Design/RemixIcon/blob/master/LICENSE',
+    defaultProps: {
+      size: 32,
+
+      fill: 'currentColor',
+      stroke: 'none',
+    },
   },
   {
     name: 'boxicons',
@@ -68,9 +137,15 @@ export const iconSetConfigs = [
     gitBranch: 'master',
     svgGlob: 'svg/regular/*.svg',
     componentPrefix: 'Box',
-    cacheDir: '../.icon-cache/boxicons',
+    cacheDir: './.icon-cache/boxicons',
     license: 'MIT',
     licenseUrl: 'https://github.com/atisawd/boxicons/blob/master/LICENSE',
+    defaultProps: {
+      size: 32,
+
+      fill: 'currentColor',
+      stroke: 'none',
+    },
   },
   {
     name: 'simpleicons',
@@ -78,15 +153,22 @@ export const iconSetConfigs = [
     gitBranch: 'develop',
     svgGlob: 'icons/*.svg',
     componentPrefix: 'Simple',
-    cacheDir: '../.icon-cache/simpleicons',
+    cacheDir: './.icon-cache/simpleicons',
     license: 'CC0-1.0',
     licenseUrl:
       'https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md',
+    defaultProps: {
+      size: 32,
+
+      fill: 'currentColor',
+      stroke: 'none',
+    },
   },
   {
     name: 'eva',
     repoUrl: 'https://github.com/akveo/eva-icons.git',
     gitBranch: 'master',
+    componentPrefix: 'Eva',
     variants: [
       {
         variant: 'fill',
@@ -99,9 +181,15 @@ export const iconSetConfigs = [
         componentPrefix: 'EvaOutline',
       },
     ],
-    cacheDir: '../.icon-cache/eva',
+    cacheDir: './.icon-cache/eva',
     license: 'MIT',
     licenseUrl: 'https://github.com/akveo/eva-icons/blob/master/LICENSE.txt',
+    defaultProps: {
+      size: 32,
+      fill: 'currentColor',
+      stroke: 'none',
+    },
+    removeClasses:['cls-1']
   },
   // Zondicons (MIT)
   {
@@ -110,10 +198,16 @@ export const iconSetConfigs = [
     gitBranch: 'master',
     svgGlob: 'src/*.svg',
     componentPrefix: 'Zondicon',
-    cacheDir: '../.icon-cache/zondicons',
+    cacheDir: './.icon-cache/zondicons',
     license: 'MIT',
     licenseUrl:
       'https://github.com/dukestreetstudio/zondicons/blob/master/LICENSE',
+
+    defaultProps: {
+      size: 32,
+      fill: 'currentColor',
+      stroke: 'none',
+    },
   },
   // Ionicons (MIT)
   {
@@ -122,9 +216,14 @@ export const iconSetConfigs = [
     gitBranch: 'main',
     svgGlob: 'src/svg/*.svg',
     componentPrefix: 'Ion',
-    cacheDir: '../.icon-cache/ionicons',
+    cacheDir: './.icon-cache/ionicons',
     license: 'MIT',
     licenseUrl: 'https://github.com/ionic-team/ionicons/blob/main/LICENSE',
+    defaultProps: {
+      size: 32,
+      fill: 'currentColor',
+      stroke: 'none',
+    },
   },
   // Codicons (MIT)
   {
@@ -133,9 +232,14 @@ export const iconSetConfigs = [
     gitBranch: 'main',
     svgGlob: 'src/icons/*.svg',
     componentPrefix: 'Codicon',
-    cacheDir: '../.icon-cache/codicons',
+    cacheDir: './.icon-cache/codicons',
     license: 'MIT',
     licenseUrl:
       'https://github.com/microsoft/vscode-codicons/blob/main/LICENSE',
+    defaultProps: {
+      size: 32,
+      fill: 'currentColor',
+      stroke: 'none',
+    },
   },
-] as const
+]

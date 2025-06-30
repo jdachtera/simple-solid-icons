@@ -1,26 +1,70 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: ionicons | License: MIT (<https://github.com/ionic-team/ionicons/blob/main/LICENSE>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function IonFilterCircleOutline({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function IonFilterCircleOutline(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
+      viewBox: '0 0 512 512',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {}
-      <svg {...props}><path fill="none" stroke="#000" stroke-width="32" stroke-miterlimit="10" d="M448,256c0-106-86-192-192-192S64,150,64,256s86,192,192,192S448,362,448,256Z"/><line fill="none" stroke="#000" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" x1="144" y1="208" x2="368" y2="208"/><line fill="none" stroke="#000" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" x1="176" y1="272" x2="336" y2="272"/><line fill="none" stroke="#000" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" x1="224" y1="336" x2="288" y2="336"/></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <path
+        fill="none"
+        stroke="currentColor"
+        stroke-width="32"
+        stroke-miterlimit="10"
+        d="M448,256c0-106-86-192-192-192S64,150,64,256s86,192,192,192S448,362,448,256Z"
+      />
+      <line
+        fill="none"
+        stroke="currentColor"
+        stroke-width="32"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        x1="144"
+        y1="208"
+        x2="368"
+        y2="208"
+      />
+      <line
+        fill="none"
+        stroke="currentColor"
+        stroke-width="32"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        x1="176"
+        y1="272"
+        x2="336"
+        y2="272"
+      />
+      <line
+        fill="none"
+        stroke="currentColor"
+        stroke-width="32"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        x1="224"
+        y1="336"
+        x2="288"
+        y2="336"
+      />
+    </svg>
+  );
 }

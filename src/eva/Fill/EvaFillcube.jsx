@@ -1,28 +1,41 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: eva | License: MIT (<https://github.com/akveo/eva-icons/blob/master/LICENSE.txt>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function EvaFillcube({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function EvaFillcube(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {<style>{
-`.cls-1{fill:#fff;opacity:0;}.cls-2{fill:#231f20;}`
-}</style>}
-      <svg {...props}><defs></defs><title>cube</title><g id="Layer_2" data-name="Layer 2"><g id="cube"><g id="cube-2" data-name="cube"><rect width="24" height="24"/><path d="M11.25,11.83,3,8.36v7.73a1.69,1.69,0,0,0,1,1.52L11.19,21l.06,0Z"/><path d="M12,10.5l8.51-3.57A1.62,1.62,0,0,0,20,6.55L12.8,3.18a1.87,1.87,0,0,0-1.6,0L4,6.55a1.62,1.62,0,0,0-.51.38Z"/><path d="M12.75,11.83V21l.05,0L20,17.61a1.69,1.69,0,0,0,1-1.51V8.36Z"/></g></g></g></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <defs></defs>
+      <title>cube</title>
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="cube">
+          <g id="cube-2" data-name="cube">
+            <path d="M11.25,11.83,3,8.36v7.73a1.69,1.69,0,0,0,1,1.52L11.19,21l.06,0Z" />
+            <path d="M12,10.5l8.51-3.57A1.62,1.62,0,0,0,20,6.55L12.8,3.18a1.87,1.87,0,0,0-1.6,0L4,6.55a1.62,1.62,0,0,0-.51.38Z" />
+            <path d="M12.75,11.83V21l.05,0L20,17.61a1.69,1.69,0,0,0,1-1.51V8.36Z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
 }

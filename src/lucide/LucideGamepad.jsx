@@ -2,31 +2,36 @@
 // Icon set: lucide | License: ISC (<https://github.com/lucide-icons/lucide/blob/main/LICENSE>)
 import { mergeProps } from 'solid-js'
 
-export function LucideGamepad({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function LucideGamepad(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
+      size: 32,
+      color: 'currentColor',
       fill: 'none',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
+    props
   )
   return (
-    <>
-      {}
-      <svg {...props}>
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      
   <line x1="6" x2="10" y1="12" y2="12" />
   <line x1="8" x2="8" y1="10" y2="14" />
   <line x1="15" x2="15.01" y1="13" y2="13" />
   <line x1="18" x2="18.01" y1="11" y2="11" />
   <rect width="20" height="12" x="2" y="6" rx="2" />
-</svg>
-    </>
+
+    </svg>
   )
 }

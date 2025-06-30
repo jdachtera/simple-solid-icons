@@ -1,28 +1,39 @@
 // AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
 // Icon set: eva | License: MIT (<https://github.com/akveo/eva-icons/blob/master/LICENSE.txt>)
-import { mergeProps } from 'solid-js'
+import { mergeProps } from 'solid-js';
 
-export function EvaOutlinepaperPlaneOutline({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function EvaOutlinepaperPlaneOutline(props) {
+  const merged = mergeProps(
     {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
       xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
       viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: 'currentColor',
-      'stroke-width': '2',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
-  )
+    props,
+  );
   return (
-    <>
-      {<style>{
-`.cls-1{fill:#fff;opacity:0;}.cls-2{fill:#231f20;}`
-}</style>}
-      <svg {...props}><defs></defs><title>paper-plane</title><g id="Layer_2" data-name="Layer 2"><g id="paper-plane"><g id="paper-plane-2" data-name="paper-plane"><rect width="24" height="24"/><path d="M21,4a1.31,1.31,0,0,0-.06-.27l0-.09a1,1,0,0,0-.2-.3,1,1,0,0,0-.29-.19l-.09,0A.86.86,0,0,0,20.05,3H20a1,1,0,0,0-.3,0l-18,6a1,1,0,0,0,0,1.9l8.53,2.84,2.84,8.53a1,1,0,0,0,1.9,0l6-18A1,1,0,0,0,21,4ZM16.3,6.29l-5.57,5.57L5.16,10ZM14,18.84l-1.86-5.57L17.71,7.7Z"/></g></g></g></svg>
-    </>
-  )
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <defs></defs>
+      <title>paper-plane</title>
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="paper-plane">
+          <g id="paper-plane-2" data-name="paper-plane">
+            <path d="M21,4a1.31,1.31,0,0,0-.06-.27l0-.09a1,1,0,0,0-.2-.3,1,1,0,0,0-.29-.19l-.09,0A.86.86,0,0,0,20.05,3H20a1,1,0,0,0-.3,0l-18,6a1,1,0,0,0,0,1.9l8.53,2.84,2.84,8.53a1,1,0,0,0,1.9,0l6-18A1,1,0,0,0,21,4ZM16.3,6.29l-5.57,5.57L5.16,10ZM14,18.84l-1.86-5.57L17.71,7.7Z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
 }

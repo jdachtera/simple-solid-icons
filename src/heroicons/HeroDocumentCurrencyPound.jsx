@@ -2,27 +2,32 @@
 // Icon set: heroicons | License: MIT (<https://github.com/tailwindlabs/heroicons/blob/master/LICENSE>)
 import { mergeProps } from 'solid-js'
 
-export function HeroDocumentCurrencyPound({ size = 24, width, height, ...inputProps }) {
-  const props = mergeProps(
+export function HeroDocumentCurrencyPound(props) {
+  const merged = mergeProps(
     {
-      xmlns: 'http://www.w3.org/2000/svg',
-      width: width ?? size,
-      height: height ?? size,
-      viewBox: '0 0 24 24',
-      fill: 'none',
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
       stroke: 'currentColor',
-      'stroke-width': '2',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
     },
-    inputProps
+    props
   )
   return (
-    <>
-      {}
-      <svg {...props}>
-<path d="M19.5 14.25V11.625C19.5 9.76104 17.989 8.25 16.125 8.25H14.625C14.0037 8.25 13.5 7.74632 13.5 7.125V5.625C13.5 3.76104 11.989 2.25 10.125 2.25H8.25M14.8713 12.1287C13.6997 10.9571 11.8003 10.9571 10.6287 12.1287C9.84361 12.9138 9.58461 14.0257 9.85169 15.0264L10.0147 15.6348C10.2511 16.5171 10.2134 17.4503 9.90673 18.3107L9.75016 18.7498L10.1895 18.5302C10.8686 18.1906 11.6548 18.1347 12.3752 18.3748C13.0955 18.6149 13.8817 18.5591 14.5608 18.2195L15.0002 17.9998M8.25 15.75H12M10.5 2.25H5.625C5.00368 2.25 4.5 2.75368 4.5 3.375V20.625C4.5 21.2463 5.00368 21.75 5.625 21.75H18.375C18.9963 21.75 19.5 21.2463 19.5 20.625V11.25C19.5 6.27944 15.4706 2.25 10.5 2.25Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-    </>
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      
+<path d="M19.5 14.25V11.625C19.5 9.76104 17.989 8.25 16.125 8.25H14.625C14.0037 8.25 13.5 7.74632 13.5 7.125V5.625C13.5 3.76104 11.989 2.25 10.125 2.25H8.25M14.8713 12.1287C13.6997 10.9571 11.8003 10.9571 10.6287 12.1287C9.84361 12.9138 9.58461 14.0257 9.85169 15.0264L10.0147 15.6348C10.2511 16.5171 10.2134 17.4503 9.90673 18.3107L9.75016 18.7498L10.1895 18.5302C10.8686 18.1906 11.6548 18.1347 12.3752 18.3748C13.0955 18.6149 13.8817 18.5591 14.5608 18.2195L15.0002 17.9998M8.25 15.75H12M10.5 2.25H5.625C5.00368 2.25 4.5 2.75368 4.5 3.375V20.625C4.5 21.2463 5.00368 21.75 5.625 21.75H18.375C18.9963 21.75 19.5 21.2463 19.5 20.625V11.25C19.5 6.27944 15.4706 2.25 10.5 2.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    </svg>
   )
 }
