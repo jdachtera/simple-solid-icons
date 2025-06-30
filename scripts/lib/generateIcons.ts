@@ -45,7 +45,7 @@ export async function generateIcons(): Promise<void> {
           missingSets.push(`${set.name}/${variant.variant}`)
           continue
         }
-        const variantName = camelize(variant.variant)
+        const variantName = variant.variant.toLowerCase()
         iconSetNames.push(`${set.name}/${variantName}`)
         multiVariantRoots[root].push(variantName)
         const outDir = path.join(outRoot, set.name, variantName)
@@ -66,10 +66,9 @@ export async function generateIcons(): Promise<void> {
             variant.removeClasses || set.removeClasses || []
           )
           const baseName = path.basename(svgFile, '.svg')
-          const componentName = camelize(
-            (variant ? variant.componentPrefix : (set as any).componentPrefix) +
-              baseName
-          )
+          // PascalCase the icon name after the prefix
+          const pascalName = camelize(baseName)
+          const componentName = (variant ? variant.componentPrefix : (set as any).componentPrefix) + pascalName
           const jsxDistPath = path.join(outDir, `${componentName}.jsx`)
           // JSX
           const defaultProps = getSetDefaultProps(variant)

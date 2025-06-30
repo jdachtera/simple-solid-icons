@@ -1,2 +1,2 @@
-export * from './Fill/index.js'
-export * from './Outline/index.js'
+export * from './fill/index.js'
+export * from './outline/index.js'

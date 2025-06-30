@@ -19,9 +19,15 @@ npm install simple-solid-icons
 ```
 
 ```tsx
+// Import a single icon (tree-shakable):
 import { TablerHeart } from 'simple-solid-icons/tabler/TablerHeart'
-// or
+
+// Or import from a set (auto-exports all icons in the set/variant):
 import { TablerHeart } from 'simple-solid-icons/tabler'
+import { FaSolidWindowRestore } from 'simple-solid-icons/fontawesome/solid'
+import { FaBrandsGithub } from 'simple-solid-icons/fontawesome/brands'
+import { AntdOutlineAccountBook } from 'simple-solid-icons/antdesign/outline'
+import { EvaFillActivity } from 'simple-solid-icons/eva/fill'
 ```
 
 ---
@@ -31,7 +37,7 @@ import { TablerHeart } from 'simple-solid-icons/tabler'
 - ✅ **SSR Compatible** - Works perfectly with Vike, SolidStart, and other SSR frameworks
 - 🔄 **Auto-generated** - Icons are automatically generated from upstream sources
 - 🎯 **Tree-shakable** - Only bundle the icons you use
-- 📦 **Multiple icon sets** - Tabler, Heroicons, Lucide, Feather, Bootstrap, Remix, Boxicons, Simple Icons, Eva, Phosphor, and more
+- 📦 **Multiple icon sets** - Tabler, Heroicons, Lucide, Feather, Bootstrap, Remix, Boxicons, Simple Icons, Eva, Font Awesome (solid/regular/brands), Ant Design (outline/fill/twotone), Zondicons, Ionicons, Codicons, and more
 - 🚀 **TypeScript** - Full TypeScript support with proper types
 - 🛡️ **License Attribution** - Every icon file includes license and source info
 
@@ -48,8 +54,11 @@ npm install simple-solid-icons
 // Import an icon directly from its file for maximum tree-shaking:
 import { TablerHeart } from 'simple-solid-icons/tabler/TablerHeart'
 
-// Or import from a set (recommended for most users):
-import { TablerHeart } from 'simple-solid-icons/tabler'
+// Or import from a set/variant:
+import { FaSolidWindowRestore } from 'simple-solid-icons/fontawesome/solid'
+import { FaBrandsGithub } from 'simple-solid-icons/fontawesome/brands'
+import { AntdOutlineAccountBook } from 'simple-solid-icons/antdesign/outline'
+import { EvaFillActivity } from 'simple-solid-icons/eva/fill'
 import { HeroHome } from 'simple-solid-icons/heroicons'
 import { LucideSettings } from 'simple-solid-icons/lucide'
 
@@ -57,6 +66,10 @@ function MyComponent() {
   return (
     <div>
       <TablerHeart class="text-red-500" />
+      <FaSolidWindowRestore size={32} />
+      <FaBrandsGithub />
+      <AntdOutlineAccountBook />
+      <EvaFillActivity />
       <HeroHome size={32} />
       <LucideSettings stroke-width="1" />
     </div>
@@ -66,8 +79,8 @@ function MyComponent() {
 }
 ```
 
-## Icon Sets
 
+## Icon Sets & Prefixes
 
 - **Tabler Icons** (`Tabler*`) — MIT
 - **Heroicons** (`Hero*`) — MIT
@@ -77,7 +90,9 @@ function MyComponent() {
 - **Remix Icon** (`Remix*`) — Apache-2.0
 - **Boxicons** (`Box*`) — MIT
 - **Simple Icons** (`Simple*`) — CC0-1.0
-- **Eva Icons** (`Eva*`) — MIT
+- **Eva Icons** (`EvaFill*`, `EvaOutline*`) — MIT
+- **Font Awesome** (`FaSolid*`, `FaRegular*`, `FaBrands*`) — CC BY 4.0
+- **Ant Design** (`AntdOutline*`, `AntdFill*`, `AntdTwotone*`) — MIT
 - **Zondicons** (`Zondicon*`) — MIT
 - **Ionicons** (`Ion*`) — MIT
 - **Codicons** (`Codicon*`) — MIT

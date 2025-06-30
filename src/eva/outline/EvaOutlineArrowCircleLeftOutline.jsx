@@ -1,0 +1,40 @@
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: eva | License: MIT (<https://github.com/akveo/eva-icons/blob/master/LICENSE.txt>)
+import { mergeProps } from 'solid-js';
+
+export function EvaOutlineArrowCircleLeftOutline(props) {
+  const merged = mergeProps(
+    {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
+      'stroke-linecap': 'round',
+      'stroke-linejoin': 'round',
+    },
+    props,
+  );
+  return (
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <defs></defs>
+      <title>arrow-circle-left</title>
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="arrow-circle-left">
+          <g id="arrow-circle-left-2" data-name="arrow-circle-left">
+            <path d="M16,11H10.34l1.25-1.31a1,1,0,0,0-1.45-1.38l-2.86,3a1,1,0,0,0-.09.13.72.72,0,0,0-.11.19.88.88,0,0,0-.06.28S7,12,7,12H7a1,1,0,0,0,.08.38,1,1,0,0,0,.21.32l3,3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L10.41,13H16a1,1,0,0,0,0-2Z" />
+            <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
+}

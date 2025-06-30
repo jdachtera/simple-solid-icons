@@ -1,3 +1,3 @@
-export * from './Outline/index.js'
-export * from './Fill/index.js'
-export * from './Twotone/index.js'
+export * from './outline/index.js'
+export * from './fill/index.js'
+export * from './twotone/index.js'

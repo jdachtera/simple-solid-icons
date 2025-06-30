@@ -10,17 +10,17 @@
       "import": "./src/index.js",
       "types": "./src/index.d.ts"
     },
-    "./fontawesome/Solid": {
-      "import": "./src/fontawesome/Solid/index.js",
-      "types": "./src/fontawesome/Solid/index.d.ts"
+    "./fontawesome/solid": {
+      "import": "./src/fontawesome/solid/index.js",
+      "types": "./src/fontawesome/solid/index.d.ts"
     },
-    "./fontawesome/Regular": {
-      "import": "./src/fontawesome/Regular/index.js",
-      "types": "./src/fontawesome/Regular/index.d.ts"
+    "./fontawesome/regular": {
+      "import": "./src/fontawesome/regular/index.js",
+      "types": "./src/fontawesome/regular/index.d.ts"
     },
-    "./fontawesome/Brands": {
-      "import": "./src/fontawesome/Brands/index.js",
-      "types": "./src/fontawesome/Brands/index.d.ts"
+    "./fontawesome/brands": {
+      "import": "./src/fontawesome/brands/index.js",
+      "types": "./src/fontawesome/brands/index.d.ts"
     },
     "./tabler": {
       "import": "./src/tabler/index.js",
@@ -54,13 +54,13 @@
       "import": "./src/simpleicons/index.js",
       "types": "./src/simpleicons/index.d.ts"
     },
-    "./eva/Fill": {
-      "import": "./src/eva/Fill/index.js",
-      "types": "./src/eva/Fill/index.d.ts"
+    "./eva/fill": {
+      "import": "./src/eva/fill/index.js",
+      "types": "./src/eva/fill/index.d.ts"
     },
-    "./eva/Outline": {
-      "import": "./src/eva/Outline/index.js",
-      "types": "./src/eva/Outline/index.d.ts"
+    "./eva/outline": {
+      "import": "./src/eva/outline/index.js",
+      "types": "./src/eva/outline/index.d.ts"
     },
     "./zondicons": {
       "import": "./src/zondicons/index.js",
@@ -70,17 +70,17 @@
       "import": "./src/ionicons/index.js",
       "types": "./src/ionicons/index.d.ts"
     },
-    "./antdesign/Outline": {
-      "import": "./src/antdesign/Outline/index.js",
-      "types": "./src/antdesign/Outline/index.d.ts"
+    "./antdesign/outline": {
+      "import": "./src/antdesign/outline/index.js",
+      "types": "./src/antdesign/outline/index.d.ts"
     },
-    "./antdesign/Fill": {
-      "import": "./src/antdesign/Fill/index.js",
-      "types": "./src/antdesign/Fill/index.d.ts"
+    "./antdesign/fill": {
+      "import": "./src/antdesign/fill/index.js",
+      "types": "./src/antdesign/fill/index.d.ts"
     },
-    "./antdesign/Twotone": {
-      "import": "./src/antdesign/Twotone/index.js",
-      "types": "./src/antdesign/Twotone/index.d.ts"
+    "./antdesign/twotone": {
+      "import": "./src/antdesign/twotone/index.js",
+      "types": "./src/antdesign/twotone/index.d.ts"
     },
     "./codicons": {
       "import": "./src/codicons/index.js",

@@ -1,0 +1,41 @@
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: eva | License: MIT (<https://github.com/akveo/eva-icons/blob/master/LICENSE.txt>)
+import { mergeProps } from 'solid-js';
+
+export function EvaFillLayers(props) {
+  const merged = mergeProps(
+    {
+      size: 32,
+      color: 'currentColor',
+      fill: 'currentColor',
+      stroke: 'none',
+      'stroke-width': 2,
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 24 24',
+      'stroke-linecap': 'round',
+      'stroke-linejoin': 'round',
+    },
+    props,
+  );
+  return (
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      <defs></defs>
+      <title>layers</title>
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="layers">
+          <g id="layers-2" data-name="layers">
+            <path d="M3.24,7.29l8.52,4.63a.51.51,0,0,0,.48,0l8.52-4.63a.44.44,0,0,0-.05-.81L12.19,3a.5.5,0,0,0-.38,0L3.29,6.48A.44.44,0,0,0,3.24,7.29Z" />
+            <path d="M20.71,10.66l-1.83-.78-6.64,3.61a.51.51,0,0,1-.48,0L5.12,9.88l-1.83.78a.48.48,0,0,0,0,.85l8.52,4.9a.46.46,0,0,0,.48,0l8.52-4.9A.48.48,0,0,0,20.71,10.66Z" />
+            <path d="M20.71,15.1l-1.56-.68-6.91,3.76a.51.51,0,0,1-.48,0L4.85,14.42l-1.56.68a.49.49,0,0,0,0,.87l8.52,5a.51.51,0,0,0,.48,0l8.52-5A.49.49,0,0,0,20.71,15.1Z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
+}
