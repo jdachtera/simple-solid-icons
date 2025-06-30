@@ -6,9 +6,11 @@
   command = "pnpm run dev"
   port = 5173
 
+
 [build.environment]
   NODE_VERSION = "22"
   NPM_FLAGS = "--version"
+  NODE_OPTIONS = "--max-old-space-size=4096"
 
 [functions]
   directory = "netlify/functions"
