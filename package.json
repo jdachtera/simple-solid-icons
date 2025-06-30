@@ -1,6 +1,6 @@
 {
   "name": "simple-solid-icons",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "SSR-safe, simple, and auto-generated icon library for SolidJS with components from popular open-source icon sets.",
   "type": "module",
   "main": "./src/index.js",
@@ -68,10 +68,14 @@
     }
   },
   "files": [
-    "src"
+    "src",
+    "README.md"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "clean": "rm -rf src/*",
+    "clean": "rm -rf src/* dist/*",
     "update:repos": "tsx scripts/cloneIconRepos.ts",
     "generate:icons": "tsx scripts/generateIcons.ts",
     "generate:icon-index": "tsx scripts/generateIconIndex.ts",
