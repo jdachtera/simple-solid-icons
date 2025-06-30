@@ -1,6 +1,6 @@
 {
   "name": "simple-solid-icons",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "SSR-safe, simple, and auto-generated icon library for SolidJS with components from popular open-source icon sets.",
   "type": "module",
   "main": "./src/index.js",
