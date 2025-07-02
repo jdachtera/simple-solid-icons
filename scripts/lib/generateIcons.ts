@@ -1,214 +1,114 @@
 import fs from 'fs/promises'
-import { glob } from 'glob'
 import path from 'path'
-import { iconSetConfigs } from '../../iconSets.config'
-import { camelize } from './camelize'
+import {
+  iconSetConfigs,
+  SetOrVariant,
+  variantSets,
+} from '../../iconSets.config'
 
-import { updatePackageJsonExports } from './updatePackageJsonExports'
 import { fileURLToPath } from 'url'
-
+import { useTemplate } from './useTemplate'
 import { generateCompiledIconJsx } from './generateCompiledIconJsx'
 
+import * as babel from '@babel/core'
+import { initializeSetFiles } from './initializeSetFiles'
+import { readSvgSourceFiles } from './readSvgSourceFiles'
+import { updatePackageJsonExports } from './updatePackageJsonExports'
+import { generateIndexFiles } from './generateIndexFiles'
+
 const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+export const __dirname = path.dirname(__filename)
 
-const templatesDir = path.resolve(__dirname)
-const jsxTemplatePath = path.join(templatesDir, 'iconTemplate.jsx')
-const dtsTemplatePath = path.join(templatesDir, 'iconTemplate.d.ts')
-
-const outRoot = path.resolve(path.join(__dirname, '../../src'))
-export const jsxTemplate = await fs.readFile(jsxTemplatePath, 'utf-8')
-const dtsTemplate = await fs.readFile(dtsTemplatePath, 'utf-8')
+export const outRoot = path.resolve(path.join(__dirname, '../../src'))
 
 export async function generateIcons(): Promise<void> {
   console.log('Generating icons from .icon-cache...')
   let iconCount = 0
-  const iconSetNames: string[] = []
-  const missingSets: string[] = []
-  const multiVariantRoots: Record<string, string[]> = {}
 
-  for (const set of iconSetConfigs) {
-    // Multi-variant support
-    if (Array.isArray((set as any).variants)) {
-      const root = set.name
-      multiVariantRoots[root] = []
-      for (const variant of (set as any).variants) {
-        let svgFiles: string[] = []
-        let svgDir = ''
-        if (set.sourceType === 'npm') {
-          // svgGlob is absolute or relative to project root (node_modules/...)
-          svgFiles = await glob(variant.svgGlob, { absolute: true })
-        } else {
-          svgDir = path.resolve(__dirname, '../../', set.cacheDir)
-          svgFiles = await glob(variant.svgGlob, { cwd: svgDir })
-        }
-        if (!svgFiles.length) {
-          missingSets.push(`${set.name}/${variant.variant}`)
-          continue
-        }
-        const variantName = variant.variant.toLowerCase()
-        iconSetNames.push(`${set.name}/${variantName}`)
-        multiVariantRoots[root].push(variantName)
-        const outDir = path.join(outRoot, set.name, variantName)
-        await fs.mkdir(outDir, { recursive: true })
-        let generatedComponentNames: string[] = []
-        await Promise.all(
-          svgFiles.map(async svgFile => {
-            const svgPath =
-              set.sourceType === 'npm' ? svgFile : path.join(svgDir, svgFile)
+  await fs.writeFile(`${outRoot}/types.ts`, await useTemplate('types.d.ts'))
+  const iconsWithImportPath = await Promise.all(
+    variantSets.map(async set => {
+      const {
+        outFileJsDom,
+        outFileJsSsr,
+        outFileDts,
+        iconsJsHeader,
+        baseFileName,
+      } = await initializeSetFiles(set, outRoot)
 
-            const baseName = path.basename(svgFile, '.svg')
-            // PascalCase the icon name after the prefix
-            const pascalName = camelize(baseName)
-            const componentName =
-              (variant
-                ? variant.componentPrefix
-                : (set as any).componentPrefix) + pascalName
+      let jsxCode = iconsJsHeader
 
-            const { dom, ssr } = await generateCompiledIconJsx(
-              { ...set, ...variant },
-              componentName,
-              svgPath
-            )
+      const svgFiles = await readSvgSourceFiles(set)
 
-            await fs.writeFile(path.join(outDir, `${componentName}.js`), dom)
-            await fs.writeFile(
-              path.join(outDir, `${componentName}.ssr.js`),
-              ssr
-            )
-            // DTS
-            const dtsCode = dtsTemplate
-              .replace('ICON_SET_NAME', set.name)
-              .replace('ICON_SET_LICENSE', set.license)
-              .replace('ICON_SET_LICENSE_URL', set.licenseUrl)
-              .replace('ICON_NAME', componentName)
-            const dtsDistPath = path.join(outDir, `${componentName}.d.ts`)
-            await fs.writeFile(dtsDistPath, dtsCode)
-            iconCount++
-            // (logging removed for speed)
-            // Save the componentName for index export
-            generatedComponentNames.push(componentName)
-          })
-        )
-        // Index for this set/variant (sorted)
-        generatedComponentNames.sort((a, b) => a.localeCompare(b))
-        const exports = generatedComponentNames
-          .map(
-            componentName =>
-              `export { ${componentName} } from './${componentName}.js'`
+      svgFiles.sort()
+
+      const iconstWithImport = {
+        componentNames: [] as string[],
+        set: set.name,
+        variant: 'variant' in set ? set.variant : undefined,
+        importPath: baseFileName,
+      }
+
+      for (const svgPath of svgFiles) {
+        try {
+          const { dts, jsx, componentName } = await generateCompiledIconJsx(
+            set,
+            svgPath
           )
-          .join('\n')
-        const ssrExports = generatedComponentNames
-          .map(
-            componentName =>
-              `export { ${componentName} } from './${componentName}.ssr.js'`
+
+          jsxCode += jsx
+          await fs.appendFile(outFileDts, dts)
+
+          iconstWithImport.componentNames.push(componentName)
+
+          iconCount++
+        } catch (error) {
+          console.error(
+            `Error processing ${svgPath} in set ${set.name}:`,
+            error
           )
-          .join('\n')
-        const indexPath = path.join(outDir, 'index.js')
-        const ssrIndexPath = path.join(outDir, 'index.ssr.js')
-        await fs.writeFile(indexPath, exports)
-        await fs.writeFile(ssrIndexPath, ssrExports)
-        // Types index
-        await fs.writeFile(path.join(outDir, 'index.d.ts'), exports)
-        console.log(`✓ ${set.name}/${variant.variant}/index.js (sorted)`)
+        }
       }
-      // Root index for multi-variant set
-      if (multiVariantRoots[root].length) {
-        const rootIndexContent = multiVariantRoots[root]
-          .map(v => `export * from './${v}/index.js'`)
-          .join('\n')
-        const rootSsrIndexContent = multiVariantRoots[root]
-          .map(v => `export * from './${v}/index.ssr.js'`)
-          .join('\n')
-        const rootIndexPath = path.join(outRoot, root, 'index.js')
-        const rootSsrIndexPath = path.join(outRoot, root, 'index.ssr.js')
-        await fs.writeFile(rootIndexPath, rootIndexContent)
-        await fs.writeFile(rootSsrIndexPath, rootSsrIndexContent)
-        await fs.writeFile(
-          path.join(outRoot, root, 'index.d.ts'),
-          rootIndexContent
-        )
-        console.log(`✓ ${root}/index.js (root re-export)`)
-      }
-    } else {
-      // Single-variant (default) sets
-      let svgFiles: string[] = []
-      let svgDir = ''
-      const globPattern = set.svgGlob || '**/*.svg'
-      if (set.sourceType === 'npm') {
-        svgFiles = await glob(globPattern, { absolute: true })
-      } else {
-        svgDir = path.resolve(__dirname, '../../', set.cacheDir)
-        svgFiles = await glob(globPattern, { cwd: svgDir })
-      }
-      if (!svgFiles.length) {
-        missingSets.push(set.name)
-        continue
-      }
-      iconSetNames.push(set.name)
-      const outDir = path.join(outRoot, set.name)
-      await fs.mkdir(outDir, { recursive: true })
-      let generatedComponentNames: string[] = []
-      for (const svgFile of svgFiles) {
-        const svgPath =
-          set.sourceType === 'npm' ? svgFile : path.join(svgDir, svgFile)
 
-        const baseName = path.basename(svgFile, '.svg')
-        const componentName =
-          camelize((set as any).componentPrefix) + camelize(baseName)      
+      const jsCode = await babel.transformAsync(jsxCode, {
+        filename: outFileJsSsr,
+        sourceMaps: 'inline',
+        minified: false,
+        compact: false,
+        presets: [
+          [
+            'solid',
+            { generate: 'dom', hydratable: true, sourceMaps: 'inline' },
+          ],
+        ],
+      })!
 
-        const { dom, ssr } = await generateCompiledIconJsx(
-          set,
-          componentName,
-          svgPath
-        )
+      const jsSsrCode = await babel.transformAsync(jsxCode, {
+        filename: outFileJsSsr,
+        sourceMaps: 'inline',
+        minified: false,
+        compact: false,
+        presets: [
+          ['solid', { generate: 'ssr', hydratable: true, sourceMap: 'inline' }],
+        ],
+      })
 
-        await fs.writeFile(path.join(outDir, `${componentName}.js`), dom)
-        await fs.writeFile(path.join(outDir, `${componentName}.ssr.js`), ssr)
+      await fs.writeFile(outFileJsDom, jsCode?.code!)
+      await fs.writeFile(outFileJsSsr, jsSsrCode?.code!)
+      console.log(
+        `✓ ${svgFiles.length} icons generated from ${'variant' in set ? `${set.name}:${set.variant} variant` : `${set.name} set`}`
+      )
 
-        // DTS
-        const dtsCode = dtsTemplate
-          .replace('ICON_SET_NAME', set.name)
-          .replace('ICON_SET_LICENSE', set.license)
-          .replace('ICON_SET_LICENSE_URL', set.licenseUrl)
-          .replace('ICON_NAME', componentName)
-        const dtsDistPath = path.join(outDir, `${componentName}.d.ts`)
-        await fs.writeFile(dtsDistPath, dtsCode)
-        iconCount++
-        // (logging removed for speed)
-        // Save the componentName for index export
-        generatedComponentNames.push(componentName)
-      }
-      // Index for this set (sorted)
-      generatedComponentNames.sort((a, b) => a.localeCompare(b))
-      const exports = generatedComponentNames
-        .map(
-          componentName =>
-            `export { ${componentName} } from './${componentName}.js'`
-        )
-        .join('\n')
-      const ssrExports = generatedComponentNames
-        .map(
-          componentName =>
-            `export { ${componentName} } from './${componentName}.ssr.js'`
-        )
-        .join('\n')
-      const indexPath = path.join(outDir, 'index.js')
-      const ssrIndexPath = path.join(outDir, 'index.ssr.js')
-      await fs.writeFile(indexPath, exports)
-      await fs.writeFile(ssrIndexPath, ssrExports)
-      // Types index
-      await fs.writeFile(path.join(outDir, 'index.d.ts'), exports)
-      console.log(`✓ ${set.name}/index.js (sorted)`)
-    }
-  }
-  // (No main index.js or index.d.ts generated)
-  // console.log('✓ main index.js and index.d.ts')
-  console.log(
-    `Generated ${iconCount} icons in ${iconSetNames.length} sets/variants.`
+      return iconstWithImport
+    })
   )
-  if (missingSets.length) {
-    console.warn(`Warning: No SVGs found for sets: ${missingSets.join(', ')}`)
-  }
-  await updatePackageJsonExports(iconSetNames)
+
+  iconsWithImportPath.sort((a, b) => {
+    if (a.set !== b.set) return a.set.localeCompare(b.set)
+    if (a.variant !== b.variant) return (a.variant || '').localeCompare(b.variant || '')
+    return a.importPath.localeCompare(b.importPath)
+  })
+
+  await updatePackageJsonExports()
+  await generateIndexFiles(iconsWithImportPath)
 }

@@ -1,0 +1,1 @@
+export function ICON_NAME(props: IconProps): JSX.Element

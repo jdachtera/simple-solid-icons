@@ -34,6 +34,10 @@ export type IconSetConfig = {
   sourceType?: 'git' | 'npm'
 }
 
+export type SetOrVariant =
+  | IconSetConfig
+  | (Omit<IconSetConfig, 'variants'> & IconSetVariantConfig)
+
 const defaultProps: IconSetDefaultProps = {
   size: 32,
   color: 'currentColor',
@@ -42,7 +46,9 @@ const defaultProps: IconSetDefaultProps = {
   'stroke-width': 2,
 }
 
-export const getSetDefaultProps = (setConfig: IconSetConfig): Required<IconSetDefaultProps> => {
+export const getSetDefaultProps = (
+  setConfig: IconSetConfig
+): Required<IconSetDefaultProps> => {
   return {
     ...defaultProps,
     ...setConfig.defaultProps,
@@ -57,10 +63,10 @@ export const iconSetConfigs: IconSetConfig[] = [
     gitBranch: '', // not used for npm
     cacheDir: './.icon-cache/fontawesome',
     license: 'CC BY 4.0',
-    licenseUrl: 'https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt',
+    licenseUrl:
+      'https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt',
     defaultProps: {
       size: 32,
-      fill: 'currentColor',
       stroke: 'none',
     },
     sourceType: 'npm',
@@ -73,7 +79,8 @@ export const iconSetConfigs: IconSetConfig[] = [
       },
       {
         variant: 'regular',
-        svgGlob: 'node_modules/@fortawesome/fontawesome-free/svgs/regular/*.svg',
+        svgGlob:
+          'node_modules/@fortawesome/fontawesome-free/svgs/regular/*.svg',
         componentPrefix: 'FaRegular',
       },
       {
@@ -161,7 +168,6 @@ export const iconSetConfigs: IconSetConfig[] = [
     licenseUrl: 'https://github.com/twbs/icons/blob/main/LICENSE.md',
     defaultProps: {
       size: 32,
-      fill: 'currentColor',
       stroke: 'none',
       'stroke-width': 0.5,
     },
@@ -285,7 +291,8 @@ export const iconSetConfigs: IconSetConfig[] = [
     componentPrefix: 'Antd',
     cacheDir: './.icon-cache/antdesign',
     license: 'MIT',
-    licenseUrl: 'https://github.com/ant-design/ant-design-icons/blob/master/LICENSE',
+    licenseUrl:
+      'https://github.com/ant-design/ant-design-icons/blob/master/LICENSE',
     defaultProps: {
       size: 32,
       fill: 'currentColor',
@@ -319,7 +326,8 @@ export const iconSetConfigs: IconSetConfig[] = [
     componentPrefix: 'Codicon',
     cacheDir: './.icon-cache/codicons',
     license: 'MIT',
-    licenseUrl: 'https://github.com/microsoft/vscode-codicons/blob/main/LICENSE',
+    licenseUrl:
+      'https://github.com/microsoft/vscode-codicons/blob/main/LICENSE',
     defaultProps: {
       size: 32,
       fill: 'currentColor',
@@ -327,3 +335,12 @@ export const iconSetConfigs: IconSetConfig[] = [
     },
   },
 ]
+
+export const variantSets: SetOrVariant[] = iconSetConfigs.flatMap(set => {
+  if (Array.isArray(set.variants)) {
+    const { variants, ...rootSet } = set
+    return variants.map(variant => ({ ...rootSet, ...variant }))
+  } else {
+    return [set]
+  }
+})

@@ -1,7 +1,17 @@
-import { createSignal, For, createResource, Show, createEffect } from 'solid-js'
+import {
+  createSignal,
+  For,
+  createResource,
+  Show,
+  createEffect,
+  Component,
+} from 'solid-js'
 import { Dynamic } from 'solid-js/web'
 import { iconIndex, IconIndexEntry } from './iconIndex'
 import { getSetDefaultProps, iconSetConfigs } from '../iconSets.config'
+
+import * as allIcons from '../src'
+import { IconProps } from '../src/types'
 
 export default function App() {
   location.hash = location.hash || `#${iconIndex[0].set}`
@@ -60,22 +70,7 @@ export default function App() {
     setPage(0) // Reset to first page on search or set change
   }, [search, selectedSet])
 
-  function useIconLoader(icon: IconIndexEntry) {
-    return createResource(
-      () => icon,
-      async ({ name, set, variant }) => {
-        if (variant) {
-          const mod = await import(
-            `../src/${set.toLowerCase()}/${variant}/${name}.jsx`
-          )
-          return mod[name]
-        } else {
-          const mod = await import(`../src/${set.toLowerCase()}/${name}.jsx`)
-          return mod[name]
-        }
-      }
-    )
-  }
+
 
   // Popup state for selected icon
   const [selectedIcon, setSelectedIcon] = createSignal<IconIndexEntry | null>(
@@ -214,25 +209,20 @@ export default function App() {
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
         <For each={pagedIcons()}>
           {iconObj => {
-            const [Icon] = useIconLoader(iconObj)
+      
+
             return (
               <div class="flex flex-col items-center bg-white rounded shadow p-3 hover:shadow-lg transition group relative">
-                <Show
-                  when={Icon()}
-                  fallback={
-                    <div class="w-8 h-8 mb-2 animate-pulse bg-blue-100 rounded" />
-                  }
-                >
-                  <Dynamic
-                    component={Icon()}
-                    size={iconSize()}
-                    stroke-width={iconStrokeWidth()}
-                    stroke={iconStroke()}
-                    fill={iconFill()}
-                    class="mb-2 text-blue-500 group-hover:text-blue-700 cursor-pointer"
-                    onClick={() => setSelectedIcon(iconObj)}
-                  />
-                </Show>
+                <IconByName
+                  name={iconObj.name}
+                  size={iconSize()}
+                  stroke-width={iconStrokeWidth()}
+                  stroke={iconStroke()}
+                  fill={iconFill()}
+                  class="mb-2 text-blue-500 group-hover:text-blue-700 cursor-pointer"
+                  onClick={() => setSelectedIcon(iconObj)}
+                />
+
                 <div class="text-xs font-mono text-gray-700 mb-1 text-center">
                   {iconObj.name}
                 </div>
@@ -249,11 +239,12 @@ export default function App() {
         </For>
       </div>
       <Show when={selectedIcon()}>
-        {() => {
-          const iconObj = selectedIcon()!
-          const [Icon] = useIconLoader(iconObj)
-          const importStatement = `import { ${iconObj.name} } from '${iconObj.importPath.replace('../src/', 'solid-icons-ssr/').split('/').slice(0, -1).join('/')}'`
-          const setConfig = iconSetConfigs.find(s => s.name.toLowerCase() === iconObj.set.toLowerCase())
+        {(selectedIcon) => {
+          const iconObj = selectedIcon()
+          const importStatement = `import { ${iconObj.name} } from ''solid-icons-ssr/${iconObj.importPath}'`
+          const setConfig = iconSetConfigs.find(
+            s => s.name.toLowerCase() === iconObj.set.toLowerCase()
+          )
 
           if (!setConfig) {
             console.error(`No config found for set: ${iconObj.set}`)
@@ -324,25 +315,17 @@ export default function App() {
                 <div class="mb-2 text-lg font-bold text-center">
                   {iconObj.name}
                 </div>
-                <Show
-                  when={!Icon.loading}
-                  fallback={
-                    <div class="flex justify-center mb-3">
-                      <div class="w-16 h-16 animate-pulse bg-blue-100 rounded-full" />
-                    </div>
-                  }
-                >
+
                   <div class="flex justify-center mb-3">
-                    <Dynamic
-                      component={Icon()}
+                    <IconByName
+                      name={iconObj.name}
                       size={iconSize()}
                       stroke-width={iconStrokeWidth()}
                       stroke={iconStroke()}
                       fill={iconFill()}
                       class="text-blue-500"
                     />
-                  </div>
-                </Show>
+                  </div>                
                 <div class="mb-2">
                   <div class="text-xs font-semibold mb-1">Import:</div>
                   <div class="bg-gray-100 rounded px-2 py-1 font-mono text-xs flex items-center justify-between">
@@ -366,7 +349,7 @@ export default function App() {
                       {copied() === usageExample ? 'Copied!' : 'Copy'}
                     </button>
                   </div>
-                </div>            
+                </div>
               </div>
             </div>
           )
@@ -377,5 +360,20 @@ export default function App() {
         SolidJS
       </footer>
     </div>
+  )
+}
+
+const IconByName = (props: { name: string } & IconProps) => {
+  const iconName = props.name as unknown as keyof typeof allIcons
+  const IconComponent =
+    iconName in allIcons ? (allIcons[iconName] as Component<IconProps>) : null
+
+  if (!IconComponent) {
+    console.error(`Icon component not found: ${props.name}`)
+    return null
+  }
+
+  return (
+    <IconComponent {...props}/>
   )
 }

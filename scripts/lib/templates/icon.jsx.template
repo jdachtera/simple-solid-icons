@@ -1,0 +1,21 @@
+export function ICON_NAME(props) {
+  const merged = mergeProps(
+    {
+      ...DEFAULT_IMPORT_NAMEDefaultProps,
+      viewBox: 'VIEW_BOX',
+    },
+    props
+  )
+  return (
+    <svg
+      {...merged}
+      width={merged.width ?? merged.size}
+      height={merged.height ?? merged.size}
+      stroke={merged.stroke ?? merged.color}
+      fill={merged.fill}
+    >
+      SVG_PATHS
+    </svg>
+  )
+}
+

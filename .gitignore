@@ -4,3 +4,4 @@ node_modules/
 # Icon cache for local repo clones
 .icon-cache/
 dist
+bundle/dist

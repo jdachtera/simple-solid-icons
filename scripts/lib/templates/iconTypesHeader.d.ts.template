@@ -1,0 +1,5 @@
+// AUTO-GENERATED FILE. DO NOT EDIT BY HAND.
+// Icon set: ICON_SET_NAME | License: ICON_SET_LICENSE (ICON_SET_LICENSE_URL)
+import type { JSX } from 'solid-js'
+import type { IconProps } from '__ROOT__/types'
+

@@ -1,0 +1,12 @@
+demo/
+dist/
+bundle/!dist/
+node_modules/
+*.config.*
+*.ts
+*.tsx
+*.jsx
+*.svg
+*.md
+!src/
+!README.md
