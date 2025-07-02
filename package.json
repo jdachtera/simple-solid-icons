@@ -11,6 +11,11 @@
       "types": "./src/fontawesome/solid.d.ts",
       "solid-server": "./src/fontawesome/solid.ssr.js"
     },
+    "./fontawesome": {
+      "import": "./src/fontawesome/index.js",
+      "types": "./src/fontawesome/index.d.ts",
+      "solid-server": "./src/fontawesome/index.ssr.js"
+    },
     "./fontawesome/regular": {
       "import": "./src/fontawesome/regular.js",
       "types": "./src/fontawesome/regular.d.ts",
@@ -66,6 +71,11 @@
       "types": "./src/eva/fill.d.ts",
       "solid-server": "./src/eva/fill.ssr.js"
     },
+    "./eva": {
+      "import": "./src/eva/index.js",
+      "types": "./src/eva/index.d.ts",
+      "solid-server": "./src/eva/index.ssr.js"
+    },
     "./eva/outline": {
       "import": "./src/eva/outline.js",
       "types": "./src/eva/outline.d.ts",
@@ -85,6 +95,11 @@
       "import": "./src/antdesign/outline.js",
       "types": "./src/antdesign/outline.d.ts",
       "solid-server": "./src/antdesign/outline.ssr.js"
+    },
+    "./antdesign": {
+      "import": "./src/antdesign/index.js",
+      "types": "./src/antdesign/index.d.ts",
+      "solid-server": "./src/antdesign/index.ssr.js"
     },
     "./antdesign/fill": {
       "import": "./src/antdesign/fill.js",
@@ -112,7 +127,7 @@
   "scripts": {
     "clean": "rm -rf src/* dist/* ",
     "update:sources": "tsx scripts/updateIconSources.ts",
-    "generate:icons": "tsx scripts/generateIcons.ts",        
+    "generate:icons": "tsx scripts/generateIcons.ts",
     "update:all": "pnpm clean && pnpm update:sources && pnpm generate:icons",
     "dev": "vite",
     "build": "vite build",
@@ -146,11 +161,11 @@
     "@tailwindcss/postcss": "^4.1.11",
     "@types/babel__core": "^7.20.5",
     "@types/node": "^20.19.2",
-    "autoprefixer": "^10.4.21",    
+    "autoprefixer": "^10.4.21",
     "glob": "^11.0.3",
     "pnpm": "^10.12.4",
     "postcss": "^8.5.6",
-    "prettier": "^3.6.2",    
+    "prettier": "^3.6.2",
     "tailwindcss": "^4.1.11",
     "tslib": "^2.8.1",
     "tsx": "^4.20.3",
